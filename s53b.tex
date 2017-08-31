@@ -1,0 +1,93 @@
+﻿\documentclass[10pt,a5j]{tarticle} % A5 用
+\AtBeginDvi{\special{papersize=148mm,210mm}} % A5 用
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
+\usepackage{pxrubrica}
+\usepackage{multicol}
+\setlength{\topmargin}{20mm}
+\addtolength{\topmargin}{-1in}
+\setlength{\oddsidemargin}{20mm}
+\addtolength{\oddsidemargin}{-1in}
+\setlength{\textwidth}{170mm} % A5 用
+\setlength{\textheight}{118mm} % A5 用
+\setlength{\headsep}{0mm}
+\setlength{\headheight}{0mm}
+\setlength{\topskip}{0mm}
+\setlength{\parskip}{0pt}
+\def\labelenumi{\theenumi、} % 箇条書きのフォーマット
+\parindent = 0pt % 段落下げしない
+
+
+\begin{document}
+\thispagestyle{empty} % ページ番号の消去
+\newcommand{\linespace}{1.8em} % 行間の設定
+\newcommand{\blocksize}{0.33\hsize} % 行間の設定
+
+\begin{minipage}[c]{0.7\hsize}
+	\begin{center}
+		{\LARGE
+			草は萠え出で
+		}
+		{\small 
+			(昭和五十三年第七十回記念祭歌)
+		}\\
+	\end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize}
+	\begin{flushright}%
+		朝倉仁樹君 作歌\\
+		田坂幸平君 作曲
+	\end{flushright}
+\end{minipage}
+
+\vspace{1.5em}
+\begin{enumerate}
+	\begin{minipage}[c]{\blocksize}
+	
+		\vspace{\linespace}
+		\item
+		\ruby{草}{くさ}は\ruby{萠}{も}え\ruby{出}{い}で\ruby[g]{郭公}{とり}は\ruby{鳴}{な}き\\
+		\ruby{憧}{あこが}れ\ruby{睦}{むつ}ぶ\ruby[g]{宿舎}{やどりや}に\\
+		\ruby{疾風怒涛}{しっ|ぷう|ど|とう}の\ruby{渦}{うず}の\ruby{中}{なか}\\
+		\ruby{明}{あか}り\ruby{求}{もと}めて\ruby[g]{放浪}{さまよ}いぬ\\
+		\ruby{巷}{ちまた}の\ruby{塵}{ちり}をふり\ruby{払}{はら}い\\
+		\ruby{悠々}{ゆう|ゆう}\ruby{迪}{みち}を\ruby{歩}{あゆ}まなん\\
+
+		\item
+		\ruby{蛮声}{ばん|せい}\ruby{放歌}{ほう|か}\ruby{乱舞}{らん|ぶ}する\\
+		\ruby{姿}{すがた}\ruby{雄々}{お|お}しき\ruby{吾}{われ}なれど\\
+		\ruby[g]{原始林}{もり}の\ruby{可憐}{か|れん}な\ruby{白花}{しら|はな}に\\
+		\ruby{心}{こころ}ふるわす\ruby{春}{はる}もあり\\
+		\ruby{清}{きよ}き\ruby[g]{乙女子}{おとめご}\ruby{去}{さ}りて\ruby{行}{ゆ}く\\
+		\ruby{恋}{こい}に\ruby{涙}{なんだ}す\ruby{秋}{あき}もあり\\
+		
+	\end{minipage}
+	\begin{minipage}[c]{\blocksize}
+	
+		\vspace{\linespace}
+		\item
+		\ruby{気高}{け|だか}き\ruby{野心}{や|しん}の\ruby{男}{お}の\ruby{児等}{こ|ら}が\\
+		\ruby{士幌}{し|ほろ}に\ruby[g]{山小屋}{こや}をうち\ruby{建}{た}てぬ\\
+		\ruby{十勝}{と|かち}の\ruby{山}{やま}と\ruby[g]{平原}{の}に\ruby{抱}{だ}かれ\\
+		\ruby{果}{は}てなく\ruby{魂}{こころ}\ruby{翔}{か}けるなり\\
+		\ruby{厳}{きび}しき\ruby{北}{きた}の\ruby{大地}{だい|ち}より\\
+		\ruby{新}{あら}たな\ruby{夢}{ゆめ}に\ruby{飛}{と}びたたん\\
+
+		\item
+		\ruby{読}{よ}み\ruby{飲}{の}み\ruby{語}{かた}り\ruby{夜}{よる}は\ruby{明}{あ}け\\
+		\ruby{熱}{あつ}き\ruby{情}{なさけ}に\ruby{年}{とし}は\ruby{経}{ふ}り\\
+		ああ\ruby{青春}{せい|しゅん}の\ruby{祭日}{まつり|び}も\\
+		はや\ruby{七十}{しち|じゅう}を\ruby{数}{かぞ}うなり\\
+		\ruby[g]{寮生}{とも}よ\ruby{再}{ふたた}び\ruby{楡影}{にれ|かげ}に\\
+		\ruby{三十年}{み|そ|とせ}\ruby{後}{のち}に\ruby{集}{つど}わなん\\
+	
+	\end{minipage}
+	\begin{minipage}[c]{\blocksize}
+		
+		\includegraphics[width=6cm, angle=90]{cisefrep.pdf}
+	
+	\end{minipage}
+\end{enumerate}
+
+
+\end{document}

@@ -1,0 +1,107 @@
+﻿\documentclass[10pt,a5j]{tarticle} % A5 用
+\AtBeginDvi{\special{papersize=148mm,210mm}} % A5 用
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
+\usepackage{pxrubrica}
+\usepackage{multicol}
+\setlength{\topmargin}{20mm}
+\addtolength{\topmargin}{-1in}
+\setlength{\oddsidemargin}{20mm}
+\addtolength{\oddsidemargin}{-1in}
+\setlength{\textwidth}{170mm} % A5 用
+\setlength{\textheight}{118mm} % A5 用
+\setlength{\headsep}{0mm}
+\setlength{\headheight}{0mm}
+\setlength{\topskip}{0mm}
+\setlength{\parskip}{0pt}
+\def\labelenumi{\theenumi、} % 箇条書きのフォーマット
+\parindent = 0pt % 段落下げしない
+
+
+\begin{document}
+\thispagestyle{empty} % ページ番号の消去
+\newcommand{\linespace}{1.0em} % 行間の設定
+\newcommand{\blocksize}{0.33\hsize} % 行間の設定
+
+\begin{minipage}[c]{0.7\hsize}
+	\begin{center}
+		{\normalsize 
+			校歌
+		}
+		{\LARGE
+			永遠の幸
+		}
+		{\small 
+			（札幌農学校校歌）
+		}
+	\end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize}
+	\begin{flushright}%
+		大和田建樹氏 校閲\\ 
+		有島武朗君 作歌\\ 
+		納所弁次郎氏 選曲
+	\end{flushright}
+\end{minipage}
+
+\vspace{1.5em}
+\begin{enumerate}
+	\begin{minipage}[c]{\blocksize}
+	
+		\vspace{\linespace}
+		\item
+		\ruby[g]{永遠}{とこしへ}の\ruby{幸}{さち}
+		\ruby{朽}{く}ちざる\ruby{誉}{ほまれ}\\
+		つねに\ruby{我等}{われ|ら}がうへにあれ\\
+		よるひる\ruby{育}{そだ}て
+		あけくれ\ruby{教}{おし}へ\\
+		\ruby{人}{ひと}となしし\ruby{我庭}{わが|にわ}に\\
+
+	\end{minipage}
+	\begin{minipage}[c]{\blocksize}
+
+		\vspace{\linespace}
+		\item
+		\ruby{北斗}{ほく|と}をつかん
+		たかき\ruby[g]{希望}{のぞみ}は\\
+		\ruby[g]{時代}{とき}を\ruby{照}{てら}す\ruby{光}{ひかり}なり\\
+		\ruby{深雪}{み|ゆき}を\ruby{凌}{しの}ぐ
+		\ruby{潔}{きよ}き\ruby[g]{節操}{みさお}は\\
+		\ruby{国}{くに}を\ruby{守}{まも}る\ruby{力}{ちから}なり\\
+		（※繰り返し）
+	
+	\end{minipage}
+	\begin{minipage}[c]{\blocksize}
+		
+		\vspace{\linespace}
+		\item
+		\ruby{山}{やま}は\ruby{裂}{さ}くとも
+		\ruby{海}{うみ}はあすとも\\
+		\ruby{真理正義}{しん|り|せい|ぎ}おつべしや\\
+		\ruby{不朽}{ふ|きゅう}を\ruby{求}{もと}め
+		\ruby{意気}{い|き}\ruby{相}{あい}ゆるす\\
+		\ruby{我等}{われ|ら}\ruby[g]{丈夫}{ますらお}\ruby{此}{ここ}にあり\\
+		（※繰り返し）
+	
+	\end{minipage}
+	\begin{minipage}[c]{0.5\hsize}
+		\vspace{\linespace}
+		（※） 
+		イザイザイザ\\
+		うちつれて
+		\ruby{進}{すす}むは\ruby{今}{いま}ぞ\\
+		\ruby{豊平}{とよ|ひら}の\ruby{川}{かわ}
+		\ruby{尽}{つき}せぬながれ\\
+		\ruby{友}{とも}たれ\ruby{永}{なが}く\ruby{友}{とも}たれ\\
+	\end{minipage}
+	\begin{minipage}[c]{0.5\hsize}
+		\vspace{\linespace}
+		（注 有島武郎在学中の明治三十三年の作。\\
+		大和田建樹（一八五六 - 一九一〇）は作詞の面で、\\
+		納所弁次郎（一八六五 - 一九三六）は作曲の面で、\\
+		共に近代日本唱歌史に大きな足跡を残した。）
+	\end{minipage}
+\end{enumerate}
+
+
+\end{document}
