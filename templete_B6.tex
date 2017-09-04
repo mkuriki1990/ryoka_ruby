@@ -1,4 +1,4 @@
-﻿\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+﻿% \documentclass[10pt,b5j]{tarticle} % B6 縦書き
 \AtBeginDvi{\special{papersize=128mm,182mm}} % B6 用用紙サイズ
 \usepackage{otf} % Unicode で字を入力するのに必要なパッケージ
 \usepackage[size=b6j]{bxpapersize} % B6 用紙サイズを指定
@@ -19,39 +19,3 @@
 \def\labelenumi{\theenumi、} % 箇条書きのフォーマット
 \parindent = 0pt % 段落下げしない
 
-
-\begin{document}
-\thispagestyle{empty} % ページ番号の消去
-\newcommand{\linespace}{1.0em} % 行間の設定
-\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
-
-%%%%% タイトルと作者 ここから %%%%%
-\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
-	\begin{center}
-		{\LARGE
-			TITLE % タイトルを入れる
-		}
-		{\small 
-			（YEAR） % 年などを入れる
-		}\\
-	\end{center}
-\end{minipage}
-\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
-	\begin{flushright} % 下寄せにする
-		NAME1君 作歌\\ % 作歌者
-		NAME2君 作曲 % 作曲者
-	\end{flushright}
-\end{minipage}
-%%%%% タイトルと作者 ここまで %%%%%
-
-\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
-\begin{enumerate}
-	\begin{minipage}[c]{\blocksize}
-	
-		LILYCS
-	
-	\end{minipage}
-\end{enumerate}
-
-
-\end{document}
