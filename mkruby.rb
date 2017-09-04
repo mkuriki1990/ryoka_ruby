@@ -54,7 +54,7 @@ csvList.each{|data|
         if line == "\n"
             lilycs << buffer.chomp << "\n"
         else
-            lilycs << buffer.chomp << "\\\\\n"
+            lilycs << buffer.chomp << "\\\\\\\n"
         end
         buffer = line
     }
@@ -72,8 +72,8 @@ csvList.each{|data|
     # 連続する漢字をまとめる処理 ここまで
 
     # 曲番を除いて TeX トークン \item と \vspace に変換
-    lilycs.gsub!(/.+\.\\\\\n/, '') # 任意の文字にドットがつくものは曲番なので覗く
-    lilycs.gsub!(/^\\\\$/, "\n\\vspace{\\linespace}\n\\item") # \\ だけの行を '\vspace{\linespace}\n\item' に置き換え
+    lilycs.gsub!(/.+\.\\\\\\\n/, '') # 任意の文字にドットがつくものは曲番なので覗く
+    lilycs.gsub!(/^\\\\\\$/, "\n\\vspace{\\linespace}\n\\item") # \\ だけの行を '\vspace{\linespace}\n\item' に置き換え
 
     # フッタがあれば処理する
     if footer.length != 0
@@ -82,6 +82,9 @@ csvList.each{|data|
         # フッタを追記
         lilycs = lilycs << footer
     end
+
+    # 最初の空行だけ除く
+    lilycs.sub!("\n", '')
 
     # # srcName.ruby ファイルに書き出し
     # result = File.open("ruby/#{srcName}.ruby", 'w')
@@ -101,9 +104,14 @@ csvList.each{|data|
     # テンプレートの中身をそれぞれ置換
     tex.gsub!('TITLE', title)
     tex.gsub!('YEAR', year)
-    tex.gsub!('NAME1', name1)
-    tex.gsub!('NAME2', name2)
-    tex.gsub!('LILYCS', lilycs)
+    if name2.length != 0
+        tex.gsub!('NAME1', name1)
+        tex.gsub!('NAME2', name2)
+    else
+        tex.gsub!('NAME1', name1)
+        tex.gsub!('NAME2', name1)
+    end
+    tex.gsub!('        LILYCS', lilycs)
 
     # srcName.ruby.tex ファイルに書き出し
     result = File.open("tex/#{srcName}.ruby.tex", 'w')
