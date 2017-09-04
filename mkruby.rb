@@ -113,6 +113,8 @@ csvList.each{|data|
     end
     tex.gsub!('        LILYCS', lilycs)
 
+    # 元のファイル名から .txt を抜く
+    srcName.slice!('.txt')
     # srcName.ruby.tex ファイルに書き出し
     result = File.open("tex/#{srcName}.ruby.tex", 'w')
     result.write(tex)
