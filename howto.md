@@ -10,7 +10,7 @@
 \ruby{草}{}は\ruby{萠}{}え\ruby{出}{}で
 \ruby{草}{くさ}は\ruby{萠}{も}え\ruby{出}{い}で
 ```
-* 基本的には漢字の読みを<span style="color:red">**直後の {} 内に挿入**</span>する. 
+* 基本的には漢字の読みを<span style="color:red">直後の {} 内に挿入</span>する. 
 
 ```TeX
 \ruby{気高}{}き\ruby{野心}{}の\ruby{男}{}の\ruby{児等}{}が
