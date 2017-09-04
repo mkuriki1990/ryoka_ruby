@@ -1,0 +1,37 @@
+\begin{document}
+\thispagestyle{empty} % ページ番号の消去
+\newcommand{\linespace}{1.0em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+        {\LARGE
+            TITLE % タイトルを入れる
+        }
+        {\small 
+            （YEAR） % 年などを入れる (和文なので全角括弧を用いている)
+        }\\
+    \end{center}
+\end{minipage}
+ebegin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        NAME1君 作歌\\ % 作歌者
+        NAME2君 作曲 % 作曲者
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        LILYCS
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+
+\end{document}
