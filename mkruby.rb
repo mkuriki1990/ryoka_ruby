@@ -3,6 +3,8 @@
 # \ruby{漢字}{} をつけるスクリプト
 require 'csv'
 
+templateName = 'document_B6.tex'
+
 # 収録曲一覧の読み込み
 csvList = CSV.read('./src/ryoka_list.csv', headers:true)
 csvList.each{|data|
@@ -81,29 +83,31 @@ csvList.each{|data|
         lilycs = lilycs << footer
     end
 
-    # srcName.ruby ファイルに書き出し
-    result = File.open("ruby/#{srcName}.ruby", 'w')
-    result.write(lilycs)
+    # # srcName.ruby ファイルに書き出し
+    # result = File.open("ruby/#{srcName}.ruby", 'w')
+    # result.write(lilycs)
+    # result.close
+
+    ###################
+    # ここから TeX ファイルの作成
+    ###################
+    # TeX のテンプレートファイル読み込み
+    template = File.open("#{templateName}", 'r')
+    tex = template.read()
+
+    # lilycs 部分は行頭にスペースを入れて TeX テンプレートのインデントに揃える
+    lilycs.gsub!(/^/, "        ")
+    
+    # テンプレートの中身をそれぞれ置換
+    tex.gsub!('TITLE', title)
+    tex.gsub!('YEAR', year)
+    tex.gsub!('NAME1', name1)
+    tex.gsub!('NAME2', name2)
+    tex.gsub!('LILYCS', lilycs)
+
+    # srcName.ruby.tex ファイルに書き出し
+    result = File.open("tex/#{srcName}.ruby.tex", 'w')
+    result.write(tex)
     result.close
 }
-
-
-###################
-# ここから TeX ファイルの作成
-###################
-
-# TeX のテンプレートファイル読み込み
-template = File.open('document_B6.tex', 'r')
-
-
-# buffer = templete.read();
-# src = source.read();
-# 
-# buffer.gsub!("LILYCS", src)
-# p buffer
-# 
-# fff = File.open('test.tex', 'w')
-# 
-# fff.write(buffer)
-# fff.close
 
