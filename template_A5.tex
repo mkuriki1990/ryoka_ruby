@@ -5,6 +5,7 @@
 \usepackage[dvipdfmx]{graphicx} % 画像を挿入するためのパッケージ
 \usepackage[dvipdfmx]{color} % 色をつけるためのパッケージ
 \usepackage{pxrubrica} % ルビを振るためのパッケージ
+\usepackage{plext} % 漢数字の enumerate を使うためのパッケージ
 \usepackage{multicol} % 複数段組を作るためのパッケージ
 \setlength{\topmargin}{20mm} % 上下方向のマージン
 \addtolength{\topmargin}{-1in} % 
@@ -16,6 +17,6 @@
 \setlength{\headheight}{0mm} % 
 \setlength{\topskip}{0mm} % 
 \setlength{\parskip}{0pt} % 
-\def\labelenumi{\theenumi、} % 箇条書きのフォーマット
+\def\theenumi{\Kanji{enumi}、} % 箇条書きのフォーマットを漢数字に変更
 \parindent = 0pt % 段落下げしない
 
