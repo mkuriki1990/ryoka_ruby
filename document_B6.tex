@@ -2,10 +2,7 @@
 \input{template_B6.tex} % B6 用テンプレート読み込み
 
 \begin{document}
-\thispagestyle{empty} % ページ番号の消去
-\newcommand{\linespace}{0.5em} % 行間の設定
-\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
-
+% begin header
 %%%%% タイトルと作者 ここから %%%%%
 \begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
     \begin{center}
@@ -24,10 +21,12 @@
     \end{flushright}
 \end{minipage}
 %%%%% タイトルと作者 ここまで %%%%%
-
-\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+% end header
 
 % begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
 %%%%% 歌詞 ここから %%%%%
 \begin{enumerate} % 番号の箇条書き ここから
     \begin{minipage}[c]{\blocksize}
