@@ -1,0 +1,85 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            新な灯火 % タイトルを入れる
+        }
+        {\small 
+            （昭和52年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        石川徹君 作歌\\元辻毅君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 繰り返しなし)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{北国}{}の\ruby{荒}{}ぶ\ruby{吹雪}{}に\\
+        \ruby{楡}{}の\ruby{木}{}の\ruby{高}{}く\ruby{聳}{}える\\
+        \ruby{原始林}{}の\ruby{中果}{}てる\ruby{事}{}なく\\
+        \ruby{雄々}{}しくて\ruby{人}{}の\ruby{瞼}{}に\\
+        \ruby{何時迄}{}も\ruby{鮮}{}やかに\ruby{刻}{}む\\
+        \ruby{其}{}の\ruby{姿}{}を\ruby{恵迪寮}{}は
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{憂愁}{}と\ruby{理想}{}を\ruby{胸}{}に\\
+        \ruby{爽}{}やかに\ruby{寮友}{}は\ruby{去}{}り\ruby{行}{}く\\
+        \ruby{夜}{}を\ruby{徹}{}し\ruby{未来}{}の\ruby{事}{}を\\
+        \ruby{御互}{}に\ruby{語}{}った\ruby{部屋}{}に\\
+        \ruby{思出}{}の\ruby{言葉}{}を\ruby{残}{}し\\
+        \ruby{懐}{}かしい\ruby{恵迪寮}{}を
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{年月}{}に\ruby{傾}{}く\ruby{姿}{}\\
+        \ruby{痛}{}ましく\ruby{懐}{}いの\ruby{残}{}る\\
+        \ruby{部屋}{}の\ruby{壁崩}{}れ\ruby{落}{}ちて\\
+        \ruby{昔}{}から\ruby{点}{}る\ruby{燈火}{}\\
+        \ruby{今}{}はもう\ruby{細}{}くなり\ruby{行}{}く\\
+        \ruby{我々}{}の\ruby{恵迪寮}{}の
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{先人}{}の\ruby{残}{}した\ruby{燈火}{}\\
+        \ruby{心有}{}る\ruby{寮友}{}よ\ruby{絶}{}やさず\\
+        \ruby{思}{}い\ruby{見}{}て\ruby{新}{}な\ruby{燈火}{}\\
+        \ruby{今}{}こそ\ruby{探}{}し\ruby{求}{}めて\\
+        \ruby{点}{}そう\ruby{絶}{}やす\ruby{事}{}なく\\
+        \ruby{何時迄}{}も\ruby{恵迪寮}{}に
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

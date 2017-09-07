@@ -1,0 +1,90 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            冬の大地に % タイトルを入れる
+        }
+        {\small 
+            （昭和48年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        伊藤潤平君 作歌\\矢野哲憲君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,3,5 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{冬}{}の\ruby{大地}{}に\ruby{夢}{}は\ruby{醒}{}め\\
+        \ruby{旭日}{}に\ruby{浮}{}ぶ\ruby{白亜城}{}\\
+        \ruby{原始}{}の\ruby{森}{}は\ruby{樹氷咲}{}き\\
+        \ruby{西方空}{}を\ruby{眺}{}むれば\\
+        \ruby{新雪淡}{}き\ruby{手稲山}{}
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        ポプラ\ruby{並木}{}の\ruby{葉}{}も\ruby{落}{}ちて\\
+        \ruby{秋}{}の\ruby{香深}{}き\ruby{夕間暮}{}れ\\
+        \ruby{白日西}{}に\ruby{沈}{}み\ruby{行}{}き\\
+        \ruby{素月東}{}の\ruby{森}{}に\ruby{出}{}ず\\
+        \ruby{乾坤環}{}り\ruby{復}{}た\ruby{周}{}る
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{浜茄子}{}の\ruby{砂丘}{}たたずみて\\
+        はるかに\ruby{眺}{}むオホーツク\\
+        \ruby{知床}{}の\ruby{嶺雪}{}かぶり\\
+        \ruby{沈}{}む\ruby{入日}{}に\ruby{白鳥}{}の\\
+        \ruby{飛影}{}ぞ\ruby{哀}{}しく\ruby{消}{}え\ruby{去}{}りぬ
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{旅}{}のロマンに\ruby{誘}{}われて\\
+        \ruby{支笏}{}の\ruby{岸}{}にさまよえば\\
+        \ruby{静寂}{}の\ruby{嶺}{}は\ruby{荘厳}{}に\\
+        \ruby{仰}{}ぐ\ruby{星座}{}は\ruby{闇}{}に\ruby{浮}{}き\\
+        \ruby{静}{}に\ruby{光}{}る\ruby{北極星}{}
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        \ruby{荒}{}ぶ\ruby{吹雪}{}ぞ\ruby{旅}{}の\ruby{魂}{}\\
+        \ruby{一年涙胸}{}に\ruby{秘}{}め\\
+        \ruby{我}{}が\ruby{夢}{}かけるオリオンに\\
+        \ruby{我}{}が\ruby{春永久}{}に\ruby{朽}{}ちざらん\\
+        \ruby{蝦夷}{}が\ruby{大地}{}ぞ\ruby{忘}{}るまじ
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

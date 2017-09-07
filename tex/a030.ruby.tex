@@ -1,0 +1,88 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            水産科応援歌 % タイトルを入れる
+        }
+        {\small 
+            （明治42年） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+         % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% % end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{天下}{}の\ruby{粋}{}を\ruby{鍾}{}めたる\\
+        \ruby{我}{}が\ruby{水産}{}の\ruby{健男児}{}\\
+        \ruby{東風薫}{}る\ruby{今日}{}の\ruby{日}{}を\\
+        \ruby{歌}{}へ\ruby{撰手}{}が\ruby{其}{}の\ruby{風姿}{}
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{春}{}、\ruby{南洋}{}の\ruby{曙}{}や\\
+        \ruby{紅霞渺々立}{}ち\ruby{罩}{}めて\\
+        \ruby{舟}{}の\ruby{行手}{}を\ruby{鎖}{}す\ruby{時}{}\\
+        \ruby{健児}{}の\ruby{力}{}、\ruby{波}{}を\ruby{蹴}{}る
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{秋}{}、\ruby{北海}{}の\ruby{夕潮}{}や\\
+        \ruby{銀星光}{}り\ruby{幽}{}かにて\\
+        \ruby{船}{}の\ruby{行手}{}の\ruby{暗}{}き\ruby{時}{}\\
+        \ruby{健児}{}の\ruby{勇氣鯨斬}{}る
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{白浪激}{}す\ruby{巌}{}の\ruby{上}{}\\
+        \ruby{健児}{}が\ruby{叫}{}ぶ\ruby{凱歌}{}は\\
+        \ruby{朝}{}?\ruby{躍}{}る\ruby{大洋}{}の\\
+        \ruby{遠}{}き\ruby{紫雲}{}に\ruby{響}{}く\ruby{哉}{}
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        \ruby{正義}{}の\ruby{血潮火}{}と\ruby{燃}{}ゆる\\
+        \ruby{我}{}が\ruby{水産}{}の\ruby{健男児}{}\\
+        \ruby{歌}{}ひ\ruby{果}{}てにしこの\ruby{夕}{}べ\\
+        \ruby{歌}{}へ\ruby{撰手}{}が\ruby{其}{}の\ruby{勳巧}{}
+        
+        \vspace{\linespace}
+        \item
+        （「\ruby{勇敢}{}なる\ruby{水兵}{}」の\ruby{譜}{}）
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

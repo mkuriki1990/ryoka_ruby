@@ -1,0 +1,81 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            新しき陽は % タイトルを入れる
+        }
+        {\small 
+            （昭和40年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        金子公良君 作歌\\西雪弘光君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,4 繰り返しなし)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{新}{}しき\ruby{陽}{}は\ruby{今昇}{}り\\
+        \ruby{空}{}のはて\ruby{黎明}{}を\ruby{告}{}ぐ\\
+        \ruby{黒}{}き\ruby{雲西}{}に\ruby{流}{}れん\\
+        \ruby{吹}{}きすさぶ\ruby{嵐}{}をつきて\\
+        \ruby{平和}{}をと\ruby{声}{}は\ruby{轟}{}く
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{逞}{}ましき\ruby{友}{}の\ruby{怒}{}りに\\
+        \ruby{雄々}{}しくも\ruby{我等誓}{}いし\\
+        \ruby{幸}{}の\ruby{世永遠}{}に\ruby{築}{}かん\\
+        \ruby{広}{}き\ruby{地}{}に\ruby{鍬}{}ふりかざし\\
+        \ruby{緑萠}{}え\ruby{水流}{}るまで
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{輝}{}やける\ruby{祖国}{}の\ruby{山河}{}に\\
+        こだまする\ruby{我等}{}が\ruby{雄叫}{}び\\
+        \ruby{一}{}すじの\ruby{光求}{}めて\\
+        ひたすらにただひたすらに\\
+        \ruby{腕組}{}みて\ruby{歩}{}み\ruby{進}{}まん
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{真実}{}の\ruby{鐘鳴}{}り\ruby{響}{}き\\
+        \ruby{森影}{}にどよめきのわく\\
+        \ruby{自治}{}の\ruby{旗風}{}にゆらめき\\
+        \ruby{名}{}を\ruby{留}{}む\ruby{伝}{}え\ruby{守}{}りて\\
+        \ruby{恵迪}{}は\ruby{今}{}よみがえる
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

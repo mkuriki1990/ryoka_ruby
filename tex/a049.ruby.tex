@@ -1,0 +1,84 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            医専応援歌 % タイトルを入れる
+        }
+        {\small 
+             % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+         % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% % end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{昔懐}{}かし\ruby{時計台}{}\\
+        \ruby{鐘}{}が\ruby{鳴}{}る\\
+        その\ruby{鐘}{}の\ruby{音}{}に\ruby{生}{}れ\ruby{出}{}た\\
+        コチャ\\
+        \ruby{北大医専}{}は\ruby{猛者揃}{}い\\
+        コチャエ　コチャエ
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{一目見}{}せたやメスをとる\\
+        その\ruby{姿}{}\\
+        \ruby{野口英世何}{}のその\\
+        コチャ\\
+        \ruby{望}{}みは\ruby{低}{}いがノーベル\ruby{賞}{}\\
+        コチャエ　コチャエ
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{何}{}でもエエから\ruby{勝}{}った\ruby{方}{}がエ\\
+        \ruby{勝}{}った\ruby{方}{}がエ\\
+        \ruby{偉駄天揃}{}いのわが\ruby{選手}{}\\
+        コチャ\\
+        \ruby{吾等}{}が\ruby{健児}{}の\ruby{勝}{}ち\ruby{戦}{}\\
+        コチャエ　コチャエ
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        ポプラ\ruby{並木}{}に\ruby{陽}{}が\ruby{落}{}ちて\\
+        \ruby{夜}{}が\ruby{来}{}る\\
+        おいらが\ruby{医専}{}の\ruby{独擅場}{}\\
+        コチャ\\
+        \ruby{飲}{}めや\ruby{唄}{}への\ruby{大勝利}{}\\
+        コチャエ　コチャエ
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

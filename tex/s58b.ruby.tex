@@ -1,0 +1,75 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            北に恵めし % タイトルを入れる
+        }
+        {\small 
+            （昭和58年新寮記念寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        大崎益孝君 作歌\\竹中秀文君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{北}{}に\ruby{恵}{}めし\ruby{若}{}き\ruby{日}{}の\ruby{夢}{}\\
+        いつかは\ruby{壊}{}れゆくものか\\
+        すがしき\ruby{朝}{}の\ruby{光}{}と\ruby{風}{}は\\
+        \ruby{原始}{}の\ruby{森}{}に\ruby{消}{}え\ruby{去}{}りぬ\\
+        \ruby{今}{}こそ\ruby{我}{}も\ruby{旅立}{}ちの\ruby{時}{}\\
+        \ruby{心}{}の\ruby{宿}{}よいざさらば
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{北}{}の\ruby{原野}{}を\ruby{流離}{}い\ruby{行}{}けば\\
+        \ruby{淡}{}き\ruby{花影}{}さゆらぎぬ\\
+        \ruby{今}{}も\ruby{変}{}わらぬその\ruby{涼風}{}に\\
+        \ruby{昔}{}の\ruby{光偲}{}ばずや\\
+        \ruby{流}{}れる\ruby{雲}{}に\ruby{孤}{}り\ruby{謳}{}えば\\
+        \ruby{果}{}てなく\ruby{夢}{}は\ruby{何処}{}までも
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{北}{}を\ruby{望}{}みし\ruby{岬}{}に\ruby{立}{}てば\\
+        うち\ruby{寄}{}す\ruby{波}{}は\ruby{静}{}かなり\\
+        されど\ruby{遙}{}けき\ruby{今樺太}{}の\\
+        \ruby{色}{}めく\ruby{空}{}を\ruby{憂}{}い\ruby{眺}{}ん\\
+        \ruby{功利}{}し\ruby{多}{}きこの\ruby{人}{}の\ruby{世}{}に\\
+        \ruby{誠}{}の\ruby{迪}{}を\ruby{貫}{}かん
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

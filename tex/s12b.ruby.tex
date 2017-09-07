@@ -1,0 +1,77 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            春未だ浅き % タイトルを入れる
+        }
+        {\small 
+            （昭和12年第30回記念祭歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        平城鷹雄君 作歌\\宍戸昌夫君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{春未}{}だ\ruby{浅}{}き\ruby{白楊}{}の\\
+        \ruby{雪解}{}の\ruby{小路}{}たたずめば\\
+        しばし\ruby{聞}{}けとて\ruby{私語}{}の\\
+        \ruby{木}{}の\ruby{間}{}もれくる\ruby{夕嵐}{}
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        あはく\ruby{足}{}げに\ruby{咲}{}き\ruby{出}{}でし\\
+        おぼろおぼろの\ruby{水芭蕉}{}\\
+        なつかしの\ruby{原始杜肩}{}とりて\\
+        \ruby{榾火}{}をめぐり\ruby{歌}{}はなん
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{長髪頬}{}に\ruby{戯}{}むれて\\
+        \ruby{昔変}{}らぬ\ruby{風}{}なれや\\
+        \ruby{今}{}したたへん\ruby{三十回}{}の\\
+        \ruby{青史}{}をかざす\ruby{記念祭}{}
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{美酒}{}の\ruby{夜}{}は\ruby{更}{}け\ruby{行}{}けど\\
+        \ruby{尽}{}きぬ\ruby{男子}{}の\ruby{黒潮}{}を\\
+        \ruby{契}{}の\ruby{杯}{}に\ruby{汲}{}み\ruby{交}{}はし\\
+        \ruby{常緑}{}を\ruby{祝}{}ふ\ruby{自治}{}の\ruby{宴}{}
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

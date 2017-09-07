@@ -1,0 +1,96 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            穹蒼高く % タイトルを入れる
+        }
+        {\small 
+            （大正5年南寮寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        長崎次郎君 作歌\\黒住須賀夫君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{穹蒼高}{}く\ruby{夜}{}は\ruby{深}{}く\\
+        \ruby{沈黙}{}の\ruby{杜}{}に\ruby{聳}{}えたつ\\
+        \ruby{桂}{}の\ruby{梢指}{}すところ\\
+        \ruby{北斗}{}の\ruby{冴}{}に\ruby{君}{}みずや\\
+        「\ruby{吾}{}が\ruby{若人}{}よ\ruby{汝}{}が\ruby{野心}{}\\
+        われにかも\ruby{似}{}て\ruby{崇}{}くあれ」
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{荒}{}ぶ\ruby{吹雪}{}のもだすとき\\
+        \ruby{六片}{}の\ruby{花咲}{}くところ\\
+        \ruby{皎}{}たる\ruby{天地塵絶}{}えて\\
+        \ruby{塞}{}つる\ruby{力}{}を\ruby{君}{}よ\ruby{知}{}れ\\
+        「\ruby{吾}{}が\ruby{若人}{}よ\ruby{北}{}の\ruby{曠野}{}に\\
+        \ruby{身}{}を\ruby{練}{}り\ruby{魂}{}を\ruby{磨}{}かずや」
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{谷間}{}の\ruby{百合}{}の\ruby{香}{}のゆらぎ\\
+        \ruby{楡}{}の\ruby{若葉}{}に\ruby{陽}{}はこぼる\\
+        \ruby{春}{}の\ruby{息吹}{}に\ruby{渡}{}り\ruby{行}{}く\\
+        \ruby{時鐘}{}の\ruby{響}{}きに\ruby{君}{}よ\ruby{聴}{}け\\
+        「\ruby{吾}{}が\ruby{若人}{}よ\ruby{石狩}{}は\\
+        \ruby{自由}{}の\ruby{郷土}{}ぞ\ruby{幸多}{}き」
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{百鳥歌}{}ひ\ruby{花}{}は\ruby{笑}{}む\\
+        \ruby{美}{}しき\ruby{国}{}の\ruby{自治}{}の\ruby{家}{}に\\
+        \ruby{十一}{}の\ruby{春今日来}{}る\\
+        \ruby{祝歌}{}たかく\ruby{君歌}{}へ\\
+        「\ruby{迪}{}に\ruby{恵}{}ふ\ruby{若人}{}の\\
+        \ruby{住家}{}よ\ruby{永}{}に\ruby{栄}{}あれ」
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        \ruby{崇}{}きのぞみを\ruby{星}{}に\ruby{懸}{}け\\
+        \ruby{鐘}{}に\ruby{自由}{}を\ruby{学}{}びつつ\\
+        \ruby{真理}{}を\ruby{求}{}むる\ruby{一百}{}の\\
+        \ruby{健児}{}が\ruby{行手遠}{}けれど\\
+        \ruby{吾若}{}き\ruby{力強}{}ければ\\
+        \ruby{贏}{}む\ruby{秋}{}は\ruby{近}{}からむ\\
+        など\ruby{贏}{}ざる\ruby{事}{}あらん
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

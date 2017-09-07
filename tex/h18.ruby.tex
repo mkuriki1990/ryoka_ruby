@@ -1,0 +1,81 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            ただ一心に % タイトルを入れる
+        }
+        {\small 
+            （平成18年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        岩崎良平君 作歌\\吉田和史君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 了なし繰り返しあり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{紺碧}{}の\ruby{空}{}を\ruby{貫}{}く\\
+        \ruby{一筋}{}の\ruby{白雲無限}{}の\ruby{可能性}{}\\
+        \ruby{我}{}が\ruby{胸}{}に\ruby{秘}{}め\\
+        \ruby{広}{}がれる\ruby{迪}{}\\
+        ただ\ruby{一心}{}に\ruby{信}{}じ\ruby{歩}{}もう
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{漆黒}{}の\ruby{闇}{}を\ruby{貫}{}く\\
+        \ruby{静}{}かな\ruby{月明}{}り\\
+        \ruby{内}{}なる\ruby{大志息}{}を\ruby{潜}{}めて\\
+        \ruby{開}{}かれる\ruby{朝}{}\\
+        ただ\ruby{一心}{}に\ruby{信}{}じ\ruby{臨}{}まん
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{朧灰}{}の\ruby{雲}{}を\ruby{貫}{}く\\
+        \ruby{揺}{}るがぬ\ruby{意思}{}\\
+        \ruby{昔年}{}の\ruby{想}{}い\ruby{翼}{}と\ruby{共}{}に\\
+        \ruby{光差}{}す\ruby{先}{}\\
+        ただ\ruby{一心}{}に\ruby{信}{}じ\ruby{飛}{}びたつ
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{真紅}{}の\ruby{心}{}を\ruby{貫}{}く\\
+        \ruby{熱}{}き\ruby{眼差}{}し\\
+        \ruby{叶}{}わぬ\ruby{夢友}{}らに\ruby{託}{}し\\
+        \ruby{新}{}たなる\ruby{迪}{}\\
+        ただ\ruby{一心}{}に\ruby{信}{}じ\ruby{進}{}もう
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

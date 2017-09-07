@@ -1,0 +1,61 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            水産科応援歌 % タイトルを入れる
+        }
+        {\small 
+            （大正4年） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+         % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% % end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{友}{}よ　\ruby{立}{}て　いざ\ruby{矛取}{}りて\\
+        \ruby{過}{}ぎし\ruby{日}{}の　\ruby{涙}{}の\ruby{誓}{}\\
+        \ruby{今}{}ぞ\ruby{今}{}　\ruby{晴}{}らさん\ruby{時}{}は\\
+        いざや\ruby{立}{}て　\ruby{海}{}の\ruby{大丈夫}{}\\
+        ラ\ruby{水産}{}　ラ\ruby{水産}{}　ラ\ruby{水産}{}
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{紫}{}の\ruby{旗降}{}る\ruby{蔭}{}に\\
+        \ruby{思}{}はずや\ruby{無念}{}の\ruby{跡}{}を\\
+        \ruby{若}{}き\ruby{血}{}の\ruby{迸}{}りもて\\
+        \ruby{新}{}めん　\ruby{死}{}せる\ruby{歴史}{}を
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

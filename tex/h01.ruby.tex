@@ -1,0 +1,77 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            惡魔死す瞬間 % タイトルを入れる
+        }
+        {\small 
+            （平成元年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        宜寿次盛生君 作歌\\田口拓君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{惡魔死}{}す\ruby{瞬間何}{}を\ruby{凝視}{}る\\
+        \ruby{解}{}けざる\ruby{呪鬼}{}ヶ\ruby{島}{}\\
+        \ruby{北溟}{}の\ruby{国}{}この\ruby{城}{}に\\
+        \ruby{我旅立}{}ちの\ruby{時}{}を\ruby{待}{}つ
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{降}{}りたる\ruby{魔王荒}{}れ\ruby{狂}{}ふ\\
+        \ruby{若}{}き\ruby{生血}{}を\ruby{吸}{}ひ\ruby{蘇}{}へる\\
+        \ruby{西都}{}の\ruby{異変我知}{}らず\\
+        \ruby{春欄漫}{}に\ruby{酔}{}ひ\ruby{狂}{}ふ
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{祭終}{}りて\ruby{黄葉散}{}り\\
+        \ruby{暗雲広}{}がる\ruby{秋}{}の\ruby{空}{}\\
+        \ruby{希望}{}の\ruby{東光恨}{}みつつ\\
+        \ruby{冬将軍}{}が\ruby{猛狂}{}ふ
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{白銀}{}の\ruby{原野}{}は\ruby{静}{}まりて\\
+        \ruby{地獄転}{}じて\ruby{黄泉}{}の\ruby{国}{}\\
+        \ruby{野人籠}{}りて\ruby{微睡}{}みて\\
+        \ruby{今旅立}{}ちの\ruby{春}{}を\ruby{待}{}つ
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

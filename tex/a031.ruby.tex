@@ -1,0 +1,74 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            予科応援歌 % タイトルを入れる
+        }
+        {\small 
+            （大正4年） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+         % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% % end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{楡樹}{}の\ruby{都春}{}たけて\\
+        \ruby{風新緑}{}に\ruby{薫}{}るとき\\
+        \ruby{勇士三百旗鼓堂々}{}と\\
+        \ruby{喊聲}{}あぐるはれ\ruby{戦}{}\\
+        フレ\ruby{予科}{}　フレ\ruby{予科}{}\\
+        フレ　フレ　フレ
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{思}{}へば\ruby{昔豊公}{}が\\
+        \ruby{貔貅十万海}{}を\ruby{越}{}え\\
+        \ruby{韓八道}{}を\ruby{血潮}{}に\ruby{染}{}めし\\
+        \ruby{滔天}{}の\ruby{意氣我}{}にあり\\
+        \ruby{走}{}れ\ruby{鷺山}{}　\ruby{走}{}れ\ruby{平岡}{}\\
+        \ruby{走}{}れ　\ruby{走}{}れ　\ruby{走}{}れ
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{振}{}へ\ruby{若人今}{}ぞ\ruby{今}{}\\
+        \ruby{汝}{}が\ruby{雄心}{}のをどるとき\\
+        \ruby{榮}{}ある\ruby{勝利}{}の\ruby{凱歌}{}と\ruby{共}{}に\\
+        \ruby{誉}{}は\ruby{高}{}し\ruby{優勝旗}{}\\
+        \ruby{勝}{}った\ruby{予科}{}　\ruby{勝}{}った\ruby{予科}{}\\
+        \ruby{勝}{}った　\ruby{勝}{}った　\ruby{勝}{}った
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

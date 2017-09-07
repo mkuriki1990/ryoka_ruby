@@ -1,0 +1,95 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            嗚呼青春の % タイトルを入れる
+        }
+        {\small 
+            （昭和5年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        児山信蔵君 作歌\\有村徹君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,3,5 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{嗚呼青春}{}の\ruby{夢高}{}く\\
+        \ruby{理想}{}のあとに\ruby{憧憬}{}れて\\
+        \ruby{楡}{}の\ruby{花散}{}る\ruby{学都}{}にぞ\\
+        \ruby{啓示}{}を\ruby{求}{}む\ruby{若人}{}は\\
+        \ruby{綺花}{}を\ruby{流}{}して\ruby{逝}{}く\ruby{水}{}に\\
+        \ruby{十九}{}の\ruby{春}{}を\ruby{嘆}{}くなり
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{牧場}{}の\ruby{緑草踏}{}みしだき\\
+        \ruby{栗毛}{}の\ruby{駒}{}に\ruby{鞍置}{}きて\\
+        うち\ruby{振}{}る\ruby{鞭}{}の\ruby{音}{}も\ruby{高}{}く\\
+        \ruby{希望}{}の\ruby{大空}{}を\ruby{朗}{}らかに\\
+        \ruby{寮歌}{}を\ruby{歌}{}ひつ\ruby{眺}{}むれば\\
+        \ruby{白雲流}{}れゆく\ruby{手稲山静}{}か
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{学堂}{}の\ruby{古鐘}{}の\ruby{沈}{}みゆき\\
+        \ruby{楡陵}{}の\ruby{蒼空}{}に\ruby{銀月冴}{}えて\\
+        \ruby{羊}{}の\ruby{群}{}れの\ruby{片影}{}もなし\\
+        \ruby{沈黙}{}の\ruby{原始林}{}に\ruby{散}{}りしける\\
+        \ruby{落葉踏}{}みゆく\ruby{雄}{}き\ruby{子}{}は\\
+        \ruby{三年}{}の\ruby{絢夢}{}に\ruby{涙}{}する
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{疎林}{}のほとり\ruby{夕陽}{}は\ruby{落}{}ちて\\
+        \ruby{凩}{}さへも\ruby{絶}{}えし\ruby{真夜}{}に\\
+        \ruby{涯}{}なく\ruby{白}{}き\ruby{石狩}{}の\\
+        \ruby{銀雪}{}に\ruby{連}{}なる\ruby{曠野}{}の\ruby{静寂}{}\\
+        \ruby{震}{}はせ\ruby{乍}{}ら\ruby{橇唄}{}は\\
+        \ruby{神秘}{}の\ruby{闇}{}を\ruby{縫}{}ひてゆく
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        \ruby{北斗}{}は\ruby{遠}{}く\ruby{七星清}{}し\\
+        「\ruby{妄執}{}」の\ruby{現世}{}を\ruby{見下}{}して\\
+        \ruby{真実一路}{}の\ruby{迪恵}{}ぬ\\
+        「\ruby{意気}{}」と「\ruby{血潮}{}」に\ruby{生}{}くる\ruby{子}{}の\\
+        \ruby{瞳}{}に\ruby{燃}{}ゆる\ruby{紅焰}{}は\\
+        \ruby{永遠}{}なる\ruby{生命}{}の\ruby{証}{}なり
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

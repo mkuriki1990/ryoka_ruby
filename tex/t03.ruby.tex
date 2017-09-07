@@ -1,0 +1,85 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            我が運命こそ % タイトルを入れる
+        }
+        {\small 
+            （大正3年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        樋口桜五君 作歌\\赤木顕次君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{我}{}が\ruby{運命}{}こそ\ruby{青渦}{}わける\\
+        \ruby{千}{}ひろの\ruby{海}{}の\ruby{真珠取}{}り\\
+        \ruby{美想}{}にあこがるる\ruby{身}{}は\\
+        \ruby{驕楽}{}の\ruby{春}{}に\ruby{酔}{}ひしれて\\
+        \ruby{戯}{}る\ruby{人}{}を\ruby{夢}{}とはみつつ\\
+        \ruby{逆}{}まく\ruby{波}{}を\ruby{闡}{}きゆく
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{永遠}{}に\ruby{華}{}さく\ruby{水底}{}ふかく\\
+        \ruby{神秘}{}の\ruby{巌}{}に\ruby{嫦娥}{}の\\
+        \ruby{露}{}のしづくの\ruby{真珠}{}またま\\
+        \ruby{掌}{}に\ruby{獲}{}し\ruby{光栄}{}と\ruby{喜悦}{}と\\
+        \ruby{七重}{}の\ruby{潮}{}の\ruby{妙音}{}にひびく\\
+        \ruby{美珠}{}こそわれの\ruby{生命}{}なれ
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{薫}{}る\ruby{樹陰}{}に\ruby{花仄}{}みえて\\
+        \ruby{朧}{}おぼろの\ruby{春}{}の\ruby{宵}{}\\
+        \ruby{一壺}{}の\ruby{酒}{}の\ruby{汲}{}む\ruby{夢淡}{}く\\
+        \ruby{心}{}の\ruby{酔}{}に\ruby{舞歌}{}を\\
+        \ruby{社会高}{}くしらべ\ruby{祝}{}はむ\\
+        \ruby{君瑞祥}{}の\ruby{歳}{}なれや
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{彩雲低}{}く\ruby{恵}{}の\ruby{家}{}に\\
+        \ruby{幸漂蕩}{}ひてゆく\ruby{水}{}や\\
+        \ruby{姿}{}うるほす\ruby{柳}{}の\ruby{萠黄}{}\\
+        \ruby{契}{}りゆかしき\ruby{春鳥}{}の\\
+        \ruby{団欒}{}の\ruby{音}{}をばうつし\ruby{伝}{}へむ\\
+        \ruby{遠}{}くはるけき\ruby{師}{}の\ruby{君}{}に
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

@@ -1,0 +1,81 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            花繚乱の % タイトルを入れる
+        }
+        {\small 
+            （昭和32年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        前島一淑君 作歌・作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4,5 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{花繚乱}{}の\ruby{夢}{}に\ruby{酔}{}い\\
+        \ruby{地}{}の\ruby{囁}{}きの\ruby{音}{}に\ruby{伏}{}せば\\
+        \ruby{草淑々}{}の\ruby{声}{}すなり
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{夜光流}{}るる\ruby{芝草}{}や\\
+        \ruby{辛夷}{}の\ruby{花}{}の\ruby{香}{}に\ruby{迷}{}う\\
+        \ruby{遠}{}き\ruby{憧}{}れ\ruby{逝}{}にし\ruby{日}{}よ
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{窓辺}{}に\ruby{招}{}く\ruby{幻}{}の\\
+        \ruby{影}{}にあくがれ\ruby{彷徨}{}えば\\
+        \ruby{森}{}に\ruby{桂}{}の\ruby{火}{}は\ruby{燃}{}えぬ
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{今紅}{}の\ruby{篝火}{}よ\\
+        \ruby{裸形}{}の\ruby{友}{}は\ruby{肩組}{}みて\\
+        \ruby{去}{}り\ruby{行}{}く\ruby{青春}{}を\\
+        \ruby{惜}{}しむかな
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        \ruby{静寂甦}{}りぬ\ruby{春}{}の\ruby{宵}{}\\
+        \ruby{銀漢}{}の\ruby{下希望}{}なる\\
+        \ruby{支笏}{}の\ruby{湖}{}に\ruby{星}{}は\ruby{飛}{}ぶ
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

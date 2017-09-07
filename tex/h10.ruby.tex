@@ -1,0 +1,81 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            天地人 % タイトルを入れる
+        }
+        {\small 
+            （平成10年第90回記念祭歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        一谷英樹君 作歌\\長谷川健君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{紅天}{}かなた\ruby{大鷲舞}{}いて\\
+        \ruby{茜}{}さす\ruby{朝陽}{}も\ruby{映}{}ゆる\\
+        \ruby{天}{}より\ruby{落}{}つるカムイの\ruby{瀑布}{}\\
+        \ruby{地}{}に\ruby{轟}{}くや\\
+        \ruby{夜気高}{}まりて\ruby{銀漢}{}の\ruby{群星}{}\\
+        きらめくや\\
+        \ruby{北天望}{}み\ruby{九十路}{}\\
+        \ruby{大}{}いなる\ruby{能力求}{}めん
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{聳}{}ゆ\ruby{連峰果}{}て\ruby{無}{}き\ruby{眺望}{}\\
+        \ruby{猛}{}き\ruby{心}{}を\ruby{駆}{}き\ruby{立}{}てぬ\\
+        \ruby{北嶺}{}の\ruby{樹海深遠成}{}して\\
+        \ruby{我}{}を\ruby{呑}{}み\ruby{込}{}む\\
+        \ruby{無限緑野静寂}{}の\ruby{中}{}に\\
+        \ruby{満月}{}と\ruby{飲}{}む\\
+        \ruby{北土佇}{}み\ruby{九十路}{}\\
+        \ruby{澄}{}み\ruby{渡}{}る\ruby{瞳視}{}つめよ
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{臥竜}{}の\ruby{牙深淵潜}{}み\\
+        \ruby{鳳雛}{}の\ruby{翼時機}{}を\ruby{待}{}つ\\
+        \ruby{誇}{}り\ruby{語}{}れり\ruby{現在記念祭}{}\\
+        \ruby{奮起飛}{}び\ruby{出}{}でよ\\
+        \ruby{我}{}らが\ruby{魂}{}はや\ruby{九十路}{}\\
+        \ruby{湧}{}き\ruby{立}{}たん\\
+        \ruby{青人満}{}ちて\ruby{九十路}{}\\
+        \ruby{狂}{}おしき\ruby{滾}{}りほとばせ
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

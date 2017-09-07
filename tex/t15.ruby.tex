@@ -1,0 +1,95 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            ああ青春の歓喜を % タイトルを入れる
+        }
+        {\small 
+            （大正15年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        木村左京君 作歌\\牧野千代治君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,5 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        ああ\ruby{青春}{}の\ruby{歓喜}{}を\\
+        \ruby{宴}{}の\ruby{酔}{}ひと\ruby{言}{}ふは\ruby{誰}{}れ\\
+        \ruby{我}{}が\ruby{行}{}く\ruby{方}{}の\ruby{遠}{}ければ\\
+        しばしこの\ruby{舎}{}に\ruby{憩}{}ひして\\
+        \ruby{草}{}を\ruby{茵}{}の\ruby{旅枕}{}\\
+        \ruby{明日}{}の\ruby{旅路}{}を\ruby{夢}{}に\ruby{見}{}ん
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{曠野}{}に\ruby{萠}{}ゆる\ruby{若草}{}の\\
+        しらべゆかしき\ruby{喜}{}びを\\
+        そよ\ruby{吹}{}く\ruby{風}{}に\ruby{寄}{}するとき\\
+        うららかに\ruby{照}{}る\ruby{春}{}の\ruby{日}{}は\\
+        \ruby{霞}{}の\ruby{奥}{}にまどろみて\\
+        \ruby{光}{}の\ruby{波}{}は\ruby{野}{}に\ruby{充}{}てり
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{故郷}{}の\ruby{空}{}は\ruby{見}{}えねども\\
+        ただ\ruby{野}{}は\ruby{広}{}く\ruby{路遠}{}し\\
+        \ruby{彼方}{}の\ruby{国}{}に\ruby{孜々}{}として\\
+        \ruby{歩}{}みつづくる\ruby{行人}{}は\\
+        \ruby{行手}{}の\ruby{空}{}に\ruby{湧}{}き\ruby{出}{}づる\\
+        \ruby{光}{}の\ruby{雲}{}を\ruby{如何}{}に\ruby{見}{}る
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{望}{}の\ruby{光見}{}えざれば\\
+        \ruby{世}{}は\ruby{永劫}{}に\ruby{常闇}{}か\\
+        \ruby{我}{}が\ruby{清純}{}の\ruby{魂}{}の\\
+        \ruby{撓}{}まぬ\ruby{旅}{}は\ruby{麗}{}しく\\
+        \ruby{頑迷}{}の\ruby{徒}{}も\ruby{起}{}き\ruby{出}{}でて\\
+        \ruby{我等}{}の\ruby{群}{}に\ruby{加}{}はらん
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        あはれゆかしき\ruby{人}{}の\ruby{世}{}や\\
+        \ruby{夜}{}ふけの\ruby{街}{}を\ruby{歩}{}みつつ\\
+        \ruby{遠}{}き\ruby{北斗}{}の\ruby{星}{}を\ruby{呼}{}び\\
+        \ruby{友}{}も\ruby{歌}{}えば\ruby{我}{}も\ruby{和}{}し\\
+        \ruby{来}{}るはここぞ\ruby{森}{}の\ruby{奥}{}\\
+        \ruby{光}{}まばゆき\ruby{自治}{}の\ruby{燈}{}
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

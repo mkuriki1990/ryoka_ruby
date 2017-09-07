@@ -1,0 +1,83 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            野性に吠えろ % タイトルを入れる
+        }
+        {\small 
+            （平成22年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        林祥史君 作歌・作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 繰り返しなし)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{静}{}かに\ruby{暮}{}らす\\
+        \ruby{憂}{}さ\ruby{晴}{}らしより\\
+        \ruby{生}{}き\ruby{恥}{}さすらい\\
+        なすがままに\\
+        \ruby{野性}{}に\ruby{吠}{}えろ\\
+        \ruby{歌}{}えよ\ruby{踊}{}れ\\
+        \ruby{野性}{}に\ruby{吠}{}えろ\\
+        \ruby{狂}{}えよ\ruby{狂}{}え
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{訪}{}れ\ruby{去}{}りゆく\\
+        \ruby{底}{}なしの\ruby{日々}{}\\
+        \ruby{慰安}{}を\ruby{求}{}めど\\
+        \ruby{言葉}{}は\ruby{足}{}りず\\
+        \ruby{野性}{}に\ruby{吠}{}えろ\\
+        \ruby{歌}{}えよ\ruby{踊}{}れ\\
+        \ruby{野性}{}に\ruby{吠}{}えろ\\
+        \ruby{狂}{}えよ\ruby{狂}{}え
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{思}{}い\ruby{出}{}すたびに\\
+        \ruby{記憶}{}は\ruby{薄}{}れ\\
+        \ruby{枯}{}れ\ruby{葉}{}の\ruby{紅}{}\\
+        \ruby{落陽}{}に\ruby{散}{}る\\
+        \ruby{海}{}の\ruby{碧}{}さを\ruby{伝}{}えておくれ\\
+        \ruby{空}{}の\ruby{高}{}さを\ruby{伝}{}えておくれ\\
+        \ruby{野性}{}に\ruby{吠}{}えろ\\
+        \ruby{歌}{}えよ\ruby{踊}{}れ\\
+        \ruby{野性}{}に\ruby{吠}{}えろ\\
+        \ruby{狂}{}えよ\ruby{狂}{}え
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

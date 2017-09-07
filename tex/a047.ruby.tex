@@ -1,0 +1,74 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            医専振興歌 % タイトルを入れる
+        }
+        {\small 
+            （昭和14年7月） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        高見浩也君 作歌\\向井弘君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% % end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{東雲遥}{}か\ruby{北海}{}の\\
+        \ruby{朝日}{}に\ruby{燃}{}ゆる\ruby{石狩}{}に\\
+        \ruby{呱々}{}の\ruby{声}{}をあげしより\\
+        \ruby{進}{}んでやまぬ\ruby{若人}{}よ\\
+        \ruby{示}{}せ！\\
+        \ruby{東亜}{}にその\ruby{意氣}{}を！
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{鈴蘭薫}{}る\ruby{学}{}び\ruby{舎}{}に\\
+        \ruby{萠}{}ゆる\ruby{緑}{}は\ruby{春}{}の\ruby{呼吸}{}\\
+        \ruby{白樺聳}{}ゆる\ruby{山々}{}を\\
+        \ruby{彩}{}る\ruby{錦}{}は\ruby{秋}{}の\ruby{衣}{}\\
+        \ruby{磨}{}け！\\
+        \ruby{学徒}{}よその\ruby{腕}{}！
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{理想}{}は\ruby{高}{}し\ruby{北斗星}{}\\
+        \ruby{虚空遥}{}かに\ruby{瞬}{}いて\\
+        \ruby{医専健児}{}の\ruby{行}{}く\ruby{処}{}\\
+        \ruby{如何}{}なる\ruby{山}{}も\ruby{踏}{}み\ruby{越}{}えて\\
+        \ruby{迎}{}へよ！\\
+        \ruby{栄}{}ある\ruby{大歴史}{}！
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

@@ -1,0 +1,110 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            STUDENTENLIED % タイトルを入れる
+        }
+        {\small 
+             % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        Prof.Hans Koller君 作歌・作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% % end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        Erst kommt der junge Studio, tralala, tralala,\\
+        % Ganz still und scheu nach Sapporo, tralala, tralala.
+        Die erste Zeit wirt ihm nicht leicht,\\
+        % Denn oft das Heimweh ihn beschleicht.
+        	Jupeidi, peidi, peida, jupeidi, jupeida,\\
+        	jupeidi, peidi, peida, jupeidi, peida !
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        Im Herbst lebt unser Studio, tralala, tralala,\\
+        Vergnugt in delce jubilo, tralala, tralala,\\
+        Erst Hasenjagd in Kotoni,\\
+        Und dann zu Nacht Jabiraki.
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        Im Mai vom schmucken T??nspielring, tralala, tralala,\\
+        Schallt lusting es, bum, bum, tsching, tsching, tsching,\\
+        Das ist das Fest vom Undokwai,\\
+        Drum schmettert all: Hurrah, Banzai !
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        Oft hat der Studio nicht viel Geld, tralala, tralala,\\
+        % Deshalb ist er recht schlecht bestellt, tralala, tralala.
+        O Kashi, Mochi und Manju,\\
+        Verchafft er sich durch Komparu.
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        Doch kommen die Examina, tralala, tralala,\\
+        % Da singt er nicht mehr Jupeidi, tralala, tralala.
+        Er sieht so blass und traurig drein;\\
+        Das wird wohl vom Studieren sein.
+        
+        \vspace{\linespace}
+        \item
+        % 6.
+        Ihm wird von all dem Zeug so dumm, tralala, tralala,\\
+        % Als ging im Kopf ein Muhlrad um, tralala, tralala.
+        Er ochst und schanzt so mancherlei,\\
+        Und traumt sogar von Rakudai.
+        
+        \vspace{\linespace}
+        \item
+        % 7.
+        Dann in dem Heft steht schwarz auf weiss, tralala, tralala,\\
+        % Wovon der Studio nicht viel weiss, tralala, tralala.
+        Doch kommt zuletzt der Tag herbei,\\
+        So spricht er leis: Shikata-ga-nai.
+        
+        
+        \vspace{\linespace}
+        \item
+        コラー\ruby{先生}{}（スイス\ruby{人}{}）は\ruby{明治}{}41\ruby{年}{}から\ruby{予科}{}でドイツ\ruby{語}{}を\ruby{教}{}えられ、\ruby{大正}{}14\ruby{年}{}、\\
+        \ruby{在職中}{}に\ruby{死去}{}された。この\ruby{歌}{}は\ruby{明治末期}{}から\ruby{大正初期}{}に\ruby{作}{}られたものである。\\
+        \ruby{曲}{}は「Jupeidiの\ruby{譜}{}」とのみ\ruby{記}{}されている。1845\ruby{年}{}のUrbummellied（G.Weber\\
+        \ruby{作詞}{}、R.Schaffer \ruby{作曲}{}）が\ruby{元歌}{}と\ruby{推定}{}される。
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

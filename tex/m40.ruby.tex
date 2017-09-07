@@ -1,0 +1,105 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            一帯ゆるき % タイトルを入れる
+        }
+        {\small 
+            （明治40年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        田中義麿君 作歌\\高松正信君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{一帯}{}ゆるき\ruby{石狩}{}の\\
+        \ruby{源遠}{}く\ruby{霞罩}{}め\\
+        \ruby{五彩}{}を\ruby{染}{}むる\ruby{夕照}{}は\\
+        \ruby{手稲}{}の\ruby{夏}{}の\ruby{栄}{}にして\\
+        そこに\ruby{無限}{}の\ruby{恩寵}{}あり\\
+        \ruby{是吾校}{}の\ruby{在}{}る\ruby{処}{}
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{胡沙吹}{}く\ruby{風}{}に\ruby{秋闌}{}けて\\
+        \ruby{黄葉散}{}りしく\ruby{牧場千里}{}\\
+        \ruby{満野}{}の\ruby{吹雪叱咤}{}する\\
+        エルムの\ruby{姿壮}{}なれや\\
+        そこに\ruby{無限}{}の\ruby{偉力}{}あり\\
+        \ruby{是吾寮}{}の\ruby{在}{}る\ruby{処}{}
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{偲}{}へば\ruby{遠}{}き\ruby{三十年}{}の\\
+        \ruby{榛莽}{}あしたの\ruby{日}{}を\ruby{蔽}{}ひ\\
+        ゆふべの\ruby{月}{}に\ruby{羆熊吼}{}ゆる\\
+        \ruby{北海}{}の\ruby{野}{}に\ruby{鋤入}{}れて\\
+        \ruby{偉人}{}が\ruby{植}{}ゑし\ruby{桜花}{}\\
+        \ruby{薫}{}は\ruby{高}{}し\ruby{千万古}{}
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{海}{}を\ruby{距}{}てて\ruby{南}{}の\\
+        \ruby{空}{}の\ruby{彼方}{}を\ruby{眺}{}むれば\\
+        \ruby{古人}{}の\ruby{道}{}は\ruby{跡}{}もなく\\
+        \ruby{文明}{}の\ruby{徳}{}は\ruby{尚成}{}らず\\
+        \ruby{溟濛天}{}に\ruby{漲}{}りて\\
+        \ruby{帰鳥夕}{}に\ruby{彷徨}{}いぬ
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        \ruby{颷々}{}として\ruby{風狂}{}ひ\\
+        \ruby{北海}{}の\ruby{潮黒}{}むとき\\
+        \ruby{電光凄}{}く\ruby{駛}{}りては\\
+        \ruby{鬼啾々}{}の\ruby{声}{}すなり\\
+        \ruby{破邪}{}の\ruby{剣}{}を\ruby{右手}{}にして\\
+        \ruby{起}{}てるは\ruby{誰}{}ぞや\ruby{吾健児}{}
+        
+        \vspace{\linespace}
+        \item
+        % 6.
+        \ruby{岩間}{}に\ruby{咽}{}ぶ\ruby{渓流}{}も\\
+        \ruby{明日}{}は\ruby{黄河}{}に\ruby{波}{}うたむ\\
+        \ruby{蟄竜遂}{}に\ruby{雲}{}を\ruby{呼}{}び\\
+        \ruby{鳳雛}{}やがて\ruby{時}{}を\ruby{得}{}て\\
+        \ruby{扶揺}{}に\ruby{搏}{}って\ruby{騰}{}りなば\\
+        \ruby{魍魎遂}{}に\ruby{影}{}もなし
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

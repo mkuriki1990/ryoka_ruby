@@ -1,0 +1,77 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            若芽の出づる % タイトルを入れる
+        }
+        {\small 
+            （平成3年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        柴田一君 作歌・作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,4 繰り返しなし)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{若芽}{}の\ruby{出}{}づる\ruby{早春}{}に\\
+        \ruby{孤影}{}も\ruby{辞}{}せぬ\ruby{若人}{}の\\
+        \ruby{尖風躰}{}を\ruby{貫}{}けば\\
+        \ruby{漲}{}る\ruby{大志}{}の\ruby{息吹有}{}り
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{万物謳歌}{}う\ruby{盛夏}{}なれど\\
+        \ruby{榮華}{}の\ruby{闇部忘}{}るまじ\\
+        \ruby{凱風四界}{}を\ruby{覆}{}へども\\
+        \ruby{鬼哭}{}の\ruby{嘆}{}きは\ruby{芯}{}を\ruby{凍}{}て
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{紅葉吠}{}ゆる\ruby{秋}{}の\ruby{窓}{}\\
+        \ruby{落葉瓢}{}の\ruby{様}{}を\ruby{見}{}む\\
+        \ruby{疾風怒濤}{}の\ruby{世}{}なればこそ\\
+        \ruby{真理}{}の\ruby{迪}{}を\ruby{一筋}{}に
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{永雪猛}{}る\ruby{厳冬}{}は\\
+        \ruby{心膽練磨}{}の\ruby{時節}{}かな\\
+        \ruby{烈風大地}{}を\ruby{劈}{}けど\\
+        \ruby{揺}{}るがぬ\ruby{我}{}らがこの\ruby{宿居}{}
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

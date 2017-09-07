@@ -1,0 +1,90 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            農学実科応援歌 % タイトルを入れる
+        }
+        {\small 
+            （大正4年） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+         % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% % end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        \ruby{第一}{}の\ruby{歌}{}\\
+        % 1.
+        ここ\ruby{大正四}{}つの\ruby{春}{}\\
+        \ruby{北斗}{}の\ruby{空}{}に\ruby{風立}{}ちて\\
+        \ruby{剣}{}は\ruby{光将}{}は\ruby{走}{}せ\\
+        \ruby{貔貅交々振}{}ひ\ruby{立}{}つ
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{修羅}{}の\ruby{巷}{}のただ\ruby{中}{}に\\
+        \ruby{桃色}{}の\ruby{雄旗飜}{}へる\\
+        \ruby{健児一百血}{}は\ruby{湧}{}きて\\
+        いざ\ruby{中原}{}の\ruby{此一挙}{}
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{月}{}の\ruby{桂}{}の\ruby{冠}{}りは\\
+        \ruby{期}{}して\ruby{我等}{}の\ruby{胸}{}にあり\\
+        \ruby{雄飛一激攻}{}め\ruby{立}{}てて\\
+        かの\ruby{群衆}{}を\ruby{凌駕}{}せん
+        
+        \vspace{\linespace}
+        \item
+        \ruby{第二}{}の\ruby{歌}{}\\
+        % 1.
+        \ruby{北海}{}の\ruby{空}{}ねむりて\\
+        \ruby{石狩}{}の\ruby{原春静}{}か\\
+        \ruby{手稲}{}の\ruby{夕}{}べ\ruby{雨白}{}く\\
+        \ruby{男児}{}の\ruby{夢}{}の\ruby{醒}{}むる\ruby{時}{}\\
+        \ruby{一陣}{}の\ruby{風狂}{}ひ\ruby{來}{}て\\
+        ここに\ruby{乱}{}るるああ\ruby{戦争}{}
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        そら\ruby{舞}{}ひのぼる\ruby{蛟竜}{}の\\
+        \ruby{山}{}を\ruby{震}{}はせ\ruby{海}{}を\ruby{干}{}ん\\
+        \ruby{抜山}{}の\ruby{勇蓋世}{}の\ruby{気}{}\\
+        \ruby{颶風}{}の\ruby{翼身}{}に\ruby{纏}{}ひ\\
+        \ruby{栄誉}{}の\ruby{戦}{}こころみて\\
+        \ruby{盡}{}きせぬ\ruby{生命讃}{}へばや
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

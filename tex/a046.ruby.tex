@@ -1,0 +1,80 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            医学部学友会歌 % タイトルを入れる
+        }
+        {\small 
+            （昭和14年） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        大槻均君 作歌\\森鼻正美君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% % end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{北国}{}の\ruby{聖}{}き\ruby{都}{}に\\
+        \ruby{伝}{}へたる\ruby{崇}{}き\ruby{教}{}を\\
+        \ruby{慕}{}ひ\ruby{來}{}りぬ\\
+        \ruby{仰}{}がずや\\
+        \ruby{先人}{}の\ruby{跡}{}\\
+        \ruby{拓}{}きてむ\\
+        \ruby{未踏}{}の\ruby{境}{}\\
+        その\ruby{榮光}{}に\ruby{輝}{}く\ruby{我等}{}！
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{渦巻}{}ける\ruby{世紀}{}の\ruby{嵐}{}\\
+        \ruby{日}{}の\ruby{本}{}の\ruby{道}{}は\ruby{尊}{}し\\
+        いざ\ruby{起}{}たんかな\\
+        \ruby{究}{}めずや\\
+        \ruby{生命}{}の\ruby{神秘}{}\\
+        \ruby{讃}{}へなむ\\
+        \ruby{医学}{}の\ruby{勝利}{}\\
+        その\ruby{榮光}{}に\ruby{輝}{}く\ruby{我等}{}！
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        「フラーテ」は\ruby{平和}{}の\ruby{団欒}{}\\
+        \ruby{美}{}はしの\ruby{山河}{}に\ruby{充}{}つる\\
+        \ruby{活氣亨}{}けつつ\\
+        \ruby{誇}{}らずや\\
+        \ruby{熱}{}き\ruby{血潮}{}を\\
+        \ruby{謳}{}ふべし\\
+        \ruby{躍}{}る\ruby{力}{}を\\
+        その\ruby{榮光}{}に\ruby{輝}{}く\ruby{我等}{}！
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

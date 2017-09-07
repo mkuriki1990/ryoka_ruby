@@ -1,0 +1,93 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            起伏しらぬ % タイトルを入れる
+        }
+        {\small 
+            （大正11年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        牧原東洋男君 作歌\\高橋北雄君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4,5,6 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{起伏知}{}らぬ\ruby{運命}{}こそ\\
+        \ruby{時}{}の\ruby{流転}{}の\ruby{弧}{}の\ruby{上}{}を\\
+        あはれ\ruby{雪解}{}のましみづに\\
+        \ruby{流}{}れて\ruby{尽}{}きぬ\ruby{濁流}{}よ
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{未知}{}のひろ\ruby{野}{}のかぎろひて\\
+        \ruby{輝}{}くまでに\ruby{萠}{}え\ruby{出}{}でし\\
+        \ruby{若}{}き\ruby{草木}{}のさゆらぎに\\
+        \ruby{春深}{}き\ruby{日}{}の\ruby{逍遙}{}や
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{澄}{}みて\ruby{雲}{}なき\ruby{空}{}と\ruby{野}{}を\\
+        かぎりて\ruby{走}{}る\ruby{山並}{}に\\
+        \ruby{高}{}き\ruby{心}{}のをののきは\\
+        \ruby{踊}{}る\ruby{血潮}{}の\ruby{真夏日陽}{}よ
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{銀}{}の\ruby{香炉}{}にしのび\ruby{雨}{}\\
+        \ruby{楡}{}の\ruby{繁}{}みに\ruby{交}{}じらへば\\
+        \ruby{大天地}{}も\ruby{傾}{}きて\\
+        \ruby{命}{}かなしき\ruby{秋}{}なれや
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        \ruby{夜毎}{}にさゆる\ruby{窓}{}の\ruby{星}{}\\
+        \ruby{闇行}{}く\ruby{橇}{}の\ruby{鈴}{}の\ruby{音}{}に\\
+        \ruby{真理}{}の\ruby{水}{}の\ruby{人掬}{}い\\
+        \ruby{求}{}めてやまぬ\ruby{瞑想}{}よ
+        
+        \vspace{\linespace}
+        \item
+        % 6.
+        \ruby{深}{}き\ruby{安息}{}の\ruby{夢}{}やすく\\
+        げに\ruby{憧憬}{}の\ruby{地}{}やここに\\
+        \ruby{芸術}{}の\ruby{霊}{}ぞただよへる\\
+        \ruby{自由}{}の\ruby{精}{}ぞみなぎれる
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

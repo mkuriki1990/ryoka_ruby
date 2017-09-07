@@ -1,0 +1,99 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            秋逍遙 % タイトルを入れる
+        }
+        {\small 
+            （昭和45年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        熊野芳明君 作歌\\吉田守男君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (未明,払暁,初更,深更
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % \ruby{未明}{}.
+        \ruby{秋}{}に\ruby{秋添}{}う\ruby{時雨月}{}\\
+        \ruby{曙星瞬}{}く\ruby{恋々}{}と\\
+        されど\ruby{近}{}づく\ruby{蕭晨}{}に\\
+        \ruby{幽愁}{}はつのるせつなくも\\
+        \ruby{落涙}{}しばし\ruby{悄然}{}と
+        
+        \vspace{\linespace}
+        \item
+        % \ruby{払暁}{}.
+        \ruby{蕭晨}{}は\ruby{来}{}にけり\ruby{石狩野}{}\\
+        \ruby{野菊}{}に\ruby{滴}{}る\ruby{血}{}の\ruby{雫}{}\\
+        \ruby{木}{}の\ruby{葉}{}さやぎぬ\ruby{涼風}{}に\\
+        \ruby{野}{}を\ruby{流離}{}えば\ruby{深}{}き\ruby{哀愁}{}\\
+        \ruby{情}{}けの\ruby{露}{}を\ruby{探求}{}むなり
+        
+        \vspace{\linespace}
+        \item
+        % \ruby{昼}{}.
+        \ruby{遥}{}かに\ruby{煙}{}る\ruby{大平原}{}\\
+        \ruby{蕭然秋}{}の\ruby{小糠雨}{}\\
+        \ruby{原生林}{}の\ruby{錦}{}も\ruby{色寂}{}し\\
+        \ruby{黒俊馬}{}の\ruby{長嘶}{}に\ruby{沈思破}{}れ\\
+        \ruby{秋}{}の\ruby{情趣}{}を\ruby{知}{}る\ruby{二十}{}
+        
+        \vspace{\linespace}
+        \item
+        % \ruby{落葉}{}.
+        \ruby{時雨}{}もやみてあかねさす\\
+        \ruby{赤紫雲}{}の\ruby{黄昏}{}に\\
+        \ruby{夕陽返}{}し\ruby{珠玉}{}の\ruby{如}{}\\
+        \ruby{蜻蛉}{}が\ruby{翅翎}{}に\ruby{我}{}が\ruby{久懐}{}\\
+        \ruby{真情}{}の\ruby{友}{}へと\ruby{託}{}すかな
+        
+        \vspace{\linespace}
+        \item
+        % \ruby{初更}{}.
+        \ruby{釣瓶落}{}しの\ruby{秋}{}の\ruby{日}{}の\\
+        \ruby{紫紺}{}の\ruby{闇}{}に\ruby{淡}{}く\ruby{浮}{}く\\
+        \ruby{利鎌}{}の\ruby{秋月}{}はあな\ruby{悲}{}し\\
+        きらめく\ruby{長庚}{}にただ\ruby{涙}{}\\
+        \ruby{己}{}が\ruby{運命}{}か\ruby{斯}{}くあるが
+        
+        \vspace{\linespace}
+        \item
+        % \ruby{深更}{}.
+        \ruby{夢幻}{}か\ruby{人}{}の\ruby{夢}{}は\\
+        \ruby{秋}{}の\ruby{百子夜}{}に\ruby{我悄然}{}\\
+        \ruby{地平}{}の\ruby{彼方}{}へ\ruby{冴星空}{}を\\
+        \ruby{過}{}りて\ruby{落}{}つる\ruby{流}{}れ\ruby{星}{}\\
+        ただただ\ruby{涙}{}は\ruby{何故}{}か
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

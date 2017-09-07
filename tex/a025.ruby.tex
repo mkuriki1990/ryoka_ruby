@@ -1,0 +1,92 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            山の四季 % タイトルを入れる
+        }
+        {\small 
+            （山岳部部歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        朝比奈英三君 作歌\\渡辺良一君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% % end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        ふぶきの\ruby{尾根}{}も \ruby{風止}{}みて\\
+        \ruby{春}{}の\ruby{日}{}ざしの おとずれに\\
+        \ruby{沢}{}のなだれも \ruby{静}{}まりて\\
+        \ruby{雪}{}げの\ruby{沢}{}の \ruby{歌楽}{}し\\
+        いざ\ruby{行}{}こう \ruby{我}{}が\ruby{友}{}よ\\
+        \ruby{暑寒}{}の\ruby{尾根}{}に \ruby{芦別}{}に\\
+        \ruby{北}{}の\ruby{山}{}の\\
+        ざらめの\ruby{尾根}{}を \ruby{飛}{}ばそうよ
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{沢}{}を\ruby{登}{}りて いま\ruby{五日}{}\\
+        ワラジも\ruby{足}{}に \ruby{親}{}しみぬ\\
+        \ruby{三日三晩}{}の \ruby{籠城}{}も\\
+        \ruby{過}{}ぎて\ruby{楽}{}しき \ruby{思}{}い\ruby{出}{}よ\\
+        いざ\ruby{行}{}こう \ruby{我}{}が\ruby{友}{}よ\\
+        \ruby{日高}{}の\ruby{山}{}に \ruby{夏}{}の\ruby{旅}{}に\\
+        \ruby{北}{}の\ruby{山}{}の\\
+        カールの\ruby{中}{}に \ruby{眠}{}ろうよ
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{山}{}は\ruby{紅葉}{}に \ruby{彩}{}られ\\
+        \ruby{頂高}{}く \ruby{空澄}{}みぬ\\
+        \ruby{新雪輝}{}く \ruby{山山}{}は\\
+        いずれも\ruby{親}{}しき \ruby{友}{}だちよ\\
+        いざ\ruby{行}{}こう \ruby{我}{}が\ruby{友}{}よ\\
+        ニセイカウシュペにトムラウシに\\
+        \ruby{北}{}の\ruby{山}{}の\\
+        \ruby{沢}{}のたき\ruby{火}{}に \ruby{語}{}ろうよ
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{吹雪}{}も\ruby{止}{}んだ \ruby{朝}{}まだき\\
+        \ruby{凍}{}ったテントを \ruby{起}{}き\ruby{出}{}でて\\
+        はるかにのぞむ やせ\ruby{尾根}{}は\\
+        \ruby{朝焼}{}け\ruby{燃}{}ゆる ペテガリだ\\
+        いざ\ruby{行}{}こう \ruby{我}{}が\ruby{友}{}よ\\
+        \ruby{氷}{}の\ruby{尾根}{}に アンザイレン\\
+        \ruby{北}{}の\ruby{山}{}の\\
+        \ruby{聖}{}き\ruby{頂}{} \ruby{目指}{}そうよ
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

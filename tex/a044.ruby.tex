@@ -1,0 +1,68 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            昭和11年応援歌 % タイトルを入れる
+        }
+        {\small 
+             % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        河邨文一郎君 作歌\\能登君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% % end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{起}{}つは\ruby{今}{}\\
+        \ruby{揚}{}げよ\ruby{雄叫}{}び\\
+        \ruby{回天}{}の\ruby{覇業}{}\\
+        \ruby{成}{}すべき\ruby{時}{}ぞ\\
+        \ruby{北方}{}の\ruby{剛}{}\\
+        \ruby{曠野}{}を\ruby{蹴}{}りて\\
+        \ruby{図南}{}の\ruby{翼}{}\\
+        \ruby{蒼穹}{}にはためく
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{起}{}つは\ruby{今}{}\\
+        \ruby{灑}{}げ\ruby{鉄血}{}\\
+        \ruby{山抜}{}く\ruby{力}{}\\
+        \ruby{腕}{}に\ruby{満}{}ちぬ\\
+        \ruby{精鋭}{}すぐりて\\
+        \ruby{利剣}{}を\ruby{執}{}れば\\
+        \ruby{相搏}{}つ\ruby{闘志}{}\\
+        \ruby{燃}{}えて\ruby{逆捲}{}く
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

@@ -1,0 +1,75 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            蒼天へ % タイトルを入れる
+        }
+        {\small 
+            （平成14年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        上川雄之君 作歌\\千葉直樹君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 了なし繰り返しあり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{翠}{}き\ruby{早緑}{}あまりに\ruby{深}{}く\\
+        \ruby{若葉}{}に\ruby{臥}{}せし\ruby{風吹}{}く\ruby{楡陵}{}の\\
+        \ruby{寮}{}で\ruby{培}{}うこの\ruby{大志}{}\\
+        \ruby{寮友}{}との\ruby{絢夢}{}は\ruby{東雲明}{}かり\\
+        \ruby{佇}{}み\ruby{移}{}ろう\ruby{憧}{}れを\\
+        \ruby{今}{}こそ\ruby{我}{}が\ruby{身}{}の\ruby{翼}{}と\ruby{成}{}さん
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{碧}{}き\ruby{雪迪}{}あまりに\ruby{長}{}く\\
+        \ruby{星影映}{}えし\ruby{原始}{}の\ruby{森}{}を\\
+        \ruby{放浪}{}い\ruby{往}{}かんはこの\ruby{恵}{}み\\
+        \ruby{心緒乱}{}れて\ruby{我}{}が\ruby{身}{}の\ruby{果}{}ても\\
+        \ruby{折}{}れぬ\ruby{野心}{}を\ruby{誓}{}いつつ\\
+        \ruby{六華}{}と\ruby{月}{}を\ruby{燈火}{}に
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{蒼}{}き\ruby{天空}{}あまりに\ruby{広}{}く\\
+        \ruby{楡}{}と\ruby{風}{}とに\ruby{我等}{}は\ruby{宿}{}る\\
+        \ruby{魂}{}の\ruby{懊悩}{}みは\ruby{雲散}{}らし\\
+        \ruby{新}{}たな\ruby{雄叫}{}び\ruby{羽}{}ばたきに\\
+        \ruby{大}{}いなる\ruby{生命抱}{}え\ruby{得}{}て\\
+        \ruby{飛}{}び\ruby{発}{}たんいざ\ruby{北斗}{}の\ruby{雄途}{}
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

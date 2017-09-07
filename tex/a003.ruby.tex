@@ -1,0 +1,64 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            島浪かへる % タイトルを入れる
+        }
+        {\small 
+            （大正3年桜星会歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        木原均君 作歌\\岩崎直砥君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% % end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{島浪}{}かへる\ruby{北溟}{}さして\\
+        \ruby{石狩}{}の\ruby{水末遠}{}く\\
+        \ruby{霞}{}のあなた\ruby{流}{}るヽ\ruby{郷土}{}に\\
+        あけくれなれし\ruby{我友}{}の\\
+        \ruby{學}{}びに\ruby{集}{}ふ\ruby{楡影}{}の\ruby{庭}{}に\\
+        \ruby{絢爛}{}の\ruby{春}{}またおとづれぬ
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{春陽}{}のもと\ruby{下萠}{}えそめて\\
+        \ruby{遙}{}かなるかな\ruby{我思}{}ひ\\
+        \ruby{無相}{}の\ruby{智慧}{}を\ruby{追}{}ひ\ruby{求}{}めつ、\\
+        \ruby{無明}{}の\ruby{闇}{}をわけ\ruby{入}{}りて\\
+        \ruby{生命}{}の\ruby{流}{}れ\ruby{深}{}くも\ruby{進}{}む\\
+        \ruby{雄々}{}しき\ruby{學徒}{}こヽ\ruby{北}{}にあり
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

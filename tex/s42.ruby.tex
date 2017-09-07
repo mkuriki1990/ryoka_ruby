@@ -1,0 +1,81 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            寒気身を刺す % タイトルを入れる
+        }
+        {\small 
+            （昭和42年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        岡田雄三君 作歌\\森田弘彦君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{寒気身}{}を\ruby{刺}{}す\ruby{北国}{}の\\
+        \ruby{永遠}{}に\ruby{名}{}を\ruby{覇}{}す\ruby{恵迪寮}{}\\
+        \ruby{四百野人}{}の\ruby{集}{}いしに\\
+        \ruby{我等}{}が\ruby{理想何時}{}の\ruby{日}{}か\\
+        \ruby{成}{}さざらむとぞ\ruby{意気高}{}し
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{窈窕多}{}し\ruby{札幌}{}に\\
+        \ruby{弊衣破帽}{}の\ruby{身}{}なれども\\
+        \ruby{一度歌}{}わば\ruby{蛮声}{}の\\
+        \ruby{遠}{}く\ruby{手稲}{}に\ruby{木霊}{}して\\
+        \ruby{嗚呼誰}{}か\ruby{知}{}る\ruby{吾}{}が\ruby{野心}{}
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{燃}{}ゆる\ruby{紅原始林}{}\\
+        \ruby{尽}{}きぬ\ruby{想}{}いを\ruby{酒杯}{}に\\
+        \ruby{酔}{}えば\ruby{肩取}{}り\ruby{乱舞}{}する\\
+        \ruby{吾等}{}が\ruby{行先}{}に\ruby{光明}{}あり\\
+        \ruby{楽}{}しからずや\ruby{此}{}の\ruby{饗宴}{}
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{蒼空}{}の\ruby{下佇}{}みて\\
+        \ruby{木}{}の\ruby{葉身}{}に\ruby{降}{}る\ruby{秋}{}の\ruby{日}{}に\\
+        \ruby{仮}{}いこの\ruby{身}{}は\ruby{一介}{}の\\
+        \ruby{卑}{}しきものと\ruby{知}{}るとても\\
+        \ruby{吾}{}が\ruby{野望}{}は\ruby{永遠}{}に
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

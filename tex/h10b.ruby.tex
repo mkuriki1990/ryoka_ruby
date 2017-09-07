@@ -1,0 +1,77 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            生命萌え出で % タイトルを入れる
+        }
+        {\small 
+            （平成10年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        小日山輝泉君 作歌\\長谷川健君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 了なし繰り返しあり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{生命萌}{}え\ruby{出}{}で \ruby{輝}{}く\ruby{楡陵}{}に\\
+        \ruby{真白}{}の\ruby{翼}{} \ruby{蒼空高}{}く\ruby{舞}{}う\\
+        \ruby{仮寝}{}の\ruby{宿}{}に \ruby{我}{}が\ruby{身}{}はあれど\\
+        \ruby{風行}{}く\ruby{先}{}に \ruby{心}{}は\ruby{駆}{}ける
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{謳歌}{}いて\ruby{暮}{}れる \ruby{晩秋}{}の\ruby{夜}{}\\
+        \ruby{篝火染}{}める \ruby{紅}{}の\ruby{頬}{}\\
+        \ruby{今燃}{}え\ruby{上}{}がる \ruby{一瞬}{}の\ruby{夢}{}\\
+        \ruby{我達}{}の\ruby{滾}{} \ruby{夜空}{}を\ruby{焦}{}がす
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{凍}{}てつきし\ruby{原始林}{} \ruby{髪凍}{}る\ruby{小路}{}\\
+        \ruby{聞}{}こゆるはただ \ruby{白雪}{}の\ruby{声}{}\\
+        \ruby{大地清}{}める \ruby{白銀}{}の\ruby{露}{}\\
+        \ruby{眠}{}る\ruby{若芽}{}は \ruby{何}{}をか\ruby{夢}{}む
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{雪残}{}る\ruby{春}{} \ruby{寮友}{}の\ruby{門出}{}に\\
+        \ruby{共}{}に\ruby{歩}{}むは \ruby{月光}{}の\ruby{路}{}\\
+        \ruby{果}{}て\ruby{無}{}く\ruby{続}{}く \ruby{指標無}{}き\ruby{旅}{}\\
+        \ruby{野心}{}を\ruby{胸}{}に \ruby{進}{}みて\ruby{行}{}かん
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

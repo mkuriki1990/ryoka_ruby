@@ -1,0 +1,99 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            時潮の流転 % タイトルを入れる
+        }
+        {\small 
+            （昭和14年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        望月真三君 作歌\\竹村伸一君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,6 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{時潮}{}の\ruby{流転淙々}{}と\\
+        \ruby{四季乾坤}{}に\ruby{巡}{}り\ruby{立}{}つ\\
+        \ruby{去来常}{}なく\ruby{人変}{}り\\
+        \ruby{有情無為}{}の\ruby{時鐘}{}の\ruby{音}{}に\\
+        \ruby{孤城}{}の\ruby{爽春}{}は\ruby{未}{}だ\ruby{浅}{}し
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{遠}{}く\ruby{流離}{}の\ruby{春}{}に\ruby{来}{}て\\
+        \ruby{此}{}の\ruby{高楼}{}に\ruby{春愁}{}ひつつ\\
+        \ruby{郭公鳥}{}の\ruby{鳴}{}くさへも\\
+        \ruby{多感}{}の\ruby{児等}{}の\ruby{情懐熱}{}く\\
+        \ruby{懐古}{}の\ruby{涙溢}{}るべし
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{真日澄}{}む\ruby{北}{}の\ruby{蒼穹}{}はるか\\
+        \ruby{飛燕}{}ひとたび\ruby{音}{}に\ruby{鳴}{}けば\\
+        \ruby{桃李}{}の\ruby{華影}{}は\ruby{痩}{}せゆきて\\
+        あはれ\ruby{旅寝}{}の\ruby{若}{}き\ruby{遊子}{}よ\\
+        \ruby{帰南}{}の\ruby{郷愁}{}しきりなり
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{夕陽西}{}に\ruby{落}{}ち\ruby{行}{}けば\\
+        \ruby{白樺林朱}{}に\ruby{染}{}み\\
+        \ruby{暮秋}{}の\ruby{颯}{}は\ruby{飄々}{}と\\
+        \ruby{時艱}{}を\ruby{憂}{}ふ\ruby{国}{}の\ruby{子}{}の\\
+        \ruby{悲腸}{}の\ruby{声}{}に\ruby{似}{}たるかな
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        \ruby{北斗地平}{}に\ruby{揺曳}{}ぐとき\\
+        \ruby{天地}{}の\ruby{四大霜}{}と\ruby{凝}{}り\\
+        \ruby{四寮}{}の\ruby{高夢}{}も\ruby{凍}{}てつきて\\
+        ほがらほがらの\ruby{朝}{}ぼらけ\\
+        \ruby{帰雁}{}の\ruby{孤影}{}よ\ruby{月}{}に\ruby{飛}{}ぶ
+        
+        \vspace{\linespace}
+        \item
+        % 6.
+        \ruby{明日別}{}れ\ruby{行}{}く\ruby{旅人}{}の\\
+        \ruby{春}{}の\ruby{夕}{}べの\ruby{宴遊}{}かな\\
+        かへらぬ\ruby{絢夢}{}をしのびつつ\\
+        \ruby{生命}{}の\ruby{故郷}{}と\ruby{慨嘆}{}きしも\\
+        すでに\ruby{三星霜}{}の\ruby{草枕}{}
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

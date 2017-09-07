@@ -1,0 +1,105 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            ヨットマンの歌 % タイトルを入れる
+        }
+        {\small 
+             % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+         % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% % end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{腰}{}のシーナイフにすがりつき\\
+        ついて\ruby{行}{}きます\ruby{何処}{}までも\\
+        ついて\ruby{行}{}くのは\ruby{易}{}けれど\\
+        \ruby{女乗}{}せない\ruby{三号艇}{}
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{女乗}{}せない\ruby{三号艇}{}なら\\
+        \ruby{長}{}い\ruby{黒髪断}{}ち\ruby{切}{}って\\
+        \ruby{可愛}{}いいクルーになりすまし\\
+        ついて\ruby{行}{}きます\ruby{何処}{}までも
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{四年三年}{}ジジクサイ\\
+        \ruby{二年}{}それぞれ\ruby{彼女}{}あり\\
+        \ruby{可愛}{}いい\ruby{一年}{}にゃ\ruby{金}{}が\ruby{無}{}い\\
+        \ruby{女泣}{}かせのヨットマン
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        いいじゃありませんか\\
+        ヨットマンは\\
+        ボロのズボンにボロのシャツ\\
+        ボロのヨットに\ruby{乗}{}ってても\\
+        \ruby{腕}{}は\ruby{確}{}かなヨットマン
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        いいじゃありませんか\\
+        ヨットマンは\\
+        \ruby{欠}{}けた\ruby{茶碗}{}に\ruby{折}{}れたはし\\
+        クサレズッペにクサレ\ruby{飯}{}\\
+        それでも\ruby{生}{}きてるヨットマン
+        
+        \vspace{\linespace}
+        \item
+        % 6.
+        いいじゃありませんか\\
+        ヨットマンは\\
+        \ruby{太}{}い\ruby{腕}{}に\ruby{黒}{}い\ruby{顔}{}\\
+        キリリと\ruby{締}{}まった\ruby{口許}{}が\\
+        グーッといかすぜヨットマン
+        
+        \vspace{\linespace}
+        \item
+        % 7.
+        \ruby{浜}{}の\ruby{娘}{}が\ruby{噂}{}する\\
+        \ruby{愛}{}しあの\ruby{人}{}ヨットマン\\
+        お\ruby{嫁}{}に\ruby{行}{}くならヨットマン\\
+        \ruby{今夜}{}も\ruby{楽}{}しい\ruby{夢}{}を\ruby{見}{}る\\
+        ヨットマン　ヨットマン\\
+        ヨットヨットマン
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

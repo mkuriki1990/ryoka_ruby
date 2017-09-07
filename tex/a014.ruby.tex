@@ -1,0 +1,83 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            北海道帝国大学文武会創基五十周年祝歌 % タイトルを入れる
+        }
+        {\small 
+             % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        秋野豊太君 作歌\\河口忠雄君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% % end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{楡}{}の\ruby{森蔭緑}{}して\\
+        \ruby{嫩草薫}{}る\ruby{学庭}{}に\\
+        \ruby{文華絢爛春來}{}れば\\
+        \ruby{創基五十}{}の\ruby{鐘}{}ぞ\ruby{鳴}{}る
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        ビー・アンビシャス・ボーイズの\\
+        \ruby{遠}{}き\ruby{遺訓}{}も\ruby{新}{}しく\\
+        \ruby{温}{}ねて\ruby{友}{}よ\ruby{仰}{}ぎ\ruby{見}{}ん\\
+        \ruby{師}{}の\ruby{俤}{}の\ruby{尊}{}としや
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{原始}{}の\ruby{荒野拓}{}きつゝ\\
+        \ruby{培}{}ひ\ruby{初}{}めし\ruby{教草}{}\\
+        \ruby{栄}{}えて\ruby{茲}{}に\ruby{最}{}と\ruby{高}{}き\\
+        \ruby{学府}{}のほまれ\ruby{偉}{}なる\ruby{哉}{}
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        あゝ\ruby{極星}{}は\ruby{燦}{}として\\
+        \ruby{北}{}の\ruby{文化}{}や\ruby{照}{}り\ruby{映}{}ゆる\\
+        いざ\ruby{若人}{}よ\ruby{集}{}ひ\ruby{來}{}て\\
+        \ruby{宵}{}の\ruby{灯}{}かざし\ruby{祝}{}はずや
+        
+        
+        \vspace{\linespace}
+        \item
+        \ruby{注}{}\\
+        \ruby{第二節}{}はクラーク\ruby{胸像}{}の\ruby{除幕式}{}を\\
+        \ruby{祝}{}う\ruby{意味}{}で\ruby{作}{}られた。
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

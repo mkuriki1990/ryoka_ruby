@@ -1,0 +1,111 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            永遠の幸 % タイトルを入れる
+        }
+        {\small 
+            （札幌農学校校歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        大和田建樹氏 校閲 有島武朗君 作歌\\納所弁次郎君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{永遠}{}の\ruby{幸}{}\\
+        \ruby{朽}{}ちざる\ruby{誉}{}\\
+        つねに\ruby{我等}{}がうへにあれ\\
+        よるひる\ruby{育}{}て\\
+        あけくれ\ruby{教}{}へ\\
+        \ruby{人}{}となしし\ruby{我庭}{}に
+        
+        \vspace{\linespace}
+        \item
+        イザイザイザ\\
+        うちつれて\\
+        \ruby{進}{}むは\ruby{今}{}ぞ\\
+        \ruby{豊平}{}の\ruby{川}{}\\
+        \ruby{尽}{}せぬながれ\\
+        \ruby{友}{}たれ\ruby{永}{}く\ruby{友}{}たれ
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{北斗}{}をつかん\\
+        たかき\ruby{希望}{}は\\
+        \ruby{時代}{}を\ruby{照}{}す\ruby{光}{}なり\\
+        \ruby{深雪}{}を\ruby{凌}{}ぐ\\
+        \ruby{潔}{}き\ruby{節操}{}は\\
+        \ruby{国}{}を\ruby{守}{}る\ruby{力}{}なり
+        
+        \vspace{\linespace}
+        \item
+        イザイザイザ\\
+        うちつれて\\
+        \ruby{進}{}むは\ruby{今}{}ぞ\\
+        \ruby{豊平}{}の\ruby{川}{}\\
+        \ruby{尽}{}せぬながれ\\
+        \ruby{友}{}たれ\ruby{永}{}く\ruby{友}{}たれ
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{山}{}は\ruby{裂}{}くとも\\
+        \ruby{海}{}はあすとも\\
+        \ruby{真理正義}{}おつべしや\\
+        \ruby{不朽}{}を\ruby{求}{}め\\
+        \ruby{意気相}{}ゆるす\\
+        \ruby{我等丈夫此}{}にあり
+        
+        \vspace{\linespace}
+        \item
+        イザイザイザ\\
+        うちつれて\\
+        \ruby{進}{}むは\ruby{今}{}ぞ\\
+        \ruby{豊平}{}の\ruby{川}{}\\
+        \ruby{尽}{}せぬながれ\\
+        \ruby{友}{}たれ\ruby{永}{}く\ruby{友}{}たれ
+        
+        （※
+        有島武郎在学中の明治三十三年の作。
+        大和田建樹（一八五六 - 一九一〇）は
+        作詞の面で、
+        納所弁次郎（一八六五 - 一九三六）は
+        作曲の面で、共に近代日本唱歌史に
+        大きな足跡を残した。）
+
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

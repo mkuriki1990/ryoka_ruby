@@ -1,0 +1,85 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            憧憬の故郷 % タイトルを入れる
+        }
+        {\small 
+            （昭和50年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        佐藤守君 作歌\\関川哲夫君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4,5 繰り返しなし)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        「\ruby{汝}{}が\ruby{故郷}{}は\ruby{何処}{}にありや」\\
+        \ruby{熱}{}き\ruby{血潮}{}に\ruby{身}{}は\ruby{溢}{}れども\\
+        \ruby{希望}{}を\ruby{胸}{}に\ruby{行方}{}も\ruby{知}{}れず\\
+        \ruby{朔風}{}に\ruby{身}{}を\ruby{寄}{}せ\ruby{漂泊}{}い\ruby{出}{}でん
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{聳}{}ゆるポプラは\ruby{何}{}をか\ruby{象徴}{}し\\
+        \ruby{遙}{}かな\ruby{大地}{}は\ruby{何語}{}るらん\\
+        \ruby{渺茫}{}の\ruby{地}{}に\ruby{理想}{}を\ruby{秘}{}めて\\
+        \ruby{真摯}{}の\ruby{道}{}を\ruby{歩}{}みゆかん
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{逍遙}{}の\ruby{詩静寂}{}に\ruby{透}{}り\\
+        \ruby{曠野}{}を\ruby{一人}{}ゆく\ruby{吾佇}{}めば\\
+        \ruby{日輪幽寂}{}に\ruby{手稲}{}の\ruby{端}{}にて\\
+        \ruby{朱}{}に\ruby{染}{}まらん\ruby{哉原始}{}の\ruby{森}{}は
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{嗚呼寮友}{}よ\ruby{夕}{}の\ruby{瞑想}{}\\
+        \ruby{己身}{}に\ruby{嘆}{}けども\ruby{憂愁}{}はやまず\\
+        \ruby{白銀}{}の\ruby{季節寮舎}{}に\ruby{在}{}りて\\
+        \ruby{熱}{}き\ruby{心}{}を\ruby{語}{}り\ruby{明}{}かせよ
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        \ruby{光幽}{}けき\ruby{憧憬}{}の\ruby{故郷}{}\\
+        \ruby{霞静}{}かに\ruby{流}{}れ\ruby{渡}{}りて\\
+        \ruby{新緑}{}にみる\ruby{自然}{}の\ruby{黙示}{}\\
+        \ruby{北溟}{}の\ruby{大地}{}は\ruby{我}{}が\ruby{故郷}{}か
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

@@ -1,0 +1,105 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            彷徨へる心のままに % タイトルを入れる
+        }
+        {\small 
+            （昭和24年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        池田基君 作歌\\伊藤嘉弘君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (序,冬,結 繰り返しなし)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % \ruby{序}{}.
+        \ruby{彷徨}{}へる\ruby{心}{}のままに\\
+        \ruby{見返}{}りの\ruby{陵}{}を\ruby{登}{}れば\\
+        \ruby{野}{}は\ruby{遙}{}か\ruby{去}{}にし\ruby{日}{}の\ruby{面影}{}\\
+        \ruby{簫々}{}の\ruby{闇}{}にとけゆく\\
+        \ruby{斯}{}くあるは\ruby{人}{}の\ruby{宿命}{}か\\
+        \ruby{天地}{}に\ruby{星}{}の\ruby{飛}{}ぶなり
+        
+        \vspace{\linespace}
+        \item
+        % \ruby{春}{}.
+        \ruby{清冽}{}の\ruby{玉散}{}る\ruby{知性}{}\\
+        \ruby{燃}{}え\ruby{狂}{}ふ\ruby{情熱}{}の\ruby{焰}{}\\
+        \ruby{若}{}き\ruby{身}{}の\ruby{裏}{}に\ruby{留}{}めて\\
+        \ruby{相剋}{}の\ruby{旅}{}を\ruby{逝}{}くなり\\
+        \ruby{苦悩}{}しみに\ruby{頬}{}を\ruby{濡}{}らせば\\
+        \ruby{春雨}{}も\ruby{楡影}{}つたふ
+        
+        \vspace{\linespace}
+        \item
+        % \ruby{夏}{}.
+        \ruby{初夏}{}の\ruby{野}{}に\ruby{陽炎}{}たてば\\
+        \ruby{痛}{}ましき\ruby{魂}{}の\ruby{疵}{}の\\
+        \ruby{陽}{}に\ruby{癒}{}えて\ruby{幸福}{}は\ruby{希望}{}は\\
+        \ruby{微風}{}に\ruby{咲}{}き\ruby{出}{}づる\ruby{華}{}\\
+        \ruby{育}{}くみし\ruby{白珠}{}の\ruby{水}{}\\
+        \ruby{浜茄}{}の\ruby{赤}{}き\ruby{血潮}{}よ
+        
+        \vspace{\linespace}
+        \item
+        % \ruby{秋}{}.
+        \ruby{秋深}{}き\ruby{磯}{}に\ruby{佇}{}み\\
+        \ruby{汐飛沫浴}{}びし\ruby{彼}{}の\ruby{時}{}\\
+        \ruby{月影}{}に\ruby{宿命解}{}かんと\\
+        \ruby{友垣}{}の\ruby{誓}{}ひし\ruby{言葉}{}\\
+        \ruby{斯}{}く\ruby{故}{}に\ruby{千草}{}ふみしき\\
+        \ruby{寥々}{}の\ruby{孤杖}{}を\ruby{運}{}ぶ
+        
+        \vspace{\linespace}
+        \item
+        % \ruby{冬}{}.
+        \ruby{雪}{}の\ruby{舞}{}ふ\ruby{砂丘薄}{}れて\\
+        \ruby{光輝}{}なき\ruby{旧}{}りし\ruby{仕種}{}は\\
+        \ruby{忘却}{}の\ruby{寄}{}する\ruby{汐音}{}に\\
+        \ruby{消}{}え\ruby{去}{}りぬ\ruby{名残}{}の\ruby{水際}{}\\
+        \ruby{叫}{}ぶには\ruby{余}{}りに\ruby{深}{}く\\
+        \ruby{涙}{}には\ruby{余}{}りに\ruby{虚}{}し
+        
+        \vspace{\linespace}
+        \item
+        % \ruby{結}{}.
+        \ruby{三春秋}{}の\ruby{絢夢原始林影}{}に\\
+        \ruby{散}{}り\ruby{果}{}てて\ruby{悲哀}{}を\ruby{秘}{}めつ\\
+        \ruby{陵}{}を\ruby{去}{}る\ruby{遊子}{}の\ruby{瞳}{}\\
+        \ruby{又燃}{}えぬ\ruby{愛情}{}と\ruby{決意}{}に\\
+        \ruby{暁}{}の\ruby{新}{}たな\ruby{旅出}{}\\
+        \ruby{永遠}{}に\ruby{時}{}は\ruby{流}{}れぬ
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

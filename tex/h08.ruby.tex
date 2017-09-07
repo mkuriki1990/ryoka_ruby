@@ -1,0 +1,72 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            若き力 % タイトルを入れる
+        }
+        {\small 
+            （平成8年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        長谷川健君 作歌\\石井英一君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{高鳴}{}る\ruby{胸}{}の\ruby{血潮巻}{}く\\
+        \ruby{熱}{}い\ruby{情熱}{}に\ruby{身}{}をまかす\\
+        ただその\ruby{意気}{}を\ruby{信}{}じつつ\\
+        \ruby{堂々迪}{}を\ruby{拓}{}きゆく\\
+        \ruby{我}{}は\ruby{泰山北斗}{}の\ruby{身}{}
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{我何者}{}ぞ\ruby{何}{}かある\\
+        \ruby{我}{}が\ruby{若}{}き\ruby{力奮起}{}せば\\
+        \ruby{鎧袖一触地}{}に\ruby{砕}{}き\\
+        \ruby{天}{}にも\ruby{響}{}け「\ruby{嗚呼}{}バンカラ!」\\
+        \ruby{憂}{}い\ruby{忘}{}れよ\ruby{杯}{}を\ruby{酌}{}め
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{希}{}みは\ruby{高}{}しけつ\ruby{青}{}し\\
+        \ruby{芙蓉万里}{}の\ruby{風}{}を\ruby{待}{}ち\\
+        しばしおさめしこの\ruby{翼}{}\\
+        \ruby{雄図}{}を\ruby{胸}{}に\ruby{刻}{}みたる\\
+        \ruby{鴻鵠}{}の\ruby{志}{}をだれ\ruby{知}{}るや
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

@@ -1,0 +1,85 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            敝れし衣 % タイトルを入れる
+        }
+        {\small 
+            （大正14年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        外山徳次郎君 作歌\\三溝清美君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4,5 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{敝}{}れし\ruby{衣}{}の\ruby{袖}{}に\ruby{散}{}る\\
+        \ruby{不香}{}の\ruby{花}{}の\ruby{小夜嵐}{}\\
+        \ruby{淋}{}しく\ruby{強}{}く\ruby{生}{}きぬ\ruby{可}{}く\\
+        \ruby{手稲}{}の\ruby{峯}{}に\ruby{響}{}くかな
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{送}{}る\ruby{梅花}{}の\ruby{芳}{}せに\\
+        \ruby{熱腸}{}しぼる\ruby{杜鵑}{}\\
+        \ruby{誘}{}ふ\ruby{春風恨}{}みては\\
+        \ruby{散}{}るも\ruby{惜}{}しまぬ\ruby{山桜}{}
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        きのふぞ\ruby{移}{}る\ruby{秋風}{}に\\
+        \ruby{草木悲歌}{}を\ruby{奏}{}ひつつ\\
+        \ruby{月}{}の\ruby{面}{}ゆく\ruby{鳥}{}の\ruby{影}{}\\
+        \ruby{故山}{}の\ruby{空}{}に\ruby{微}{}み\ruby{行}{}く
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{駄鞭荒野}{}に\ruby{打}{}ふりて\\
+        \ruby{赴}{}くや\ruby{皇土}{}の\ruby{城}{}の\ruby{外}{}\\
+        \ruby{青山我}{}が\ruby{有}{}に\ruby{帰}{}し\\
+        \ruby{緑水我}{}を\ruby{弔}{}はん
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        \ruby{国}{}に\ruby{誓}{}ひし\ruby{丈夫}{}の\\
+        \ruby{夢中原}{}にさまよひて\\
+        \ruby{仰}{}ぐみ\ruby{空}{}にまたたける\\
+        \ruby{北極星}{}のかげ\ruby{清}{}し
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

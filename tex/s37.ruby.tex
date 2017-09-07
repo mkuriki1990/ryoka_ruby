@@ -1,0 +1,72 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            壁歌は語る % タイトルを入れる
+        }
+        {\small 
+            （昭和37年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        執行洋視君 作歌\\助川秀三郎君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{壁歌}{}は\ruby{語}{}る\ruby{幾星霜}{}\\
+        \ruby{集}{}り\ruby{散}{}ず\ruby{若人}{}が\\
+        \ruby{夜々}{}に\ruby{語}{}ったる\ruby{苦悩}{}の\ruby{記}{}\\
+        \ruby{日々}{}に\ruby{語}{}ったる\ruby{歓喜}{}の\ruby{記}{}\\
+        ああその\ruby{意気}{}は\ruby{永遠}{}に\ruby{栄}{}えん
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{壁歌}{}は\ruby{続}{}く\ruby{百年}{}に\\
+        \ruby{美辞}{}をば\ruby{嫌}{}いし\ruby{若人}{}が\\
+        \ruby{好機}{}に\ruby{変}{}えたる\ruby{時流}{}の\ruby{言}{}\\
+        \ruby{好機}{}に\ruby{乗}{}りし\ruby{時流}{}の\ruby{波}{}\\
+        ああその\ruby{思出}{}いつか\ruby{崩}{}れん
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{壁歌}{}は\ruby{残}{}る\ruby{千代}{}に\\
+        \ruby{日夜}{}ひもとき\ruby{探索}{}に\\
+        \ruby{我}{}が\ruby{捨}{}てたる\ruby{邪道}{}よ\\
+        \ruby{我}{}が\ruby{容}{}れたる\ruby{真理}{}よ\\
+        ああその\ruby{純情後}{}に\ruby{偲}{}ばん
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

@@ -1,0 +1,77 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            吾れ憧れし % タイトルを入れる
+        }
+        {\small 
+            （昭和33年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        佐伯政英君 作歌\\佐藤一正君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{吾憧}{}れし\ruby{美}{}の\ruby{国}{}の\\
+        \ruby{春}{}は\ruby{名}{}のみの\ruby{春}{}なれど\\
+        \ruby{雪解}{}の\ruby{水}{}に\ruby{甦}{}る\\
+        \ruby{野面}{}に\ruby{充}{}ち\ruby{満}{}つ\ruby{生命}{}あり
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{遠}{}くふるさと\ruby{離}{}れ\ruby{来}{}し\\
+        \ruby{寮友}{}と\ruby{睦}{}の\ruby{杯酌}{}めば\\
+        \ruby{今日}{}も\ruby{手稲山}{}に\ruby{夕映}{}えて\\
+        \ruby{鐘声}{}はろかに\ruby{快}{}よし
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{楡}{}の\ruby{木蔭}{}に\ruby{憩}{}せば\\
+        \ruby{紫紺}{}の\ruby{峰}{}をこえゆきて\\
+        \ruby{父母}{}いかに\ruby{君}{}いかに\\
+        つきるを\ruby{知}{}らぬ\ruby{吾}{}が\ruby{懐}{}い
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        ただ\ruby{茫漠}{}の\ruby{大平野}{}\\
+        \ruby{静寂}{}の\ruby{夜}{}は\ruby{更}{}けゆきて\\
+        \ruby{囲}{}む\ruby{焚火}{}も\ruby{暗}{}に\ruby{消}{}え\\
+        \ruby{夜空彩}{}る\ruby{北斗星}{}
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

@@ -1,0 +1,69 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            六華雪解に % タイトルを入れる
+        }
+        {\small 
+            （平成21年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        丸田潤君 作歌・作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{六華雪解}{}に\ruby{佇}{}みて\\
+        \ruby{故郷}{}を\ruby{去}{}りし\ruby{若人}{}が\\
+        \ruby{清}{}き\ruby{野心}{}を\ruby{胸}{}に\ruby{秘}{}め\\
+        しばし\ruby{憩}{}わんこの\ruby{宿舎}{}
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{酒飲}{}み\ruby{宴}{}し\ruby{夜}{}は\ruby{更}{}けて\\
+        \ruby{明}{}く\ruby{迄語}{}り\ruby{日々}{}は\ruby{行}{}き\\
+        \ruby{燈火闇}{}に\ruby{浮}{}かび\ruby{出}{}づ\\
+        \ruby{輝}{}き\ruby{永久}{}に\ruby{絶}{}やさずや
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{理想}{}の\ruby{自治}{}を\ruby{手}{}にするは\\
+        \ruby{常}{}に\ruby{寮生}{}が\ruby{高}{}みなり\\
+        \ruby{崩}{}れゆくこの\ruby{時}{}にこそ\\
+        \ruby{不断}{}の\ruby{尽力忘}{}るまじ
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

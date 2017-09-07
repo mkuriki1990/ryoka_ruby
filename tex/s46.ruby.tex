@@ -1,0 +1,81 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            朔北に % タイトルを入れる
+        }
+        {\small 
+            （昭和46年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        伊藤正朗君 作歌・作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 繰り返しなし)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{朔北}{}に\ruby{手稲颪}{}の\ruby{咆哮絶}{}えて\\
+        \ruby{静寂}{}に\ruby{痛}{}し\ruby{遠汽笛}{}\\
+        \ruby{凍}{}てつく\ruby{雪原}{}に\ruby{寒月}{}の\\
+        \ruby{蒼}{}き\ruby{光}{}の\ruby{射}{}しそえば\\
+        \ruby{聳天樹}{}の\ruby{影}{}は\ruby{猛}{}くして\\
+        \ruby{虚空指}{}す\ruby{彼方宿}{}り\ruby{舎}{}の\\
+        \ruby{灯}{}は\ruby{今宵}{}また\ruby{旅人}{}の\\
+        \ruby{継}{}ぎ\ruby{培}{}いし\ruby{迪}{}を\ruby{諭}{}せり
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{朝焼}{}けて\ruby{南}{}に\ruby{風}{}の\ruby{起}{}つ\ruby{聞}{}かば\\
+        \ruby{北}{}の\ruby{都}{}に\ruby{春近}{}く\\
+        \ruby{雪融}{}け\ruby{水}{}の\ruby{溢}{}れては\\
+        \ruby{豊水}{}の\ruby{岸塵高}{}し\\
+        \ruby{黄}{}ばむ\ruby{空}{}ゆく\ruby{鳥}{}も\ruby{鳴}{}く\\
+        \ruby{土}{}の\ruby{香}{}ぞする\ruby{野幌路}{}を\\
+        \ruby{孤}{}りそぞろに\ruby{辿}{}る\ruby{日}{}は\\
+        \ruby{異郷}{}の\ruby{旅}{}を\ruby{思}{}い\ruby{侘}{}ぶかな
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        はろばろと\ruby{続}{}く\ruby{沃野}{}の\ruby{玉葱畠}{}\\
+        \ruby{金}{}に\ruby{輝}{}く\ruby{北指}{}して\\
+        \ruby{延}{}びる\ruby{鉄路}{}の\ruby{傍}{}に\\
+        かの\ruby{石狩}{}の\ruby{文学碑}{}\\
+        \ruby{濁}{}れる\ruby{川}{}に\ruby{臨}{}みては\\
+        \ruby{沈}{}む\ruby{夏陽}{}に\ruby{涙}{}する\\
+        \ruby{回顧百年忘}{}れずや\\
+        この\ruby{地拓}{}きし\ruby{先人}{}の\ruby{夢}{}
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

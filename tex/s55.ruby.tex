@@ -1,0 +1,89 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            楡は枯れず % タイトルを入れる
+        }
+        {\small 
+            （昭和55年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        新井桂二君 作歌\\奥田和人君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 了なし繰り返しあり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        \ruby{北}{}に\ruby{生}{}まれし\ruby{者}{}たちよ\\
+        \ruby{北}{}に\ruby{出会}{}いし\ruby{者}{}たちよ\\
+        \ruby{北}{}に\ruby{奢}{}れる\ruby{者}{}たちよ\\
+        \ruby{北}{}に\ruby{歌}{}える\ruby{者}{}たちよ\\
+        \ruby{永遠}{}に\ruby{祈}{}りし\\
+        \ruby{朝}{}は\ruby{未}{}だかなわず\\
+        \ruby{百年}{}に\ruby{織}{}りたる\ruby{衣}{}は\\
+        \ruby{当}{}に\ruby{引}{}き\ruby{裂}{}かれんとす\\
+        \ruby{嗚呼願}{}わくば\ruby{二度糸}{}を\ruby{紡}{}ぎて\\
+        \ruby{限}{}りなく\ruby{澄}{}みわたる\\
+        \ruby{穹北}{}の\ruby{空}{}に\ruby{舞}{}わん
+        
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{朝靄}{}けむる\ruby{今}{}ひとときの\\
+        \ruby{熟寝}{}の\ruby{夢}{}の\ruby{幸}{}せよ\\
+        \ruby{覚}{}めて\ruby{現}{}に\ruby{見渡}{}せば\\
+        \ruby{美}{}は\ruby{崩}{}れゆく\ruby{北都}{}なり\\
+        \ruby{天空常}{}に\ruby{雲抱}{}けども\\
+        \ruby{楡}{}は\ruby{萌}{}えて\ruby{大地}{}をまねく
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{清冽}{}の\ruby{野}{}に\ruby{道}{}を\ruby{耕}{}し\\
+        \ruby{荒野}{}に\ruby{明日}{}を\ruby{信}{}じつつ\\
+        \ruby{彷徨}{}い\ruby{行}{}ける\ruby{寂}{}しさに\\
+        \ruby{陽}{}は\ruby{傾}{}きて\ruby{我}{}を\ruby{見}{}る\\
+        \ruby{虚}{}いゆける\ruby{時}{}にこそ\\
+        \ruby{楡}{}は\ruby{映}{}えて\ruby{風}{}を\ruby{斬}{}る
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{北}{}の\ruby{自然}{}は\ruby{蝕}{}ばまれゆき\\
+        \ruby{青葉}{}の\ruby{降}{}るや\ruby{青春}{}の\ruby{寮庭}{}\\
+        \ruby{忘}{}るるなかれ\ruby{大願}{}を\\
+        \ruby{胸}{}に\ruby{秘}{}めし\ruby{涙痕}{}を\\
+        \ruby{時}{}は\ruby{人}{}はと\ruby{変}{}われども\\
+        \ruby{楡}{}は\ruby{枯}{}れず\ruby{空}{}をさす
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

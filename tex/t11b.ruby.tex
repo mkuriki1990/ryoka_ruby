@@ -1,0 +1,77 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            かがやく路 % タイトルを入れる
+        }
+        {\small 
+            （大正11年新寮記念寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        服部光平君 作歌\\山本吉之助君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 繰り返しなし)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        かがやく\ruby{路}{}のさすらひや\\
+        \ruby{魂}{}の\ruby{聖}{}なる\ruby{石狩}{}の\\
+        \ruby{色華}{}かなるあけぼのの\\
+        \ruby{揺籃}{}に\ruby{歌}{}ふ\ruby{若人}{}は
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{夏}{}の\ruby{林}{}に\ruby{流}{}れわたる\\
+        いのちの\ruby{野火}{}のおき\ruby{伏}{}の\\
+        \ruby{愛}{}の\ruby{栄}{}えは\ruby{香盤}{}に\\
+        \ruby{感激深}{}く\ruby{胸}{}をゆる
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{秋}{}の\ruby{狭霧}{}の\ruby{野}{}を\ruby{越}{}えて\\
+        \ruby{時}{}の\ruby{進}{}みのみちすぢに\\
+        \ruby{鐘}{}の\ruby{音聞}{}けば\ruby{今更}{}に\\
+        あはれ\ruby{高鳴}{}る\ruby{吾生命}{}よ
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{永遠}{}になみうつ\ruby{白銀}{}の\\
+        \ruby{神秘}{}を\ruby{語}{}る\ruby{冬}{}の\ruby{夜}{}に\\
+        \ruby{空色}{}の\ruby{国星}{}の\ruby{国}{}\\
+        \ruby{沈黙}{}に\ruby{曳}{}ける\ruby{追懐}{}よ
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

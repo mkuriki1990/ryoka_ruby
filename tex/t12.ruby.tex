@@ -1,0 +1,85 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            春雨に濡る % タイトルを入れる
+        }
+        {\small 
+            （大正12年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        高橋北雄君 作歌\\西田貫道君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{春雨}{}に\ruby{濡}{}るアカシヤ\ruby{花}{}\\
+        \ruby{街路}{}の\ruby{灯}{}はなやかに\\
+        \ruby{地}{}は\ruby{銀鼠}{}にたそがるる\\
+        \ruby{寂}{}かに\ruby{歩}{}む\ruby{若人}{}が\\
+        \ruby{心}{}にめざむ\ruby{爽}{}かの\\
+        \ruby{灑}{}み\ruby{充}{}てる\ruby{力}{}かな
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{夏}{}の\ruby{入陽}{}に\ruby{砂丘}{}の\\
+        \ruby{猟虎}{}の\ruby{骨}{}に\ruby{鷗飛}{}ぶ\\
+        \ruby{融}{}けざる\ruby{銀}{}の\ruby{山脈}{}は\\
+        \ruby{碧薄}{}れゆく\ruby{空}{}にうく\\
+        \ruby{名残}{}の\ruby{光身}{}にあびて\\
+        \ruby{異郷}{}の\ruby{方}{}を\ruby{思}{}ふかな
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{仄青白}{}き\ruby{白樺}{}や\\
+        \ruby{落葉}{}ふむ\ruby{音寂}{}しくも\\
+        \ruby{谷}{}また\ruby{谷}{}を\ruby{辿}{}り\ruby{行}{}き\\
+        \ruby{今宵}{}は\ruby{淡}{}き\ruby{夢見}{}んと\\
+        \ruby{焚火}{}を\ruby{囲}{}み\ruby{歌}{}ふ\ruby{寮歌}{}\\
+        \ruby{紫紺}{}の\ruby{闇}{}に\ruby{解}{}けて\ruby{行}{}く
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{青}{}き\ruby{空透}{}き\ruby{銀}{}の\ruby{月}{}\\
+        \ruby{石狩}{}の\ruby{河波光}{}る\\
+        \ruby{雪}{}の\ruby{野限}{}は\ruby{靄}{}こめて\\
+        \ruby{灯漂}{}ふアイヌ\ruby{小屋}{}\\
+        \ruby{琥珀}{}の\ruby{酒}{}を\ruby{汲}{}み\ruby{交}{}し\\
+        \ruby{王者}{}の\ruby{誇偲}{}ぶかな
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

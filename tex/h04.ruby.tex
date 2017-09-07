@@ -1,0 +1,79 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            熱き街 % タイトルを入れる
+        }
+        {\small 
+            （平成4年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        美濃成夫君 作歌・作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{熱}{}き\ruby{街}{} \ruby{冬}{}まだ\ruby{見}{}ぬ\ruby{若草}{}よ\\
+        \ruby{丘}{}に\ruby{騒}{}く\ruby{黄}{}の\ruby{芝}{}の\ruby{声}{}を\ruby{勝利歌}{}に\\
+        \ruby{開}{}ける\ruby{野心}{}は\ruby{路}{}の\ruby{上}{}\\
+        \ruby{原始林}{}をつらぬく
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{寄}{}する\ruby{闇}{} \ruby{俺}{}の\ruby{樹}{}はつぶれない\\
+        \ruby{忍}{}びよる\ruby{業}{}の\ruby{糧}{}も\ruby{鎧袖一触}{}す\\
+        \ruby{積雲}{}に\ruby{箕微笑}{}む\ruby{月}{}の\ruby{面}{}に\\
+        \ruby{孤}{}り\ruby{気}{}を\ruby{吐}{}く
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{覇}{}する\ruby{壁}{} \ruby{水晶降}{}る\ruby{明}{}けの\ruby{街}{}\\
+        \ruby{静寂}{}の\ruby{暴君座}{}すれども\\
+        \ruby{生}{}をみごもる\\
+        \ruby{珠}{}のはじける\ruby{日}{}も\ruby{近}{}し\\
+        \ruby{息}{}を\ruby{潜}{}めよ
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{熱}{}き\ruby{街}{} \ruby{俺}{}の\ruby{名}{}は\ruby{恵迪寮}{}\\
+        \ruby{四山}{}を\ruby{震}{}わす\ruby{四股}{}の\ruby{音}{}に\\
+        \ruby{煩悩}{}は\ruby{吹}{}き\ruby{散}{}る\\
+        \ruby{目線}{}めざすは\ruby{天下一}{}\\
+        \ruby{迪}{}を\ruby{極}{}めよ
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

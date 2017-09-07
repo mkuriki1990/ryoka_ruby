@@ -1,0 +1,82 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            恵迪小唄 % タイトルを入れる
+        }
+        {\small 
+            （平成19年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        井関俊介君 作歌\\八城雄太君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 繰り返しなし)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{金}{}がないのが\ruby{最初}{}の\ruby{縁}{}で\\
+        \ruby{入}{}ってみたのは\ruby{良}{}いけれど\\
+        すみかはボロ\ruby{屋}{}に\\
+        \ruby{得体}{}の\ruby{知}{}れぬ\\
+        \ruby{上}{}の\ruby{年目}{}が\ruby{一絡}{}げ ヤレ\\
+        \ruby{想}{}えば\ruby{遠}{}くへ\ruby{来}{}たもんだ
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{大志抱}{}きて\ruby{北都}{}へ\ruby{来}{}たが\\
+        \ruby{気付}{}けば\ruby{朝寝}{}に\ruby{高}{}いびき\\
+        \ruby{自分}{}は\ruby{違}{}うと\ruby{言}{}ってはみたが\\
+        サァ \ruby{明日}{}からがんばるぞ ヤレ\\
+        \ruby{朱}{}に\ruby{交}{}われば\ruby{朱}{}くなる
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{酒}{}を\ruby{飲}{}み\ruby{飲}{}み\ruby{話}{}もすれば\\
+        \ruby{突然}{}ドンパと\ruby{突}{}っ\ruby{張}{}り\ruby{合}{}い\\
+        \ruby{時}{}には\ruby{突}{}き\ruby{上}{}げ\ruby{時}{}には\ruby{日和}{}り\\
+        \ruby{奴}{}より\ruby{俺}{}の\ruby{方}{}が\ruby{上}{} ヤレ\\
+        \ruby{同}{}じ\ruby{団栗}{}せいくらべ
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{先}{}は\ruby{長}{}いと\ruby{思}{}っていても\\
+        \ruby{時間}{}の\ruby{経}{}つのは\ruby{早}{}いもの\\
+        \ruby{苦楽}{}を\ruby{共}{}に\ruby{住}{}んではいたが\\
+        \ruby{避}{}けては\ruby{通}{}れぬ\ruby{別}{}れ\ruby{道}{} ヤレ\\
+        \ruby{縁}{}は\ruby{異}{}なもの\ruby{味}{}なもの
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

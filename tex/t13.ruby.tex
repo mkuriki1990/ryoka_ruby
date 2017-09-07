@@ -1,0 +1,95 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            茫々はるか % タイトルを入れる
+        }
+        {\small 
+            （大正13年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        高野芳雄君 作歌\\神島辰雄君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 了あり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{茫々}{}はるかに\ruby{緑}{}に\ruby{炎}{}えて\\
+        \ruby{石狩原頭美}{}の\ruby{香}{}に\ruby{酔}{}えば\\
+        \ruby{高鳴}{}りあふるる\ruby{若人}{}の\ruby{血}{}や\\
+        ああこの\ruby{霊}{}の\ruby{憧}{}れの\ruby{地}{}に\\
+        \ruby{曙光}{}に\ruby{輝}{}く\ruby{黎明告}{}ぐる\\
+        \ruby{鐘}{}を\ruby{撞}{}かばや
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{真紅}{}に\ruby{熱}{}せる\ruby{入陽}{}は\ruby{沈}{}み\\
+        \ruby{黙思}{}の\ruby{歩}{}みを\ruby{運}{}ぶ\ruby{夕宵}{}は\\
+        エルムの\ruby{繁}{}みの\ruby{梢透}{}かして\\
+        \ruby{夕映流}{}るる\ruby{黄色}{}の\ruby{彩}{}に\\
+        \ruby{生命}{}の\ruby{窓}{}をば\ruby{疾}{}く\ruby{開}{}け\ruby{放}{}ち\\
+        \ruby{霊気吸}{}はずや
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{地平}{}の\ruby{際涯}{}によしや\ruby{吾等}{}の\\
+        \ruby{感激}{}は\ruby{沈}{}めど\ruby{彼方}{}はるかに\\
+        \ruby{思索}{}の\ruby{曠野}{}は\ruby{尽}{}せぬなれば\\
+        \ruby{石狩河岸}{}に\ruby{友}{}よ\ruby{佇}{}み\\
+        \ruby{野生}{}の\ruby{律}{}べの\ruby{秘奥}{}を\ruby{求}{}め\\
+        \ruby{真理}{}を\ruby{聴}{}かん
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{寒風荒}{}びて\ruby{吹雪吹}{}く\ruby{夜}{}も\\
+        \ruby{楡林}{}に\ruby{洩}{}れたる\ruby{四寮}{}の\ruby{燭光}{}\\
+        \ruby{生命}{}ぞまたたき\ruby{青春}{}の\ruby{日}{}の\\
+        \ruby{灯累}{}りて\ruby{永遠}{}に\ruby{輝}{}く\\
+        ああ\ruby{其}{}の\ruby{灯}{}かげに\ruby{霊}{}と\ruby{血潮}{}の\\
+        \ruby{籠}{}められしかな
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        \ruby{昔}{}を\ruby{偲}{}べば\ruby{吾等}{}が\ruby{寮}{}は\\
+        \ruby{原始}{}の\ruby{茂森}{}に\ruby{生}{}める\ruby{自然児}{}\\
+        \ruby{不断}{}の\ruby{船路}{}に\ruby{彼岸}{}めがけて\\
+        \ruby{自治}{}への\ruby{歩}{}みは\ruby{十九星霜}{}\\
+        \ruby{自由}{}の\ruby{栄}{}に\ruby{友}{}よ\ruby{奏}{}でん\\
+        \ruby{平和}{}の\ruby{序曲}{}
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

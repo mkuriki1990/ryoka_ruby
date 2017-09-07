@@ -1,0 +1,90 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            浅緑燃ゆる % タイトルを入れる
+        }
+        {\small 
+            （昭和22年第40回記念祭歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        山家貫之君 作歌\\堀井洵君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,4,5 繰り返しなし)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{浅緑燃}{}ゆる\ruby{北}{}の\ruby{曠里}{}\\
+        \ruby{荒}{}ぶ\ruby{嵐}{}を\ruby{身}{}に\ruby{受}{}けて\\
+        \ruby{神秘}{}の\ruby{扉開}{}け\ruby{放}{}ち\\
+        \ruby{雄叫}{}び\ruby{高}{}く\ruby{濁世}{}に\\
+        \ruby{叱咤}{}の\ruby{剣}{}を\ruby{振}{}るふかな
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{沈黙}{}の\ruby{楡林}{}のほの\ruby{暗}{}く\\
+        \ruby{友}{}と\ruby{高望}{}を\ruby{語}{}りてし\\
+        \ruby{三年}{}の\ruby{夢}{}は\ruby{淡}{}くとも\\
+        \ruby{羽搏}{}かんかな\ruby{大鳳}{}は\\
+        アンデスの\ruby{嶺越}{}えゆかん
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        ソロモンの\ruby{栄華}{}すでになし\\
+        \ruby{血涙}{}もて\ruby{築}{}きし\ruby{幾春秋}{}\\
+        \ruby{花}{}を\ruby{褥}{}に\ruby{仮睡}{}めば\\
+        \ruby{春駘蕩}{}の\ruby{微風}{}の\ruby{香}{}に\\
+        \ruby{私語}{}めく\ruby{永遠}{}の\ruby{理想}{}かな
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{北斗}{}の\ruby{啓示}{}なほ\ruby{清}{}く\\
+        \ruby{今宵四寮}{}に\ruby{輝}{}けば\\
+        \ruby{猛}{}き\ruby{遊児}{}の\ruby{熱血}{}は\\
+        ナイルの\ruby{河}{}のなほ\ruby{浩}{}く\\
+        \ruby{乱}{}れし\ruby{世}{}をば\ruby{呑}{}みほさん
+        
+        \vspace{\linespace}
+        \item
+        % 5.
+        \ruby{青史}{}は\ruby{薫}{}る\ruby{七十星霜}{}の\\
+        \ruby{崇高}{}き\ruby{歴史}{}を\ruby{承継}{}ぎて\\
+        \ruby{明日創造}{}の\ruby{首途}{}に\\
+        \ruby{今日四十回}{}の\ruby{記念祭}{}\\
+        \ruby{浩歌}{}はんかな\ruby{吾}{}が\ruby{友}{}よ
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}

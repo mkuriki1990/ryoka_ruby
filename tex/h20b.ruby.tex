@@ -1,0 +1,85 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            雲海貫く % タイトルを入れる
+        }
+        {\small 
+            （平成20年第100回記念祭歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        石井翔君 作歌\\木川明音君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 了なし繰り返しあり)
+% end header
+
+% begin body
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+%%%%% 歌詞 ここから %%%%%
+% begin lilycs
+\begin{enumerate} % 番号の箇条書き ここから
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item
+        % 1.
+        \ruby{雲海貫}{}く\ruby{泰山}{}に\\
+        \ruby{伍山}{}を\ruby{覇}{}せと\ruby{吼}{}える\ruby{熊}{}\\
+        \ruby{俗野}{}に\ruby{満}{}てる\ruby{四面}{}の\ruby{楚歌}{}を\\
+        \ruby{真理}{}のたけびで\ruby{吹}{}き\ruby{飛}{}ばす\\
+        マツリダマツリダ\\
+        マツリダヒグマ
+        
+        \vspace{\linespace}
+        \item
+        % 2.
+        \ruby{混迷尽}{}きぬ\ruby{泥濘}{}に\\
+        \ruby{曲学阿世}{}くだく\ruby{虎}{}\\
+        \ruby{世}{}をまどわす\ruby{混沌}{}ぬえを\\
+        \ruby{真理}{}の\ruby{瞳}{}で\ruby{睥睨}{}す\\
+        マツリダマツリダ\\
+        マツリダモウコ
+        
+        \vspace{\linespace}
+        \item
+        % 3.
+        \ruby{濁流荒}{}ぶる\ruby{大飛泉}{}\\
+        \ruby{己身一}{}つの\ruby{六六魚}{}\\
+        \ruby{時}{}の\ruby{趨勢物}{}ともにせず\\
+        \ruby{龍}{}に\ruby{転}{}ぜと\ruby{登}{}りゆく\\
+        マツリダマツリダ\\
+        マツリダオロチ
+        
+        \vspace{\linespace}
+        \item
+        % 4.
+        \ruby{流}{}れに\ruby{流}{}れ\ruby{一百年}{}\\
+        \ruby{祭}{}りに\ruby{祭}{}って\ruby{一世紀}{}\\
+        \ruby{真理}{}を\ruby{求}{}む\ruby{若学徒}{}\\
+        \ruby{今}{}ぞ\ruby{狂}{}いて\ruby{大宴}{}\\
+        マツリダマツリダ\\
+        マツリダゴッホ
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
