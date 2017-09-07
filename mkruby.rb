@@ -5,10 +5,23 @@ require 'csv'
 
 templateName = 'document_B6.tex'
 
+fileList = "" # 作業済みファイル一覧を格納する変数
+# 編集済みファイル一覧を ???.txt 形式で取得
+Dir.glob("./worked/*.tex"){|file|
+    filename = File.basename(file, ".tex")
+    filename.gsub!('.ruby', '.txt')
+    fileList += filename
+}
+
 # 収録曲一覧の読み込み
 csvList = CSV.read('./src/ryoka_list.csv', headers:true)
 csvList.each{|data|
     srcName = "#{data["ファイル名"]}".gsub!(/.*\//, '')
+    # 編集済みファイル一覧にあれば, そのファイルはスキップ
+    if fileList.match(srcName)
+        p srcName
+        next
+    end
     title = "#{data["曲名"]}"
     # year = "#{data["年"]}"
     year = "#{data[0]}" # 0 番目要素の "年" だけヘッダ名で取得できない
