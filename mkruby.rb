@@ -23,12 +23,17 @@ csvList.each{|data|
     lilycs = "" # 歌詞を入れる文字列変数
     buffer = "" # 一行を一時保存する文字列変数
     footer = "" # フッタを一時保存する文字列変数
+    order = "" # 歌う曲番を一時保存する文字列変数
     isHeaderEnd = false # ヘッダ判断用のフラグ
     isFooterBegin = false # ヘッダ判断用のフラグ
 
     src.lines{|line|
         # 最初の空行まではヘッダとして除外
         if !isHeaderEnd
+            # ヘッダ内で '(' で始まる行は歌う曲番を示すので保存
+            if line =~ /^\(/
+                order = line
+            end
             if line == "\n"
                 isHeaderEnd = true
             end
@@ -36,7 +41,7 @@ csvList.each{|data|
         end
 
         # ヘッダ以外で半角 '(' から始まる行からはフッタ
-        # フッタにルビはいらないので, 後から付け足すため保存
+        # フッタにルビはいらないので, 後から付け足すために保存
         if line =~ /^\(/ && !isFooterBegin
             # 括弧が見つかった直後は buffer を処理して footer に記録開始
             isFooterBegin = true
@@ -115,6 +120,7 @@ csvList.each{|data|
         name = name1.gsub(/^(.+)$/, '\1君 作歌・作曲')
         tex.gsub!('NAME', name)
     end
+    tex.gsub!(/(% end header)/){"% #{order}#{$1}"} # 歌う曲番をコメントで付加
     tex.gsub!('        LILYCS', lilycs) # 歌詞部分
 
     # 元のファイル名から .txt を抜く
