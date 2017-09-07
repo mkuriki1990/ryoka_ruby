@@ -109,7 +109,12 @@ csvList.each{|data|
     
     # テンプレートの中身をそれぞれ置換
     tex.gsub!('TITLE', title)
-    tex.gsub!('YEAR', year)
+    if year.length != 0
+        year.gsub!(/(.+)/, '（\1）')
+        tex.gsub!('YEAR', year)
+    else
+        tex.gsub!('YEAR', '')
+    end
     # 作歌作曲者が同一かどうかで場合分け
     if name2.length != 0
         name1.gsub!(/^(.+)$/, '\1君 作歌')
