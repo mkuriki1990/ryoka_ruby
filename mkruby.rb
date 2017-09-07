@@ -3,7 +3,39 @@
 # \ruby{漢字}{} をつけるスクリプト
 require 'csv'
 
+# template に使うファイル名
 templateName = 'document_B6.tex'
+
+# 1 - 999 までを漢数字に変換する関数
+def number2kansuuji(num)
+    # 数字と漢字のハッシュ
+    number = Hash[0=>"", 1=>"一", 2=>"二", 3=>"三", 4=>"四", 5=>"五", 6=>"六", 7=>"七", 8=>"八", 9=>"九"]
+    digit = Hash[100=>"百", 10=>"十"]
+    str = "" # 結果を入れる変数
+    [100, 10].each{|d|
+        temp = num / d
+        # とある桁で割って 1 以下のときは次の桁へ
+        if temp == 0
+            next
+        else
+            # 各桁の前の漢数字を決定
+            # "一百", "一十" などを避けるため 1 とそれ以外で区別する
+            if temp > 1
+                char = number[temp]
+            else
+                char = ""
+            end
+            # 桁の漢字を追加
+            char += digit[d]
+        end
+        # 求めた漢数字を追記
+        str += char
+        num %= d # 剰余を求めて次の桁へ
+    }
+    # 最後に余った数を変換して追記
+    str += number[num]
+    return str
+end
 
 fileList = "" # 作業済みファイル一覧を格納する変数
 # 編集済みファイル一覧を ???.txt 形式で取得
@@ -24,7 +56,18 @@ csvList.each{|data|
     end
     title = "#{data["曲名"]}"
     # year = "#{data["年"]}"
-    year = "#{data[0]}" # 0 番目要素の "年" だけヘッダ名で取得できない
+    year = "#{data[0]}" # なぜか 0 番目要素の "年" だけヘッダ名で取得できない
+    # "年" や "100回記念" などに含まれる 3 桁までのアラビア数字を漢数字に変換 (1914年などは変換したくない)
+    if year.match(/\d/)
+        # 4 桁の数字だけ除外して処理する
+        if !year.match(/[0-9]{4}/)
+            numList = year.scan(/[0-9]+/)
+            numList.each{|num|
+                kanji = number2kansuuji(num.to_i)
+                year.sub!("#{num}", "#{kanji}")
+            }
+        end
+    end
     name1 = "#{data["作歌"]}"
     name2 = "#{data["作曲"]}"
 
