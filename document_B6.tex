@@ -6,17 +6,21 @@
 %%%%% タイトルと作者 ここから %%%%%
 \begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
     \begin{center}
+    % begin title
         {\LARGE
             TITLE % タイトルを入れる
         }
         {\small 
             （YEAR） % 年などを入れる (和文なので全角括弧を用いている)
         }
+    % end title
     \end{center}
 \end{minipage}
 \begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
     \begin{flushright} % 下寄せにする
+        % begin name
         NAME % 作歌・作曲者
+        % end name
     \end{flushright}
 \end{minipage}
 %%%%% タイトルと作者 ここまで %%%%%
@@ -27,6 +31,7 @@
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
 %%%%% 歌詞 ここから %%%%%
+% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
     \begin{minipage}[c]{\blocksize}
     
@@ -34,6 +39,7 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
+% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 
