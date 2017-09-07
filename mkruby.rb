@@ -72,7 +72,8 @@ csvList.each{|data|
     # 連続する漢字をまとめる処理 ここまで
 
     # 曲番を除いて TeX トークン \item と \vspace に変換
-    lilycs.gsub!(/.+\.\\\\\\\n/, '') # 任意の文字にドットがつくものは曲番なので覗く
+    # lilycs.gsub!(/.+\.\\\\\\\n/, '') # 任意の文字にドットがつくものは曲番なので覗く
+    lilycs.gsub!(/(.+\.)\\\\\\/, '% \1') # 任意の文字にドットがつくものは曲番なのでコメントアウトしておく
     lilycs.gsub!(/^\\\\\\$/, "\n\\vspace{\\linespace}\n\\item") # \\ だけの行を '\vspace{\linespace}\n\item' に置き換え
 
     # フッタがあれば処理する
@@ -104,14 +105,17 @@ csvList.each{|data|
     # テンプレートの中身をそれぞれ置換
     tex.gsub!('TITLE', title)
     tex.gsub!('YEAR', year)
+    # 作歌作曲者が同一かどうかで場合分け
     if name2.length != 0
-        tex.gsub!('NAME1', name1)
-        tex.gsub!('NAME2', name2)
+        name1.gsub!(/^(.+)$/, '\1君 作歌')
+        name2.gsub!(/^(.+)$/, '\1君 作曲')
+        name = name1 + "\\\\\\" + name2
+        tex.gsub!('NAME', name)
     else
-        tex.gsub!('NAME1', name1)
-        tex.gsub!('NAME2', name1)
+        name = name1.gsub(/^(.+)$/, '\1君 作歌・作曲')
+        tex.gsub!('NAME', name)
     end
-    tex.gsub!('        LILYCS', lilycs)
+    tex.gsub!('        LILYCS', lilycs) # 歌詞部分
 
     # 元のファイル名から .txt を抜く
     srcName.slice!('.txt')
