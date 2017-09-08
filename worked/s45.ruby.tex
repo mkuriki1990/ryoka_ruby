@@ -1,0 +1,108 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            秋逍遙 % タイトルを入れる
+        }
+        {\small 
+            （昭和四十五年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        熊野芳明君 作歌\\吉田守男君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (未明,払暁,初更,深更
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.33\hsize} % 段組間の設定
+\newcommand{\itemmargin}{4em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item[未明]~\\
+        % \ruby{未明}{}.
+        \ruby{秋}{あき}に\ruby{秋添}{あき|そ}う\ruby[g]{時雨}{しぐれ}\ruby{月}{づき}\\
+        \ruby{曙星}{しょ|せい}\ruby{瞬}{またた}く\ruby{恋々}{れん|れん}と\\
+        されど\ruby{近}{ちか}づく\ruby{蕭晨}{しょう|しん}に\\
+        \ruby[g]{幽愁}{おもい}はつのるせつなくも\\
+        \ruby{落涙}{らく|るい}しばし\ruby{悄然}{しょう|ぜん}と
+        
+        \vspace{\linespace}
+        \item[払暁]~\\
+        % \ruby{払暁}{}.
+        \ruby[g]{蕭晨}{あさ}は\ruby{来}{き}にけり\ruby{石狩野}{いし|かり|の}\\
+        \ruby[g]{野菊}{きく}に\ruby{滴}{したた}る\ruby{血}{ち}の\ruby{雫}{しずく}\\
+        \ruby{木}{こ}の\ruby{葉}{は}さやぎぬ\ruby{涼風}{すず|かぜ}に\\
+        \ruby{野}{の}を\ruby[g]{流離}{さす}えば\ruby{深}{ふか}き\ruby[g]{哀愁}{うれい}\\
+        \ruby{情}{なさ}けの\ruby{露}{つゆ}を\ruby[g]{探求}{もと}むなり
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+
+        \vspace{\linespace}
+        \item[昼]~\\
+        % \ruby{昼}{}.
+        \ruby{遥}{はる}かに\ruby{煙}{けむ}る\ruby{大平原}{だい|へい|げん}\\
+        \ruby{蕭然}{しょう|ぜん}\ruby{秋}{あき}の\ruby{小糠雨}{こ|ぬか|あめ}\\
+        \ruby[g]{原生林}{もり}の\ruby{錦}{にしき}も\ruby{色寂}{いろ|さび}し\\
+        \ruby[g]{黒俊馬}{あお}の\ruby[g]{長嘶}{こえ}に\ruby[g]{沈思}{ゆめ}\ruby{破}{やぶ}れ\\
+        \ruby{秋}{あき}の\ruby[g]{情趣}{こころ}を\ruby{知}{し}る\ruby[g]{二十}{はたち}
+        
+        \vspace{\linespace}
+        \item[落葉]~\\
+        % \ruby{落葉}{}.
+        \ruby[g]{時雨}{しぐれ}もやみてあかねさす\\
+        \ruby[g]{赤紫雲}{むらさきくも}の\ruby[g]{黄昏}{たそがれ}に\\
+        \ruby{夕陽}{せき|よう}\ruby{返}{かえ}し\ruby[g]{珠玉}{たま}の\ruby{如}{ごと}\\
+        % \ruby[g]{蜻蛉}{あきつ}が\ruby[g]{翅{\UID{7FCE}}翎}{はね}に\ruby{我}{わ}が\ruby[g]{久懐}{おもい}\\
+        \ruby[g]{蜻蛉}{あきつ}が\ruby[g]{翅{\UTF{7FCE}}}{はね}に\ruby{我}{わ}が\ruby[g]{久懐}{おもい}\\
+        \ruby[g]{真情}{こころ}の\ruby{友}{とも}へと\ruby{託}{たく}すかな
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+
+        \vspace{\linespace}
+        \item[初更]~\\
+        % \ruby{初更}{}.
+        \ruby{釣瓶}{つる|べ}\ruby{落}{おと}しの\ruby{秋}{あき}の\ruby{日}{ひ}の\\
+        \ruby{紫紺}{し|こん}の\ruby{闇}{やみ}に\ruby{淡}{あわ}く\ruby{浮}{う}く\\
+        \ruby{利鎌}{と|がま}の\ruby[g]{秋月}{つき}はあな\ruby{悲}{かな}し\\
+        きらめく\ruby[g]{長庚}{ほし}にただ\ruby{涙}{なみだ}\\
+        \ruby{己}{おの}が\ruby[g]{運命}{さだめ}か\ruby{斯}{か}くあるが
+        
+        \vspace{\linespace}
+        \item[深更]~\\
+        % \ruby{深更}{}.
+        \ruby{夢}{ゆめ}\ruby{幻}{まぼろし}か\ruby{人}{ひと}の\ruby{世}{よ}は\\
+        \ruby{秋}{あき}の\ruby[g]{百子夜}{ももよ}に\ruby{我}{われ}\ruby{悄然}{しょう|ぜん}\\
+        \ruby{地平}{ち|へい}の\ruby[g]{彼方}{かなた}へ\ruby[g]{冴星}{ほし}\ruby{空}{そら}を\\
+        \ruby{過}{よぎ}りて\ruby{落}{お}つる\ruby{流}{なが}れ\ruby{星}{ぼし}\\
+        ただただ\ruby{涙}{なみだ}は\ruby{何故}{なに|ゆえ}か
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
