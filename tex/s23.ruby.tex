@@ -27,17 +27,20 @@
 % (1,6 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{饗宴}{}の\ruby{杯}{}に\ruby{淡}{}れゆく\\
         \ruby{手稲}{}の\ruby{峰}{}に\ruby{今}{}しばし\\
@@ -47,7 +50,7 @@
         \ruby{優}{}しき\ruby{薫香遺}{}しつつ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{真理}{}の\ruby{道}{}の\ruby{彷徨}{}に\\
         \ruby{遊子}{}は\ruby{尋}{}めぬ\ruby{人性}{}を\\
@@ -57,7 +60,7 @@
         \ruby{贏}{}しものは\ruby{何}{}ならん
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{原始林}{}の\ruby{濃緑}{}のまどろみに\\
         \ruby{高夢}{}は\ruby{結}{}びぬ\ruby{先人}{}の\\
@@ -67,7 +70,7 @@
         \ruby{草野}{}に\ruby{夕陽}{}は\ruby{既}{}に\ruby{没}{}つ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{秋}{}の\ruby{哀愁}{}は\ruby{旅}{}の\ruby{子}{}に\\
         ひとしほ\ruby{沁}{}みる\ruby{夜半}{}の\ruby{月}{}\\
@@ -77,7 +80,7 @@
         \ruby{凋落}{}の\ruby{世}{}に\ruby{響}{}くなり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{狂}{}ふ\ruby{吹雪}{}に\ruby{我}{}が\ruby{思索}{}\\
         \ruby{託}{}して\ruby{進}{}む\ruby{三百}{}の\\
@@ -87,7 +90,7 @@
         \ruby{高}{}き\ruby{理想}{}の\ruby{旭日}{}は\ruby{出}{}でぬ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{楡}{}の\ruby{鐘声}{}に\ruby{逝}{}く\ruby{青春}{}の\\
         \ruby{神秘}{}を\ruby{解}{}かん\ruby{花莚}{}\\
@@ -98,7 +101,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

@@ -27,17 +27,20 @@
 % (1,2,3,4 了なし繰り返しあり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{紺碧}{}の\ruby{空}{}を\ruby{貫}{}く\\
         \ruby{一筋}{}の\ruby{白雲無限}{}の\ruby{可能性}{}\\
@@ -46,7 +49,7 @@
         ただ\ruby{一心}{}に\ruby{信}{}じ\ruby{歩}{}もう
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{漆黒}{}の\ruby{闇}{}を\ruby{貫}{}く\\
         \ruby{静}{}かな\ruby{月明}{}り\\
@@ -55,7 +58,7 @@
         ただ\ruby{一心}{}に\ruby{信}{}じ\ruby{臨}{}まん
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{朧灰}{}の\ruby{雲}{}を\ruby{貫}{}く\\
         \ruby{揺}{}るがぬ\ruby{意思}{}\\
@@ -64,7 +67,7 @@
         ただ\ruby{一心}{}に\ruby{信}{}じ\ruby{飛}{}びたつ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{真紅}{}の\ruby{心}{}を\ruby{貫}{}く\\
         \ruby{熱}{}き\ruby{眼差}{}し\\
@@ -74,7 +77,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

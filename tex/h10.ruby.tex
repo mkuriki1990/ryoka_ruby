@@ -27,17 +27,20 @@
 % (1,2,3 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{紅天}{}かなた\ruby{大鷲舞}{}いて\\
         \ruby{茜}{}さす\ruby{朝陽}{}も\ruby{映}{}ゆる\\
@@ -49,7 +52,7 @@
         \ruby{大}{}いなる\ruby{能力求}{}めん
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{聳}{}ゆ\ruby{連峰果}{}て\ruby{無}{}き\ruby{眺望}{}\\
         \ruby{猛}{}き\ruby{心}{}を\ruby{駆}{}き\ruby{立}{}てぬ\\
@@ -61,7 +64,7 @@
         \ruby{澄}{}み\ruby{渡}{}る\ruby{瞳視}{}つめよ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{臥竜}{}の\ruby{牙深淵潜}{}み\\
         \ruby{鳳雛}{}の\ruby{翼時機}{}を\ruby{待}{}つ\\
@@ -74,7 +77,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

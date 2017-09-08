@@ -27,17 +27,20 @@
 % (序,冬,結 繰り返しなし)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % \ruby{序}{}.
         \ruby{彷徨}{}へる\ruby{心}{}のままに\\
         \ruby{見返}{}りの\ruby{陵}{}を\ruby{登}{}れば\\
@@ -47,7 +50,7 @@
         \ruby{天地}{}に\ruby{星}{}の\ruby{飛}{}ぶなり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % \ruby{春}{}.
         \ruby{清冽}{}の\ruby{玉散}{}る\ruby{知性}{}\\
         \ruby{燃}{}え\ruby{狂}{}ふ\ruby{情熱}{}の\ruby{焰}{}\\
@@ -57,7 +60,7 @@
         \ruby{春雨}{}も\ruby{楡影}{}つたふ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % \ruby{夏}{}.
         \ruby{初夏}{}の\ruby{野}{}に\ruby{陽炎}{}たてば\\
         \ruby{痛}{}ましき\ruby{魂}{}の\ruby{疵}{}の\\
@@ -67,7 +70,7 @@
         \ruby{浜茄}{}の\ruby{赤}{}き\ruby{血潮}{}よ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % \ruby{秋}{}.
         \ruby{秋深}{}き\ruby{磯}{}に\ruby{佇}{}み\\
         \ruby{汐飛沫浴}{}びし\ruby{彼}{}の\ruby{時}{}\\
@@ -77,7 +80,7 @@
         \ruby{寥々}{}の\ruby{孤杖}{}を\ruby{運}{}ぶ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % \ruby{冬}{}.
         \ruby{雪}{}の\ruby{舞}{}ふ\ruby{砂丘薄}{}れて\\
         \ruby{光輝}{}なき\ruby{旧}{}りし\ruby{仕種}{}は\\
@@ -87,7 +90,7 @@
         \ruby{涙}{}には\ruby{余}{}りに\ruby{虚}{}し
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % \ruby{結}{}.
         \ruby{三春秋}{}の\ruby{絢夢原始林影}{}に\\
         \ruby{散}{}り\ruby{果}{}てて\ruby{悲哀}{}を\ruby{秘}{}めつ\\
@@ -98,7 +101,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

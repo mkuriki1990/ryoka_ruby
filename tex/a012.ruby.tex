@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         神\ruby{統二千五百年}{}\\
         \ruby{東海}{}の\ruby{果}{}に\ruby{眠}{}りたる\\
@@ -46,7 +49,7 @@
         \ruby{進取}{}の\ruby{旗}{}を\ruby{振}{}り\ruby{立}{}てぬ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{天}{}に\ruby{二}{}つの\ruby{日}{}なければ\\
         \ruby{地上}{}を\ruby{西}{}し\ruby{東}{}せる\\
@@ -56,7 +59,7 @@
         \ruby{乾坤茲光}{}あり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{此}{}の\ruby{国運}{}に\ruby{魁}{}し\\
         \ruby{先}{}づ\ruby{北辺}{}の\ruby{島}{}の\ruby{上}{}\\
@@ -66,7 +69,7 @@
         \ruby{百万}{}の\ruby{民若}{}かりき
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{此}{}の\ruby{民衆}{}を\ruby{導}{}きて\\
         \ruby{重}{}き\ruby{使命}{}に\ruby{負}{}かじと\\
@@ -76,7 +79,7 @@
         \ruby{其}{}の\ruby{名声}{}や\ruby{將}{}た\ruby{説}{}かじ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{今}{}や\ruby{羽翼}{}を\ruby{整}{}へて\\
         \ruby{徳乾坤}{}を\ruby{被}{}ふ\ruby{可}{}き\\
@@ -86,7 +89,7 @@
         \ruby{新職分}{}は\ruby{下}{}りたり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{思}{}へ\ruby{嘗}{}ては\ruby{北辰}{}と\\
         \ruby{光}{}を\ruby{競}{}ひ\ruby{白雪}{}と\\
@@ -96,7 +99,7 @@
         \ruby{希望}{}の\ruby{色}{}に\ruby{溢}{}れずや
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 7.
         \ruby{功利若}{}し\ruby{世}{}の\ruby{風}{}たらば\\
         \ruby{其所}{}に\ruby{我等}{}の\ruby{戦}{}あり\\
@@ -106,7 +109,7 @@
         \ruby{其所}{}に\ruby{我等}{}の\ruby{戦}{}あり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 8.
         \ruby{楡}{}の\ruby{梢風鳴}{}りて\\
         \ruby{平和}{}の\ruby{歌}{}をなすが\ruby{如}{}\\
@@ -117,7 +120,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

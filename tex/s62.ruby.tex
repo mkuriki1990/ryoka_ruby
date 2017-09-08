@@ -27,17 +27,20 @@
 % (1,2,3,4 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{北斗遙}{}かに\ruby{広}{}がれる\\
         \ruby{波濤煌}{}く\ruby{水平線}{}\\
@@ -51,7 +54,7 @@
         \ruby{希望}{}かなえん
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{北斗清}{}かに\ruby{見}{}はるかす\\
         \ruby{紺碧}{}に\ruby{滲}{}む\ruby{大空}{}に\\
@@ -65,7 +68,7 @@
         \ruby{真理求}{}めん
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{北斗豊}{}かに\ruby{色}{}づける\\
         \ruby{黄金色}{}の\ruby{大沃野}{}\\
@@ -79,7 +82,7 @@
         \ruby{正義貫}{}かん
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{北斗果}{}てなく\ruby{包}{}み\ruby{込}{}む\\
         \ruby{荒}{}び\ruby{飛}{}び\ruby{散}{}る\ruby{猛吹雪}{}\\
@@ -94,7 +97,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

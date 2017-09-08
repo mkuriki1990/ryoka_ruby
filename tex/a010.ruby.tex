@@ -26,22 +26,25 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         -\ruby{醒}{}めよ\ruby{迷}{}ひの\ruby{夢醒}{}めよ\\
         \ruby{醒}{}めよ\ruby{迷}{}ひの\ruby{夢醒}{}めよ-
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{札幌農学校}{}は\ruby{蝦夷}{}ヶ\ruby{島}{} \ruby{熊}{}が\ruby{棲}{}む\\
         \ruby{荒野}{}に\ruby{建}{}てたる\ruby{大校舎}{}コチャ\\
@@ -49,7 +52,7 @@
         コチャエ コチャエ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{札幌農学校}{}は\ruby{蝦夷}{}ヶ\ruby{島}{}　\ruby{手稲山}{}\\
         \ruby{夕焼}{}け\ruby{小焼}{}けのするところコチャ\\
@@ -57,7 +60,7 @@
         コチャエ コチャエ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{札幌農学校}{}は\ruby{蝦夷}{}ヶ\ruby{島}{}　クラーク\ruby{氏}{}\\
         ビーアンビシァスボーイズとコチャ\\
@@ -71,7 +74,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

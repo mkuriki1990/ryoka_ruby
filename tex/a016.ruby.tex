@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         Erst kommt der junge Studio, tralala, tralala,\\
         % Ganz still und scheu nach Sapporo, tralala, tralala.
@@ -46,7 +49,7 @@
         	jupeidi, peidi, peida, jupeidi, peida !
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         Im Herbst lebt unser Studio, tralala, tralala,\\
         Vergnugt in delce jubilo, tralala, tralala,\\
@@ -54,7 +57,7 @@
         Und dann zu Nacht Jabiraki.
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         Im Mai vom schmucken T??nspielring, tralala, tralala,\\
         Schallt lusting es, bum, bum, tsching, tsching, tsching,\\
@@ -62,7 +65,7 @@
         Drum schmettert all: Hurrah, Banzai !
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         Oft hat der Studio nicht viel Geld, tralala, tralala,\\
         % Deshalb ist er recht schlecht bestellt, tralala, tralala.
@@ -70,7 +73,7 @@
         Verchafft er sich durch Komparu.
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         Doch kommen die Examina, tralala, tralala,\\
         % Da singt er nicht mehr Jupeidi, tralala, tralala.
@@ -78,7 +81,7 @@
         Das wird wohl vom Studieren sein.
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         Ihm wird von all dem Zeug so dumm, tralala, tralala,\\
         % Als ging im Kopf ein Muhlrad um, tralala, tralala.
@@ -86,7 +89,7 @@
         Und traumt sogar von Rakudai.
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 7.
         Dann in dem Heft steht schwarz auf weiss, tralala, tralala,\\
         % Wovon der Studio nicht viel weiss, tralala, tralala.
@@ -95,7 +98,7 @@
         
         
         \vspace{\linespace}
-        \item
+        \item~\\
         コラー\ruby{先生}{}（スイス\ruby{人}{}）は\ruby{明治}{}41\ruby{年}{}から\ruby{予科}{}でドイツ\ruby{語}{}を\ruby{教}{}えられ、\ruby{大正}{}14\ruby{年}{}、\\
         \ruby{在職中}{}に\ruby{死去}{}された。この\ruby{歌}{}は\ruby{明治末期}{}から\ruby{大正初期}{}に\ruby{作}{}られたものである。\\
         \ruby{曲}{}は「Jupeidiの\ruby{譜}{}」とのみ\ruby{記}{}されている。1845\ruby{年}{}のUrbummellied（G.Weber\\
@@ -103,7 +106,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

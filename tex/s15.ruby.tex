@@ -27,17 +27,20 @@
 % (1,2,3 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{弥生}{}の\ruby{空}{}に\ruby{消}{}え\ruby{残}{}る\\
         \ruby{霞}{}に\ruby{春}{}の\ruby{絢夢闌}{}けて\\
@@ -47,7 +50,7 @@
         \ruby{仰}{}ぐ\ruby{健児}{}の\ruby{影清}{}し
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{手稲}{}の\ruby{山}{}に\ruby{陽}{}は\ruby{落}{}ちて\\
         \ruby{広}{}き\ruby{蒼空}{}の\ruby{茜雲}{}\\
@@ -57,7 +60,7 @@
         \ruby{暫}{}し\ruby{臥竜}{}の\ruby{夢}{}に\ruby{見}{}む
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{春雨煙}{}る\ruby{並木路}{}に\\
         \ruby{輪廻}{}の\ruby{相偲}{}びては\\
@@ -67,7 +70,7 @@
         \ruby{野路}{}は\ruby{果}{}てなく\ruby{黄昏}{}れぬ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{究理}{}の\ruby{道}{}は\ruby{遠}{}くとも\\
         \ruby{研磨}{}の\ruby{窓}{}に\ruby{月匂}{}ふ\\
@@ -77,7 +80,7 @@
         \ruby{熱血男児}{}ここにあり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{光}{}かそけき\ruby{原始林蔭}{}の\\
         \ruby{月}{}に\ruby{散}{}り\ruby{布}{}く\ruby{花蓆}{}\\
@@ -87,7 +90,7 @@
         \ruby{歓喜}{}の\ruby{夜}{}は\ruby{更}{}けゆきぬ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{不壊}{}の\ruby{智玉}{}を\ruby{育}{}みて\\
         \ruby{恵迪}{}ここに\ruby{早三年}{}\\
@@ -98,7 +101,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

@@ -27,17 +27,20 @@
 % (1,2,3,4,5 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{沈黙}{}の\ruby{杜}{}に\ruby{春来告}{}げる\\
         \ruby{芳香馨}{}し\ruby{辛夷}{}の\ruby{花}{}よ\\
@@ -47,7 +50,7 @@
         されど\ruby{恵迪此処}{}に\ruby{在}{}り
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{水恋鳥}{}の\ruby{哀}{}しき\ruby{聲}{}に\\
         \ruby{我故知}{}らず\ruby{涙流}{}しぬ\\
@@ -57,7 +60,7 @@
         されど\ruby{憧憬恵迪}{}に\ruby{在}{}り
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{紅雲流}{}るる\ruby{黄昏}{}どきに\\
         \ruby{夕細道}{}は\ruby{幽}{}か\ruby{続}{}きて\\
@@ -67,7 +70,7 @@
         されど\ruby{青春恵迪}{}に\ruby{在}{}り
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{雪舞}{}ひ\ruby{踊}{}る\ruby{白銀}{}の\ruby{世}{}よ\\
         \ruby{天指}{}す\ruby{枝柯}{}に\ruby{樹氷咲}{}く\\
@@ -77,7 +80,7 @@
         されど\ruby{経営恵迪}{}に\ruby{在}{}り
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{弛}{}むことなく\ruby{唯時}{}は\ruby{逝}{}き\\
         \ruby{生}{}きとし\ruby{生}{}けるものは\ruby{去}{}りゆく\\
@@ -88,7 +91,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

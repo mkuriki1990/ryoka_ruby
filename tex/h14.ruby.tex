@@ -27,17 +27,20 @@
 % (1,2,3 了なし繰り返しあり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{翠}{}き\ruby{早緑}{}あまりに\ruby{深}{}く\\
         \ruby{若葉}{}に\ruby{臥}{}せし\ruby{風吹}{}く\ruby{楡陵}{}の\\
@@ -47,7 +50,7 @@
         \ruby{今}{}こそ\ruby{我}{}が\ruby{身}{}の\ruby{翼}{}と\ruby{成}{}さん
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{碧}{}き\ruby{雪迪}{}あまりに\ruby{長}{}く\\
         \ruby{星影映}{}えし\ruby{原始}{}の\ruby{森}{}を\\
@@ -57,7 +60,7 @@
         \ruby{六華}{}と\ruby{月}{}を\ruby{燈火}{}に
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{蒼}{}き\ruby{天空}{}あまりに\ruby{広}{}く\\
         \ruby{楡}{}と\ruby{風}{}とに\ruby{我等}{}は\ruby{宿}{}る\\
@@ -68,7 +71,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

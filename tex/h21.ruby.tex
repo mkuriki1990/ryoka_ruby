@@ -27,17 +27,20 @@
 % (1,2,3 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{六華雪解}{}に\ruby{佇}{}みて\\
         \ruby{故郷}{}を\ruby{去}{}りし\ruby{若人}{}が\\
@@ -45,7 +48,7 @@
         しばし\ruby{憩}{}わんこの\ruby{宿舎}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{酒飲}{}み\ruby{宴}{}し\ruby{夜}{}は\ruby{更}{}けて\\
         \ruby{明}{}く\ruby{迄語}{}り\ruby{日々}{}は\ruby{行}{}き\\
@@ -53,7 +56,7 @@
         \ruby{輝}{}き\ruby{永久}{}に\ruby{絶}{}やさずや
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{理想}{}の\ruby{自治}{}を\ruby{手}{}にするは\\
         \ruby{常}{}に\ruby{寮生}{}が\ruby{高}{}みなり\\
@@ -62,7 +65,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

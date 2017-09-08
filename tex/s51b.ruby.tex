@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{楡陵}{}を\ruby{去}{}る\ruby{日}{}に\ruby{涙}{}せし\\
         \ruby{寮友}{}よ\ruby{何処}{}に\ruby{去}{}り\ruby{行}{}ける\\
@@ -44,7 +47,7 @@
         \ruby{寮友}{}よ\ruby{集}{}わん\ruby{楡}{}かげに
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{南溟}{}の\ruby{空北}{}の\ruby{果}{}て\\
         \ruby{散}{}りにし\ruby{寮友}{}も\ruby{集}{}いけむ\\
@@ -52,7 +55,7 @@
         \ruby{今宵寮祭}{}のかゞり\ruby{火}{}に
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{原子}{}の\ruby{杜}{}は\ruby{拓}{}かれて\\
         \ruby{真白}{}き\ruby{帽}{}の\ruby{三条消}{}え\\
@@ -60,7 +63,7 @@
         \ruby{郭公}{}の\ruby{声}{}あわれなり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{生命}{}の\ruby{春}{}の\ruby{短}{}かさよ\\
         \ruby{藻岩}{}のみどり\ruby{紅葉}{}して\\
@@ -68,7 +71,7 @@
         あゝ\ruby{青春}{}の\ruby{日}{}よいづこ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{旧}{}き\ruby{寮舎}{}を\ruby{訪}{}い\ruby{往}{}けば\\
         \ruby{若}{}き\ruby{男子}{}の\ruby{寮歌流}{}る\\
@@ -76,7 +79,7 @@
         \ruby{頬}{}を\ruby{流}{}るる\ruby{涙}{}かな
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{自治}{}の\ruby{燈}{}かかげ\ruby{百年}{}の\\
         \ruby{青史}{}をかざす\ruby{楡陵}{}の\ruby{宴}{}\\
@@ -85,7 +88,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

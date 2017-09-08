@@ -27,17 +27,20 @@
 % (1,2,3,4 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin}
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
 		\ruby{草}{くさ}は\ruby{萠}{も}え\ruby{出}{い}で\ruby[g]{郭公}{とり}は\ruby{鳴}{な}き\\
 		\ruby{憧}{あこが}れ\ruby{睦}{むつ}ぶ\ruby[g]{宿舎}{やどりや}に\\
@@ -47,7 +50,7 @@
 		\ruby{悠々}{ゆう|ゆう}\ruby{迪}{みち}を\ruby{歩}{あゆ}まなん\\
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
 		\ruby{蛮声}{ばん|せい}\ruby{放歌}{ほう|か}\ruby{乱舞}{らん|ぶ}する\\
 		\ruby{姿}{すがた}\ruby{雄々}{お|お}しき\ruby{吾}{われ}なれど\\
@@ -60,7 +63,7 @@
 	\begin{minipage}[c]{\blocksize}
 	
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
 		\ruby{気高}{け|だか}き\ruby{野心}{や|しん}の\ruby{男}{お}の\ruby{児等}{こ|ら}が\\
 		\ruby{士幌}{し|ほろ}に\ruby[g]{山小屋}{こや}をうち\ruby{建}{た}てぬ\\
@@ -70,7 +73,7 @@
 		\ruby{新}{あら}たな\ruby{夢}{ゆめ}に\ruby{飛}{と}びたたん\\
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
 		\ruby{読}{よ}み\ruby{飲}{の}み\ruby{語}{かた}り\ruby{夜}{よる}は\ruby{明}{あ}け\\
 		\ruby{熱}{あつ}き\ruby{情}{なさけ}に\ruby{年}{とし}は\ruby{経}{ふ}り\\
@@ -81,7 +84,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

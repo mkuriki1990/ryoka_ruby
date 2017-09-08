@@ -27,17 +27,20 @@
 % (1,7 繰り返しなし)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         あますなく\ruby{拓}{}きゆく\ruby{道}{}\\
         \ruby{天雲}{}の\ruby{向伏}{}す\ruby{極}{}み\\
@@ -47,7 +50,7 @@
         \ruby{誇}{}らかに\ruby{諸声}{}に\ruby{血潮流}{}さむ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{悠久}{}の\ruby{天詔琴}{}\\
         \ruby{今}{}ぞ\ruby{時}{}、\ruby{轟}{}き\ruby{赴}{}きぬ\\
@@ -58,7 +61,7 @@
         \ruby{秋}{}に\ruby{生}{}れし
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         どよめきぬ\ruby{祖霊}{}の\ruby{行}{}\\
         \ruby{六合}{}に\ruby{頸}{}く\ruby{漲}{}ぎり\\
@@ -69,7 +72,7 @@
         \ruby{生命}{}たぎちむ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{欣求}{}の\ruby{宇宙蝕変満}{}つも\\
         \ruby{東亜}{}の\ruby{空}{}、\ruby{復円光}{}らん\\
@@ -80,7 +83,7 @@
         \ruby{黎明}{}の\ruby{幸星}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{帰}{}るなき\ruby{発程}{}に\ruby{起}{}つ\\
         \ruby{眸澄}{}める\ruby{我等若人}{}\\
@@ -91,7 +94,7 @@
         \ruby{海図}{}に\ruby{夢}{}む
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{厳}{}かの\ruby{時}{}の\ruby{流}{}れに\\
         \ruby{新}{}しき\ruby{力}{}よ\ruby{躍}{}れ\\
@@ -102,7 +105,7 @@
         \ruby{先駆}{}に\ruby{埋}{}めん
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 7.
         ここぞ\ruby{茲}{}、いかで\ruby{忘}{}れむ\\
         \ruby{日}{}に\ruby{若}{}き、\ruby{恵迪}{}の\ruby{児}{}よ\\
@@ -114,7 +117,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{島浪}{}かへる\ruby{北溟}{}さして\\
         \ruby{石狩}{}の\ruby{水末遠}{}く\\
@@ -46,7 +49,7 @@
         \ruby{絢爛}{}の\ruby{春}{}またおとづれぬ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{春陽}{}のもと\ruby{下萠}{}えそめて\\
         \ruby{遙}{}かなるかな\ruby{我思}{}ひ\\
@@ -57,7 +60,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

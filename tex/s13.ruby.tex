@@ -27,17 +27,20 @@
 % (1,2,3 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{津軽}{}の\ruby{滄海}{}の\ruby{渦潮}{}わけて\\
         \ruby{雄大}{}き\ruby{想}{}ひを\ruby{北斗}{}に\ruby{馳}{}する\\
@@ -45,7 +48,7 @@
         \ruby{抱擁}{}かれて\ruby{今野心培}{}ふ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         アカシヤの\ruby{白花散}{}り\ruby{敷}{}く\ruby{夕}{}べ\\
         \ruby{白銀}{}の\ruby{月仄}{}かに\ruby{浮}{}ぶ\\
@@ -53,7 +56,7 @@
         \ruby{羊}{}の\ruby{群}{}は\ruby{声}{}なく\ruby{去}{}りぬ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{石狩}{}の\ruby{平野}{}に\ruby{爽夏訪}{}れて\\
         \ruby{原始}{}の\ruby{大森}{}は\ruby{緑影}{}も\ruby{小暗}{}し\\
@@ -61,7 +64,7 @@
         \ruby{清涼}{}しき\ruby{朝}{}の\ruby{熟睡}{}を\ruby{破}{}る
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{豊穣}{}の\ruby{秋}{}の\ruby{讃歌}{}を\ruby{奏}{}で\\
         ポプラの\ruby{高梢}{}さやかに\ruby{揺}{}ぐ\\
@@ -69,7 +72,7 @@
         \ruby{生}{}の\ruby{歓喜我}{}が\ruby{胸懐}{}に\ruby{充溢}{}つ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{飄々}{}の\ruby{風声疎林}{}に\ruby{沈潜}{}み\\
         \ruby{無眼}{}の\ruby{静寂天地}{}に\ruby{充満}{}てり\\
@@ -77,7 +80,7 @@
         \ruby{我}{}が\ruby{行}{}く\ruby{孤影}{}よ\ruby{霜仁凍}{}りぬ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{白銀}{}の\ruby{六華荘厳}{}に\ruby{咲}{}く\\
         \ruby{山嶺奥深}{}く\ruby{彷徨}{}れ\ruby{行}{}けば\\
@@ -85,7 +88,7 @@
         \ruby{冬}{}の\ruby{神秘}{}に\ruby{我}{}が\ruby{胸戦傈}{}ふ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 7.
         さあれ\ruby{戦塵東亜}{}を\ruby{閉鎖}{}し\\
         \ruby{全支}{}の\ruby{空}{}に\ruby{硝煙昏冥}{}し\\
@@ -93,7 +96,7 @@
         \ruby{雄心湧}{}きて\ruby{若}{}き\ruby{熱血滾}{}る
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 8.
         \ruby{先人}{}の\ruby{絢夢残}{}れる\ruby{原始林}{}に\\
         \ruby{寮祭}{}の\ruby{犠牲}{}の\ruby{火柱廻}{}りて\\
@@ -102,7 +105,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

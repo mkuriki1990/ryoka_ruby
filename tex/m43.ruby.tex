@@ -27,17 +27,20 @@
 % (1,4,6 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{帝都}{}を\ruby{北}{}に\ruby{三百里}{}\\
         \ruby{津軽}{}の\ruby{海}{}を\ruby{越}{}え\ruby{来}{}れば\\
@@ -47,7 +50,7 @@
         \ruby{我北州}{}の\ruby{島}{}と\ruby{凝}{}る
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{鯨群吼}{}ゆる\ruby{荒潮}{}に\\
         \ruby{落}{}つる\ruby{北斗}{}の\ruby{影冴}{}えて\\
@@ -57,7 +60,7 @@
         \ruby{我北州}{}の\ruby{島}{}に\ruby{見}{}る
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{鈴蘭薫}{}る\ruby{春}{}の\ruby{野辺}{}\\
         \ruby{楡}{}の\ruby{下蔭草繁}{}る\\
@@ -67,7 +70,7 @@
         \ruby{眺}{}めは\ruby{飽}{}かぬ\ruby{姿}{}かな
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{朝霧深}{}き\ruby{野}{}の\ruby{面}{}に\\
         \ruby{嘶}{}く\ruby{駒}{}の\ruby{跡追}{}えば\\
@@ -77,7 +80,7 @@
         \ruby{農牧}{}の\ruby{幸謳}{}ふかな
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{見}{}よ\ruby{文明}{}は\ruby{北進}{}す\\
         \ruby{古嚢}{}は\ruby{盛}{}らず\ruby{新酒}{}を\\
@@ -87,7 +90,7 @@
         \ruby{地}{}は\ruby{広漠}{}の\ruby{沖積層}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{此聖都}{}を\ruby{永久}{}に\\
         \ruby{浮華軽佻}{}の\ruby{国}{}とせず\\
@@ -98,7 +101,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{霞}{}は\ruby{深}{}し\ruby{鶉月}{}の\\
         \ruby{空尚寒}{}き\ruby{眺}{}めかな\\
@@ -48,7 +51,7 @@
         フレー　フレー　フレー
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{涙}{}にむせび\ruby{血}{}をすすり\\
         \ruby{忍}{}ぶ\ruby{思}{}は\ruby{幾星霜}{}\\
@@ -58,7 +61,7 @@
         はらせ\ruby{積}{}るその\ruby{恨}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{立}{}つべき\ruby{時}{}は\ruby{今}{}ぞ\ruby{今}{}\\
         \ruby{決死}{}の\ruby{意氣}{}よ\ruby{來}{}れ\ruby{友}{}\\
@@ -69,7 +72,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{太平洋}{}と\ruby{日本海}{}\\
         \ruby{結}{}ぶ\ruby{海峡}{}ただなかに\\
@@ -45,7 +48,7 @@
         \ruby{高等水産校}{}は\ruby{立}{}つ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{四方海}{}なる\ruby{大日本}{}\\
         \ruby{水産特}{}にその\ruby{宝}{}\\
@@ -54,7 +57,7 @@
         \ruby{健児雄}{}たけぶ\ruby{波}{}の\ruby{上}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{見}{}よベーリング、アラスカは\\
         \ruby{北}{}に、\ruby{南}{}は\ruby{赤道}{}を\\
@@ -63,7 +66,7 @@
         \ruby{進}{}み\ruby{使命}{}に\ruby{盡}{}すべし
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{洋}{}の\ruby{東西}{}おしなべて\\
         \ruby{斯界}{}の\ruby{指導}{}われの\ruby{任}{}\\
@@ -73,7 +76,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

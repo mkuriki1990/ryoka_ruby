@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{三代}{}に\ruby{亘}{}りし　\ruby{恵迪寮}{}\\
         \ruby{歴史}{}も\ruby{経}{}りて　\ruby{一世紀}{}\\
@@ -44,7 +47,7 @@
         \ruby{団欒}{}も\ruby{楽}{}し　\ruby{記念祭}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{歳}{}を\ruby{重}{}ねて　\ruby{恵迪}{}は\\
         \ruby{自今}{}は\ruby{女子}{}　\ruby{男子}{}らは\\
@@ -52,7 +55,7 @@
         \ruby{日夜}{}に\ruby{励}{}み　\ruby{探求}{}むなり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{拓}{}きたる\ruby{野}{}は　ビルの\ruby{谷}{}\\
         \ruby{創成川}{}の　\ruby{柳}{}　\ruby{何処}{}\\
@@ -60,7 +63,7 @@
         \ruby{若木}{}に\ruby{伝}{}う　\ruby{紳士道}{}と
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{世}{}にも\ruby{希}{}なる　\ruby{楽}{}しみは\\
         \ruby{魂}{}に\ruby{触}{}れし　\ruby{若}{}き\ruby{日}{}の\\
@@ -68,7 +71,7 @@
         \ruby{寮友}{}らと\ruby{語}{}る　この\ruby{時}{}ぞ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{始皇夢}{}むは　\ruby{千万世}{}\\
         \ruby{我}{}らが\ruby{寮歌}{}は　\ruby{永遠}{}に\\
@@ -77,7 +80,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

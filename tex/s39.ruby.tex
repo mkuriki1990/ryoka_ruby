@@ -27,17 +27,20 @@
 % (序,1,結 了なし繰り返しあり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % \ruby{序}{}.
         \ruby{偉大}{}なる\ruby{北溟}{}の\ruby{自然}{}は\\
         \ruby{我}{}が\ruby{眼前}{}に\ruby{限}{}りなく\ruby{広}{}ごりて\\
@@ -47,7 +50,7 @@
         \ruby{遊子}{}が\ruby{胸}{}を\ruby{今}{}や\ruby{満}{}しぬ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{飄々}{}の\ruby{北風}{}は\ruby{荒}{}び\\
         \ruby{白銀}{}の\ruby{華大地覆}{}えど\\
@@ -58,7 +61,7 @@
         \ruby{異邦}{}ゆ\ruby{憧憬}{}れ\ruby{集}{}いぬ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         いよよ\ruby{増}{}す\ruby{静寂}{}のなかに\\
         \ruby{永劫}{}の\ruby{影宿}{}す\ruby{原始}{}の\ruby{深森}{}よ\\
@@ -68,7 +71,7 @@
         \ruby{萠}{}え\ruby{出}{}ん\ruby{若}{}き\ruby{情熱}{}は
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         かりそめの\ruby{宿}{}にはあれど\\
         \ruby{忘}{}れ\ruby{得}{}じ\ruby{若}{}き\ruby{日}{}の\ruby{遍歴}{}\\
@@ -78,7 +81,7 @@
         \ruby{篝火}{}は\ruby{赤}{}く\ruby{燃}{}えたり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{輝}{}ける\ruby{北国}{}のたくみよ\\
         されど\ruby{優}{}りて\ruby{美}{}しき\ruby{自治}{}の\ruby{伝統}{}よ\\
@@ -88,7 +91,7 @@
         \ruby{恵迪}{}の\ruby{寮故郷}{}の\ruby{上}{}に
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % \ruby{結}{}.
         されど\ruby{視}{}よ\ruby{我等}{}が\ruby{周囲}{}を\\
         \ruby{邪悪}{}なる\ruby{権力}{}は\ruby{四方}{}に\ruby{荒}{}び\\
@@ -99,7 +102,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

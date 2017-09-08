@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{清}{}き\ruby{郷石狩}{}の\ruby{曠野}{}に\\
         うち\ruby{立}{}てし\ruby{先人}{}が\ruby{跡}{}\\
@@ -48,7 +51,7 @@
         \ruby{傅統}{}の\ruby{楡鐘高}{}く\ruby{鳴}{}るなり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{黒}{}き\ruby{雲世}{}に\ruby{狂}{}へども\\
         \ruby{守}{}り\ruby{來}{}し\ruby{正義}{}の\ruby{精神}{}\\
@@ -60,7 +63,7 @@
         \ruby{雄叫}{}びは\ruby{高}{}く\ruby{湧}{}くなり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{天地}{}に\ruby{暴風雨吠}{}ゆるも\\
         \ruby{東洋}{}に\ruby{夜}{}は\ruby{黎明}{}んとす\\
@@ -72,7 +75,7 @@
         \ruby{生}{}ける\ruby{證}{}に\ruby{胸}{}は\ruby{湧}{}くなり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{悠久}{}の\ruby{時}{}の\ruby{移}{}ろひ\\
         \ruby{青春}{}のこの\ruby{瞬間}{}を\\
@@ -85,7 +88,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

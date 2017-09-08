@@ -27,17 +27,20 @@
 % (1,5 繰り返しなし)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{六華}{}ぞ\ruby{窓}{}に\ruby{刻}{}まれる\\
         \ruby{灯灯}{}ともされて\\
@@ -48,7 +51,7 @@
         \ruby{暖}{}かき\ruby{片隅求}{}むる\ruby{若人等}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{時効}{}なき\ruby{戦争裂}{}かれたる\\
         \ruby{一会}{}の\ruby{愛}{}の\ruby{光芒}{}と\\
@@ -59,7 +62,7 @@
         \ruby{音}{}もなく
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{白}{}き\ruby{岩肌}{}かいとなり\\
         \ruby{登}{}りて\ruby{伝}{}う\ruby{水}{}の\ruby{城}{}\\
@@ -69,7 +72,7 @@
         たどりこし\ruby{我}{}らが\ruby{魂}{}まで\ruby{飛沫}{}せよ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{別}{}るる\ruby{道}{}を\ruby{限}{}りとて\\
         \ruby{露}{}けき\ruby{草}{}にさし\ruby{入}{}るも\\
@@ -79,7 +82,7 @@
         \ruby{肝胆相照}{}らしき\ruby{月影燦然}{}と
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{残照長}{}く\ruby{尾}{}を\ruby{引}{}けば\\
         \ruby{安}{}らぎ\ruby{満}{}ちて\ruby{夜}{}の\ruby{声}{}\\
@@ -90,7 +93,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

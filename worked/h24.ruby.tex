@@ -27,14 +27,18 @@
 % (1,2 了なし繰り返しあり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
-\begin{itemize}
-    \item[（※）]
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin}
+
+    \item[（※）]~\\
     \ruby{快速}{かい|そく}エアポート\ruby{僕}{ぼく}を\ruby{乗}{の}せ
     \ruby{汽笛}{き|てき}を\ruby{鳴}{な}らして\ruby{駆}{か}け\ruby{抜}{ぬ}ける\\
     \ruby{旅行者}{りょ|こう|しゃ}\ruby{達}{たち}は\ruby{両腕}{りょう|うで}に
@@ -43,14 +47,12 @@
     カンバの\ruby{林}{はやし}を\ruby{抜}{ぬ}ければ\\
     \ruby{僕}{ぼく}はもう\ruby{独}{ひと}りぼっち
     さよなら youthful days
-\end{itemize}
 
-\begin{enumerate} % 番号の箇条書き ここから
+    \vspace{\linespace}
     \begin{minipage}[c]{\blocksize}
-    
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{思}{おも}い\ruby{浮}{う}かぶ\ruby{四年前}{よ|ねん|まえ}の
         \ruby{春}{はる}のことその\ruby{時}{とき}も\\
@@ -67,7 +69,7 @@
     \begin{minipage}[c]{\blocksize}
 
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{思}{おも}い\ruby{掛}{か}けず\ruby{頬}{ほほ}を\ruby{伝}{つた}う
         \ruby{一筋}{ひと|すじ}のその\ruby{涙}{なみだ}\\
@@ -83,7 +85,6 @@
 
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{楡枝梢頭}{}の\ruby{秋}{}の\ruby{風}{}\\
         \ruby{聞}{}け\ruby{歓楽}{}の\ruby{響}{}あり\\
@@ -46,7 +49,7 @@
         フレフレフレ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{至剛}{}の\ruby{備何}{}かせん\\
         \ruby{吾}{}に\ruby{練磨}{}の\ruby{腕}{}あり\\
@@ -60,7 +63,7 @@
         ラーラーラー
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{手稲山}{}の\ruby{雲}{}さりて\\
         \ruby{斜陽紅葉}{}に\ruby{映}{}ゆるとき\\
@@ -71,12 +74,11 @@
         
         
         \vspace{\linespace}
-        \item
+        \item~\\
         （\ruby{大正四年十月十七日付小樽新報}{}より）
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

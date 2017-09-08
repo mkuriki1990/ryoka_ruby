@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         ふぶきの\ruby{尾根}{}も \ruby{風止}{}みて\\
         \ruby{春}{}の\ruby{日}{}ざしの おとずれに\\
@@ -48,7 +51,7 @@
         ざらめの\ruby{尾根}{}を \ruby{飛}{}ばそうよ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{沢}{}を\ruby{登}{}りて いま\ruby{五日}{}\\
         ワラジも\ruby{足}{}に \ruby{親}{}しみぬ\\
@@ -60,7 +63,7 @@
         カールの\ruby{中}{}に \ruby{眠}{}ろうよ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{山}{}は\ruby{紅葉}{}に \ruby{彩}{}られ\\
         \ruby{頂高}{}く \ruby{空澄}{}みぬ\\
@@ -72,7 +75,7 @@
         \ruby{沢}{}のたき\ruby{火}{}に \ruby{語}{}ろうよ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{吹雪}{}も\ruby{止}{}んだ \ruby{朝}{}まだき\\
         \ruby{凍}{}ったテントを \ruby{起}{}き\ruby{出}{}でて\\
@@ -85,7 +88,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

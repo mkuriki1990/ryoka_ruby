@@ -27,17 +27,20 @@
 % (序,1,結 繰り返しなし)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % \ruby{序}{}.
         \ruby{厳}{}しかる\ruby{道}{}に\ruby{仕}{}へて\\
         \ruby{限}{}ある\ruby{玉緒惜}{}しむ\\
@@ -47,7 +50,7 @@
         \ruby{旅}{}の\ruby{朝早}{}くは\ruby{明}{}けぬ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{時潮}{}の\ruby{波}{}の\ruby{寄}{}する\ruby{間}{}を\\
         \ruby{久遠}{}の\ruby{岸}{}に\ruby{佇}{}みて\\
@@ -58,7 +61,7 @@
         \ruby{秘誦}{}の\ruby{啓示語}{}るなり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{孤窓}{}に\ruby{流}{}る\ruby{星屑}{}に\\
         \ruby{無辺}{}の\ruby{調律訪}{}へば\\
@@ -69,7 +72,7 @@
         \ruby{溶}{}け\ruby{行}{}く\ruby{方}{}に\ruby{馳}{}するかな
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{朽葉}{}ゆらぎて\ruby{湧}{}き\ruby{出}{}づる\\
         \ruby{楡}{}の\ruby{林}{}の\ruby{真清水}{}に\\
@@ -80,7 +83,7 @@
         \ruby{淡}{}れし\ruby{影}{}の\ruby{寂寥}{}よ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{宿命}{}の\ruby{道}{}を\ruby{行}{}く\ruby{身}{}にも\\
         \ruby{友}{}を\ruby{誇}{}らん\ruby{花筵}{}\\
@@ -91,7 +94,7 @@
         \ruby{胸}{}の\ruby{小琴}{}を\ruby{掻}{}き\ruby{鳴}{}らす
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{北斗頭上}{}に\ruby{影冴}{}えて\\
         \ruby{神秘}{}の\ruby{息}{}に\ruby{吹}{}かれつつ\\
@@ -102,7 +105,7 @@
         \ruby{汲}{}まん\ruby{今宵}{}の\ruby{記念祭}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % \ruby{結}{}.
         \ruby{近}{}きかな\ruby{楡陵}{}を\ruby{去}{}る\ruby{日}{}は\\
         \ruby{還}{}り\ruby{来}{}ぬ\ruby{足跡愛}{}しみて\\
@@ -114,7 +117,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

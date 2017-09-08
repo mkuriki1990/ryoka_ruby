@@ -27,17 +27,20 @@
 % (1,6 了なし)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{郭公}{}の\ruby{声}{}に\ruby{迷夢}{}の\ruby{夜}{}は\ruby{明}{}けて\\
         \ruby{紫紺}{}の\ruby{雲}{}の\ruby{色}{}も\ruby{褪}{}めゆき\\
@@ -48,7 +51,7 @@
         \ruby{朝}{}の\ruby{神秘}{}よ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{濃緑}{}に\ruby{原始}{}の\ruby{森}{}の\ruby{茂}{}る\ruby{候}{}\\
         \ruby{君影草}{}の\ruby{花}{}も\ruby{散}{}り\ruby{果}{}て\\
@@ -58,7 +61,7 @@
         \ruby{仰臥}{}せる\ruby{牧童}{}の\ruby{上}{}に\ruby{雲}{}は\ruby{動}{}かず
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{俊厳}{}の\ruby{秋気何時}{}しか\ruby{野}{}に\ruby{充}{}ちて\\
         \ruby{可憐}{}し\ruby{虫}{}の\ruby{音}{}ものを\ruby{思}{}はす\\
@@ -68,7 +71,7 @@
         \ruby{蕭々夕風}{}いとど\ruby{身}{}には\ruby{悩}{}し
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{銀月}{}は\ruby{今雪原}{}の\ruby{上}{}に\ruby{照}{}り\\
         エルムの\ruby{梢淡青}{}く\ruby{映}{}りて\\
@@ -78,7 +81,7 @@
         \ruby{一条}{}の\ruby{橇路}{}に\ruby{残}{}る\ruby{鈴}{}に\ruby{震}{}へり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{丈}{}なる\ruby{草踏}{}み\ruby{分}{}けて\ruby{蝦夷}{}ヶ\ruby{野}{}に\\
         \ruby{迪}{}を\ruby{恵}{}ねし\ruby{人}{}の\ruby{姿}{}よ\\
@@ -88,7 +91,7 @@
         \ruby{夕陽}{}は\ruby{手稲}{}の\ruby{背淡紅}{}く\ruby{映}{}せり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{白樺}{}よポプラ\ruby{並木}{}よアカシヤよ\\
         \ruby{春秋三度廻}{}り\ruby{去}{}りなば\\
@@ -100,7 +103,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

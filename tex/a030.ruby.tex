@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{天下}{}の\ruby{粋}{}を\ruby{鍾}{}めたる\\
         \ruby{我}{}が\ruby{水産}{}の\ruby{健男児}{}\\
@@ -44,7 +47,7 @@
         \ruby{歌}{}へ\ruby{撰手}{}が\ruby{其}{}の\ruby{風姿}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{春}{}、\ruby{南洋}{}の\ruby{曙}{}や\\
         \ruby{紅霞渺々立}{}ち\ruby{罩}{}めて\\
@@ -52,7 +55,7 @@
         \ruby{健児}{}の\ruby{力}{}、\ruby{波}{}を\ruby{蹴}{}る
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{秋}{}、\ruby{北海}{}の\ruby{夕潮}{}や\\
         \ruby{銀星光}{}り\ruby{幽}{}かにて\\
@@ -60,7 +63,7 @@
         \ruby{健児}{}の\ruby{勇氣鯨斬}{}る
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{白浪激}{}す\ruby{巌}{}の\ruby{上}{}\\
         \ruby{健児}{}が\ruby{叫}{}ぶ\ruby{凱歌}{}は\\
@@ -68,7 +71,7 @@
         \ruby{遠}{}き\ruby{紫雲}{}に\ruby{響}{}く\ruby{哉}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{正義}{}の\ruby{血潮火}{}と\ruby{燃}{}ゆる\\
         \ruby{我}{}が\ruby{水産}{}の\ruby{健男児}{}\\
@@ -76,12 +79,11 @@
         \ruby{歌}{}へ\ruby{撰手}{}が\ruby{其}{}の\ruby{勳巧}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         （「\ruby{勇敢}{}なる\ruby{水兵}{}」の\ruby{譜}{}）
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

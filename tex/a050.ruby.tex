@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         1．\\
         あゝ\ruby{石狩}{}の\ruby{平原}{}の\\
         \ruby{郭公來}{}り\ruby{啼}{}く\ruby{楡}{}の\ruby{樹}{}に\\
@@ -44,7 +47,7 @@
         わが\ruby{学}{}び\ruby{舎}{}ぞ\ruby{聳}{}え\ruby{立}{}つ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{新}{}らしき\ruby{世}{}の\ruby{朝}{}ぼらけ\\
         \ruby{學}{}と\ruby{技}{}とを\ruby{積}{}みなして\\
@@ -52,7 +55,7 @@
         われ\ruby{等}{}が\ruby{重}{}き\ruby{使命}{}なれ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{春萠}{}え\ruby{出}{}づる\ruby{若草}{}に\\
         \ruby{伸}{}び\ruby{行}{}く\ruby{生命}{}を\ruby{思}{}い\ruby{見}{}つ\\
@@ -60,7 +63,7 @@
         \ruby{遠}{}き\ruby{天地}{}を\ruby{想}{}ふかな
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{見}{}よや\ruby{無限}{}の\ruby{大自然}{}\\
         \ruby{富源}{}あまねく\ruby{滿}{}つるとも\\
@@ -68,7 +71,7 @@
         \ruby{工匠}{}の\ruby{技}{}を\ruby{用}{}ゐずば
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{日毎}{}に\ruby{進}{}む\ruby{文明}{}の\\
         \ruby{先駆者}{}たるはそも\ruby{誰}{}ぞ\\
@@ -76,7 +79,7 @@
         わが\ruby{技術者}{}にあらざるや
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{皇国二千六百年}{}\\
         \ruby{東亜}{}の\ruby{空}{}は\ruby{今明}{}けて\\
@@ -84,7 +87,7 @@
         \ruby{若}{}き\ruby{戦士}{}の\ruby{血}{}は\ruby{躍}{}る
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 7.
         あゝ\ruby{北海}{}の\ruby{霜雪}{}に\\
         \ruby{鍛}{}へられたる\ruby{魂}{}もちて\\
@@ -92,13 +95,12 @@
         \ruby{太}{}き\ruby{柱}{}とならむかな
         
         \vspace{\linespace}
-        \item
+        \item~\\
         \ruby{付記}{}\\
         \ruby{此}{}の\ruby{歌}{}は\ruby{北工会募集}{}に\ruby{応募}{}されたものである。
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

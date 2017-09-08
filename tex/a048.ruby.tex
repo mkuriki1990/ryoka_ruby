@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{楡}{}の\ruby{梢}{}に\ruby{影}{}さして\\
         \ruby{此処北溟}{}の\ruby{天地}{}にも\\
@@ -45,7 +48,7 @@
         \ruby{爛漫香}{}る\ruby{花}{}の\ruby{色}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{谷間}{}に\ruby{香}{}る\ruby{鈴蘭}{}の\\
         \ruby{清}{}き\ruby{姿}{}を\ruby{求}{}めつつ\\
@@ -54,7 +57,7 @@
         \ruby{游子}{}に\ruby{離郷}{}の\ruby{涙}{}あり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{流}{}れてやまぬ\ruby{石狩}{}の\\
         \ruby{自然}{}の\ruby{黙示眺}{}む\ruby{時}{}\\
@@ -63,7 +66,7 @@
         \ruby{吾等}{}の\ruby{胸}{}に\ruby{燃}{}ゆるかな
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         ここ\ruby{四歳}{}の\ruby{春秋}{}や\\
         \ruby{牧場}{}の\ruby{園}{}の\ruby{延齢草}{}\\
@@ -73,7 +76,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

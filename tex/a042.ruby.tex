@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         \ruby{戦雲低}{}し\\
         \ruby{北張}{}の\ruby{牙城}{}\\
         \ruby{烽火揚}{}がれり\\
@@ -46,7 +49,7 @@
         \ruby{白旌揺}{}ぐ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{乾坤}{}の\ruby{闘志}{}を\ruby{我培}{}へり\\
         \ruby{中原定}{}む\\
@@ -57,7 +60,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

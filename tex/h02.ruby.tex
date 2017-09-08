@@ -27,17 +27,20 @@
 % (1,2,3,4 了なし繰り返しあり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{足引}{}きの\ruby{手稲}{}の\ruby{峰}{}よ\\
         \ruby{遙}{}けくも\ruby{偉大}{}なるかな\\
@@ -47,7 +50,7 @@
         \ruby{稜線}{}の\ruby{美}{}しさ\ruby{永遠}{}に
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{人}{}の\ruby{世}{}は\ruby{移}{}ろいやすく\\
         \ruby{今日}{}の\ruby{夢明日}{}は\ruby{空}{}しき\\
@@ -57,7 +60,7 @@
         いつの\ruby{日}{}か\ruby{成}{}るを\ruby{夢見}{}む
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{並木路}{}は\ruby{黄金}{}に\ruby{映}{}えて\\
         \ruby{秋}{}の\ruby{日}{}の\ruby{愁}{}いを\ruby{誘}{}う\\
@@ -67,7 +70,7 @@
         いざ\ruby{守}{}らむ\ruby{真理}{}の\ruby{灯}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{瞬}{}くは\ruby{北斗}{}の\ruby{星}{}か\\
         \ruby{我進}{}む\ruby{道}{}を\ruby{照}{}らさむ\\
@@ -78,7 +81,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

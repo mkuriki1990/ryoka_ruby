@@ -1,6 +1,8 @@
 \documentclass[10pt,b5j]{tarticle} % B6 縦書き
 \input{template_B6.tex} % B6 用テンプレート読み込み
 
+\renewcommand{\baselinestretch}{0.85} % 行間の倍率
+
 \begin{document}
 % begin header
 %%%%% タイトルと作者 ここから %%%%%
@@ -27,17 +29,20 @@
 % (1 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.0em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.3em} % 行間の設定
 \newcommand{\blocksize}{0.33\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin}
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{都}{みやこ}ぞ\ruby[g]{弥生}{やよい}の\ruby{雲}{くも}\ruby{紫}{むらさき}に\\
         \ruby{花}{はな}の\ruby{香}{か}\ruby{漂}{ただよ}ふ\ruby[g]{宴遊}{うたげ}の\ruby{筵}{むしろ}\\
@@ -49,7 +54,7 @@
         \ruby{人}{ひと}の\ruby{世}{よ}の\ruby{清}{きよ}き\ruby{国}{くに}ぞとあこがれぬ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{豊}{ゆた}かに\ruby{稔}{みの}れる\ruby{石狩}{いし|かり}の\ruby{野}{の}に\\
         \ruby{雁}{かりがね}\ruby{遙々}{はる|ばる}\ruby{沈}{しず}みてゆけば\\
@@ -64,7 +69,7 @@
     \begin{minipage}[c]{\blocksize}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{寒月}{かん|げつ}\ruby{懸}{かか}れる\ruby{針葉樹林}{しん|よう|じゅ|りん}\\
         \ruby{橇}{そり}の\ruby{音}{ね}\ruby{凍}{こお}りて\ruby{物}{もの}\ruby{皆}{みな}\ruby{寒}{さむ}く\\
@@ -76,7 +81,7 @@
         \ruby{樹氷}{じゅ|ひょう}\ruby{咲}{さ}く\ruby{壮麗}{そう|れい}の\ruby{地}{ち}をここに\ruby{見}{み}よ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{牧場}{まき|ば}の\ruby{若草}{わか|くさ}\ruby[g]{陽炎}{かげろふ}\ruby{燃}{も}えて\\
         \ruby{森}{もり}には\ruby{桂}{かつら}の\ruby{新緑}{しん|りょく}\ruby{萠}{きざ}し\\
@@ -91,7 +96,7 @@
     \begin{minipage}[c]{\blocksize}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{朝雲}{あさ|ぐも}\ruby{流}{なが}れて\ruby{金色}{こん|じき}に\ruby{照}{て}り\\
         \ruby{平原}{へい|げん}\ruby{果}{は}てなき\ruby{東}{ひむがし}の\ruby{際}{きわ}\\
@@ -104,7 +109,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

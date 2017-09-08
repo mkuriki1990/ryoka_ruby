@@ -27,17 +27,20 @@
 % (1,2,3 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{大地}{}はなごやかにうるほひて\\
         \ruby{丘陵}{}の\ruby{傾斜}{}の\ruby{若草}{}や\\
@@ -47,7 +50,7 @@
         \ruby{嗚呼青春}{}の\ruby{讃歌}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{色紫}{}の\ruby{彩絹}{}に\\
         \ruby{染}{}めて\ruby{溶}{}けたる\ruby{朝霧}{}の\\
@@ -57,7 +60,7 @@
         \ruby{入江}{}の\ruby{波}{}に\ruby{夏陽}{}は\ruby{映}{}ゆる
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{連嶺紅}{}に\ruby{黄昏}{}れて\\
         \ruby{夕靄流}{}る\ruby{水沼}{}の\\
@@ -67,7 +70,7 @@
         \ruby{高遠}{}き\ruby{感激}{}に\ruby{逍遙}{}ふ\ruby{哉}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{神秘}{}の\ruby{森林}{}に\ruby{群星}{}さえて\\
         \ruby{雪}{}の\ruby{曠野遠}{}く\ruby{静謐}{}なり\\
@@ -77,7 +80,7 @@
         \ruby{若}{}き\ruby{人等}{}の\ruby{哀歓}{}よ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{陽炎}{}ゆらぐ\ruby{春}{}の\ruby{日}{}に\\
         \ruby{落葉}{}しぐる\ruby{秋}{}の\ruby{夜}{}に\\
@@ -88,7 +91,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

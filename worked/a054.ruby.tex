@@ -27,12 +27,14 @@
 % (1,2,3 了あり)
 % end header
 
-% begin body
-\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+% begin length
+\vspace{1.0em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.33\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 
 \ruby{富貴名門}{ふう|き|めい|もん}の\ruby{女性}{じょ|せい}に\ruby{恋}{こい}するを
 \ruby{純情}{じゅん|じょう}の\ruby{恋}{こい}と\ruby{誰}{だれ}が\ruby{言}{い}うぞ。\\
@@ -51,10 +53,11 @@
 \ruby{吾}{われ}らが\ruby{水産放浪歌}{すい|さん|ほう|ろう|か}\\
 
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin}
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{心猛}{こころ|たけ}くも\ruby{鬼神}{おに|がみ}ならず\\
         \ruby{男}{おとこ}と\ruby{生}{う}れて\ruby{情}{なさけ}はあれど\\
@@ -65,7 +68,7 @@
 	\begin{minipage}[c]{\blocksize}
 
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{朝日夕日}{あさ|ひ|ゆう|ひ}をデッキに\ruby{浴}{あ}びて\\
         \ruby{続}{つづ}く\ruby{海原一筋道}{うな|ばら|ひと|すじ|みち}を\\
@@ -76,7 +79,7 @@
 	\begin{minipage}[c]{\blocksize}
 
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{波}{なみ}の\ruby[g]{彼方}{かなた}の\ruby{南氷洋}{なん|ぴょう|よう}は\\
         \ruby{男}{おとこ}\ruby{多恨}{た|こん}の\ruby{身}{み}の\ruby{捨}{す}てどころ\\
@@ -90,7 +93,6 @@
         （仲田三孝作詞、川上義彦作曲）の\\
         換え歌と推定される。
 \end{flushright}
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

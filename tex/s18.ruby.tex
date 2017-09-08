@@ -27,17 +27,20 @@
 % (1,2,6 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{天地}{}の\ruby{奥}{}に\ruby{征}{}く\ruby{吾}{}や\\
         \ruby{弧杖無限}{}に\ruby{旅立}{}ちて\\
@@ -47,7 +50,7 @@
         \ruby{噫魂}{}のふるさとか
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{四大}{}も\ruby{夢}{}む\ruby{幌}{}のさと\\
         \ruby{歌}{}の\ruby{心}{}を\ruby{温}{}ぬれば\\
@@ -57,7 +60,7 @@
         \ruby{月皎々}{}の\ruby{滄海}{}をゆく
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{大空風}{}に\ruby{咽}{}ぶよひ\\
         \ruby{暮鐘}{}は\ruby{低}{}く\ruby{漂}{}ひて\\
@@ -67,7 +70,7 @@
         \ruby{久遠}{}の\ruby{星}{}を\ruby{仰}{}がずや
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{高}{}き\ruby{理想}{}は\ruby{人}{}の\ruby{世}{}を\\
         \ruby{人}{}の\ruby{世}{}と\ruby{生}{}く\ruby{佗}{}しさに\\
@@ -77,7 +80,7 @@
         \ruby{心虚}{}しき\ruby{歓喜}{}よ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{北溟春}{}は\ruby{浅}{}けれど\\
         \ruby{森}{}かげ\ruby{清}{}く\ruby{黄花咲}{}き\\
@@ -87,7 +90,7 @@
         \ruby{時乾坤}{}に\ruby{春}{}よ\ruby{立}{}つ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         いざ\ruby{浩歌}{}はなん\ruby{天壤}{}の\\
         \ruby{栄}{}ゆる\ruby{時}{}ぞ\ruby{益荒男}{}の\\
@@ -98,7 +101,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

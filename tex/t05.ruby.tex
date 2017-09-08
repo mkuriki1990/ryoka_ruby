@@ -27,17 +27,20 @@
 % (1,2,3 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{穹蒼高}{}く\ruby{夜}{}は\ruby{深}{}く\\
         \ruby{沈黙}{}の\ruby{杜}{}に\ruby{聳}{}えたつ\\
@@ -47,7 +50,7 @@
         われにかも\ruby{似}{}て\ruby{崇}{}くあれ」
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{荒}{}ぶ\ruby{吹雪}{}のもだすとき\\
         \ruby{六片}{}の\ruby{花咲}{}くところ\\
@@ -57,7 +60,7 @@
         \ruby{身}{}を\ruby{練}{}り\ruby{魂}{}を\ruby{磨}{}かずや」
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{谷間}{}の\ruby{百合}{}の\ruby{香}{}のゆらぎ\\
         \ruby{楡}{}の\ruby{若葉}{}に\ruby{陽}{}はこぼる\\
@@ -67,7 +70,7 @@
         \ruby{自由}{}の\ruby{郷土}{}ぞ\ruby{幸多}{}き」
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{百鳥歌}{}ひ\ruby{花}{}は\ruby{笑}{}む\\
         \ruby{美}{}しき\ruby{国}{}の\ruby{自治}{}の\ruby{家}{}に\\
@@ -77,7 +80,7 @@
         \ruby{住家}{}よ\ruby{永}{}に\ruby{栄}{}あれ」
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{崇}{}きのぞみを\ruby{星}{}に\ruby{懸}{}け\\
         \ruby{鐘}{}に\ruby{自由}{}を\ruby{学}{}びつつ\\
@@ -89,7 +92,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

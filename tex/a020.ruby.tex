@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{見}{}よや\ruby{若人}{}　\ruby{見}{}はるかす\\
         \ruby{北山脈}{}の　\ruby{頂}{}に\\
@@ -44,7 +47,7 @@
         \ruby{冬厳}{}に　\ruby{訪}{}れぬ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{冬}{}こそ\ruby{男性}{}　\ruby{雄々}{}しかる\\
         \ruby{自然}{}の\ruby{息吹}{}　\ruby{荒}{}くして\\
@@ -52,7 +55,7 @@
         \ruby{吾呼}{}ぶ\ruby{声}{}の　なつかしき
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{切}{}なく\ruby{昏}{}き　\ruby{人}{}の\ruby{世}{}の\\
         \ruby{夢}{}む\ruby{杯}{}　\ruby{打}{}ち\ruby{砕}{}き\\
@@ -60,7 +63,7 @@
         スキーを\ruby{炬火}{}と　\ruby{燃}{}えしめん
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{繚爛花}{}の　\ruby{粧}{}は\\
         \ruby{凍土深}{}く　あせたれど\\
@@ -68,7 +71,7 @@
         \ruby{頬紅}{}に　\ruby{誇}{}りあり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{窮}{}まる\ruby{林}{}　\ruby{幻想}{}に\\
         \ruby{打}{}ち\ruby{黙}{}しつつ　\ruby{尋}{}め\ruby{行}{}けば\\
@@ -76,7 +79,7 @@
         \ruby{肩}{}に\ruby{降}{}り\ruby{散}{}る　\ruby{雪崩}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         その\ruby{頂}{}の　\ruby{樹氷}{}かみ\\
         \ruby{今立}{}ち\ruby{返}{}る　\ruby{麓}{}へと\\
@@ -84,7 +87,7 @@
         \ruby{聖}{}き\ruby{思}{}ひに　\ruby{奢}{}るなり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 7.
         シルバーシャンツェに　\ruby{陽}{}はくれて\\
         \ruby{谺}{}ひびける　\ruby{谿間}{}に\\
@@ -92,7 +95,7 @@
         \ruby{顧}{}みる\ruby{身}{}の　\ruby{歓喜}{}よ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 8.
         \ruby{窓}{}に\ruby{私語}{}めく　\ruby{粉雪}{}に\\
         \ruby{雪煙湧}{}く　\ruby{滑走}{}の\\
@@ -101,7 +104,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

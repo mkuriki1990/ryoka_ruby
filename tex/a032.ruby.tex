@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         \ruby{第一}{}の\ruby{歌}{}\\
         % 1.
         ここ\ruby{大正四}{}つの\ruby{春}{}\\
@@ -45,7 +48,7 @@
         \ruby{貔貅交々振}{}ひ\ruby{立}{}つ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{修羅}{}の\ruby{巷}{}のただ\ruby{中}{}に\\
         \ruby{桃色}{}の\ruby{雄旗飜}{}へる\\
@@ -53,7 +56,7 @@
         いざ\ruby{中原}{}の\ruby{此一挙}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{月}{}の\ruby{桂}{}の\ruby{冠}{}りは\\
         \ruby{期}{}して\ruby{我等}{}の\ruby{胸}{}にあり\\
@@ -61,7 +64,7 @@
         かの\ruby{群衆}{}を\ruby{凌駕}{}せん
         
         \vspace{\linespace}
-        \item
+        \item~\\
         \ruby{第二}{}の\ruby{歌}{}\\
         % 1.
         \ruby{北海}{}の\ruby{空}{}ねむりて\\
@@ -72,7 +75,7 @@
         ここに\ruby{乱}{}るるああ\ruby{戦争}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         そら\ruby{舞}{}ひのぼる\ruby{蛟竜}{}の\\
         \ruby{山}{}を\ruby{震}{}はせ\ruby{海}{}を\ruby{干}{}ん\\
@@ -83,7 +86,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

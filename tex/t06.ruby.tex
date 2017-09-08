@@ -27,17 +27,20 @@
 % (1,6 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{魔神}{}の\ruby{呪}{}アルペンの\\
         \ruby{白雪永久}{}に\ruby{清}{}からず\\
@@ -47,7 +50,7 @@
         \ruby{正義}{}の\ruby{光影}{}くらし
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         されど\ruby{儼然東洋}{}に\\
         その\ruby{義}{}と\ruby{侠}{}を\ruby{胸}{}にして\\
@@ -57,7 +60,7 @@
         \ruby{映華}{}ある\ruby{歴史十二年}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{嗚呼北海}{}の\ruby{荒吹雪}{}\\
         \ruby{白箭膚}{}を\ruby{擘}{}くも\\
@@ -67,7 +70,7 @@
         \ruby{紅燃}{}ゆる\ruby{悶}{}えあり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{残陽西}{}に\ruby{茜}{}して\\
         \ruby{今日}{}も\ruby{暮}{}れ\ruby{行}{}く\ruby{手稲山}{}\\
@@ -77,7 +80,7 @@
         \ruby{雄図千里}{}ぞ\ruby{駆}{}りゆく
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{平和}{}の\ruby{流}{}れ\ruby{豊平}{}の\\
         \ruby{狭霧罩}{}めたる\ruby{朝}{}ぼらけ\\
@@ -87,7 +90,7 @@
         \ruby{唄}{}ふ「\ruby{自由}{}」の\ruby{二字}{}の\ruby{曲}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{今宵楡影}{}に\ruby{団欒}{}して\\
         \ruby{月影}{}に\ruby{酌}{}む\ruby{自治}{}の\ruby{宴}{}\\
@@ -98,7 +101,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

@@ -30,17 +30,20 @@
 % (1 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.33\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin}
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby[g]{永遠}{とこしへ}の\ruby{幸}{さち}
         \ruby{朽}{く}ちざる\ruby{誉}{ほまれ}\\
@@ -53,7 +56,7 @@
     \begin{minipage}[c]{\blocksize}
 
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{北斗}{ほく|と}をつかん
         たかき\ruby[g]{希望}{のぞみ}は\\
@@ -67,7 +70,7 @@
     \begin{minipage}[c]{\blocksize}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{山}{やま}は\ruby{裂}{さ}くとも
         \ruby{海}{うみ}はあすとも\\
@@ -81,7 +84,7 @@
     \begin{minipage}[c]{0.5\hsize}
 
         \vspace{\linespace}
-        （※） 
+        \item[（※） ]~\\
         イザイザイザ\\
         うちつれて
         \ruby{進}{すす}むは\ruby{今}{いま}ぞ\\
@@ -100,7 +103,6 @@
 
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

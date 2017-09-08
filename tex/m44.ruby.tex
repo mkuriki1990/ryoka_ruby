@@ -27,17 +27,20 @@
 % (1,2,3,4 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{藻岩}{}の\ruby{緑春闌}{}けて\\
         \ruby{万朶一朶}{}の\ruby{朝霞}{}\\
@@ -47,7 +50,7 @@
         \ruby{希望}{}の\ruby{前途光}{}あり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{青葉波}{}よるアカシヤの\\
         \ruby{薫}{}る\ruby{木影}{}に\ruby{立}{}ちよれば\\
@@ -57,7 +60,7 @@
         \ruby{牛}{}の\ruby{背}{}に\ruby{散}{}る\ruby{蔦紅葉}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         あはれ「\ruby{美}{}の\ruby{国}{}」\ruby{石狩}{}の\\
         \ruby{自然}{}を\ruby{己}{}が\ruby{揺籃}{}に\\
@@ -67,7 +70,7 @@
         \ruby{翼整装}{}ふ\ruby{思}{}あり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{斗南}{}の\ruby{翼拡}{}げては\\
         \ruby{天地広}{}しと\ruby{誰}{}か\ruby{云}{}ふ\\
@@ -77,7 +80,7 @@
         \ruby{岸辺}{}の\ruby{森}{}に\ruby{斧}{}を\ruby{振}{}れ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{弦月落}{}ちて\ruby{白楊}{}の\\
         \ruby{樹林}{}の\ruby{暗}{}の\ruby{深}{}き\ruby{時}{}\\
@@ -87,7 +90,7 @@
         \ruby{巨人}{}の\ruby{叫}{}び\ruby{茲}{}にあり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{浮華軽佻}{}の\ruby{風}{}あれて\\
         \ruby{驕奢}{}の\ruby{波}{}は\ruby{狂}{}ふとも\\
@@ -98,7 +101,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

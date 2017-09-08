@@ -26,17 +26,20 @@
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{流}{}るヽ\ruby{光途重}{}ね\ruby{來}{}て\\
         \ruby{星霜此處}{}に\ruby{四十年}{}\\
@@ -46,7 +49,7 @@
         \ruby{誰}{}か\ruby{血汐}{}の\ruby{湧}{}かざらむ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{咽}{}ぶ\ruby{悲憤}{}の\ruby{誓}{}より\\
         \ruby{早}{}や\ruby{七年}{}の\ruby{春}{}うつり\\
@@ -56,7 +59,7 @@
         \ruby{精力}{}に\ruby{満}{}ちし\ruby{凱歌}{}を
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{陽春}{}の\ruby{光}{}に\ruby{覆翼}{}まれ\\
         \ruby{嫩草萠}{}ゆる\ruby{北}{}の\ruby{郷}{}\\
@@ -66,7 +69,7 @@
         \ruby{高鳴}{}たてヽ\ruby{響}{}きゆく
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{豊平川}{}の\ruby{夏}{}の\ruby{夜}{}や\\
         \ruby{玉兎}{}の\ruby{踊}{}る\ruby{波}{}の\ruby{上}{}\\
@@ -76,7 +79,7 @@
         \ruby{古塔}{}に\ruby{響}{}く\ruby{時}{}の\ruby{音}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         こヽ\ruby{石狩}{}の\ruby{大沃野}{}\\
         \ruby{静}{}けき\ruby{秋}{}のめぐり\ruby{來}{}て\\
@@ -86,7 +89,7 @@
         \ruby{自然}{}の\ruby{愛}{}に\ruby{狎}{}るヽ\ruby{哉}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{萬里茫々雪}{}の\ruby{海}{}\\
         \ruby{白龍怒}{}り\ruby{風叫}{}ぶ\\
@@ -96,7 +99,7 @@
         おヽ\ruby{紅}{}の\ruby{朝日影}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 7.
         \ruby{北辰冴}{}ゆる\ruby{夕}{}まぐれ\\
         ボーイズ　ビイ　アンビシャスの\\
@@ -107,7 +110,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

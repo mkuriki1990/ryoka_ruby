@@ -1,6 +1,7 @@
 \documentclass[10pt,b5j]{tarticle} % B6 縦書き
 \input{template_B6.tex} % B6 用テンプレート読み込み
 
+\renewcommand{\baselinestretch}{0.85} % 行間の倍率
 \begin{document}
 % begin header
 %%%%% タイトルと作者 ここから %%%%%
@@ -27,17 +28,20 @@
 % (1,2,3,9,10 了なし繰り返しあり)
 % end header
 
-% begin body
-\vspace{0.5em} % タイトル, 作者と歌詞の間に隙間を設ける
-\newcommand{\linespace}{0.3em} % 行間の設定
+% begin length
+\vspace{0.2em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{-0.1em} % 行間の設定
 \newcommand{\blocksize}{0.33\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin}
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         もしも\ruby{海}{うみ}が\ruby{酒}{さけ}ならば\\
         お\ruby{前}{まえ}は\ruby{魚}{さかな}になるという\\
@@ -45,7 +49,7 @@
         \ruby{波}{なみ}が\ruby{来}{く}るたび\ruby{酒}{さけ}を\ruby{飲}{の}む
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         つまみはそうさ\ruby{俺}{おれ}の\ruby{脳}{のう}\\
         \ruby{酒}{さけ}にとろけた\ruby{脳}{のう}みそさ\\
@@ -53,7 +57,7 @@
         \ruby{空}{から}の\ruby{頭蓋}{ず|がい}に\ruby{酒}{さけ}を\ruby{注}{つ}ぐ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{明日}{あ|す}は\ruby{泥土}{でい|ど}に\ruby{墜}{お}ちるとも\\
         \ruby{今}{いま}は\ruby{昇}{のぼ}らんはしご\ruby{酒}{ざけ}\\
@@ -61,7 +65,7 @@
         その\ruby{身}{み}\ruby{月}{つき}にも\ruby{届}{とど}くべし
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{盃}{つき}もめぐりて\ruby{今}{いま}や\ruby{今}{いま}\\
         \ruby{魑魅魍魎}{ち|み|もう|りょう}が\ruby{顔}{かお}を\ruby{出}{だ}す\\
@@ -72,7 +76,7 @@
     \begin{minipage}[c]{\blocksize}
 
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{更}{ふ}け\ruby{行}{ゆ}く\ruby{夜}{よる}に\ruby{浮}{う}かぶ\ruby{月}{つき}\\
         \ruby{窓辺}{まど|べ}にうつる\ruby{影}{かげ}は\ruby{今}{いま}\\
@@ -80,7 +84,7 @@
         \ruby{月}{つき}は\ruby{黙}{だま}って\ruby{見}{み}るばかり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{中天}{ちゅう|てん}\ruby{高}{たか}く\ruby{日}{ひ}は\ruby{昇}{のぼ}り\\
         \ruby[g]{今日}{きょう}もマグロの\ruby{大漁旗}{たい|りょう|き}\\
@@ -88,7 +92,7 @@
         \ruby{兵}{つわもの}どもが\ruby{夢}{ゆめ}の\ruby{跡}{あと}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 7.
         \ruby{天}{てん}の\ruby{夢}{ゆめ}から\ruby{落}{お}っこちて\\
         \ruby[g]{今日}{きょう}は\ruby{地}{ち}を\ruby{這}{は}う\ruby[g]{宿酔}{ふつかよい}\\
@@ -96,7 +100,7 @@
         \ruby{空}{むな}しく\ruby{響}{ひび}くいつもの\ruby{問}{と}い
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 8.
         \ruby{積}{つ}んでは\ruby{崩}{くず}す\ruby{盃}{さかづき}は\\
         \ruby{賽}{さい}の\ruby[g]{河原}{かわら}の\ruby{石積}{いし|づ}みか\\
@@ -107,7 +111,7 @@
     \begin{minipage}[c]{\blocksize}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 9.
         とかく\ruby{憂}{うれい}の\ruby{多}{おお}い\ruby{世}{よ}を\\
         されば\ruby{払}{はら}えよ\ruby{玉帚}{たま|はたき}\\
@@ -115,7 +119,7 @@
         \ruby{自}{おの}ずと\ruby{心}{こころ}\ruby{開}{ひら}くべし
         
         \vspace{\linespace}
-        \item[十、]
+        \item[十]~\\
         % 10.
         たとえ\ruby{百年}{ひゃく|ねん}\ruby{生}{い}きたとて\\
         わずかに\ruby{三万}{さん|まん}\ruby{六千日}{ろく|せん|にち}\\
@@ -124,7 +128,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

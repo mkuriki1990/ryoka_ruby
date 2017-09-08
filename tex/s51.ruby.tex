@@ -27,17 +27,20 @@
 % (1,4,5 繰り返しなし)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{夜}{}は\ruby{巡}{}り\\
         \ruby{限}{}りなき\ruby{光}{}の\ruby{束}{}は\\
@@ -47,7 +50,7 @@
         もう\ruby{情熱}{}もなく\ruby{涙}{}ながる
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{何}{}を\ruby{求}{}め\\
         ほの\ruby{暗}{}き\ruby{大気}{}の\ruby{底}{}に\\
@@ -58,7 +61,7 @@
         \ruby{祈}{}りささぐ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{大}{}き\ruby{精神}{}\\
         \ruby{物思}{}う\ruby{我}{}らに\\
@@ -68,7 +71,7 @@
         \ruby{我}{}らが\ruby{命大}{}き\ruby{魂}{}へ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{女性}{}の\ruby{清}{}き\ruby{美}{}しさ\\
         \ruby{真摯}{}な\ruby{理性}{}の\ruby{輝}{}きにさそわれて\\
@@ -78,7 +81,7 @@
         この\ruby{暗}{}さに
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{深}{}き\ruby{森}{}のささやき\\
         \ruby{清冷}{}な\ruby{川}{}の\ruby{流}{}れに\ruby{聞}{}きいりて\\
@@ -89,7 +92,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

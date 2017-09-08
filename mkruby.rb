@@ -135,7 +135,7 @@ csvList.each{|data|
     # 曲番を除いて TeX トークン \item と \vspace に変換
     # lilycs.gsub!(/.+\.\\\\\\\n/, '') # 任意の文字にドットがつくものは曲番なので覗く
     lilycs.gsub!(/(.+\.)\\\\\\/, '% \1') # 任意の文字にドットがつくものは曲番なのでコメントアウトしておく
-    lilycs.gsub!(/^\\\\\\$/, "\n\\vspace{\\linespace}\n\\item") # \\ だけの行を '\vspace{\linespace}\n\item' に置き換え
+    lilycs.gsub!(/^(\\\\\\)$/){"\n\\vspace{\\linespace}\n\\item~#{$1}"} # \\ だけの行を '\vspace{\linespace}\n\item~\\' に置き換え
 
     # フッタがあれば処理する
     if footer.length != 0

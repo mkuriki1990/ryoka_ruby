@@ -27,17 +27,20 @@
 % (1,3 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{流転永世}{}の\ruby{旅衣}{}\\
         \ruby{四大}{}の\ruby{神秘尋}{}はんにも\\
@@ -47,7 +50,7 @@
         \ruby{孤影簫々}{}の\ruby{荒野}{}に\ruby{消}{}えぬ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{清}{}き\ruby{友情}{}を\ruby{先人}{}の\\
         \ruby{忍苦染}{}み\ruby{映}{}ゆ\ruby{楡}{}が\ruby{枝}{}に\\
@@ -57,7 +60,7 @@
         \ruby{塵世}{}の\ruby{濁流}{}ひた\ruby{超}{}えて
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{寮窓辺}{}に\ruby{泣}{}くや\ruby{人性}{}の\\
         \ruby{運命}{}の\ruby{羈絆固}{}ければ\\
@@ -67,7 +70,7 @@
         \ruby{白珠碗}{}に\ruby{掬}{}ばなむ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{秋闌}{}く\ruby{原始林}{}のうら\ruby{寂}{}びて\\
         \ruby{愛智}{}の\ruby{微光凄風}{}に\ruby{散}{}り\\
@@ -77,7 +80,7 @@
         \ruby{栄光}{}に\ruby{帆立}{}つ\ruby{吾寮}{}いま
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{生命}{}の\ruby{旅路厳粛}{}の\\
         \ruby{啓示}{}に\ruby{喘}{}ぐ\ruby{友垣}{}と\\
@@ -88,7 +91,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

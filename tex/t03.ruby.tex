@@ -27,17 +27,20 @@
 % (1,2,3,4 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{我}{}が\ruby{運命}{}こそ\ruby{青渦}{}わける\\
         \ruby{千}{}ひろの\ruby{海}{}の\ruby{真珠取}{}り\\
@@ -47,7 +50,7 @@
         \ruby{逆}{}まく\ruby{波}{}を\ruby{闡}{}きゆく
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{永遠}{}に\ruby{華}{}さく\ruby{水底}{}ふかく\\
         \ruby{神秘}{}の\ruby{巌}{}に\ruby{嫦娥}{}の\\
@@ -57,7 +60,7 @@
         \ruby{美珠}{}こそわれの\ruby{生命}{}なれ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{薫}{}る\ruby{樹陰}{}に\ruby{花仄}{}みえて\\
         \ruby{朧}{}おぼろの\ruby{春}{}の\ruby{宵}{}\\
@@ -67,7 +70,7 @@
         \ruby{君瑞祥}{}の\ruby{歳}{}なれや
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{彩雲低}{}く\ruby{恵}{}の\ruby{家}{}に\\
         \ruby{幸漂蕩}{}ひてゆく\ruby{水}{}や\\
@@ -78,7 +81,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

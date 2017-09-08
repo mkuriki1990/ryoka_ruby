@@ -27,17 +27,20 @@
 % (1,2,6 了あり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{時潮}{}の\ruby{流転淙々}{}と\\
         \ruby{四季乾坤}{}に\ruby{巡}{}り\ruby{立}{}つ\\
@@ -46,7 +49,7 @@
         \ruby{孤城}{}の\ruby{爽春}{}は\ruby{未}{}だ\ruby{浅}{}し
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{遠}{}く\ruby{流離}{}の\ruby{春}{}に\ruby{来}{}て\\
         \ruby{此}{}の\ruby{高楼}{}に\ruby{春愁}{}ひつつ\\
@@ -55,7 +58,7 @@
         \ruby{懐古}{}の\ruby{涙溢}{}るべし
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{真日澄}{}む\ruby{北}{}の\ruby{蒼穹}{}はるか\\
         \ruby{飛燕}{}ひとたび\ruby{音}{}に\ruby{鳴}{}けば\\
@@ -64,7 +67,7 @@
         \ruby{帰南}{}の\ruby{郷愁}{}しきりなり
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{夕陽西}{}に\ruby{落}{}ち\ruby{行}{}けば\\
         \ruby{白樺林朱}{}に\ruby{染}{}み\\
@@ -73,7 +76,7 @@
         \ruby{悲腸}{}の\ruby{声}{}に\ruby{似}{}たるかな
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{北斗地平}{}に\ruby{揺曳}{}ぐとき\\
         \ruby{天地}{}の\ruby{四大霜}{}と\ruby{凝}{}り\\
@@ -82,7 +85,7 @@
         \ruby{帰雁}{}の\ruby{孤影}{}よ\ruby{月}{}に\ruby{飛}{}ぶ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{明日別}{}れ\ruby{行}{}く\ruby{旅人}{}の\\
         \ruby{春}{}の\ruby{夕}{}べの\ruby{宴遊}{}かな\\
@@ -92,7 +95,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

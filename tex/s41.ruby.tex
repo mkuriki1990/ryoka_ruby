@@ -27,17 +27,20 @@
 % (1,2,5,6 繰り返しなし)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         \ruby{重畳}{}たる\ruby{手稲}{}\\
         \ruby{藻岩}{}の\ruby{山脈}{}を\\
         \ruby{吾}{}が\ruby{宿舎}{}の\ruby{青垣}{}となし\\
@@ -55,7 +58,7 @@
         \ruby{青春}{}の\ruby{意気託}{}しなん
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         いつの\ruby{日}{}か\ruby{生命結}{}ばん\\
         \ruby{碧空高}{}き\ruby{楡}{}よポプラよ\\
@@ -64,7 +67,7 @@
         \ruby{荒涼}{}の\ruby{憂愁}{}よぎりぬ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{島松}{}の\ruby{雪}{}の\ruby{路上}{}に\\
         \ruby{手}{}を\ruby{振}{}りし\ruby{遠}{}き\ruby{日}{}の\ruby{夢}{}\\
@@ -73,7 +76,7 @@
         \ruby{広}{}ごれる\ruby{石狩}{}の\ruby{原野}{}に
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{鶏}{}はまだ\ruby{長鳴}{}かずして\\
         \ruby{貪}{}れる\ruby{熟睡}{}をあとに\\
@@ -82,7 +85,7 @@
         \ruby{消}{}え\ruby{行}{}くや\ruby{先人}{}の\ruby{遺声}{}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{蝦夷人}{}よ\ruby{今}{}こそ\ruby{瞑想}{}え\\
         \ruby{星辰}{}しるき\ruby{彼}{}の\ruby{冬空}{}に\\
@@ -91,7 +94,7 @@
         \ruby{若駒}{}の\ruby{鞭}{}とはなさん
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 5.
         \ruby{睦}{}み\ruby{来}{}て\ruby{親友}{}は\ruby{高唱}{}えど\\
         \ruby{舌苦}{}き\ruby{地酒}{}に\ruby{酔}{}い\ruby{痴}{}れ\\
@@ -100,7 +103,7 @@
         この\ruby{惆悵誰}{}に\ruby{語}{}らん
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 6.
         \ruby{暖}{}かき\ruby{光求}{}めて\\
         \ruby{彷徨}{}えり\ruby{冷}{}たき\ruby{野末}{}\\
@@ -110,7 +113,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

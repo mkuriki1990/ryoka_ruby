@@ -27,17 +27,20 @@
 % (1,2,3,4 繰り返しなし)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{花咲}{}き\ruby{散}{}りて\ruby{五十年}{}の\\
         \ruby{実}{}りの\ruby{秋}{}ぞ\ruby{幸多}{}く\\
@@ -45,7 +48,7 @@
         \ruby{寮友}{}よ\ruby{歌}{}えよいざやいざ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{楡}{}の\ruby{大樹}{}に\ruby{尋}{}ぬれば\\
         \ruby{誇}{}らしげにぞ\ruby{答}{}えたる\\
@@ -53,7 +56,7 @@
         \ruby{寮友}{}よ\ruby{讃}{}えよいざやいざ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{歌声原始林}{}にこだまして\\
         \ruby{爆笑夜空}{}をつんざけば\\
@@ -61,7 +64,7 @@
         \ruby{寮友}{}よ\ruby{踊}{}れよいざやいざ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 4.
         \ruby{我等}{}が\ruby{誇}{}る\ruby{自治寮}{}に\\
         \ruby{五十回}{}めぐる\ruby{記念祭}{}\\
@@ -70,7 +73,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

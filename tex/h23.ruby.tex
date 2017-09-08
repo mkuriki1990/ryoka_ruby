@@ -27,17 +27,20 @@
 % (了なし繰り返しあり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item
+        \item~\\
         \ruby{春風吹}{}きゆく\ruby{原始}{}の\ruby{森}{}に\\
         \ruby{吾}{}れ\ruby{微睡}{}みて\ruby{酒宴}{}して\\
         \ruby{逍遥}{}すれども\ruby{其}{}の\ruby{歩}{}は\ruby{止}{}まず\\
@@ -48,7 +51,7 @@
         \ruby{高唱}{}いて\ruby{進}{}まん\ruby{青}{}き\ruby{旅路}{}を
         
         \vspace{\linespace}
-        \item
+        \item~\\
         \ruby{星}{}は\ruby{昂々美稲超}{}えて\\
         \ruby{玉黍}{}を\ruby{食}{}む\ruby{旅鳥}{}や\\
         \ruby{染}{}まず\ruby{彷徨}{}う\ruby{其}{}が\ruby{白羽}{}に\\
@@ -56,7 +59,7 @@
         \ruby{広}{}がるはただ\ruby{青}{}き\ruby{旅路}{}ぞ
         
         \vspace{\linespace}
-        \item
+        \item~\\
         \ruby{花}{}は\ruby{灼々壌撃}{}つ\ruby{酔}{}いを\\
         \ruby{君影草}{}の\ruby{鈴音}{}にきく\\
         さればこの\ruby{手}{}を\ruby{春陽高}{}く\\
@@ -64,7 +67,7 @@
         \ruby{濃緑}{}に\ruby{萠}{}ゆ\ruby{白花}{}に\ruby{誇}{}らん
         
         \vspace{\linespace}
-        \item
+        \item~\\
         \ruby{月}{}は\ruby{朧々輝光}{}は\ruby{幽}{}か\\
         \ruby{梢叢分}{}けて\ruby{河}{}に\ruby{落}{}つ\\
         \ruby{水面}{}に\ruby{透}{}くきみが\ruby{底}{}に\\
@@ -72,7 +75,7 @@
         \ruby{孤月仰}{}ぐ\ruby{子}{}よ\ruby{誰}{}が\ruby{為}{}に\ruby{泣}{}く
         
         \vspace{\linespace}
-        \item
+        \item~\\
         \ruby{雪}{}は\ruby{皚々大地軋}{}めて\\
         \ruby{氷嵐}{}まさに\ruby{街}{}を\ruby{呑}{}む\\
         \ruby{無明}{}の\ruby{曠野}{}に\ruby{巨熊眠}{}るも\\
@@ -80,7 +83,7 @@
         \ruby{嗚呼黎明}{}に\ruby{吹雪}{}も\ruby{霧散}{}す
         
         \vspace{\linespace}
-        \item
+        \item~\\
         \ruby{宙}{}は\ruby{悠々逍遥}{}の\ruby{果}{}て\\
         \ruby{芝草}{}を\ruby{枕}{}に\ruby{星}{}を\ruby{抱}{}く\\
         \ruby{有情}{}の\ruby{声}{}に\ruby{朋友和}{}す\ruby{寮歌}{}を\\
@@ -89,7 +92,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 

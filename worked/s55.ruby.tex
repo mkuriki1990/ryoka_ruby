@@ -27,12 +27,14 @@
 % (1,2,3 了なし繰り返しあり)
 % end header
 
-% begin body
+% begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.33\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
-% begin lilycs
 \ruby{北}{きた}に\ruby{生}{う}まれし\ruby{者}{もの}たちよ\\
 \ruby{北}{きた}に\ruby{出会}{で|あ}いし\ruby{者}{もの}たちよ\\
 \ruby{北}{きた}に\ruby{奢}{おご}れる\ruby{者}{もの}たちよ\\
@@ -46,10 +48,11 @@
 \ruby{穹北}{きゅう|ほく}の\ruby{空}{そら}に\ruby{舞}{うた}わん
 \vspace{\linespace}
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin}
     \begin{minipage}[c]{\blocksize}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 1.
         \ruby{朝靄}{あさ|もや}けむる\ruby{今}{いま}ひとときの\\
         \ruby[g]{熟寝}{うまい}の\ruby{夢}{ゆめ}の\ruby{幸}{しあわ}せよ\\
@@ -62,7 +65,7 @@
     \begin{minipage}[c]{\blocksize}
         
         \vspace{\linespace}
-        \item
+        \item~\\
         % 2.
         \ruby{清冽}{せい|れつ}の\ruby{野}{の}に\ruby{道}{みち}を\ruby{耕}{たがや}し\\
         \ruby{荒野}{あれ|の}に\ruby[g]{明日}{あす}を\ruby{信}{しん}じつつ\\
@@ -75,7 +78,7 @@
     \begin{minipage}[c]{\blocksize}
 
         \vspace{\linespace}
-        \item
+        \item~\\
         % 3.
         \ruby{北}{きた}の\ruby{自然}{し|ぜん}は\ruby{蝕}{むし}ばまれゆき\\
         \ruby{青葉}{あお|ば}の\ruby{降}{ふ}るや\ruby[g]{青春}{はる}の\ruby[g]{寮庭}{にわ}\\
@@ -86,7 +89,6 @@
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
-% end lilycs
 %%%%% 歌詞 ここまで %%%%%
 % end body
 
