@@ -135,7 +135,8 @@ csvList.each{|data|
     # 曲番を除いて TeX トークン \item と \vspace に変換
     # lilycs.gsub!(/.+\.\\\\\\\n/, '') # 任意の文字にドットがつくものは曲番なので覗く
     lilycs.gsub!(/(.+\.)\\\\\\/, '% \1') # 任意の文字にドットがつくものは曲番なのでコメントアウトしておく
-    lilycs.gsub!(/^(\\\\\\)$/){"\n\\vspace{\\linespace}\n\\item~#{$1}"} # \\ だけの行を '\vspace{\linespace}\n\item~\\' に置き換え
+    # \\ だけの行を '\end{minipage}\n\begin{minipage}[c]{\blocksize}\n\vspace{\linespace}\n\item~\\' に置き換え
+    lilycs.gsub!(/^(\\\\\\)$/){"\n\\end{minipage}\n\\begin{minipage}[c]{\\blocksize}\n\n\\vspace{\\linespace}\n\\item~#{$1}"}
 
     # フッタがあれば処理する
     if footer.length != 0
@@ -162,6 +163,10 @@ csvList.each{|data|
 
     # lilycs 部分は行頭にスペースを入れて TeX テンプレートのインデントに揃える
     lilycs.gsub!(/^/, "        ")
+    # '\begin', '\end' で始まる行はインデントが違うので調整
+    lilycs.gsub!(/        (\\begin.*|\\end.*)/, '    \1')
+    # 最初の '\end{minipage}' - '\begin{minipage}' とインデント揃えるスペースを除去
+    lilycs.sub!(/\\end.+\n +\\begin.+\n +\n {4}/, "")
     
     # テンプレートの中身をそれぞれ置換
     tex.gsub!('TITLE', title)

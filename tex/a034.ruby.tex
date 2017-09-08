@@ -30,7 +30,7 @@
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
-\newcommand{\itemmargin}{6em} % 曲番の位置調整の長さ
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
 % end length
 % begin body
 %%%%% 歌詞 ここから %%%%%
@@ -38,7 +38,25 @@
     \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
     
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{友}{}よ　\ruby{立}{}て　いざ\ruby{矛取}{}りて\\
+        \ruby{過}{}ぎし\ruby{日}{}の　\ruby{涙}{}の\ruby{誓}{}\\
+        \ruby{今}{}ぞ\ruby{今}{}　\ruby{晴}{}らさん\ruby{時}{}は\\
+        いざや\ruby{立}{}て　\ruby{海}{}の\ruby{大丈夫}{}\\
+        ラ\ruby{水産}{}　ラ\ruby{水産}{}　ラ\ruby{水産}{}
         
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{紫}{}の\ruby{旗降}{}る\ruby{蔭}{}に\\
+        \ruby{思}{}はずや\ruby{無念}{}の\ruby{跡}{}を\\
+        \ruby{若}{}き\ruby{血}{}の\ruby{迸}{}りもて\\
+        \ruby{新}{}めん　\ruby{死}{}せる\ruby{歴史}{}を
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
