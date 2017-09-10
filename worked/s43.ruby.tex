@@ -1,0 +1,95 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            樹梢霧海に % タイトルを入れる
+        }
+        {\small 
+            （昭和四十三年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        新橋登君 作歌\\佐藤菊男君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,4,転句 繰り返しなし)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.33\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{樹梢}{じゅ|しょう}\ruby{霧海}{む|かい}に\ruby{消}{き}え\ruby{入}{い}りて\\
+        \ruby{北溟}{ほく|めい}\ruby{牙城}{が|じょう}の\ruby{夏}{なつ}の\ruby{宵}{よい}\\
+        \ruby{難攻不落}{なん|こう|ふ|らく}を\ruby{誇}{ほこ}りしも\\
+        \ruby{時}{とき}\ruby{凋衰}{ちょう|すい}の\ruby{風}{かぜ}\ruby{強}{つよ}し
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby[g]{伝統}{つたへ}の\ruby{石}{いし}に\ruby{佇}{たたず}みて\\
+        \ruby[g]{古昔}{むかし}の\ruby{意気}{い|き}に\ruby{涙}{なみだ}する\\
+        \ruby{秋}{あき}の\ruby[g]{今宵}{こよい}の\ruby{宴}{うたげ}にも\\
+        \ruby{貧}{ひん}\ruby{交行}{こう|こう}の\ruby{風}{かぜ}\ruby{寒}{さむ}し
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item[転句]~\\
+        % \ruby{転}{てん}\ruby{句}{く}.
+        \ruby{楡陵}{ゆ|りょう}の\ruby{二春}{に|しゅん}に\ruby{宿}{やど}せる\ruby{白露}{しら|つゆ}の\\
+        \ruby[g]{生命}{いのち}\ruby[g]{短命}{みじか}にして\ruby{吉}{よ}しとする\\
+        さにあらば\ruby{吾等}{われ|ら}が\ruby{友}{とも}よ\\
+        \ruby[g]{久遠}{とわ}なる\ruby{星}{ほし}に\\
+        \ruby{崇厳}{すう|げん}に\ruby{大志}{たい|し}を\ruby{告}{つ}げるべく\\
+        \ruby{今}{いま}\ruby{高}{たか}らかに\ruby{誓}{ちか}いけん
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{白雪}{はく|せつ}\ruby{深}{ふか}き\ruby{北国}{きた|ぐに}に\\
+        \ruby{迪}{みち}をたずねる\ruby{旅人}{たび|びと}よ\\
+        \ruby{朔風}{さく|ふう}\ruby[g]{如何}{いか}に\ruby[g]{荒吹}{すさぶ}とも\\
+        \ruby[g]{真理}{まこと}の\ruby{郷}{さと}は\ruby{遠}{とお}からじ
+        
+        \vspace{\linespace}
+        \item~\\
+        % 4.
+        いざ\ruby[g]{寮友}{ともだち}ようたわなん\\
+        あすの\ruby[g]{生命}{いのち}を\ruby{闘}{たたか}うと\\
+        \ruby{万花}{ばん|か}\ruby{乱}{みだ}るる\ruby{春}{はる}の\ruby{日}{ひ}に\\
+        \ruby[g]{高遠}{たか}き\ruby[g]{大望}{のぞみ}を\ruby{目指}{め|ざ}さんや
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
