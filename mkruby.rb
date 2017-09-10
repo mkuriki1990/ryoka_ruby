@@ -56,13 +56,10 @@ def kanjiRuby(srcStr)
         resultMecab.lines{|line|
             # タブ文字の前に漢字が含まれている行のみを抽出
             if line.match(/.*[一-龠々]+.*\t/)
-                # p line
                 # 8 番目が読み仮名 1 個目なのでそれを抜き出す
                 sss = line.gsub(/^(.+)\t[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,(.+),.+/, '\1,\2')
                 kanji = $1
                 ruby = $2
-                # kanji = "抱え込み"
-                # ruby = "かかえこみ"
                 if kanji != nil
                     ruby.tr!('ァ-ン', 'ぁ-ん') # カタカナからひらがなに変換
                     # 'kanji' が送り仮名付きかどうかで場合分け
