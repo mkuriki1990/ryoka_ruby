@@ -37,6 +37,67 @@ def number2kansuuji(num)
     return str
 end
 
+# MeCab を利用して漢字にふりがなを用意してみる関数
+def kanjiRuby(srcStr)
+
+    # 結果を持たせる文字列変数
+    result = ""
+
+    srcStr.lines{|srcLine|
+        # MeCab はファイルしか読み込めないので, 一時的にファイル吐き出し
+        tempFile = File.open("./temporaryFile", 'w')
+        # tempFile.write(srcStr)
+        tempFile.write(srcLine)
+        tempFile.close
+
+        # MeCab を持ちいて解析
+        resultMecab = `./bin/mecab temporaryFile && rm temporaryFile`
+        # 解析結果を一行ごとに処理
+        resultMecab.lines{|line|
+            # タブ文字の前に漢字が含まれている行のみを抽出
+            if line.match(/.*[一-龠々]+.*\t/)
+                # p line
+                # 8 番目が読み仮名 1 個目なのでそれを抜き出す
+                sss = line.gsub(/^(.+)\t[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,(.+),.+/, '\1,\2')
+                kanji = $1
+                ruby = $2
+                # kanji = "抱え込み"
+                # ruby = "かかえこみ"
+                if kanji != nil
+                    ruby.tr!('ァ-ン', 'ぁ-ん') # カタカナからひらがなに変換
+                    # 'kanji' が送り仮名付きかどうかで場合分け
+                    if kanji.match(/.*[^一-龠々]+.*/)
+                        kanji.scan(/[一-龠々]/){|trueKanji|
+                            # 最初の送り仮名だけを抜き出し
+                            kanji.match(/#{trueKanji}(.)/)
+                            okurigana = $1
+                            # ルビから最初の送り仮名以降を除去
+                            ruby.match(/(.+)#{okurigana}/)
+                            trueRuby = $1
+                            # 次のループのためにルビの頭から送り仮名までを除去
+                            ruby.sub!(/.*#{okurigana}/, '')
+                            # \ruby{漢字}{ルビ} 形式に変換
+                            srcLine.gsub!(/(?!{)#{trueKanji}(?!})/){"\\ruby{#{trueKanji}}{#{trueRuby}}"}
+                        }
+                    else
+                        # \ruby{漢字}{ルビ} 形式に変換
+                        srcLine.gsub!(/(?!{)#{kanji}(?!})/){"\\ruby{#{kanji}}{#{ruby}}"}
+                    end
+                else
+                    # 漢字が判読不能なとき \ruby{漢字}{} 形式に変換
+                    kanji = line.gsub(/^(.+)\t.*/, '\1')
+                    kanji.chomp!
+                    srcLine.gsub!(/(?!{)#{kanji}(?!})/){"\\ruby{#{kanji}}{}"}
+                end
+            end
+        }
+        # 行処理の結果を書き込み
+        result << srcLine
+    }
+
+    return result
+end
+
 fileList = "" # 作業済みファイル一覧を格納する変数
 # 編集済みファイル一覧を ???.txt 形式で取得
 Dir.glob("./worked/*.tex"){|file|
@@ -123,14 +184,15 @@ csvList.each{|data|
         lilycs << buffer.chomp # 最後の行を追記
     end
 
-    lilycs.gsub!(/([一-龠々])/, '\\ruby{\1}{}') # 漢字全てを '\ruby{漢字}{}' で markup
-
-    # 連続する漢字をまとめる処理 ここから
-    lilycs.gsub!(/{}\\ruby{/, '') # '{}' と '\ruby' が連続するものを削除
-    lilycs.gsub!(/{}/, '#') # 残った '{}' を一旦 '#' に置き換え
-    lilycs.gsub!(/(.)}/, '\1') # 残された '}' を全部消す
-    lilycs.gsub!(/#/, '}{}') # '#' にした '{}' を '}{}' として元に戻す
-    # 連続する漢字をまとめる処理 ここまで
+    # MeCab を用いて \ruby{漢字}{ルビ} をそれなりに作る
+    lilycs = kanjiRuby(lilycs)
+    # lilycs.gsub!(/([一-龠々])/, '\\ruby{\1}{}') # 漢字全てを '\ruby{漢字}{}' で markup
+    # # 連続する漢字をまとめる処理 ここから
+    # lilycs.gsub!(/{}\\ruby{/, '') # '{}' と '\ruby' が連続するものを削除
+    # lilycs.gsub!(/{}/, '#') # 残った '{}' を一旦 '#' に置き換え
+    # lilycs.gsub!(/(.)}/, '\1') # 残された '}' を全部消す
+    # lilycs.gsub!(/#/, '}{}') # '#' にした '{}' を '}{}' として元に戻す
+    # # 連続する漢字をまとめる処理 ここまで
 
     # 曲番を除いて TeX トークン \item と \vspace に変換
     # lilycs.gsub!(/.+\.\\\\\\\n/, '') # 任意の文字にドットがつくものは曲番なので覗く
