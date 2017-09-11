@@ -1,0 +1,128 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\renewcommand{\baselinestretch}{0.85} % 行間の倍率
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            いつの日か生命結ばん % タイトルを入れる
+        }
+        {\small 
+            （昭和四十一年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        須藤洋一君 作歌\\吉川正文君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,5,6 繰り返しなし)
+% end header
+
+% begin length
+\vspace{0.1em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.4em} % 行間の設定
+\newcommand{\blocksize}{0.33\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{6em} % 曲番の位置調整
+
+    \item[序]~\\
+    \ruby{重畳}{ちょう|じょう}たる\ruby{手稲}{て|いね}~
+    \ruby{藻岩}{も|いわ}の\ruby{山脈}{やま|なみ}を
+    \ruby{吾}{わ}が\ruby[g]{宿舎}{やどりや}の\ruby{青垣}{あお|がき}となし\\
+    \ruby{鬱乎}{うっ|こ}たる\ruby{原始}{げん|し}の\ruby[g]{叢林}{もり}を
+    \ruby{吾}{わ}が\ruby{逍遥}{しょう|よう}の\ruby[g]{小径}{みち}となす。\\
+    \ruby{吾}{わ}が\ruby[g]{寮友}{とも}よ\ruby[g]{草原}{の}に\ruby{出}{い}でよ、
+    \ruby{暗}{くら}き\ruby[g]{孤城}{しろ}より\ruby{出}{い}でんかな。\\
+    \ruby[g]{深遠}{ふか}き\ruby{蒼穹}{そう|きゅう}あまりに\ruby{青}{あお}く、
+    \ruby{輝}{かがや}く\ruby{雪原}{せつ|げん}あまりに\ruby{白}{しろ}し。\\
+    さればよしその\ruby{身}{み}は\ruby{平々凡々}{へい|へい|ぼん|ぼん}ならんとも、
+    \ruby{吾等}{われ|ら}が\ruby[g]{野望}{のぞみ}\ruby{尽}{つ}くるを\ruby{知}{し}らず。\\
+    \ruby[g]{静寂}{しじま}を\ruby{破}{やぶ}る\ruby{蛮声}{ばん|せい}に、
+    \ruby[g]{吹雪}{ふぶき}\ruby{鎮}{おさ}むる\ruby{高吟}{こう|ぎん}に
+    \ruby{青春}{せい|しゅん}の\ruby{意気}{い|き}\ruby{託}{たく}しなん
+
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        いつの\ruby{日}{ひ}か\ruby[g]{生命}{いのち}\ruby{結}{むす}ばん\\
+        \ruby[g]{碧空}{そら}\ruby{高}{たか}き\ruby{楡}{にれ}よポプラよ\\
+        \ruby[g]{黄金}{こがね}なす\ruby[g]{銀杏}{いちょう}\ruby{並木}{なみ|き}よ\\
+        \ruby{枯}{か}れ\ruby{枯}{が}れと\ruby[g]{曠野}{の}に\ruby[g]{朔風}{かぜ}\ruby{吹}{ふ}けば\\
+        \ruby{荒涼}{こう|りょう}の\ruby[g]{憂愁}{おもい}よぎりぬ
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{島松}{しま|まつ}の\ruby{雪}{ゆき}の\ruby{路上}{ろ|じょう}に\\
+        \ruby{手}{て}を\ruby{振}{ふ}りし\ruby{遠}{とお}き\ruby{日}{ひ}の\ruby{夢}{ゆめ}\\
+        \ruby{去}{さ}り\ruby{行}{ゆ}きぬ\ruby[g]{偉大}{おおい}なる\ruby[g]{巨影}{かげ}\\
+        \ruby{君}{きみ}\ruby{聞}{き}くや\ruby{馬上}{ば|じょう}の\ruby{声}{こえ}を\\
+        \ruby{広}{ひろ}ごれる\ruby{石狩}{いし|かり}の\ruby[g]{原野}{の}に
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{鶏}{くだかけ}はまだ\ruby[g]{長鳴}{な}かずして\\
+        \ruby{貪}{むさぼ}れる\ruby[g]{熟睡}{ねむり}をあとに\\
+        \ruby{仄}{ほの}\ruby{暗}{ぐら}き\ruby[g]{叢林}{はやし}に\ruby[g]{佇立}{た}てば\\
+        \ruby{今}{いま}いずこ\ruby{青}{あお}き\ruby[g]{野望}{のぞみ}は\\
+        \ruby{消}{き}え\ruby{行}{ゆ}くや\ruby{先人}{せん|じん}の\ruby[g]{遺声}{こえ}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 4.
+        \ruby{蝦夷}{え|ぞ}\ruby{人}{びと}よ\ruby{今}{いま}こそ\ruby[g]{瞑想}{おも}え\\
+        \ruby[g]{星辰}{ほし}しるき\ruby{彼}{か}の\ruby{冬空}{ふゆ|ぞら}に\\
+        \ruby{天}{あま}\ruby{翔}{か}ける\ruby{天馬}{てん|ま}の\ruby[g]{行方}{ゆくえ}\\
+        \ruby[g]{吹雪}{ふ}き\ruby{荒}{すさ}ぶ\ruby[g]{北風}{かぜ}をつぶてを\\
+        \ruby{若駒}{わか|ごま}の\ruby{鞭}{むち}とはなさん
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 5.
+        \ruby{睦}{むつ}み\ruby{来}{き}て\ruby[g]{親友}{とも}は\ruby[g]{高唱}{うた}えど\\
+        \ruby{舌}{した}\ruby{苦}{にが}き\ruby[g]{地酒}{さけ}に\ruby{酔}{よ}い\ruby{痴}{し}れ\\
+        ストームに\ruby{身}{み}は\ruby[g]{狂乱}{くる}うとも\\
+        \ruby{忘}{わす}れ\ruby{得}{え}じ\ruby{果}{は}てなき\ruby{旅路}{たび|じ}\\
+        この\ruby[g]{惆悵}{うらみ}\ruby{誰}{だれ}に\ruby{語}{かた}らん
+        
+        \vspace{\linespace}
+        \item~\\
+        % 6.
+        \ruby{暖}{あたた}かき\ruby{光}{ひかり}\ruby{求}{もと}めて\\
+        \ruby[g]{彷徨}{さまよ}えり\ruby{冷}{つめ}たき\ruby{野末}{の|ずえ}\\
+        \ruby{北国}{きた|ぐに}に\ruby{春}{はる}\ruby{来}{きた}りなば\\
+        \ruby{若}{わか}き\ruby{日}{ひ}の\ruby{稚}{わか}き\ruby[g]{愁思}{うれい}は\\
+        \ruby{雪}{ゆき}の\ruby{如}{ごと}\ruby{融}{と}けて\ruby{流}{なが}れん
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
