@@ -1,0 +1,98 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            ストームの歌 % タイトルを入れる
+        }
+        {\small 
+             % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+         % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% % end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{minipage}[c]{\blocksize}
+    \begin{center}
+        
+        ‐\ruby{醒}{さ}めよ\ruby{迷}{まよ}ひの\ruby{夢}{ゆめ}\ruby{醒}{さ}めよ\\
+        \ruby{醒}{さ}めよ\ruby{迷}{まよ}ひの\ruby{夢}{ゆめ}\ruby{醒}{さ}めよ‐
+        
+    \end{center}
+\end{minipage}
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{札幌}{さっ|ぽろ}\ruby{農学校}{のう|がっ|こう}は\ruby{蝦夷ヶ島}{え|ぞ|が|しま}~
+        \ruby{熊}{くま}が\ruby{棲}{す}む\\
+        \ruby{荒野}{あれ|の}に\ruby{建}{た}てたる\ruby{大}{だい}\ruby{校舎}{こう|しゃ}~コチャ\\
+        エルムの\ruby{樹影}{こ|かげ}で\ruby{真理}{しん|り}\ruby{解}{と}く~
+        コチャエ コチャエ
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{札幌}{さっ|ぽろ}\ruby{農学校}{のう|がっ|こう}は\ruby{蝦夷ヶ島}{え|ぞ|が|しま}~
+        \ruby{手稲山}{て|いね|やま}\\
+        \ruby{夕焼}{ゆう|や}け\ruby{小焼}{こ|や}けのするところ~コチャ\\
+        \ruby{牧草}{ぼく|そう}\ruby{方}{かた}\ruby{敷}{し}き\ruby{詩集}{し|しゅう}\ruby{読}{よ}む~
+        コチャエ コチャエ
+        
+    % \end{minipage}
+    % \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{札幌}{さっ|ぽろ}\ruby{農学校}{のう|がっ|こう}は\ruby{蝦夷ヶ島}{え|ぞ|が|しま}~
+        クラーク\ruby{氏}{し}\\
+        ビーアンビシァスボーイズと~コチャ\\
+        \ruby{学府}{がく|ふ}の\ruby{基}{もとい}を\ruby{残}{のこ}し\ruby{行}{ゆ}く~
+        コチャエ コチャエ
+    \end{minipage}
+\begin{minipage}[c]{\blocksize}
+    \setlength{\itemindent}{0em} % 曲番の位置調整
+
+        \item[※]
+        色部米作君が、明治三十八年頃、 一番の\\
+        歌詞を作った。 明治四十三年九月に\\
+        加藤茂雄君が二番を、\\
+        出納陽一君が三番をそれぞれ作詞した。
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+% \begin{minipage}[c]{\blocksize}
+%     \begin{itemize}
+% 
+% 
+%     \end{itemize}
+% \end{minipage}
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
