@@ -2,99 +2,118 @@
 \input{template_B6.tex} % B6 用テンプレート読み込み
 
 \begin{document}
-\thispagestyle{empty} % ページ番号の消去
-\newcommand{\linespace}{0.4em} % 行間の設定
-\newcommand{\blocksize}{0.33\hsize} % 行間の設定
-
+% begin header
 %%%%% タイトルと作者 ここから %%%%%
 \begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
     \begin{center}
+    % begin title
         {\LARGE
             都ぞ弥生 % タイトルを入れる
         }
         {\small 
-            （明治四十五年） % 年などを入れる (和文なので全角括弧を用いている)
+            （明治四十五年寮歌） % 年などを入れる
         }
+    % end title
     \end{center}
 \end{minipage}
 \begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
     \begin{flushright} % 下寄せにする
-        横山芳介君 作歌\\ % 作歌者
-        赤木顕次君 作曲 % 作曲者
+        % begin name
+        横山芳介君 作歌\\赤木顕次君 作曲 % 作歌・作曲者
+        % end name
     \end{flushright}
 \end{minipage}
 %%%%% タイトルと作者 ここまで %%%%%
+% (1 了あり)
+% end header
 
-
-\vspace{0.8em} % タイトル, 作者と歌詞の間に隙間を設ける
-
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
 %%%%% 歌詞 ここから %%%%%
 \begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
     \begin{minipage}[c]{\blocksize}
-
-        \vspace{\linespace}
-        \item
-        \ruby{都}{}ぞ\ruby{弥生}{}の\ruby{雲紫}{}に\\
-        \ruby{花}{}の\ruby{香漂}{}ふ\ruby{宴遊}{}の\ruby{筵}{}\\
-        \ruby{尽}{}きせぬ\ruby{奢}{}に\ruby{濃}{}き\ruby{紅}{}や\\
-        その\ruby{春暮}{}れては\ruby{移}{}らふ\ruby{色}{}の\\
-        \ruby{夢}{}こそ\ruby{一時青}{}き\ruby{繁}{}みに\\
-        \ruby{燃}{}えなん\ruby{我胸想}{}ひを\ruby{載}{}せて\\
-        \ruby{星影冴}{}かに\ruby{光}{}れる\ruby{北}{}を\\
-        \ruby{人}{}の\ruby{世}{}の\ruby{清}{}き\ruby{国}{}ぞとあこがれぬ\\
-        
-        \vspace{\linespace}
-        \item
-        \ruby{豊}{}かに\ruby{稔}{}れる\ruby{石狩}{}の\ruby{野}{}に\\
-        \ruby{雁遙々沈}{}みてゆけば\\
-        \ruby{羊群声}{}なく\ruby{牧舎}{}に\ruby{帰}{}り\\
-        \ruby{手稲}{}の\ruby{嶺黄昏}{}こめぬ\\
-        \ruby{雄々}{}しく\ruby{聳}{}ゆる\ruby{楡}{}の\ruby{梢}{}\\
-        \ruby{打振}{}る\ruby{野分}{}に\ruby{破壊}{}の\ruby{葉音}{}の\\
-        さやめく\ruby{甍}{}に\ruby{久遠}{}の\ruby{光}{}り\\
-        おごそかに\ruby{北極星}{}を\ruby{仰}{}ぐ\ruby{哉}{}\\
     
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{都}{と}ぞ\ruby{弥生}{やよい}の\ruby{雲}{くも}\ruby{紫}{むらさき}に\\
+        \ruby{花}{はな}の\ruby{香}{こう}\ruby{漂}{}ふ\ruby{宴}{うたげ}\ruby{遊}{}の\ruby{筵}{むしろ}\\
+        \ruby{尽}{つ}きせぬ\ruby{奢}{おご}に\ruby{濃}{こ}き\ruby{紅}{べに}や\\
+        その\ruby{春}{はる}\ruby{暮}{く}れては\ruby{移}{うつ}らふ\ruby{色}{いろ}の\\
+        \ruby{夢}{ゆめ}こそ\ruby{一時}{いちじ}\ruby{青}{あお}き\ruby{繁}{しげ}みに\\
+        \ruby{燃}{も}えなん\ruby{我}{わが}\ruby{胸}{むね}\ruby{想}{そう}ひを\ruby{載}{の}せて\\
+        \ruby{星影}{ほしかげ}\ruby{冴}{さえ}かに\ruby{光}{こう}れる\ruby{北}{きた}を\\
+        \ruby{人}{ひと}の\ruby{世}{よ}の\ruby{清}{きよ}き\ruby{国}{くに}ぞとあこがれぬ
+        
     \end{minipage}
     \begin{minipage}[c]{\blocksize}
         
         \vspace{\linespace}
-        \item
-        \ruby{寒月懸}{}れる\ruby{針葉樹林}{}\\
-        \ruby{橇}{}の\ruby{音凍}{}りて\ruby{物皆寒}{}く\\
-        \ruby{野}{}もせに\ruby{乱}{}るる\ruby{清白}{}の\ruby{雪}{}\\
-        \ruby{沈黙}{}の\ruby{暁霏々}{}として\ruby{舞}{}ふ\\
-        ああその\ruby{朔風飆々}{}として\\
-        \ruby{荒}{}ぶる\ruby{吹雪}{}の\ruby{逆巻}{}くを\ruby{見}{}よ\\
-        ああその\ruby{蒼空梢聯}{}ねて\\
-        \ruby{樹氷咲}{}く\ruby{壮麗}{}の\ruby{地}{}をここに\ruby{見}{}よ\\
-    
+        \item~\\
+        % 2.
+        \ruby{豊}{ゆた}かに\ruby{稔}{みの}れる\ruby{石狩}{いしかり}の\ruby{野}{の}に\\
+        \ruby{雁}{かり}\ruby{遙}{}\ruby{々}{々}\ruby{沈}{しず}みてゆけば\\
+        \ruby{羊}{ひつじ}\ruby{群}{ぐん}\ruby{声}{こえ}なく\ruby{牧舎}{ぼくしゃ}に\ruby{帰}{かえ}り\\
+        \ruby{手稲}{ていね}の\ruby{嶺}{みね}\ruby{黄昏}{たそがれ}こめぬ\\
+        \ruby{雄々}{おお}しく\ruby{聳}{}ゆる\ruby{楡}{にれ}の\ruby{梢}{こずえ}\\
+        \ruby{打}{だ}\ruby{振}{ふ}る\ruby{野分}{のわけ}に\ruby{破壊}{はかい}の\ruby{葉音}{はおと}の\\
+        さやめく\ruby{甍}{いらか}に\ruby{久遠}{くおん}の\ruby{光}{ひか}り\\
+        おごそかに\ruby{北極星}{ほっきょくせい}を\ruby{仰}{あお}ぐ\ruby{哉}{}
+        
     \end{minipage}
     \begin{minipage}[c]{\blocksize}
         
         \vspace{\linespace}
-        \item
-        \ruby{牧場}{}の\ruby{若草陽炎燃}{}えて\\
-        \ruby{森}{}には\ruby{桂}{}の\ruby{新緑萠}{}し\\
-        \ruby{雲}{}ゆく\ruby{雲雀}{}に\ruby{延齢草}{}の\\
-        \ruby{真白}{}の\ruby{花影}{}さゆらぎて\ruby{立}{}つ\\
-        \ruby{今}{}こそ\ruby{溢}{}れぬ\ruby{清和}{}の\ruby{陽光}{}\\
-        \ruby{小河}{}の\ruby{潯}{}をさまよひゆけば\\
-        うつくしからずや\ruby{咲}{}く\ruby{水芭蕉}{}\\
-        \ruby{春}{}の\ruby{日}{}のこの\ruby{北}{}の\ruby{国幸多}{}し\\
+        \item~\\
+        % 3.
+        \ruby{寒月}{かんげつ}\ruby{懸}{かか}れる\ruby{針葉樹}{しんようじゅ}\ruby{林}{りん}\\
+        \ruby{橇}{そり}の\ruby{音}{おと}\ruby{凍}{こお}りて\ruby{物}{もの}\ruby{皆}{かい}\ruby{寒}{さむ}く\\
+        \ruby{野}{の}もせに\ruby{乱}{らん}るる\ruby{清白}{すずしろ}の\ruby{雪}{ゆき}\\
+        \ruby{沈黙}{ちんもく}の\ruby{暁}{あかつき}\ruby{霏}{}\ruby{々}{々}として\ruby{舞}{まい}ふ\\
+        ああその\ruby{朔風}{さくふう}\ruby{飆}{}\ruby{々}{々}として\\
+        \ruby{荒}{すさ}ぶる\ruby{吹雪}{ふぶき}の\ruby{逆巻}{さかま}くを\ruby{見}{み}よ\\
+        ああその\ruby{蒼空}{そうくう}\ruby{梢}{こずえ}\ruby{聯}{れん}ねて\\
+        \ruby{樹氷}{じゅひょう}\ruby{咲}{さ}く\ruby{壮麗}{そうれい}の\ruby{地}{ち}をここに\ruby{見}{み}よ
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
         
         \vspace{\linespace}
-        \item
-        \ruby{朝雲流}{}れて\ruby{金色}{}に\ruby{照}{}り\\
-        \ruby{平原果}{}てなき\ruby{東}{}の\ruby{際}{}\\
-        \ruby{連}{}なる\ruby{山脈玲瓏}{}として\\
-        \ruby{今}{}しも\ruby{輝}{}く\ruby{紫紺}{}の\ruby{雪}{}に\\
-        \ruby{自然}{}の\ruby{藝術}{}を\ruby{懐}{}みつつ\\
-        \ruby{高鳴}{}る\ruby{血潮}{}のほとばしりもて\\
-        \ruby{貴}{}とき\ruby{野心}{}の\ruby{訓}{}へ\ruby{培}{}い\\
-        \ruby{栄}{}え\ruby{行}{}く\ruby{我等}{}が\ruby{寮}{}を\ruby{誇}{}らずや \\
-
+        \item~\\
+        % 4.
+        \ruby{牧場}{ぼくじょう}の\ruby{若草}{わかくさ}\ruby{陽炎}{かげろう}\ruby{燃}{も}えて\\
+        \ruby{森}{もり}には\ruby{桂}{かつら}の\ruby{新緑}{しんりょく}\ruby{萠}{めぐむ}し\\
+        \ruby{雲}{くも}ゆく\ruby{雲}{くも}雀に\ruby{延}{のべ}\ruby{齢}{よわい}\ruby{草}{そう}の\\
+        \ruby{真白}{まっしろ}の\ruby{花影}{はなかげ}さゆらぎて\ruby{立}{た}つ\\
+        \ruby{今}{いま}こそ\ruby{溢}{あふ}れぬ\ruby{清和}{せいわ}の\ruby{陽光}{ようこう}\\
+        \ruby{小河}{おがわ}の\ruby{潯}{}をさまよひゆけば\\
+        うつくしからずや\ruby{咲}{さ}く\ruby{水芭蕉}{みずばしょう}\\
+        \ruby{春}{はる}の\ruby{日}{ひ}のこの\ruby{北}{きた}の\ruby{国}{くに}\ruby{幸}{こう}\ruby{多}{おお}し
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 5.
+        \ruby{朝}{あさ}\ruby{雲}{くも}\ruby{流}{なが}れて\ruby{金色}{きんいろ}に\ruby{照}{て}り\\
+        \ruby{平原}{ひらはら}\ruby{果}{は}てなき\ruby{東}{ひがし}の\ruby{際}{さい}\\
+        \ruby{連}{つら}なる\ruby{山脈}{さんみゃく}\ruby{玲瓏}{れいろう}として\\
+        \ruby{今}{いま}しも\ruby{輝}{かがや}く\ruby{紫紺}{しこん}の\ruby{雪}{ゆき}に\\
+        \ruby{自然}{しぜん}の\ruby{藝}{げい}\ruby{術}{じゅつ}を\ruby{懐}{ふところ}みつつ\\
+        \ruby{高鳴}{たかな}る\ruby{血潮}{ちしお}のほとばしりもて\\
+        \ruby{貴}{とうと}とき\ruby{野心}{やしん}の\ruby{訓}{くん}へ\ruby{培}{つちか}い\\
+        \ruby{栄}{さか}え\ruby{行}{ゆ}く\ruby{我}{わが}\ruby{等}{とう}が\ruby{寮}{りょう}を\ruby{誇}{ほこ}らずや 
+    
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
 %%%%% 歌詞 ここまで %%%%%
+% end body
 
 \end{document}
