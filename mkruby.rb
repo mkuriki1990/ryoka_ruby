@@ -63,8 +63,10 @@ def kanjiRuby(srcStr)
                 if kanji != nil
                     ruby.tr!('ァ-ン', 'ぁ-ん') # カタカナからひらがなに変換
                     # 'kanji' が送り仮名付きかどうかで場合分け
+                    # 「繰り返し - くりかえし」「息吹き - いぶき」などが
+                    # 一単語としての判別されてしまうための処理
                     if kanji.match(/.*[^一-龠々]+.*/)
-                        kanji.scan(/[一-龠々]/){|trueKanji|
+                        kanji.scan(/[一-龠々]+/){|trueKanji|
                             # 最初の送り仮名だけを抜き出し
                             kanji.match(/#{trueKanji}(.)/)
                             okurigana = $1
