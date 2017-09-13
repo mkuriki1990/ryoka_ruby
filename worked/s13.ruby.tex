@@ -1,0 +1,117 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            津軽の滄海の % タイトルを入れる
+        }
+        {\small 
+            （昭和十三年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        二階堂孝一君 作歌\\高橋寛君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 了あり)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.33\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{津軽}{つ|がる}の\ruby[g]{滄海}{うみ}の\ruby{渦潮}{うず|しお}わけて\\
+        \ruby[g]{雄大}{おお}き\ruby{想}{おも}ひを\ruby{北斗}{ほく|と}に\ruby{馳}{は}する\\
+        \ruby{若}{わか}き\ruby[g]{情懐}{こころ}は\ruby[g]{北溟}{きた}の\ruby{自然}{し|ぜん}に\\
+        \ruby[g]{抱擁}{いだ}かれて\ruby{今}{いま}\ruby{野心}{や|しん}\ruby{培}{つちか}ふ
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        アカシヤの\ruby[g]{白花}{はな}\ruby{散}{ち}り\ruby{敷}{し}く\ruby{夕}{ゆう}べ\\
+        \ruby[g]{白銀}{しろがね}の\ruby{月}{つき}\ruby{仄}{ほの}かに\ruby{浮}{うか}ぶ\\
+        \ruby[g]{牧場}{まき}\ruby{添}{ぞ}ひの\ruby[g]{野路}{みち}\ruby[g]{逍遙}{さまよ}ひゆけば\\
+        \ruby{羊}{ひつじ}の\ruby{群}{むれ}は\ruby{声}{こえ}なく\ruby{去}{さ}りぬ
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{石狩}{いし|かり}の\ruby[g]{平野}{の}に\ruby[g]{爽夏}{なつ}\ruby{訪}{おとず}れて\\
+        \ruby{原始}{げん|し}の\ruby[g]{大森}{もり}は\ruby[g]{緑影}{かげ}も\ruby{小暗}{を|くら}し\\
+        \ruby{郭公}{かっ|こう}の\ruby[g]{朗声}{こえ}\ruby[g]{静寂}{しじま}に\ruby{徹}{とお}り\\
+        \ruby[g]{清涼}{すず}しき\ruby{朝}{あさ}の\ruby[g]{熟睡}{うまい}を\ruby{破}{やぶ}る
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 4.
+        \ruby[g]{豊穣}{みのり}の\ruby{秋}{あき}の\ruby{讃歌}{さん|か}を\ruby{奏}{かな}で\\
+        ポプラの\ruby[g]{高梢}{こずゑ}さやかに\ruby{揺}{ゆら}ぐ\\
+        \ruby[g]{北溟}{きた}の\ruby[g]{蒼穹}{おほぞら}\ruby{紺碧}{こん|ぺき}に\ruby{透}{す}き\\
+        \ruby{生}{いき}の\ruby[g]{歓喜}{よろこび}\ruby{我}{わ}が\ruby[g]{胸懐}{むね}に\ruby[g]{充溢}{み}つ
+        
+        \vspace{\linespace}
+        \item~\\
+        % 5.
+        \ruby{飄々}{ひょう|ひょう}の\ruby[g]{風声}{こゑ}\ruby{疎林}{そ|りん}に\ruby[g]{沈潜}{ひそ}み\\
+        \ruby{無眼}{む|げん}の\ruby[g]{静寂}{しじま}\ruby{天地}{てん|ち}に\ruby[g]{充満}{み}てり\\
+        \ruby{寒月}{かん|げつ}は\ruby[g]{鋭利}{と}く\ruby{虚空}{こ|くう}を\ruby{截}{き}りて\\
+        \ruby{我}{わ}が\ruby{行}{ゆ}く\ruby[g]{孤影}{かげ}よ\ruby{霜}{しも}に\ruby{凍}{こお}りぬ
+        
+        \vspace{\linespace}
+        \item~\\
+        % 6.
+        \ruby[g]{白銀}{しろがね}の\ruby[g]{六華}{はな}\ruby[g]{荘厳}{おごそか}に\ruby{咲}{さ}く\\
+        \ruby{山嶺}{さん|れい}\ruby[g]{奥深}{ふか}く\ruby[g]{彷徨}{あこが}れ\ruby{行}{ゆ}けば\\
+        ああ\ruby{壮麗}{そう|れい}の\ruby{樹氷}{じゅ|ひょう}の\ruby{森}{もり}よ\\
+        \ruby{冬}{ふゆ}の\ruby[g]{神秘}{くしび}に\ruby{我}{わ}が\ruby{胸}{むね}\ruby[g]{戦傈}{ふる}ふ
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 7.
+        さあれ\ruby{戦塵}{せん|じん}\ruby{東亜}{とう|あ}を\ruby[g]{閉鎖}{とざ}し\\
+        \ruby{全}{ぜん}\ruby{支}{し}の\ruby{空}{そら}に\ruby{硝煙}{しょう|えん}\ruby[g]{昏冥}{くら}し\\
+        \ruby{大陸}{たい|りく}\ruby[g]{飛翔}{かけ}る\ruby{荒}{あら}\ruby{鷲}{わし}\ruby{想}{おも}へば\\
+        \ruby{雄心}{ゆう|しん}\ruby{湧}{わ}きて\ruby{若}{わか}き\ruby[g]{熱血}{ち}\ruby{滾}{たぎ}る
+        
+        \vspace{\linespace}
+        \item~\\
+        % 8.
+        \ruby{先人}{せん|じん}の\ruby[g]{絢夢}{ゆめ}\ruby{残}{のこ}れる\ruby[g]{原始林}{もり}に\\
+        \ruby[g]{寮祭}{まつり}の\ruby[g]{犠牲}{にへ}の\ruby[g]{火柱}{ほのほ}\ruby{廻}{めぐ}りて\\
+        いざ\ruby[g]{寮友}{とも}どちよ\ruby[g]{永久}{とは}に\ruby[g]{謳歌}{うた}はん\\
+        \ruby{意気}{い|き}と\ruby{血潮}{ち|しお}の\ruby[g]{三年}{みとせ}の\ruby{契}{ちぎ}り
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
