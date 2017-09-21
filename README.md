@@ -21,5 +21,5 @@
 * ryoka2ruby.sh : GNU sed を用いて漢字の周りに TeX トークン \ruby{漢字}{} を追加するスクリプト
 
 ### 参考
-ルビをある程度自動で振るために形態素解析エンジン <MeCab http://taku910.github.io/mecab/> 及び
-そのための辞書ファイル <mecab-ipadic-NEologd https://github.com/neologd/mecab-ipadic-neologd> を利用しています. 
+ルビをある程度自動で振るために形態素解析エンジン [MeCab](http://taku910.github.io/mecab/) 及び
+そのための辞書ファイル [mecab-ipadic-NEologd](https://github.com/neologd/mecab-ipadic-neologd) を利用しています. 
