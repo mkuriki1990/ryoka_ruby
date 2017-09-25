@@ -1,0 +1,106 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            北斗遙かに % タイトルを入れる
+        }
+        {\small 
+            （昭和六十二年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        佐久間朗君 作歌\\吉田崇君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 了あり)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{北斗}{ほく|と}\ruby{遙}{はろ}かに\ruby{広}{ひろ}がれる
+        \ruby{波濤}{は|とう}\ruby{煌}{きらめ}く\ruby{水平線}{すい|へい|せん}\\
+        \ruby{移}{うつ}り\ruby{行}{ゆ}く\ruby[g]{天水}{みず}\ruby{渡}{わた}る\ruby[g]{朔風}{かぜ}
+        \ruby[g]{厳冬}{ふゆ}の\ruby[g]{記憶}{おもい}を\ruby{留}{とど}めれど\\
+        \ruby{新緑}{しん|りょく}\ruby{萌}{きざ}す\ruby{曠野}{こう|や}には
+        \ruby{若}{わか}き\ruby[g]{生命}{いのち}の\ruby[g]{息吹}{いぶき}あり\\
+        \ruby{嗚呼}{あ|あ}\ruby[g]{季節}{とき}の\ruby[g]{芳香}{かおり}\ruby{満}{み}つ
+        この\ruby{北}{きた}の\ruby[g]{大地}{ち}に\\
+        \ruby{新}{あら}たなる\ruby{夢}{ゆめ}を\ruby{得}{え}て
+        \ruby[g]{希望}{のぞみ}かなえん
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{北斗}{ほく|と}\ruby{清}{さや}かに\ruby{見}{み}はるかす
+        \ruby{紺碧}{こん|ぺき}に\ruby{滲}{にじ}む\ruby{大空}{おお|ぞら}に\\
+        \ruby{輝}{かがや}く\ruby[g]{光彩}{ひかり}\ruby{燦爛}{さん|らん}と
+        \ruby{短}{みじか}き\ruby[g]{盛夏}{なつ}を\ruby{彩}{いろど}りて\\
+        \ruby{涼風}{りょう|ふう}そよぐ\ruby{窓下}{そう|か}には
+        \ruby{緑}{みどり}\ruby{滴}{したた}る\ruby{原始林}{げん|し|りん}\\
+        \ruby{嗚呼}{あ|あ}\ruby[g]{季節}{とき}の\ruby{恵}{めぐ}み\ruby{満}{み}つ
+        この\ruby{北}{きた}の\ruby[g]{大地}{ち}に\\
+        \ruby{新}{あたら}しき\ruby[g]{情熱}{おもい}もて
+        \ruby{真理}{しん|り}\ruby{求}{もと}めん
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{北斗}{ほく|と}\ruby{豊}{ゆた}かに\ruby{色}{いろ}づける
+        \ruby{黄金色}{おう|ごん|いろ}の\ruby{大沃野}{だい|よく|や}\\
+        \ruby{充足}{じゅう|そく}\ruby{誘}{さそ}う\ruby[g]{黄昏}{たそがれ}に
+        \ruby{遠}{とお}く\ruby[g]{彼方}{かなた}を\ruby{見渡}{み|わた}せば\\
+        \ruby{牧場}{まき|ば}を\ruby[g]{疾走}{はし}る\ruby{若駒}{わか|ごま}の
+        \ruby{荒土}{こう|ど}\ruby{蹴散}{け|ち}らすその\ruby{雄姿}{ゆう|し}\\
+        \ruby{嗚呼}{あ|あ}\ruby[g]{季節}{とき}の\ruby{実}{みの}り\ruby{満}{み}つ
+        この\ruby{北}{きた}の\ruby[g]{大地}{ち}に\\
+        \ruby{新}{あたら}しき\ruby{力}{ちから}\ruby{得}{え}て
+        \ruby{正義}{せい|ぎ}\ruby{貫}{つらぬ}かん
+        
+        \vspace{\linespace}
+        \item~\\
+        % 4.
+        \ruby{北斗}{ほく|と}\ruby{果}{は}てなく\ruby{包}{つつ}み\ruby{込}{こ}む
+        \ruby{荒}{すさ}び\ruby{飛}{と}び\ruby{散}{ち}る\ruby{猛}{もう}\ruby[g]{吹雪}{ふぶき}\\
+        \ruby{物}{もの}\ruby{皆}{みな}\ruby{埋}{うず}み\ruby{凍}{い}てつかせ
+        \ruby{我}{われ}らが\ruby[g]{前途}{ゆくて}\ruby{閉}{と}ざせども\\
+        ひたすら\ruby{拓}{ひら}くその\ruby{迪}{みち}に
+        \ruby{放歌}{ほう|か}\ruby{笑声}{しょう|せい}\ruby{絶}{た}ゆるなし\\
+        \ruby{嗚呼}{あ|あ}\ruby[g]{季節}{とき}の\ruby[g]{憂愁}{うれい}\ruby{満}{み}つ
+        この\ruby{北}{きた}の\ruby[g]{大地}{ち}に\\
+        \ruby{新}{あたら}しき\ruby[g]{意識}{こころ}もて
+        \ruby{自治}{じ|ち}を\ruby{築}{きず}かん
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
