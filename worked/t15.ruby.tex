@@ -1,0 +1,103 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            ああ青春の歓喜を % タイトルを入れる
+        }
+        {\small 
+            （大正十五年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        木村左京君 作歌\\牧野千代治君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,5 了あり)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.33\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        ああ\ruby{青春}{せい|しゅん}の\ruby[g]{歓喜}{よろこび}を\\
+        \ruby{宴}{うたげ}の\ruby{酔}{よ}ひと\ruby{言}{い}ふは\ruby{誰}{た}れ\\
+        \ruby{我}{わ}が\ruby{行}{い}く\ruby{方}{かた}の\ruby{遠}{とお}ければ\\
+        しばしこの\ruby{舎}{や}に\ruby{憩}{いこ}ひして\\
+        \ruby{草}{くさ}を\ruby{茵}{しとね}の\ruby{旅枕}{たび|まくら}\\
+        \ruby[g]{明日}{あす}の\ruby{旅路}{たび|じ}を\ruby{夢}{ゆめ}に\ruby{見}{み}ん
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{曠野}{こう|や}に\ruby{萠}{も}ゆる\ruby{若草}{わか|くさ}の\\
+        しらべゆかしき\ruby{喜}{よろこ}びを\\
+        そよ\ruby{吹}{ふ}く\ruby{風}{かぜ}に\ruby{寄}{よ}するとき\\
+        うららかに\ruby{照}{て}る\ruby{春}{はる}の\ruby{日}{ひ}は\\
+        \ruby{霞}{かすみ}の\ruby{奥}{おく}にまどろみて\\
+        \ruby{光}{ひかり}の\ruby{波}{なみ}は\ruby{野}{の}に\ruby{充}{み}てり
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{故郷}{こ|きょう}の\ruby{空}{そら}は\ruby{見}{み}えねども\\
+        ただ\ruby{野}{の}は\ruby{広}{ひろ}く\ruby{路}{みち}\ruby{遠}{とお}し\\
+        \ruby[g]{彼方}{かなた}の\ruby{国}{くに}に\ruby{孜々}{し|し}として\\
+        \ruby{歩}{あゆ}みつづくる\ruby{行人}{こう|じん}は\\
+        \ruby{行手}{ゆく|て}の\ruby{空}{そら}に\ruby{湧}{わ}き\ruby{出}{い}づる\\
+        \ruby{光}{ひかり}の\ruby{雲}{くも}を\ruby[g]{如何}{いか}に\ruby{見}{み}る
+        
+        \vspace{\linespace}
+        \item~\\
+        % 4.
+        \ruby{望}{のぞみ}の\ruby{光}{ひかり}\ruby{見}{み}えざれば\\
+        \ruby{世}{よ}は\ruby{永劫}{えい|ごう}に\ruby{常闇}{とこ|やみ}か\\
+        \ruby{我}{わ}が\ruby{清純}{せい|じゅん}の\ruby{魂}{たましい}の\\
+        \ruby{撓}{たゆ}まぬ\ruby{旅}{たび}は\ruby{麗}{うるは}しく\\
+        \ruby{頑迷}{がん|めい}の\ruby{徒}{と}も\ruby{起}{お}き\ruby{出}{い}でて\\
+        \ruby{我等}{われ|ら}の\ruby{群}{むれ}に\ruby{加}{くわ}はらん
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 5.
+        あはれゆかしき\ruby{人}{ひと}の\ruby{世}{よ}や\\
+        \ruby{夜}{よ}ふけの\ruby{街}{まち}を\ruby{歩}{あゆ}みつつ\\
+        \ruby{遠}{とお}き\ruby{北斗}{ほく|と}の\ruby{星}{ほし}を\ruby{呼}{よ}び\\
+        \ruby{友}{とも}も\ruby{歌}{うた}へば\ruby{我}{われ}も\ruby{和}{わ}し\\
+        \ruby{来}{きた}るはここぞ\ruby{森}{もり}の\ruby{奥}{おく}\\
+        \ruby{光}{ひかり}まばゆき\ruby{自治}{じ|ち}の\ruby{燈}{とう}
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
