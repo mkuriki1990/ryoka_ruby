@@ -30,7 +30,7 @@
 % begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
-\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\blocksize}{0.33\hsize} % 段組間の設定
 \newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
 % end length
 % begin body
@@ -42,14 +42,10 @@
         \vspace{\linespace}
         \item~\\
         % 1.
-        \ruby{春風}{しゅんぷう}\ruby{興}{おこ}せ\ruby{我}{わ}が\ruby{若人}{わこうど}よ\\
-        \ruby{大地}{だいち}を\ruby{君}{きみ}の\ruby{色}{いろ}に\ruby{染}{そ}めよ\\
-        \ruby{理知}{りち}\ruby{無}{な}かりしも\ruby{血気}{けっき}\ruby{注}{ちゅう}がば\\
-        \ruby{光明}{こうみょう}の\ruby{道}{みち}\ruby{拓}{ひら}かれん\\
-        \ruby{涙}{なみだ}たぎりて\ruby{白雲}{しらくも}を\ruby{流}{なが}せば\\
-        \ruby{満月}{まんげつ}も\ruby{我}{われ}らを\ruby{讃}{さん}へんや\\
-        \ruby{一矢}{いっし}の\ruby{猛}{たけ}りが\ruby{青龍}{せいりゅう}となりて\\
-        \ruby{天}{てん}に\ruby{昇}{のぼ}るは\ruby{今}{いま}この\ruby{時}{とき}ぞ
+        \ruby{春風}{しゅん|ぷう}\ruby{興}{おこ}せ\ruby{我}{わ}が\ruby[g]{若人}{わこうど}よ\\
+        \ruby[g]{大地}{ち}を\ruby{君}{きみ}の\ruby{色}{いろ}に\ruby{染}{そ}めよ\\
+        \ruby{理知}{り|ち}\ruby{無}{な}かりしも\ruby{血気}{けっ|き}\ruby{注}{そそ}がば\\
+        \ruby[g]{光明}{ひかり}の\ruby{迪}{みち}\ruby{拓}{ひら}かれん\\
         
     \end{minipage}
     \begin{minipage}[c]{\blocksize}
@@ -57,14 +53,11 @@
         \vspace{\linespace}
         \item~\\
         % 2.
-        \ruby{使命}{しめい}は\ruby{未}{いま}だ\ruby{君}{きみ}らが\ruby{華}{はな}ぞ\\
-        \ruby{捧}{ささ}げよ\ruby{汝}{なんじ}が\ruby{情熱}{じょうねつ}\\
-        \ruby{留}{と}まり\ruby{酌}{く}みてただ\ruby{人}{じん}を\ruby{待}{ま}つ\\
-        \ruby{尽}{つ}きる\ruby{事}{こと}なき\ruby{我}{わ}が\ruby{希望}{きぼう}\\
-        \ruby{涙}{なみだ}たぎりて\ruby{白雲}{しらくも}を\ruby{流}{なが}せば\\
-        \ruby{満月}{まんげつ}も\ruby{我}{われ}らを\ruby{讃}{さん}へんや\\
-        \ruby{一矢}{いっし}の\ruby{猛}{たけ}りが\ruby{青龍}{せいりゅう}となりて\\
-        \ruby{天}{てん}に\ruby{昇}{のぼ}るは\ruby{今}{いま}この\ruby{時}{とき}ぞ
+        \ruby{使命}{し|めい}は\ruby{未}{いま}だ\ruby{君等}{きみ|ら}が\ruby{華}{はな}ぞ\\
+        \ruby{捧}{ささ}げよ\ruby{汝}{な}が\ruby[g]{情熱}{おもい}\\
+        \ruby{留}{とど}まり\ruby{酌}{く}みてただ\ruby{人}{ひと}を\ruby{待}{ま}つ\\
+        \ruby{尽}{つ}きる\ruby{事}{こと}なき\ruby{我}{わ}が\ruby[g]{希望}{のぞみ}\\
+        （※繰り返し）
         
     \end{minipage}
     \begin{minipage}[c]{\blocksize}
@@ -72,16 +65,21 @@
         \vspace{\linespace}
         \item~\\
         % 3.
-        \ruby{別}{わか}れは\ruby{近}{ちか}く\ruby{再会}{さいかい}は\ruby{遠}{とお}し\\
-        \ruby{巣立}{すだ}つ\ruby{友}{とも}\ruby{等}{とう}の\ruby{愛}{いと}しさよ\\
-        \ruby{君}{きみ}の\ruby{比翼}{ひよく}の\ruby{鳥}{とり}となりたし\\
+        \ruby{別}{わか}れは\ruby{近}{ちか}く\ruby[g]{再会}{であい}は\ruby{遠}{とお}し\\
+        \ruby{巣立}{す|だ}つ\ruby{友等}{とも|ら}の\ruby{愛}{いと}しさよ\\
+        \ruby{君}{きみ}の\ruby{比翼}{ひ|よく}の\ruby{鳥}{とり}となりたし\\
         \ruby{翔}{か}けめぐらんかな\ruby{共}{とも}に\\
-        \ruby{涙}{なみだ}たぎりて\ruby{白雲}{しらくも}を\ruby{流}{なが}せば\\
-        \ruby{満月}{まんげつ}も\ruby{我}{われ}らを\ruby{讃}{さん}へんや\\
-        \ruby{一矢}{いっし}の\ruby{猛}{たけ}りが\ruby{青龍}{せいりゅう}となりて\\
-        \ruby{天}{てん}に\ruby{昇}{のぼ}るは\ruby{今}{いま}この\ruby{時}{とき}ぞ
+        （※繰り返し）
     
     \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+\begin{enumerate} % 番号の箇条書き ここから
+    \vspace{\linespace}
+    \item[（※）]
+    \ruby{涙}{なみだ}たぎりて\ruby[g]{白雲}{くも}を\ruby{流}{なが}せば\\
+    \ruby[g]{満月}{つき}も\ruby{我等}{われ|ら}を\ruby{讃}{たた}へんや\\
+    \ruby{一矢}{いっ|し}の\ruby{猛}{たけ}りが\ruby{青竜}{せい|りゅう}となりて\\
+    \ruby{天}{てん}に\ruby{昇}{のぼ}るは\ruby{今}{いま}この\ruby{時}{とき}ぞ
 \end{enumerate} % 番号の箇条書き ここまで
 %%%%% 歌詞 ここまで %%%%%
 % end body
