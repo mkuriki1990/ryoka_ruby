@@ -1,0 +1,74 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            二つの春 % タイトルを入れる
+        }
+        {\small 
+            （平成二十五年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        丸田潤君 作歌・作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2 繰り返しなし)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    % \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{降}{ふ}りしく\ruby{雪}{ゆき}は\ruby{終}{おわ}るを\ruby{知}{し}らず、
+        \ruby{未}{いま}だ\ruby{窓下}{そう|か}には\ruby{白銀}{はく|ぎん}の\ruby{町}{まち}。\\
+        されど\ruby[g]{陽光}{ひかり}は\ruby{日毎}{ひ|ごと}に\ruby{増}{ま}して、
+        \ruby{春}{はる}の\ruby{訪}{おとず}れを\ruby{微}{かそ}かに\ruby[g]{予感}{おも}う。\\
+        \ruby{幾許}{いく|ばく}もせず\ruby[g]{別離}{わかれ}の\ruby{時}{とき}は\ruby{来}{き}て、
+        \ruby{寮}{ここ}で\ruby{過}{す}ごせし\ruby{日}{ひ}は\ruby[g]{想出}{おもいで}となる。\\
+        \ruby{雪上}{せつ|じょう}の\ruby[g]{足跡}{あと} \ruby{融}{と}け\ruby{去}{さ}り\ruby{消}{き}ゆるよに、
+        \ruby{巣立}{す|だ}つ\ruby{若芽}{わか|が}も\ruby[g]{晩冬}{ふゆ}と\ruby{共}{とも}に\ruby{去}{さ}り\ruby{行}{ゆ}く。
+        
+    % \end{minipage}
+    % \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{残雪}{ざん|せつ}\ruby{融}{と}かす\ruby{春風}{はる|かぜ}\ruby{吹}{ふ}きて、
+        \ruby[g]{原始林}{もり}\ruby{陰}{かげ}に\ruby{萌}{も}ゆる\ruby{新芽}{しん|め}は\ruby{踊}{おど}る。\\
+        \ruby[g]{生命}{いのち}の\ruby[g]{鐘声}{かね}は\ruby{北都}{ほく|と}を\ruby{巡}{めぐ}り、
+        \ruby{長}{なが}き\ruby{寒冬}{かん|とう}の\ruby{影}{かげ}は\ruby{消}{き}え\ruby{往}{ゆ}く。\\
+        \ruby{去}{さ}りし\ruby[g]{寮友}{とも}との\ruby[g]{月日}{おもいで}\ruby{胸}{むね}にして、
+        \ruby{新}{あら}たなる\ruby[g]{一年}{じだい}の\ruby{扉}{とびら}を\ruby{開}{ひら}く。\\
+        \ruby{若}{わか}き\ruby{我等}{われ|ら}の\ruby{熱}{あつ}き\ruby{血}{ち}\ruby{滾}{たぎ}らせて、
+        ひたすらに\ruby{只}{ただ}\ruby[g]{青春}{いま}を\ruby{歩}{あゆ}みて\ruby{行}{ゆ}かん。
+    
+    % \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
