@@ -1,0 +1,80 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            蒼天へ % タイトルを入れる
+        }
+        {\small 
+            （平成十四年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        上川雄之君 作歌\\千葉直樹君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 了なし繰り返しあり)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{翠}{あお}き\ruby{早緑}{さ|みどり}あまりに\ruby{深}{ふか}く\\
+        \ruby{若葉}{わか|ば}に\ruby{臥}{ふ}せし\ruby{風}{かぜ}\ruby{吹}{ふ}く\ruby[g]{楡陵}{おか}の\\
+        \ruby{寮}{ここ}で\ruby{培}{つちか}うこの\ruby[g]{大志}{おもい}\\
+        \ruby[g]{寮友}{とも}との\ruby[g]{絢夢}{ゆめ}は\ruby[g]{東雲}{しののめ}\ruby{明}{あ}かり\\
+        \ruby{佇}{たたず}み\ruby{移}{うつ}ろう\ruby{憧}{あこが}れを\\
+        \ruby{今}{いま}こそ\ruby{我}{わ}が\ruby{身}{み}の\ruby{翼}{つばさ}と\ruby{成}{な}さん
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{碧}{あお}き\ruby{雪迪}{ゆき|みち}あまりに\ruby{長}{なが}く\\
+        \ruby{星影}{ほし|かげ}\ruby{映}{は}えし\ruby{原始}{げん|し}の\ruby{森}{もり}を\\
+        \ruby[g]{放浪}{さまよ}い\ruby{往}{ゆ}かんはこの\ruby{恵}{のぞ}み\\
+        \ruby{心緒}{しん|しょ}\ruby{乱}{みだ}れて\ruby{我}{わ}が\ruby{身}{み}の\ruby{果}{は}ても\\
+        \ruby{折}{お}れぬ\ruby[g]{野心}{こころ}を\ruby{誓}{ちか}いつつ\\
+        \ruby{六華}{りっ|か}と\ruby{月}{つき}を\ruby[g]{燈火}{ともしび}に
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{蒼}{あお}き\ruby{天空}{てん|くう}あまりに\ruby{広}{ひろ}く\\
+        \ruby{楡}{にれ}と\ruby{風}{かぜ}とに\ruby{我等}{われ|ら}は\ruby{宿}{やど}る\\
+        \ruby{魂}{たま}の\ruby[g]{懊悩}{なや}みは\ruby{雲}{くも}\ruby{散}{ちら}し\\
+        \ruby{新}{あら}たな\ruby{雄叫}{お|たけ}び\ruby{羽}{は}ばたきに\\
+        \ruby{大}{おお}いなる\ruby[g]{生命}{せい}\ruby{抱}{かか}え\ruby{得}{え}て\\
+        \ruby{飛}{と}び\ruby{発}{た}たんいざ\ruby{北斗}{ほく|と}の\ruby{雄途}{ゆう|と}
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
