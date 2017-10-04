@@ -1,0 +1,93 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            別離の歌 % タイトルを入れる
+        }
+        {\small 
+            （昭和六年閉寮記念寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        大槻均君 作歌\\中村小弥太君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 繰り返しなし)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.33\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+
+\vspace{\linespace}
+\ruby{草木}{そう|もく}すら\ruby{時}{とき}に\ruby{悲歌}{ひ|か}を\ruby{嘆}{たん}ず、
+\ruby{永劫}{えい|ごう}の\ruby{時}{とき}の\ruby{流}{なが}れの\ruby{尽}{つ}きざるに、\\
+\ruby{人}{ひと}の\ruby{世}{よ}の\ruby{凡}{すべ}ての\ruby{何}{なん}ぞはかなき。\\
+\ruby{懐}{なつ}かしき\ruby{友}{とも}よ、\\
+\ruby{彼}{か}の\ruby{寮}{りょう}を\ruby{思}{おも}ひ\ruby{浮}{うか}べて\ruby{心静}{こころ|しず}かに
+「\ruby{別離}{べつ|り}の\ruby{歌}{うた}」を\ruby{奏}{かな}でん。
+
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby[g]{高遠}{たかき}を\ruby{誇}{ほこ}る\ruby{自治寮}{じ|ち|りょう}よ\\
+        \ruby{星}{ほし}\ruby[g]{永遠}{とこしへ}に\ruby{流}{なが}れては\\
+        \ruby{春秋}{しゅん|じゅう}ここに\ruby{二十六}{に|じゅう|ろく}\\
+        \ruby{逝}{ゆ}きて\ruby{帰}{かえ}らぬ\ruby{春風}{はる|かぜ}を\\
+        \ruby{恨}{うら}む\ruby[g]{今宵󠄁}{こよい}の\ruby[g]{若草}{くさ}の\ruby{上}{うえ}\\
+        これ\ruby{先人}{せん|じん}が\ruby{夢}{ゆめ}の\ruby{跡}{あと}かな
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{移}{うつ}ろふ\ruby[g]{世習}{ならひ}\ruby{泣}{な}くは\ruby{誰}{た}そ\\
+        \ruby{原始}{げん|し}の\ruby{森}{もり}に\ruby{咲}{さ}く\ruby{枝}{えだ}を\\
+        \ruby{手折}{た|お}りて\ruby{結}{むす}ぶ\ruby{友垣}{とも|がき}が\\
+        \ruby{燃}{も}ゆる\ruby[g]{生命}{いのち}のかがり\ruby{火}{び}に\\
+        \ruby{光}{ひか}る\ruby{瞳}{ひとみ}は\ruby[g]{幸福星}{アストラ}か\\
+        \ruby{強}{つよ}く\ruby{正}{ただ}しく\ruby{友}{とも}よ\ruby{生}{い}きなむ
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby[g]{明日}{あす}の\ruby[g]{宿居}{やどり}は\ruby{知}{し}らねども\\
+        \ruby{吾}{われ}に\ruby{友}{とも}あり、\ruby{吾}{われ}\ruby{強}{つよ}し\\
+        \ruby{降}{ふ}る\ruby[g]{苦難}{くるしみ}をともにせん\\
+        \ruby{誓}{ちか}ふ\ruby{心}{こころ}の\ruby[g]{酒杯}{さかづき}に\\
+        \ruby{尽}{つ}きぬ\ruby[g]{名残}{なごり}の\ruby{涙}{なんだ}する\\
+        \ruby[g]{今宵󠄁}{こよい}\ruby{限}{かぎ}りのこの\ruby{宴}{うたげ}かな
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
