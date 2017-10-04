@@ -1,6 +1,8 @@
 \documentclass[10pt,b5j]{tarticle} % B6 縦書き
 \input{template_B6.tex} % B6 用テンプレート読み込み
 
+\renewcommand{\baselinestretch}{0.90} % 行間の倍率
+
 \begin{document}
 % begin header
 %%%%% タイトルと作者 ここから %%%%%
@@ -27,9 +29,9 @@
 % % end header
 
 % begin length
-\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
-\newcommand{\linespace}{0.5em} % 行間の設定
-\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\vspace{1.0em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.4em} % 行間の設定
+\newcommand{\blocksize}{0.33\hsize} % 段組間の設定
 \newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
 % end length
 % begin body
@@ -42,30 +44,24 @@
         \item~\\
         % 1.
         \ruby{腰}{こし}のシーナイフにすがりつき\\
-        ついて\ruby{行}{ついてい}きます\ruby{何処}{どこ}までも\\
-        ついて\ruby{行}{ついてい}くのは\ruby{易}{やす}けれど\\
-        \ruby{女}{おんな}\ruby{乗}{の}せない\ruby{三}{さん}\ruby{号}{ごう}\ruby{艇}{てい}
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
+        ついて\ruby{行}{い}きます\ruby[g]{何処}{どこ}までも\\
+        ついて\ruby{行}{い}くのは\ruby{易}{やす}けれど\\
+        \ruby{女}{おんな}\ruby{乗}{の}せない\ruby{三号艇}{さん|ごう|てい}
         
         \vspace{\linespace}
         \item~\\
         % 2.
-        \ruby{女}{おんな}\ruby{乗}{の}せない\ruby{三}{さん}\ruby{号}{ごう}\ruby{艇}{てい}なら\\
-        \ruby{長}{なが}い\ruby{黒髪}{くろかみ}\ruby{断}{た}ち\ruby{切}{き}って\\
-        \ruby{可愛}{かわい}いいクルーになりすまし\\
-        ついて\ruby{行}{ついてい}きます\ruby{何処}{どこ}までも
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
+        \ruby{女}{おんな}\ruby{乗}{の}せない\ruby{三号艇}{さん|ごう|てい}なら\\
+        \ruby{長}{なが}い\ruby{黒髪}{くろ|かみ}\ruby{断}{た}ち\ruby{切}{き}って\\
+        \ruby[g]{可愛}{かわ}いいクルーになりすまし\\
+        ついて\ruby{行}{い}きます\ruby[g]{何処}{どこ}までも
         
         \vspace{\linespace}
         \item~\\
         % 3.
-        \ruby{四年}{よんねん,よんねん}\ruby{三年}{みとし}ジジクサイ\\
-        \ruby{二年}{にねん,にねん}それぞれ\ruby{彼女}{かのじょ}あり\\
-        \ruby{可愛}{かわ}いい\ruby{一年}{いちねん}にゃ\ruby{金}{きん}が\ruby{無}{な}い\\
+        \ruby{四年}{よ|ねん}\ruby{三年}{さん|ねん}ジジクサイ\\
+        \ruby{二年}{に|ねん}それぞれ\ruby{彼女}{かの|じょ}あり\\
+        \ruby[g]{可愛}{かわ}いい\ruby{一年}{いち|ねん}にゃ\ruby{金}{かね}が\ruby{無}{な}い\\
         \ruby{女}{おんな}\ruby{泣}{な}かせのヨットマン
         
     \end{minipage}
@@ -80,15 +76,12 @@
         ボロのヨットに\ruby{乗}{の}ってても\\
         \ruby{腕}{うで}は\ruby{確}{たし}かなヨットマン
         
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
-        
         \vspace{\linespace}
         \item~\\
         % 5.
         いいじゃありませんか\\
         ヨットマンは\\
-        \ruby{欠}{か}けた\ruby{茶碗}{ちゃわん}に\ruby{折}{お}れたはし\\
+        \ruby{欠}{か}けた\ruby{茶碗}{ちゃ|わん}に\ruby{折}{お}れた\ruby{箸}{はし}\\
         クサレズッペにクサレ\ruby{飯}{めし}\\
         それでも\ruby{生}{い}きてるヨットマン
         
@@ -100,21 +93,18 @@
         % 6.
         いいじゃありませんか\\
         ヨットマンは\\
-        \ruby{太}{ふと}い\ruby{腕}{うで}に\ruby{黒}{くろ}い\ruby{顔}{かお}\\
-        キリリと\ruby{締}{し}まった\ruby{口許}{くちもと}が\\
+        \ruby{太}{ふと}い\ruby{腕}{かいな}に\ruby{黒}{くろ}い\ruby{顔}{かお}\\
+        キリリと\ruby{締}{し}まった\ruby{口許}{くち|もと}が\\
         グーッといかすぜヨットマン
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
         
         \vspace{\linespace}
         \item~\\
         % 7.
         \ruby{浜}{はま}の\ruby{娘}{むすめ}が\ruby{噂}{うわさ}する\\
-        \ruby{愛}{あい}しあの\ruby{人}{ひと}ヨットマン\\
+        \ruby{愛}{いと}しあの\ruby{人}{ひと}ヨットマン\\
         お\ruby{嫁}{よめ}に\ruby{行}{い}くならヨットマン\\
-        \ruby{今夜}{こんや}も\ruby{楽}{たの}しい\ruby{夢}{ゆめ}を\ruby{見}{み}る\\
-        ヨットマン　ヨットマン\\
+        \ruby{今夜}{こん|や}も\ruby{楽}{たの}しい\ruby{夢}{ゆめ}を\ruby{見}{み}る\\
+        ヨットマン~~ヨットマン\\
         ヨットヨットマン
     
     \end{minipage}
