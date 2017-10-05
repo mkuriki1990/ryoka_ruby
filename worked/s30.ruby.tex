@@ -1,0 +1,113 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            悲歌に血吐きし % タイトルを入れる
+        }
+        {\small 
+            （昭和三十年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        柳田和朗君 作歌\\菅原幸雄君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (序,結 了あり)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.33\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item[序]~\\
+        % \ruby{序}{ついで}.
+        \ruby{悲歌}{ひ|か}に\ruby{血}{ち}\ruby{吐}{は}きし\ruby{我}{われ}らもが\\
+        \ruby{永劫不変}{えい|ごう|ふ|へん}を\ruby[g]{探求}{もと}めんと\\
+        \ruby{遙々}{はる|ばる}\ruby[g]{漂泊}{さすらい}\ruby{来}{き}たりても\\
+        \ruby{赤}{あか}き\ruby{浜茄子}{はな|ま|す}\ruby{摘}{つ}みとりて\\
+        \ruby{悪魔}{あく|ま}\ruby{牛耳}{ぎゅう|じ}り\ruby{詩吟}{し|ぎん}する\\
+        \ruby{天下}{てん|か}\ruby{不仰}{ふ|ぎょう}の\ruby{寂寥児}{せき|りょう|じ}
+        
+        \vspace{\linespace}
+        \item[春]~\\
+        % \ruby{春}{はる}.
+        \ruby{未知}{み|ち}の\ruby{世界}{せ|かい}に\ruby{立}{た}ち\ruby{薫}{かお}る\\
+        \ruby{冬}{ふゆ}の\ruby{名残}{な|ご}りか\ruby[g]{歓喜}{よろこび}か\\
+        \ruby{春}{はる}\ruby{爛漫}{らん|まん}のただなかに\\
+        \ruby{手稲}{て|いね}の\ruby{山}{やま}の\ruby{淡雪}{あわ|ゆき}の\\
+        \ruby{雪解}{ゆき|げ}が\ruby{衣}{ころも}の\ruby{袖}{そで}\ruby{軽}{か}ろき\\
+        \ruby{門出}{かど|で}が\ruby[g]{詩歌}{うた}を\ruby[g]{讃歌}{うた}わんや
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item[夏]~\\
+        % \ruby{夏}{なつ}.
+        \ruby{原始}{げん|し}の\ruby{森}{もり}に\ruby{深}{ふか}く\ruby{入}{い}り\\
+        \ruby{朱碧}{しゅ|こん}\ruby{混}{ま}じる\ruby{眩}{まばゆ}さに\\
+        \ruby[g]{神秘}{くしび}\ruby{無象}{む|しょう}の\ruby{影}{かげ}さして\\
+        \ruby{郭公}{かっ|こう}\ruby[g]{生命}{いのち}の\ruby[g]{顫律}{とれもろ}で\\
+        \ruby{若}{わか}き\ruby{誇}{ほこ}りに\ruby{酔}{よ}い\ruby{痴}{し}れて\\
+        \ruby{自由}{じ|ゆう}の\ruby[g]{頌歌}{ほめうた}\ruby{歌}{うた}うなり
+        
+        \vspace{\linespace}
+    \item[秋]~\\
+        % \ruby{秋}{あき}.
+        \ruby{朝}{あした}の\ruby[g]{白露}{つゆ}は\ruby{詩}{し}を\ruby{吟}{ぎん}じ\\
+        \ruby{夕陽}{せき|よう}\ruby{紅}{あか}く\ruby{舞}{ま}い\ruby{乱}{みだ}る\\
+        \ruby{秋風}{しゅう|ふう}\ruby{高歌}{こう|か}\ruby{昂然}{こう|ぜん}と\\
+        \ruby{踏}{ふみ}\ruby{轟}{とど}ろかすストームの\\
+        \ruby{孤袖}{こ|しゅう}の\ruby{遊子}{ゆう|し}\ruby{大望}{たい|ぼう}の\\
+        \ruby[g]{希望}{のぞみ}に\ruby{宿}{やど}る\ruby{北極星}{ほっ|きょく|せい}
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item[冬]~\\
+        % \ruby{冬}{ふゆ}.
+        \ruby[g]{雪崩}{なだれ}に\ruby{雪}{ゆき}を\ruby{血}{ち}で\ruby{染}{そ}めて\\
+        \ruby{若}{わか}き\ruby[g]{生命}{いのち}を\ruby{捨}{す}つるとも\\
+        あこがれ\ruby[g]{清浄}{きよ}き\ruby{樹氷}{じゅ|ひょう}\ruby{恋}{こ}い\\
+        \ruby{奥山}{おく|やま}\ruby{古}{ふる}き\ruby{谷間}{たに|ま}\ruby{小屋}{ご|や}\\
+        \ruby[g]{空想}{おもい}の\ruby{羽}{はね}の\ruby[g]{頂上}{いただき}に\\
+        \ruby{炉火}{いろり|び}\ruby{囲}{かこ}み\ruby{唱}{うた}う\ruby{歌}{うた}
+        
+        \vspace{\linespace}
+        \item[結]~\\
+        % \ruby{結}{ゆい}.
+        \ruby{年}{とし}\ruby{古}{ふ}る\ruby{樹々}{き|ぎ}は\ruby{皆}{みな}\ruby{朽}{く}ちて\\
+        \ruby{生}{せい}の\ruby{心}{こころ}が\ruby{落葉}{らく|よう}の\\
+        \ruby{記憶}{き|おく}の\ruby{底}{そこ}に\ruby{沈}{しず}みいで\\
+        \ruby{悲哀}{ひ|あい}の\ruby{涙}{なみだ}ほとばしる\\
+        \ruby{世}{よ}の\ruby{暗闇}{くら|やみ}にひそめども\\
+        \ruby{去}{さ}る\ruby[g]{二年}{ふたとせ}を\ruby[g]{謳歌}{たた}えんや
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
