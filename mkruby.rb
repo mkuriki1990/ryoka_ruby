@@ -51,11 +51,12 @@ def kanjiRuby(srcStr)
         tempFile.close
 
         # MeCab を持ちいて解析
-        resultMecab = `./bin/mecab temporaryFile && rm temporaryFile`
+        resultMecab = `mecab -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd/ temporaryFile && rm temporaryFile`
         # 解析結果を一行ごとに処理
         resultMecab.lines{|line|
             # タブ文字の前に漢字が含まれている行のみを抽出
-            if line.match(/.*[一-龠々]+.*\t/)
+            # if line.match(/.*[一-龠々]+.*\t/)
+            if line.match(/.*[一-龠]+.*\t/)
                 # 8 番目が読み仮名 1 個目なのでそれを抜き出す
                 sss = line.gsub(/^(.+)\t[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,(.+),.+/, '\1,\2')
                 kanji = $1
@@ -68,10 +69,11 @@ def kanjiRuby(srcStr)
                     if kanji.match(/.*[^一-龠々]+.*/)
                         kanji.scan(/[一-龠々]+/){|trueKanji|
                             # 最初の送り仮名だけを抜き出し
-                            kanji.match(/#{trueKanji}(.)/)
-                            okurigana = $1
+                            kanji.match(/(.*)#{trueKanji}(.)/)
+                            maegana = $1
+                            okurigana = $2
                             # ルビから最初の送り仮名以降を除去
-                            ruby.match(/(.+)#{okurigana}/)
+                            ruby.match(/#{maegana}(.+)#{okurigana}/)
                             trueRuby = $1
                             # 次のループのためにルビの頭から送り仮名までを除去
                             ruby.sub!(/.*#{okurigana}/, '')
