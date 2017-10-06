@@ -51,7 +51,7 @@ def kanjiRuby(srcStr)
         tempFile.close
 
         # MeCab を持ちいて解析
-        resultMecab = `mecab -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd/ temporaryFile && rm temporaryFile`
+        resultMecab = `mecab -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd/ -u ./keiteki.dic temporaryFile && rm temporaryFile`
         # 解析結果を一行ごとに処理
         resultMecab.lines{|line|
             # タブ文字の前に漢字が含まれている行のみを抽出
