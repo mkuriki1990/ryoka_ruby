@@ -68,11 +68,11 @@ def kanjiRuby(srcStr)
                     # 一単語としての判別されてしまうための処理
                     if kanji.match(/.*[^一-龠々]+.*/)
                         kanji.scan(/[一-龠々]+/){|trueKanji|
-                            # 最初の送り仮名だけを抜き出し
+                            # 漢字の前のカナと送り仮名だけを抜き出し
                             kanji.match(/(.*)#{trueKanji}(.)/)
                             maegana = $1
                             okurigana = $2
-                            # ルビから最初の送り仮名以降を除去
+                            # ルビからカナを除去
                             ruby.match(/#{maegana}(.+)#{okurigana}/)
                             trueRuby = $1
                             # 次のループのためにルビの頭から送り仮名までを除去
