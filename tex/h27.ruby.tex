@@ -1,0 +1,89 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            咲く六華よ % タイトルを入れる
+        }
+        {\small 
+            （平成二十七年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        鈴木美奈君 作歌\\小松遼貴君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 了あり)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{学}{まな}び\ruby{舎}{や}の\ruby{野}{の}に \ruby{咲}{さ}く\ruby{六}{ろく}\ruby{華}{はな}よ\\
+        \ruby{我}{われ}らを\ruby{招}{まね}く \ruby{北}{きた}\ruby{寮}{りょう}の\ruby{幸}{みゆき}\\
+        \ruby{大望}{たいぼう}\ruby{麗}{うるわ}し この\ruby{道}{このみち}に\\
+        \ruby{名花}{めいか}\ruby{丈夫}{じょうぶ} \ruby{集}{つど}い\ruby{来}{く}る
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{涼風}{すずかぜ}に\ruby{舞}{ま}う \ruby{箱柳}{はこやなぎ}\\
+        \ruby{寮歌}{りょうか}\ruby{鳴}{な}り\ruby{響}{}く \ruby{夕餉}{ゆうげ}\ruby{時}{じ}\\
+        \ruby{先人}{せんじん}\ruby{継}{つ}ぎし \ruby{一途}{いっと}を\\
+        \ruby{未}{いま}だ\ruby{踏}{ふ}み\ruby{初}{はじ}めし \ruby{寮友}{とも}なり
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{楡}{にれ}\ruby{影}{かげ}\ruby{傾}{かたむ}く \ruby{夜}{よる}の\ruby{静寂}{せいじゃく}\\
+        \ruby{微睡}{まどろ}み\ruby{知}{し}らぬ \ruby{蔦}{つた}\ruby{住居}{じゅうきょ}\\
+        \ruby{憂}{うれ}いの\ruby{醒}{さ}めぬ \ruby{世}{よ}の\ruby{岐}{き}も\\
+        \ruby{満}{み}ち\ruby{行}{ゆ}く\ruby{若月}{わかつき}が \ruby{照}{て}らすかな
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 4.
+        \ruby{季節}{きせつ}\ruby{巡}{めぐ}りて \ruby{朔風}{さくふう}は\ruby{凪}{な}ぎ\\
+        \ruby{無何有}{むかう}の\ruby{郷}{さと}を \ruby{離}{はなれ}る\ruby{時}{とき}ぞ\\
+        \ruby{嗚呼}{ああ}\ruby{忘}{}るまじき \ruby{我}{われ}が\ruby{迪}{すすむ}の\\
+        \ruby{齢}{よわい}\ruby{延}{の}べたし \ruby{青}{あお}き\ruby{春}{はる}
+
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
