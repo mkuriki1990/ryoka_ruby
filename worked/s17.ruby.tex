@@ -1,0 +1,94 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            春来にけらし % タイトルを入れる
+        }
+        {\small 
+            （昭和十七年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        橋爪秀雄君 作歌\\杢子一雄君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 繰り返しなし)
+% end header
+
+% begin length
+\vspace{1.0em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.3em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{春来}{はる|き}にけらし\ruby{白雪}{しら|ゆき}の\\
+        \ruby{厚}{あつ}き\ruby{衣}{ころも}や\ruby{重}{おも}からん\\
+        \ruby{綾羅}{りょう|ら}の\ruby{糸}{いと}も\ruby{綻}{ほこ}ろびて\\
+        \ruby{朧々}{ろう|ろう}\ruby{深}{ふか}き\ruby[g]{五月}{さつき}\ruby{闇}{やみ}\\
+        \ruby{楡影}{ゆ|えい}\ruby{揺}{ゆら}めく\ruby[g]{{\UTF{9F19}}鼓}{ここ}の\ruby{音}{ね}に\\ % UTF 鼙
+        \ruby{夜霧}{よ|ぎり}に\ruby{蒸}{む}せる\ruby{緑酒}{りょく|しゅ}\ruby{汲}{く}み\\
+        \ruby{挙}{こぞ}りて\ruby{踊}{おど}る\ruby{楡}{にれ}の\ruby{精}{せい}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{草茅}{さう|ばう}しげき\ruby[g]{原始林}{もり}かげに\\
+        \ruby{聖}{きよし}き\ruby{焔}{ほのお}を\ruby{囲}{かこ}みつつ\\
+        \ruby{若}{わか}き\ruby[g]{情熱}{こころ}は\ruby{求}{もと}むれど\\
+        \ruby{人生}{じん|せい}\ruby{誰}{たれ}かよく\ruby{解}{と}かん\\
+        ただ\ruby{真}{まこと}なる\ruby{愛}{あい}に\ruby{泣}{な}く\\
+        \ruby[g]{寮友}{とも}の\ruby{姿}{すがた}の\ruby{清}{きよ}ければ\\
+        \ruby{春宵󠄁}{しゅん|しょう}の\ruby{罪}{つみ}と\ruby{誰}{たれ}か\ruby{言}{い}ふ
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{春秋}{はる|あき}\ruby{糸}{いと}も\ruby{限}{かぎ}りなく\\
+        \ruby[g]{文月}{ふづき}の\ruby{夢}{ゆめ}は\ruby[g]{織女星}{おりひめ}の\\
+        あはれ\ruby{手稲}{て|いね}の\ruby{衣}{ころも}かな\\
+        \ruby{山}{やま}の\ruby{端}{は}\ruby{深}{ふか}くたそがれて\\
+        \ruby[g]{今宵󠄁}{こよい}\ruby{銀河}{ぎん|が}の\ruby{祭日}{まつり|び}の\\
+        \ruby{永劫}{えい|ごう}の\ruby{空}{そら}を\ruby{眺}{ながむ}むれば\\
+        \ruby{天空}{てん|くう}\ruby{流}{なが}る\ruby{星}{ほし}\ruby{一}{ひと}つ
+        
+        \vspace{\linespace}
+        \item~\\
+        % 4.
+        \ruby{雨月}{う|げつ}の\ruby[g]{濁流}{ながれ}\ruby{滔々}{たう|たう}と\\
+        \ruby{豊川}{ほう|せん}に\ruby{聞}{き}く\ruby{世}{よ}の\ruby{憂}{うれい}\\
+        \ruby{泥潦}{でい|らう}\ruby{沈}{しず}み\ruby{真清水}{ま|し|みず}の\\
+        \ruby{流}{なが}るる\ruby{秋}{とき}は\ruby{見}{み}ざるとも\\
+        \ruby{墳墓}{ふん|ぼ}の\ruby{土}{ど}を\ruby{清}{きよ}くせん\\
+        \ruby{戦}{いくさ}の\ruby{庭}{にわ}を\ruby{高}{たか}らかに\\
+        \ruby{七}{なな}つの\ruby{海}{うみ}の\ruby{潮音}{ちょう|おん}よ
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
