@@ -30,41 +30,37 @@
 % begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
-\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\blocksize}{0.33\hsize} % 段組間の設定
 \newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
 % end length
 % begin body
 %%%%% 歌詞 ここから %%%%%
+
+\ruby{観月}{かん|げつ}\ruby{過}{す}ぎゆく\ruby{晩秋}{ばん|しゅう}の\ruby{夜}{よる}、
+\ruby{穹蒼}{そう|きゅう}の\ruby[g]{天空}{そら}\ruby{高}{たか}く
+\ruby{舞}{ま}ひたる\ruby{月}{つき}は\ruby[g]{今宵}{こよい}\ruby{満}{み}つるかな。\\
+その\ruby[g]{清輝}{かがやき}に\ruby{映}{は}えし\ruby{姫}{ひめ}が\ruby[g]{鏡水}{かがみず}は、
+\ruby{鹿}{わ}が\ruby[g]{純瞳}{ひとみ}に\ruby{宿}{やど}らむ。\\
+\ruby{月影}{つき|かげ}は\ruby{鹿}{われ}を\ruby{誘}{さそ}ひ
+\ruby{来}{き}たりしこの\ruby[g]{神無月}{とき}に
+\ruby{何}{なに}をば\ruby{見}{み}せむ。
+
 \begin{enumerate} % 番号の箇条書き ここから
     \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
-    \begin{minipage}[c]{\blocksize}
-    
-        \vspace{\linespace}
-        \item~\\
-        \ruby{観月}{みづき}\ruby{過}{す}ぎゆく\ruby{晩秋}{ばんしゅう}の\ruby{夜}{よる}、\\
-        \ruby{穹}{そら}\ruby{蒼}{あお}の\ruby{天空}{てんくう}\ruby{高}{たか}く\\
-        \ruby{舞}{まい}ひたる\ruby{月}{つき}は\ruby{今宵}{こよい}\ruby{満}{み}つるかな。\\
-        その\ruby{清輝}{きよてる}に\ruby{映}{は}えし\ruby{姫}{ひめ}が\ruby{鏡水}{かがみず}は、\\
-        \ruby{鹿}{しか}が\ruby{純}{じゅん}\ruby{瞳}{ひとみ}に\ruby{宿}{やど}らむ。\\
-        \ruby{月影}{つきかげ}は\ruby{鹿}{しか}を\ruby{誘}{さそ}ひ\\
-        \ruby{来}{き}たりしこの\ruby{神無月}{かみなづき}に\\
-        \ruby{何}{なに}をば\ruby{見}{み}せむ。
-        
-    \end{minipage}
     \begin{minipage}[c]{\blocksize}
         
         \vspace{\linespace}
         \item~\\
         % 1.
-        \ruby{時}{とき}\ruby{移}{うつ}ろひて \ruby{人世}{じんせい}は\ruby{変}{か}われども\\
-        \ruby{今宵}{こよい}も\ruby{満月}{まんげつ}は\ruby{我}{われ}らを\ruby{照}{て}さむ\\
-        \ruby{夜}{よる}の\ruby{邪}{よこしま}\ruby{帳}{ちょう}をはらはむと\\
-        \ruby{流}{ながれ}\ruby{歩}{あゆ}む\ruby{汝}{なんじ}は\ruby{楡}{にれ}に\ruby{似}{に}たれど\\
-        \ruby{風流}{ふりゅう}を\ruby{掴}{つか}まむ\ruby{芽}{め}に\ruby{感}{かん}ず\\
-        \ruby{風習}{ふうしゅう}に\ruby{付}{つけ}\ruby{和}{わ}せし\\
-        \ruby{狗}{いぬ}と\ruby{成}{な}らざらめや\\
-        さて\ruby{映}{うつ}りこむ \ruby{我}{わ}が\ruby{鏡}{かがみ}\ruby{瞳}{ひとみ}に\\
-        \ruby{風習}{ふうしゅう}だに\ruby{愛}{あい}づる その\ruby{気概}{きがい}
+        \ruby{時}{とき}\ruby{移}{うつ}ろひて \ruby[g]{人世}{よ}は\ruby{変}{か}われども\\
+        \ruby[g]{今宵}{こよい}も\ruby[g]{満月}{つき}は\ruby{我}{われ}らを\ruby{照}{うつ}さむ\\
+        \ruby{夜}{よる}の\ruby[g]{邪帳}{とばり}をはらはむと\\
+        \ruby[g]{流歩}{あゆ}む\ruby{汝}{なんじ}は\ruby{楡}{にれ}に\ruby{似}{に}たれど\\
+        \ruby[g]{風流}{かぜ}を\ruby{掴}{つか}まむ\ruby{芽}{め}に\ruby{感}{かん}ず\\
+        \ruby[g]{風習}{ならひ}に\ruby{付和}{ふ|わ}せし\\
+        \ruby{狗}{く}と\ruby{成}{な}らざらめや\\
+        さて\ruby{映}{うつ}りこむ \ruby{我}{わ}が\ruby[g]{鏡瞳}{まなざし}に\\
+        \ruby[g]{風習}{ならひ}だに\ruby{愛}{め}づる その\ruby[g]{気概}{おもひ}
         
     \end{minipage}
     \begin{minipage}[c]{\blocksize}
@@ -72,14 +68,14 @@
         \vspace{\linespace}
         \item~\\
         % 2.
-        \ruby{清}{きよし}\ruby{澄}{す}みたる\ruby{想}{そう}ひ \ruby{知}{し}る\ruby{由}{よし}もなく\\
-        \ruby{今宵}{こよい}の\ruby{三日月}{みかづき}は\ruby{川面}{かわも}に\ruby{映}{うつ}らむ\\
-        かの\ruby{日}{ひ}の\ruby{月影}{つきかげ}とは\ruby{違}{ちがい}へども\\
-        \ruby{人世}{じんせい}(よ)に\ruby{充}{み}つ\ruby{解答}{かいとう}を\ruby{自}{おの}ずと\ruby{心得}{こころえ}\\
-        \ruby{此}{この}れは\ruby{汝}{なんじ}の\ruby{求}{もとめ}\ruby{望}{もち}にか\\
-        \ruby{漲}{みなぎ}る\ruby{想}{そう}ひ などか\ruby{劣}{れつ}らむ\\
-        さて\ruby{映}{うつ}りこむ \ruby{我}{わ}が\ruby{鏡}{かがみ}\ruby{瞳}{ひとみ}に\\
-        \ruby{身}{み}を\ruby{委}{ゆだ}ねばや その\ruby{清流}{せいりゅう}
+        \ruby[g]{清澄}{す}みたる\ruby{想}{おも}ひ \ruby{知}{し}る\ruby{由}{よし}もなく\\
+        \ruby[g]{今宵}{こよい}の\ruby[g]{三日月}{つき}は\ruby{川面}{かわ|も}に\ruby{映}{うつ}らむ\\
+        かの\ruby{日}{ひ}の\ruby[g]{月影}{かた}とは\ruby{違}{ちが}へども\\
+        \ruby[g]{人世}{よ}に\ruby{充}{み}つ\ruby[g]{解答}{いらへ}を\ruby{自}{おの}ずと\ruby{心得}{こころ|え}\\
+        \ruby{此}{こ}れは\ruby{汝}{なんじ}の\ruby[g]{求望}{のぞみ}にか\\
+        \ruby{漲}{みなぎ}る\ruby{想}{おも}ひ などか\ruby{劣}{おと}らむ\\
+        さて\ruby{映}{うつ}りこむ \ruby{我}{わ}が\ruby[g]{鏡瞳}{まなざし}に\\
+        \ruby{身}{み}を\ruby{委}{ゆだ}ねばや その\ruby[g]{清流}{ながれ}
         
     \end{minipage}
     \begin{minipage}[c]{\blocksize}
@@ -87,16 +83,16 @@
         \vspace{\linespace}
         \item~\\
         % 3.
-        \ruby{静}{せい}と\ruby{唸}{うな}りし \ruby{雨}{あめ}\ruby{澪}{みお}したたれば\\
-        \ruby{今宵}{こよい}も\ruby{我}{が}は\ruby{朧月}{おぼろづき}を\ruby{仰}{ぎょう}がむ\\
-        \ruby{姫}{ひめ}が\ruby{麗姿}{れいし}を\ruby{追憶}{ついおく}ふべく\\
-        \ruby{汝}{なんじ}が\ruby{想}{そう}ひは\ruby{涙}{なみだ}と\ruby{落}{おち}\ruby{流}{なが}れ\\
-        \ruby{透}{す}かし\ruby{斜光}{しゃこう}にさらさるる\\
-        \ruby{閉}{と}じなむ\ruby{凌雲}{りょううん}よ こひ\ruby{願}{ねがい}はくば\\
-        さて\ruby{映}{うつ}りこむ \ruby{我}{わ}が\ruby{鏡}{かがみ}\ruby{瞳}{ひとみ}に\\
-        \ruby{嗚呼}{ああ}\ruby{汲}{く}まれたし その\ruby{厭}{いや}\ruby{心}{しん}\\
-        \ruby{悲}{かな}しかりけむ\ruby{晩秋}{ばんしゅう}の\ruby{夜}{よる}は\\
-        \ruby{月影}{つきかげ}\ruby{映}{は}えて\ruby{人影}{ひとかげ}も\ruby{追}{つい}ひ\ruby{得}{え}じ
+        \ruby{静}{せい}と\ruby{唸}{うな}りし \ruby[g]{雨澪}{あめ}したたれば\\
+        \ruby[g]{今宵}{こよい}も\ruby{我}{われ}は\ruby[g]{朧月}{つき}を\ruby{仰}{あお}がむ\\
+        \ruby{姫}{ひめ}が\ruby[g]{麗姿}{すがた}を\ruby[g]{追憶}{とら}ふべく\\
+        \ruby{汝}{な}が\ruby{想}{おも}ひは\ruby{涙}{なみだ}と\ruby[g]{落流}{なが}れ\\
+        \ruby{透}{す}かし\ruby[g]{斜光}{ひかり}にさらさるる\\
+        \ruby{閉}{と}じなむ\ruby[g]{凌雲}{くも}よ こひ\ruby{願}{ねが}はくば\\
+        さて\ruby{映}{うつ}りこむ \ruby{我}{わ}が\ruby[g]{鏡瞳}{まなざし}に\\
+        \ruby{嗚呼}{あ|あ}\ruby{汲}{く}まれたし その\ruby[g]{厭心}{こころ}\\
+        \ruby{悲}{かな}しかりけむ\ruby[g]{晩秋}{あき}の\ruby{夜}{よ}は\\
+        \ruby{月影}{つき|かげ}\ruby{映}{は}えて\ruby[g]{人影}{かげ}も\ruby{追}{お}ひ\ruby{得}{え}じ
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
