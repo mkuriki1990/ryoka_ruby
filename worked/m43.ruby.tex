@@ -1,0 +1,113 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            帝都を北に % タイトルを入れる
+        }
+        {\small 
+            （明治四十三年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        谷村愛之助君 作歌\\柳沢秀雄君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,4,6 了あり)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.33\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{帝都}{てい|と}を\ruby{北}{きた}に\ruby{三百里}{さん|びゃく|り}\\
+        \ruby{津軽}{つ|がる}の\ruby{海}{うみ}を\ruby{越}{こ}え\ruby{来}{く}れば\\
+        \ruby{紅塵}{こう|じん}\ruby{絶}{た}えて\ruby{空}{そら}\ruby{潔}{きよ}く\\
+        \ruby{蕭々}{しょう|しょう}として\ruby{水}{みず}\ruby{寒}{さむ}し\\
+        \ruby{大陸}{たい|りく}の\ruby{精}{せい}\ruby{鍾}{あつ}まりて\\
+        \ruby{我}{わが}\ruby{北州}{ほく|しゅう}の\ruby{島}{しま}と\ruby{凝}{こ}る
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{鯨群}{りょう|ぐん}\ruby{吼}{ほ}ゆる\ruby{荒潮}{あら|しお}に\\
+        \ruby{落}{お}つる\ruby{北斗}{ほく|と}の\ruby{影}{かげ}\ruby{冴}{さ}えて\\
+        \ruby{斧鉞}{ふ|ゑつ}\ruby{入}{い}らざるや\ruby{森林}{しん|りん}や\\
+        \ruby{人跡}{ひと|あと}\ruby{絶}{た}えし\ruby{大野原}{だい|の|はら}\\
+        \ruby{原始}{げん|し}の\ruby{儘}{まま}の\ruby{俤}{おもかげ}を\\
+        \ruby{我}{わが}\ruby{北州}{ほく|しゅう}の\ruby{島}{しま}に\ruby{見}{み}る
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{鈴蘭}{すず|らん}\ruby{薫}{かほ}る\ruby{春}{はる}の\ruby{野辺}{の|べ}\\
+        \ruby{楡}{にれ}の\ruby{下蔭}{しも|かげ}\ruby{草}{くさ}\ruby{繁}{しげ}る\\
+        \ruby{霜葉}{そう|よう}\ruby{燃}{も}ゆる\ruby{蔦葛}{つた|かづら}\\
+        \ruby[g]{吹雪}{ふぶき}は\ruby{叫}{さけ}ぶ\ruby{冬}{ふゆ}の\ruby{夜半}{よ|は}\\
+        \ruby{四季}{し|き}の\ruby{変遷}{へん|せん}\ruby{興}{きょう}\ruby{添}{そ}えて\\
+        \ruby{眺}{なが}めは\ruby{飽}{あ}かぬ\ruby{姿}{すがた}かな
+        
+        \vspace{\linespace}
+        \item~\\
+        % 4.
+        \ruby{朝霧}{あさ|ぎり}\ruby{深}{ふか}き\ruby{野}{の}の\ruby{面}{おも}に\\
+        \ruby{嘶}{いなな}く\ruby{駒}{こま}の\ruby{跡}{あと}\ruby{追}{お}へば\\
+        \ruby{露}{つゆ}の\ruby{白玉}{しら|たま}\ruby{散}{ち}り\ruby{乱}{みだ}る\\
+        \ruby{甘藍}{かん|らん}の\ruby{畑}{はた}たそがれて\\
+        プラウの\ruby{土}{つち}を\ruby{払}{はら}ふ\ruby{時}{とき}\\
+        \ruby{農牧}{のう|ぼく}の\ruby{幸}{さち}\ruby{謳}{うた}ふかな
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 5.
+        \ruby{見}{み}よ\ruby{文明}{ぶん|めい}は\ruby{北進}{ほく|しん}す\\
+        \ruby{古嚢}{こ|のう}は\ruby{盛}{も}らず\ruby{新酒}{にひ|ざけ}を\\
+        \ruby{新}{しん}\ruby{文明}{ぶん|めい}の\ruby{建設}{けん|せつ}は\\
+        \ruby{濁}{にご}れる\ruby{都}{みやこ}にあらずして\\
+        \ruby{渺}{びょう}たる\ruby{大河}{たい|が}の\ruby{片辺}{かた|ほとり}\\
+        \ruby{地}{ち}は\ruby{広漠}{こう|ばく}の\ruby{沖積層}{ちゅう|せき|そう}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 6.
+        \ruby{此}{この}\ruby{聖}{せい}\ruby{都}{と}を\ruby[g]{永久}{とこしへ}に\\
+        \ruby{浮華}{ふ|か}\ruby{軽佻}{けい|ちょう}の\ruby{国}{くに}とせず\\
+        \ruby{真摯}{しん|し}\ruby{素樸}{そ|ぼく}の\ruby{郷}{きやう}となし\\
+        \ruby{我等}{われ|ら}が\ruby{使命}{し|めい}\ruby{成}{な}し\ruby{遂}{と}げん\\
+        \ruby{真理}{しん|り}の\ruby{秘奥}{ひ|おう}\ruby{探}{さぐ}る\ruby{可}{べ}く\\
+        \ruby{道義}{どう|ぎ}の\ruby{光}{ひかり}\ruby{照}{てら}す\ruby{可}{べ}く
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
