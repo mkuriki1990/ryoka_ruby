@@ -1,6 +1,8 @@
 \documentclass[10pt,b5j]{tarticle} % B6 縦書き
 \input{template_B6.tex} % B6 用テンプレート読み込み
 
+\renewcommand{\baselinestretch}{0.90} % 行間の倍率
+
 \begin{document}
 % begin header
 %%%%% タイトルと作者 ここから %%%%%
@@ -28,8 +30,8 @@
 % end header
 
 % begin length
-\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
-\newcommand{\linespace}{0.5em} % 行間の設定
+\vspace{0.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.2em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
 \newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
 % end length
@@ -42,29 +44,26 @@
         \vspace{\linespace}
         \item~\\
         % 1.
-        \ruby{孤独}{こどく}に\ruby{満}{まん}てる\ruby{我}{われ}が\ruby{青春}{せいしゅん}に\\
-        \ruby{何時}{いつ}しか\ruby{遅}{おそ}\ruby{春}{はる}も\ruby{訪}{}ずれぬ\\
-        まだ\ruby{萠}{めぐむ}えやらぬ\ruby{芝生}{しばふ}の\ruby{上}{うえ}に\\
-        \ruby{一片}{いっぺん}\ruby{舞}{ま}い\ruby{散}{ち}る\ruby{桜花}{おうか}\\
-        \ruby{朝露}{あさつゆ}に\ruby{濡}{ぬ}れ\ruby{新}{しん}な\ruby{寮友}{とも}と\\
+        \ruby{孤独}{こ|どく}に\ruby{満}{み}てる\ruby{我}{わ}が\ruby{青春}{せい|しゅん}に\\
+        \ruby[g]{何時}{いつ}しか\ruby[g]{遅春}{はる}も\ruby{訪}{おと}ずれぬ\\
+        まだ\ruby{萠}{も}えやらぬ\ruby[g]{芝生}{しばふ}の\ruby{上}{うえ}に\\
+        \ruby{一片}{ひと|ひら}\ruby{舞}{ま}い\ruby{散}{ち}る\ruby{桜花}{さくら|ばな}\\
+        \ruby{朝露}{あさ|つゆ}に\ruby{濡}{ぬ}れ\ruby{新}{あらた}な\ruby[g]{寮友}{とも}と\\
         \ruby{盃}{さかずき}かわす\ruby{楽}{たの}しさよ\\
-        \ruby{嗚呼}{ああ}\ruby{我}{われ}\ruby{一}{いち}\ruby{人}{にん}にあらずして\\
-        \ruby{我}{われ}が\ruby{青春}{せいしゅん}は\ruby{寮友}{とも}とあり
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
+        \ruby{嗚呼}{あ|あ}\ruby{我}{われ}\ruby[g]{一人}{ひとり}にあらずして\\
+        \ruby{我}{わ}が\ruby{青春}{せい|しゅん}は\ruby[g]{寮友}{とも}とあり
         
         \vspace{\linespace}
         \item~\\
         % 2.
-        \ruby{孤独}{こどく}に\ruby{満}{まん}てる\ruby{旅人}{たびびと}\ruby{一人}{かずと}\\
-        \ruby{理想}{りそう}を\ruby{求}{もと}めて\ruby{蝦夷}{えぞ}へ\ruby{来}{こ}ぬ\\
-        その\ruby{彼}{かれ}の\ruby{人}{ひと}の\ruby{心}{こころ}\ruby{知}{し}れりや\\
-        \ruby{原始}{げんし}の\ruby{森}{もり}に\ruby{鳴}{な}く\ruby{郭公}{かっこう}\\
-        \ruby{寮友}{とも}と\ruby{別}{わか}れて\ruby{一月}{いちがつ}\ruby{経}{た}ちぬ\\
-        \ruby{今日}{きょう}\ruby{懐}{なつ}かしき\ruby{便}{たよ}りあり\\
-        \ruby{嗚呼}{ああ}\ruby{我}{われ}\ruby{一}{いち}\ruby{人}{にん}あらずして\\
-        \ruby{我}{われ}が\ruby{青春}{せいしゅん}は\ruby{寮友}{とも}とあり
+        \ruby{孤独}{こ|どく}に\ruby{満}{み}てる\ruby{旅人}{たび|びと}\ruby[g]{一人}{ひとり}\\
+        \ruby[g]{理想}{ロマン}を\ruby{求}{もと}めて\ruby{蝦夷}{え|ぞ}へ\ruby{来}{こ}ぬ\\
+        その\ruby{彼}{か}の\ruby{人}{ひと}の\ruby{心}{こころ}\ruby{知}{し}れりや\\
+        \ruby{原始}{げん|し}の\ruby{森}{もり}に\ruby{鳴}{な}く\ruby{郭公}{かっ|こう}\\
+        \ruby[g]{寮友}{とも}と\ruby{別}{わか}れて\ruby{一月}{ひと|つき}\ruby{経}{た}ちぬ\\
+        \ruby[g]{今日}{きょう}\ruby{懐}{なつか}しき\ruby{便}{たよ}りあり\\
+        \ruby{嗚呼}{あ|あ}\ruby{我}{われ}\ruby[g]{一人}{ひとり}にあらずして\\
+        \ruby{我}{わ}が\ruby{青春}{せい|しゅん}は\ruby[g]{寮友}{とも}とあり
         
     \end{minipage}
     \begin{minipage}[c]{\blocksize}
@@ -72,29 +71,26 @@
         \vspace{\linespace}
         \item~\\
         % 3.
-        \ruby{孤独}{こどく}に\ruby{満}{まん}てる\ruby{我}{われ}が\ruby{自治寮}{じちりょう}に\\
-        \ruby{早}{はや}くも\ruby{秋}{あき}の\ruby{気配}{けはい}あり\\
-        \ruby{夕陽}{ゆうひ}に\ruby{映}{うつ}ゆるポプラの\ruby{並木}{なみき}\\
-        \ruby{憂愁}{ゆうしゅう}\ruby{風}{ふう}に\ruby{枯}{か}れ\ruby{葉}{は}\ruby{飛}{と}ぶ\\
-        \ruby{再}{ふたた}び\ruby{会}{あ}いぬ\ruby{寮友}{とも}と\ruby{連}{つ}れ\ruby{立}{}ち\\
-        \ruby{真理}{しんり}の\ruby{国}{くに}を\ruby{彷徨}{うろつ}いぬ\\
-        \ruby{嗚呼}{ああ}\ruby{我}{われ}\ruby{一}{いち}\ruby{人}{にん}あらずして\\
-        \ruby{我}{われ}が\ruby{青春}{せいしゅん}は\ruby{寮友}{とも}とあり
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
+        \ruby{孤独}{こ|どく}に\ruby{満}{み}てる\ruby{我}{わ}が\ruby[g]{自治寮}{りょう}に\\
+        \ruby{早}{はや}くも\ruby{秋}{あき}の\ruby{気配}{け|はい}あり\\
+        \ruby{夕日}{ゆう|ひ}に\ruby{映}{は}ゆるポプラの\ruby{並木}{なみ|き}\\
+        \ruby{憂愁}{ゆう|しゅう}\ruby{風}{かぜ}に\ruby{枯}{か}れ\ruby{葉}{は}\ruby{飛}{と}ぶ\\
+        \ruby{再}{ふたた}び\ruby{会}{あ}いぬ\ruby[g]{寮友}{とも}と\ruby{連}{つ}れ\ruby{立}{た}ち\\
+        \ruby{真理}{しん|り}の\ruby{国}{くに}を\ruby[g]{彷徨}{さまよ}いぬ\\
+        \ruby{嗚呼}{あ|あ}\ruby{我}{われ}\ruby[g]{一人}{ひとり}にあらずして\\
+        \ruby{我}{わ}が\ruby{青春}{せい|しゅん}は\ruby[g]{寮友}{とも}とあり
         
         \vspace{\linespace}
         \item~\\
         % 4.
-        \ruby{孤独}{こどく}に\ruby{満}{まん}てる\ruby{我}{われ}が\ruby{同胞}{どうほう}に\\
-        \ruby{厳冬}{げんとう}\ruby{正}{せい}に\ruby{伸}{の}し\ruby{掛}{}り\\
-        \ruby{深雪}{みゆき}に\ruby{埋}{うま}むる\ruby{原始}{げんし}の\ruby{森}{もり}へ\\
-        \ruby{月光}{げっこう}\ruby{冴}{さえ}かに\ruby{突差}{}しぬ\\
-        \ruby{冷酒}{ひやざけ}を\ruby{飲}{の}み\ruby{野心}{やしん}\ruby{語}{かた}れば\\
-        いとど\ruby{深}{ふか}まる\ruby{友情}{ゆうじょう}かな\\
-        \ruby{嗚呼}{ああ}\ruby{我}{われ}\ruby{一}{いち}\ruby{人}{にん}あらずして\\
-        \ruby{我}{われ}が\ruby{青春}{せいしゅん}は\ruby{寮友}{とも}とあり
+        \ruby{孤独}{こ|どく}に\ruby{満}{み}てる\ruby{我}{わ}が\ruby[g]{同胞}{はらから}に\\
+        \ruby{厳冬}{げん|とう}\ruby{正}{まさ}に\ruby{伸}{の}し\ruby{掛}{かか}り\\
+        \ruby[g]{深雪}{ゆき}に\ruby{埋}{うず}むる\ruby{原始}{げん|し}の\ruby{森}{もり}へ\\
+        \ruby{月光}{げっ|こう}\ruby{冴}{さや}かに\ruby{突差}{つき|さ}しぬ\\
+        \ruby{冷酒}{ひや|ざけ}を\ruby{飲}{の}み\ruby{野心}{や|しん}\ruby{語}{かた}れば\\
+        いとど\ruby{深}{ふか}まる\ruby[g]{友情}{こころ}かな\\
+        \ruby{嗚呼}{あ|あ}\ruby{我}{われ}\ruby[g]{一人}{ひとり}にあらずして\\
+        \ruby{我}{わ}が\ruby{青春}{せい|しゅん}は\ruby[g]{寮友}{とも}とあり
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
