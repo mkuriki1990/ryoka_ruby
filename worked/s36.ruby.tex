@@ -1,6 +1,8 @@
 \documentclass[10pt,b5j]{tarticle} % B6 縦書き
 \input{template_B6.tex} % B6 用テンプレート読み込み
 
+\renewcommand{\baselinestretch}{0.90} % 行間の倍率
+
 \begin{document}
 % begin header
 %%%%% タイトルと作者 ここから %%%%%
@@ -28,8 +30,8 @@
 % end header
 
 % begin length
-\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
-\newcommand{\linespace}{0.5em} % 行間の設定
+\vspace{1.0em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.2em} % 行間の設定
 \newcommand{\blocksize}{0.5\hsize} % 段組間の設定
 \newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
 % end length
@@ -42,28 +44,25 @@
         \vspace{\linespace}
         \item~\\
         % 1.
-        \ruby{甦}{よみがえ}えれ\ruby{白}{しろ}き\ruby{辛夷}{こぶし}よ\\
-        \ruby{吐息}{といき}なす\ruby{憂悶}{ゆうもん}の\ruby{日}{ひ}も\\
-        \ruby{寂}{さび}\ruby{莫}{ばく}のまどろみも\ruby{去}{さ}り\\
+        \ruby{甦}{よみが}えれ\ruby{白}{しろ}き\ruby[g]{辛夷}{こぶし}よ\\
+        \ruby{吐息}{と|いき}なす\ruby[g]{憂悶}{くるしみ}の\ruby{日}{ひ}も\\
+        \ruby{寂莫}{せき|ばく}のまどろみも\ruby{去}{さ}り\\
         オホーツクの\ruby{水}{みず}やわらぎて\\
-        \ruby{流氷}{りゅうひょう}の\ruby{群}{ぐん}\ruby{軋}{きし}める\ruby{国}{くに}に\\
-        \ruby{彷徨}{ほうこう}のい\ruby{着}{ぎ}きしを\ruby{知}{し}る\\
-        \ruby{朽葉}{くちば}ぬき\ruby{頭}{とう}もたげし\ruby{若}{わか}き\ruby{息吹}{いぶき}は\\
-        わが\ruby{若}{わか}き\ruby{日}{ひ}の\ruby{昏迷}{こんめい}を\ruby{掻}{か}く
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
+        \ruby{流氷}{りゅう|ひょう}の\ruby{群}{むれ}\ruby{軋}{きし}める\ruby{国}{くに}に\\
+        \ruby[g]{彷徨}{さまよい}のい\ruby{着}{つ}きしを\ruby{知}{し}る\\
+        \ruby{朽葉}{くち|は}ぬき\ruby{頭}{あたま}もたげし\ruby{若}{わか}き\ruby[g]{息吹}{いぶき}は\\
+        わが\ruby{若}{わか}き\ruby{日}{ひ}の\ruby{昏迷}{こん|めい}を\ruby{掻}{か}く
         
         \vspace{\linespace}
         \item~\\
         % 2.
-        \ruby{濃霧}{のうむ}を\ruby{呑}{の}み\ruby{大気}{たいき}は\ruby{青}{あお}む\\
-        \ruby{輝}{かがや}ける\ruby{太陽}{たいよう}に\ruby{酔}{よ}い\ruby{痴}{し}れて\\
-        \ruby{高澄}{こうちょう}の\ruby{日高}{ひだか}の\ruby{峠}{とうげ}を\\
+        \ruby[g]{濃霧}{きり}を\ruby{呑}{の}み\ruby{大気}{たい|き}は\ruby{青}{あお}む\\
+        \ruby{輝}{かがや}ける\ruby[g]{太陽}{ひ}に\ruby{酔}{よ}い\ruby{痴}{し}れて\\
+        \ruby{高澄}{こう|ちょう}の\ruby{日高}{ひ|だか}の\ruby{峠}{とうげ}を\\
         わだつみの\ruby{青}{あお}をば\ruby{追}{お}わん\\
-        ああ\ruby{慵}{}げき\ruby{虚}{うろ}を\ruby{破}{やぶ}りて\\
-        \ruby{筋骨}{きんこつ}は\ruby{火照}{ほて}に\ruby{燃}{も}えぬ\\
-        エゾマツの\ruby{深}{ふか}き\ruby{樹林}{じゅりん}を\ruby{渡}{わた}る\ruby{雄叫}{おたけ}び\\
+        ああ\ruby{慵}{ものう}げき\ruby{虚}{うつろ}を\ruby{破}{や}りて\\
+        \ruby{筋骨}{きん|こつ}は\ruby{火照}{ほ|てり}に\ruby{燃}{も}えぬ\\
+        エゾマツの\ruby{深}{ふか}き\ruby{樹林}{じゅ|りん}を\ruby{渡}{わた}る\ruby{雄叫}{お|たけ}び\\
         わが\ruby{若}{わか}き\ruby{日}{ひ}の\ruby{胸}{むね}に\ruby{響}{ひび}かん
         
     \end{minipage}
@@ -72,29 +71,26 @@
         \vspace{\linespace}
         \item~\\
         % 3.
-        \ruby{眼路}{めじ}\ruby{渺茫}{びょうぼう}の\ruby{野末}{のずえ}\ruby{遙}{}けき\\
-        \ruby{石}{いし}\ruby{礫}{つぶて}の\ruby{曠野}{あらの}に\ruby{励}{はげ}む\\
-        \ruby{先達}{せんだつ}の\ruby{真情}{しんじょう}を\ruby{凝}{こ}らし\\
-        \ruby{地}{ち}の\ruby{熟睡}{じゅくすい}\ruby{静}{しず}かに\ruby{温}{ぬる}む\\
-        \ruby{真紅}{しんく}をはきて\ruby{入日}{いりひ}たゆたい\\
-        \ruby{颯々}{さっさつ}とポプラは\ruby{鳴}{な}れる\\
-        \ruby{友}{とも}どちの\ruby{組}{ぐみ}たる\ruby{肩}{かた}は\ruby{若}{わか}く\ruby{息}{いき}づく\\
-        わがあすの\ruby{日}{ひ}の\ruby{耕土}{こうど}を\ruby{期}{き}して
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
+        \ruby{眼路}{め|じ}\ruby{渺茫}{びょう|ぼう}の\ruby{野末}{の|ずえ}\ruby{遙}{はろ}けき\\
+        \ruby{石礫}{せき|れき}の\ruby{曠野}{あら|の}に\ruby{励}{はげ}む\\
+        \ruby{先達}{せん|だつ}の\ruby[g]{真情}{こころ}を\ruby{凝}{こ}らし\\
+        \ruby{地}{ち}の\ruby[g]{熟睡}{うまい}\ruby{静}{しず}かに\ruby{温}{めぐ}む\\
+        \ruby{真紅}{しん|く}をはきて\ruby{入日}{いり|ひ}たゆたい\\
+        \ruby{颯々}{さっ|さつ}とポプラは\ruby{鳴}{な}れる\\
+        \ruby{友}{とも}どちの\ruby{組}{くみ}たる\ruby{肩}{かた}は\ruby{若}{わか}く\ruby{息}{いき}づく\\
+        わがあすの\ruby{日}{ひ}の\ruby{耕土}{こう|ど}を\ruby{期}{き}して
         
         \vspace{\linespace}
         \item~\\
         % 4.
-        \ruby{白}{しろ}\ruby{皚々}{がいがい}と\ruby{六華}{りっか}は\ruby{咲}{さ}けど\\
+        \ruby{白}{しろ}\ruby{皚々}{がい|がい}と\ruby{六華}{りっ|か}は\ruby{咲}{さ}けど\\
         うす\ruby{月}{つき}は\ruby{雲}{くも}をどよませ\\
-        \ruby{逆巻}{さかまき}の\ruby{吹雪}{ふぶき}は\ruby{狂}{くる}う\\
-        \ruby{邂逅}{かいこう}に\ruby{結}{むす}ぶ\ruby{灯火}{ともしび}\\
-        \ruby{濃}{こ}き\ruby{鈍色}{にぶいろ}ににじみそめつも\\
-        \ruby{手}{て}をとりて\ruby{声}{ごえ}を\ruby{落}{お}とさじ\\
-        \ruby{明晰}{めいせき}な\ruby{眼}{め}を\ruby{持}{も}ちて\ruby{凝視}{ぎょうし}る\ruby{道}{みち}に\\
-        わが\ruby{霹靂}{へきれき}の\ruby{痕}{あと}を\ruby{印}{しる}さん
+        \ruby{逆巻}{さか|まき}の\ruby[g]{吹雪}{ふぶき}は\ruby{狂}{くる}う\\
+        \ruby{邂逅}{かい|こう}に\ruby{結}{むす}ぶ\ruby{灯火}{ともし|び}\\
+        \ruby{濃}{こ}き\ruby{鈍色}{にび|いろ}ににじみそめつも\\
+        \ruby{手}{て}をとりて\ruby{声}{こえ}を\ruby{落}{おと}さじ\\
+        \ruby{明晰}{めい|せき}な\ruby{眼}{まなこ}を\ruby{持}{も}ちて\ruby[g]{凝視}{みまも}る\ruby{道}{みち}に\\
+        わが\ruby{霹靂}{へき|れき}の\ruby{痕}{あと}を\ruby{印}{しる}さん
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
