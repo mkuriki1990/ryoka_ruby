@@ -1,6 +1,8 @@
 \documentclass[10pt,b5j]{tarticle} % B6 縦書き
 \input{template_B6.tex} % B6 用テンプレート読み込み
 
+\renewcommand{\baselinestretch}{0.90} % 行間の倍率
+
 \begin{document}
 % begin header
 %%%%% タイトルと作者 ここから %%%%%
@@ -28,9 +30,9 @@
 % end header
 
 % begin length
-\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
-\newcommand{\linespace}{0.5em} % 行間の設定
-\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\vspace{0.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.3em} % 行間の設定
+\newcommand{\blocksize}{0.33\hsize} % 段組間の設定
 \newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
 % end length
 % begin body
@@ -42,29 +44,26 @@
         \vspace{\linespace}
         \item~\\
         % 1.
-        \ruby{魂}{たましい}の\ruby{故郷}{こきょう}に\ruby{立}{た}つ\\
-        \ruby{星}{ほし}\ruby{清}{きよ}き\ruby{楡}{にれ}の\ruby{園}{えん}よ\\
-        \ruby{花芳}{かほ}る\ruby{三}{さん}\ruby{春}{はる}の\ruby{夢}{ゆめ}\\
-        \ruby{感激}{かんげき}の\ruby{涙}{なみだ}あふれて\\
-        \ruby{原始林}{もり}\ruby{蔭}{かげ}に\ruby{盃}{さかずき}かはす\\
-        \ruby{青春}{せいしゅん}きの\ruby{記念}{きねん}の\ruby{宴}{うたげ}\\
+        \ruby{魂}{たましい}の\ruby[g]{故郷}{ふるさと}に\ruby{立}{た}つ\\
+        \ruby{星}{ほし}\ruby{清}{きよ}き\ruby{楡}{エルム}の\ruby{園}{その}よ\\
+        \ruby{花芳}{はな|かほ}る\ruby{三春}{さん|しゅん}の\ruby{夢}{ゆめ}\\
+        \ruby{感激}{かん|げき}の\ruby{涙}{なみだ}あふれて\\
+        \ruby[g]{原始林}{もり}\ruby{蔭}{かげ}に\ruby{盃}{さかづき}かはす\\
+        \ruby[g]{青春}{わか}き\ruby{日}{ひ}の\ruby[g]{記念}{かたみ}の\ruby{宴}{うたげ}\\
         \ruby{歌}{うた}ふなり\\
-        \ruby{自治}{じち}と\ruby{自由}{じゆう}の\ruby{高}{こう}き\ruby{誇}{ほこ}を
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
+        \ruby{自治}{じ|ち}と\ruby{自由}{じ|ゆう}の\ruby{高}{たか}き\ruby{誇}{ほこり}を
         
         \vspace{\linespace}
         \item~\\
         % 2.
-        \ruby{六十年}{ろくじゅうねん,ろくじゅーねん}の\ruby{青史}{せいし}は\ruby{薫}{かお}り\\
-        \ruby{郭公}{かっこう}の\ruby{啼声}{}もはるかに\\
-        \ruby{紺青}{こんじょう}の\ruby{入相}{いりあい}の\ruby{空}{そら}\\
-        \ruby{魂}{たましい}は\ruby{虚空}{こくう}に\ruby{走}{はし}せて\\
-        \ruby{住}{じゅう}\ruby{昔}{むかし}の\ruby{意気}{いき}を\ruby{慕}{しの}ふ\\
+        \ruby[g]{六十年}{むそとせ}の\ruby{青史}{せい|し}は\ruby{薫}{かを}り\\
+        \ruby{郭公}{かっ|こう}の\ruby[g]{啼声}{こえ}もはるかに\\
+        \ruby{紺青}{こん|じょう}の\ruby{入相}{いり|あひ}の\ruby{空}{そら}\\
+        \ruby{魂}{たましい}は\ruby{虚空}{こ|くう}に\ruby{走}{は}せて\\
+        \ruby[g]{住昔}{ふるきよ}の\ruby[g]{意気}{こころ}を\ruby{慕}{した}ふ\\
         \ruby{尽}{つ}きるなき\ruby{川}{かわ}のせせらぎ\\
         \ruby{夢}{ゆめ}ふかし\\
-        \ruby{残}{ざん}\ruby{春}{はる}あはきポプラ\ruby{並木}{なみき}よ
+        \ruby{残春}{ざん|しゅん}あはきポプラ\ruby{並木}{なみ|き}よ
         
     \end{minipage}
     \begin{minipage}[c]{\blocksize}
@@ -72,29 +71,26 @@
         \vspace{\linespace}
         \item~\\
         % 3.
-        いで\ruby{湯}{いでゆ}\ruby{湧}{わ}く\ruby{郷}{さと}の\ruby{宴}{うたげ}は\\
-        \ruby{夜}{よ}もすがら\ruby{感激}{かんげき}はてなき\\
-        \ruby{絢爛}{けんらん}たる\ruby{瞬間}{しゅんかん}の\ruby{夢}{ゆめ}\\
-        \ruby{落葉松}{からまつ}の\ruby{林}{はやし}\ruby{時雨}{しぐ}れて\\
-        \ruby{颼}{}々の\ruby{悲歌}{ひか}の\ruby{調}{しら}べは\\
-        \ruby{楡}{にれ}\ruby{鐘}{かね}の\ruby{響}{ひびき}と\ruby{闇}{やみ}にきえゆく\\
+        いで\ruby{湯}{ゆ}\ruby{湧}{わ}く\ruby{郷}{さと}の\ruby{宴}{うたげ}は\\
+        \ruby{夜}{よ}もすがら\ruby[g]{感激}{なみだ}はてなき\\
+        \ruby{絢爛}{けん|らん}たる\ruby[g]{瞬間}{ひととき}の\ruby{夢}{ゆめ}\\
+        \ruby[g]{落葉松}{からまつ}の\ruby{林}{はやし}\ruby[g]{時雨}{しぐ}れて\\
+        \ruby{{\UTF{98BC}}々}{しゅう|しゅう}の\ruby{悲歌}{ひ|か}の\ruby{調}{しら}べは\\ % UTF 颼
+        \ruby[g]{楡鐘}{かね}の\ruby{響}{ね}と\ruby{闇}{やみ}にきえゆく\\
         さびしらに\\
-        \ruby{秋}{あき}\ruby{深}{ふか}みゆく\ruby{静寂}{せいじゃく}の\ruby{都}{と}
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
+        \ruby{秋}{あき}\ruby{深}{ふか}みゆく\ruby[g]{静寂}{しじま}の\ruby{都}{みやこ}
         
         \vspace{\linespace}
         \item~\\
         % 4.
-        \ruby{颷}{}々の\ruby{暴風}{ぼうふう}おさまり\\
-        \ruby{際涯}{さいがい}なき\ruby{雪}{ゆき}の\ruby{荒野}{あらの}に\\
-        \ruby{皎}{こう}々と\ruby{月光}{げっこう}\ruby{冴}{さえ}ゆる\\
-        \ruby{橇}{そり}の\ruby{音}{おと}の\ruby{玻窓}{}にこほりて\\
-        \ruby{限}{かぎ}りなき\ruby{瞑想}{めいそう}をさそふ\\
-        \ruby{悠久}{ゆうきゅう}の\ruby{時}{とき}の\ruby{流転}{るてん}\\
+        \ruby{{\UTF{98B7}}々}{へう|へう}の\ruby[g]{暴風}{あらし}おさまり\\ % UTF 颷
+        \ruby[g]{際涯}{はてし}なき\ruby{雪}{ゆき}の\ruby{荒野}{こう|や}に\\
+        \ruby{皎々}{こう|こう}と\ruby[g]{月光}{つきかげ}\ruby{冴}{さ}ゆる\\
+        \ruby{橇}{そり}の\ruby{音}{ね}の\ruby[g]{玻窓}{まど}にこほりて\\
+        \ruby{限}{かぎ}りなき\ruby[g]{瞑想}{おもひ}をさそふ\\
+        \ruby{悠久}{ゆう|きゅう}の\ruby{時}{とき}の\ruby[g]{流転}{うつろひ}\\
         \ruby{人}{ひと}の\ruby{世}{よ}の\\
-        \ruby{悲}{かな}しき\ruby{運命}{うんめい}ぞ\ruby{明日}{あした}の\ruby{旅路}{たびじ}は
+        \ruby{悲}{かな}しき\ruby[g]{運命}{さだめ}ぞ\ruby[g]{明日}{あす}の\ruby{旅路}{たび|じ}は
         
     \end{minipage}
     \begin{minipage}[c]{\blocksize}
@@ -102,13 +98,13 @@
         \vspace{\linespace}
         \item~\\
         % 5.
-        \ruby{曠野}{あらの}に\ruby{高}{こう}\ruby{嘯}{}ふ\ruby{恵迪}{けいてき}の\ruby{健児}{けんじ}\\
-        \ruby{毅然}{きぜん}たり\ruby{若}{わか}き\ruby{生命}{いのち}よ\\
-        \ruby{先人}{せんじん}の\ruby{崇}{たかし}き\ruby{訓戒}{くんかい}に\\
-        \ruby{大}{おお}いなる\ruby{野心}{やしん}\ruby{育}{はぐく}む\\
-        \ruby{慨世}{がいせい}の\ruby{憂}{う}はあれど\\
-        ここ\ruby{暫}{しば}し\ruby{休息}{きゅうそく}もとめて\\
-        いざ\ruby{寮友}{とも}よ\\
+        \ruby[g]{曠野}{の}に\ruby[g]{高嘯}{うた}ふ\ruby{恵迪}{けい|てき}の\ruby{健児}{こ|ら}\\
+        \ruby{毅然}{き|ぜん}たり\ruby{若}{わか}き\ruby[g]{生命}{いのち}よ\\
+        \ruby{先人}{せん|じん}の\ruby{崇}{たか}き\ruby[g]{訓戒}{おしへ}に\\
+        \ruby{大}{おほ}いなる\ruby[g]{野心}{こころ}\ruby{育}{はぐく}む\\
+        \ruby{慨世}{がい|せい}の\ruby{憂}{うれひ}はあれど\\
+        ここ\ruby{暫}{しば}し\ruby[g]{休息}{いこひ}もとめて\\
+        いざ\ruby[g]{寮友}{とも}よ\\
         のこりの\ruby{春}{はる}を\ruby{惜}{お}しまざらめや
     
     \end{minipage}
