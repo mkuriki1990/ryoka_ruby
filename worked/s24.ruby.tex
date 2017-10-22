@@ -30,7 +30,7 @@
 % begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
-\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\blocksize}{0.33\hsize} % 段組間の設定
 \newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
 % end length
 % begin body
@@ -40,64 +40,22 @@
     \begin{minipage}[c]{\blocksize}
     
         \vspace{\linespace}
-        \item~\\
-        % \ruby{序}{ついで}.
-        \ruby{彷徨}{ほうこう}へる\ruby{心}{こころ}のままに\\
-        \ruby{見返}{みかえ}りの\ruby{陵}{りょう}を\ruby{登}{のぼ}れば\\
-        \ruby{野}{の}は\ruby{遙}{はる}か\ruby{去}{さ}にし\ruby{日}{にしび}の\ruby{面影}{おもかげ}\\
-        \ruby{簫}{しょう}々の\ruby{闇}{やみ}にとけゆく\\
-        \ruby{斯}{か}くあるは\ruby{人}{ひと}の\ruby{宿命}{しゅくめい}か\\
-        \ruby{天地}{てんち}に\ruby{星}{ほし}の\ruby{飛}{と}ぶなり
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
+        \item[序]~\\
+        % \ruby{序}{じょ}.
+        \ruby[g]{彷徨}{さまよ}へる\ruby{心}{こころ}のままに\\
+        \ruby{見返}{み|かえ}りの\ruby{陵}{をか}を\ruby{登}{のぼ}れば\\
+        \ruby{野}{の}は\ruby{遙}{はる}か\ruby{去}{い}にし\ruby{日}{ひ}の\ruby[g]{面影}{かげ}\\
+        \ruby{簫々}{しょう|しょう}の\ruby{闇}{やみ}にとけゆく\\
+        \ruby{斯}{か}くあるは\ruby{人}{ひと}の\ruby[g]{宿命}{さだめ}か\\
+        \ruby{天地}{あめ|つち}に\ruby{星}{ほし}の\ruby{飛}{と}ぶなり
         
         \vspace{\linespace}
-        \item~\\
-        % \ruby{春}{はる}.
-        \ruby{清冽}{せいれつ}の\ruby{玉}{たま}\ruby{散}{ち}る\ruby{知性}{ちせい}\\
-        \ruby{燃}{も}え\ruby{狂}{きょう}ふ\ruby{情熱}{じょうねつ}の\ruby{焰}{}\\
-        \ruby{若}{わか}き\ruby{身}{み}の\ruby{裏}{うら}に\ruby{留}{と}めて\\
-        \ruby{相剋}{そうこく}の\ruby{旅}{たび}を\ruby{逝}{ゆ}くなり\\
-        \ruby{苦悩}{くのう}しみに\ruby{頬}{ほお}を\ruby{濡}{ぬ}らせば\\
-        \ruby{春雨}{はるさめ}も\ruby{楡}{にれ}\ruby{影}{かげ}つたふ
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
-        
-        \vspace{\linespace}
-        \item~\\
-        % \ruby{夏}{なつ}.
-        \ruby{初夏}{しょか}の\ruby{野}{の}に\ruby{陽炎}{かげろう}たてば\\
-        \ruby{痛}{いた}ましき\ruby{魂}{たましい}の\ruby{疵}{きず}の\\
-        \ruby{陽}{ひ}に\ruby{癒}{い}えて\ruby{幸福}{こうふく}は\ruby{希望}{きぼう}は\\
-        \ruby{微風}{びふう}に\ruby{咲}{さ}き\ruby{出}{で}づる\ruby{華}{はな}\\
-        \ruby{育}{はぐ}くみし\ruby{白}{しろ}\ruby{珠}{たま}の\ruby{水}{みず}\\
-        \ruby{浜}{はま}\ruby{茄}{なす}の\ruby{赤}{あか}き\ruby{血潮}{ちしお}よ
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
-        
-        \vspace{\linespace}
-        \item~\\
-        % \ruby{秋}{あき}.
-        \ruby{秋深}{あきふか}き\ruby{磯}{いそ}に\ruby{佇}{たたず}み\\
-        \ruby{汐}{しお}\ruby{飛沫}{しぶき}\ruby{浴}{あ}びし\ruby{彼}{かれ}の\ruby{時}{とき}\\
-        \ruby{月影}{つきかげ}に\ruby{宿命}{しゅくめい}\ruby{解}{と}かんと\\
-        \ruby{友垣}{ともがき}の\ruby{誓}{ちかい}ひし\ruby{言葉}{ことば}\\
-        \ruby{斯}{か}く\ruby{故}{ゆえ}に\ruby{千草}{せんぐさ}ふみしき\\
-        \ruby{寥々}{りょうりょう}の\ruby{孤}{こ}\ruby{杖}{つえ}を\ruby{運}{はこ}ぶ
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
-        
-        \vspace{\linespace}
-        \item~\\
+        \item[冬]~\\
         % \ruby{冬}{ふゆ}.
-        \ruby{雪}{ゆき}の\ruby{舞}{まい}ふ\ruby{砂丘}{さきゅう}\ruby{薄}{うす}れて\\
-        \ruby{光輝}{こうき}なき\ruby{旧}{ふ}りし\ruby{仕種}{しぐさ}は\\
-        \ruby{忘却}{ぼうきゃく}の\ruby{寄}{やどりき}する\ruby{汐}{しお}\ruby{音}{おん}に\\
-        \ruby{消}{き}え\ruby{去}{}りぬ\ruby{名残}{なごり}の\ruby{水際}{みずぎわ}\\
+        \ruby{雪}{ゆき}の\ruby{舞}{ま}ふ\ruby{砂丘}{さ|きゅう}\ruby{薄}{うす}れて\\
+        \ruby[g]{光輝}{ひかり}なき\ruby{旧}{ふ}りし\ruby{仕種}{し|ぐさ}は\\
+        \ruby{忘却}{ぼう|きゃく}の\ruby{寄}{よ}する\ruby{汐音}{しほ|ね}に\\
+        \ruby{消}{き}え\ruby{去}{さ}りぬ\ruby[g]{名残}{なごり}の\ruby[g]{水際}{みぎは}\\
         \ruby{叫}{さけ}ぶには\ruby{余}{あま}りに\ruby{深}{ふか}く\\
         \ruby{涙}{なみだ}には\ruby{余}{あま}りに\ruby{虚}{むな}し
         
@@ -105,14 +63,47 @@
     \begin{minipage}[c]{\blocksize}
         
         \vspace{\linespace}
-        \item~\\
+        \item[春]~\\
+        % \ruby{春}{はる}.
+        \ruby{清冽}{せい|れつ}の\ruby{玉}{たま}\ruby{散}{ち}る\ruby{知性}{ち|せい}\\
+        \ruby{燃}{も}え\ruby{狂}{くる}ふ\ruby[g]{情熱}{こころ}の\ruby[g]{焰}{ほのお}\\
+        \ruby{若}{わか}き\ruby{身}{み}の\ruby{裏}{うち}に\ruby{留}{とど}めて\\
+        \ruby{相剋}{そう|こく}の\ruby{旅}{たび}を\ruby{逝}{ゆ}くなり\\
+        \ruby[g]{苦悩}{くる}しみに\ruby{頬}{ほお}を\ruby{濡}{ぬ}らせば\\
+        \ruby{春雨}{はる|さめ}も\ruby{楡影}{にれ|かげ}つたふ
+        
+        \vspace{\linespace}
+        \item[夏]~\\
+        % \ruby{夏}{なつ}.
+        \ruby[g]{初夏}{なつ}の\ruby{野}{の}に\ruby[g]{陽炎}{かぎろひ}たてば\\
+        \ruby{痛}{いた}ましき\ruby{魂}{こころ}の\ruby{疵}{きず}の\\
+        \ruby{陽}{ひ}に\ruby{癒}{い}えて\ruby[g]{幸福}{さち}は\ruby[g]{希望}{のぞみ}は\\
+        \ruby{微風}{そよ|かぜ}に\ruby{咲}{さ}き\ruby{出}{い}づる\ruby{華}{はな}\\
+        \ruby{育}{はぐ}くみし\ruby{白珠}{しら|たま}の\ruby{水}{みず}\\
+        \ruby{浜茄}{はま|なす}の\ruby{赤}{あか}き\ruby{血潮}{ち|しお}よ
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item[秋]~\\
+        % \ruby{秋}{あき}.
+        \ruby{秋深}{あき|ふか}き\ruby{磯}{いそ}に\ruby{佇}{たたず}み\\
+        \ruby{汐}{しほ}\ruby[g]{飛沫}{しぶき}\ruby{浴}{あ}びし\ruby{彼}{か}の\ruby{時}{とき}\\
+        \ruby{月影}{つき|かげ}に\ruby[g]{宿命}{さだめ}\ruby{解}{と}かんと\\
+        \ruby{友垣}{とも|がき}の\ruby{誓}{ちか}ひし\ruby[g]{言葉}{ことば}\\
+        \ruby{斯}{か}く\ruby{故}{ゆえ}に\ruby{千草}{ち|ぐさ}ふみしき\\
+        \ruby{寥々}{りょう|りょう}の\ruby{孤杖}{こ|じょう}を\ruby{運}{はこ}ぶ
+        
+        \vspace{\linespace}
+        \item[結]~\\
         % \ruby{結}{ゆい}.
-        \ruby{三}{さん}\ruby{春秋}{しゅんじゅう}の\ruby{絢}{あや}\ruby{夢}{ゆめ}\ruby{原始林}{もり}\ruby{影}{かげ}に\\
-        \ruby{散}{ち}り\ruby{果}{は}てて\ruby{悲哀}{ひあい}を\ruby{秘}{ひ}めつ\\
-        \ruby{陵}{りょう}を\ruby{去}{さ}る\ruby{遊子}{ゆうし}の\ruby{瞳}{ひとみ}\\
-        \ruby{又}{また}\ruby{燃}{も}えぬ\ruby{愛情}{あいじょう}と\ruby{決意}{けつい}に\\
+        \ruby[g]{三春秋}{みつとせ}の\ruby[g]{絢夢}{ゆめ}\ruby[g]{原始林}{もり}\ruby{影}{かげ}に\\
+        \ruby{散}{ち}り\ruby{果}{は}てて\ruby{悲哀}{ひ|あい}を\ruby{秘}{ひ}めつ\\
+        \ruby{陵}{をか}を\ruby{去}{さ}る\ruby{遊子}{ゆう|し}の\ruby{瞳}{ひとみ}\\
+        \ruby{又}{また}\ruby{燃}{も}えぬ\ruby[g]{愛情}{あい}と\ruby{決意}{けつ|い}に\\
         \ruby{暁}{あかつき}の\ruby{新}{あら}たな\ruby{旅}{たび}\ruby{出}{で}\\
-        \ruby{永遠}{えいえん}に\ruby{時}{じ}は\ruby{流}{なが}れぬ
+        \ruby[g]{永遠}{とことは}に\ruby{時}{とき}は\ruby{流}{なが}れぬ
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
