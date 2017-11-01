@@ -1,0 +1,90 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            我が運命こそ % タイトルを入れる
+        }
+        {\small 
+            （大正三年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        樋口桜五君 作歌\\赤木顕次君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4 了あり)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{我}{わ}が\ruby[g]{運命}{さだめ}こそ\ruby{青}{あお}\ruby{渦}{うず}わける\\
+        \ruby{千}{ち}ひろの\ruby{海}{うみ}の\ruby{真珠}{ま|たま}\ruby{取}{と}り\\
+        \ruby{美}{うまし}\ruby{想}{おもひ}にあこがるる\ruby{身}{み}は\\
+        \ruby[g]{驕楽}{おごり}の\ruby{春}{はる}に\ruby{酔}{ゑ}ひしれて\\
+        \ruby{戯}{たはる}る\ruby{人}{ひと}を\ruby{夢}{ゆめ}とはみつつ\\
+        \ruby{逆}{さか}まく\ruby{波}{なみ}を\ruby{闡}{ひら}きゆく
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby[g]{永遠}{とは}に\ruby{華}{はな}さく\ruby{水底}{みな|そこ}ふかく\\
+        \ruby[g]{神秘}{くしび}の\ruby{巌}{いは}に\ruby[g]{嫦娥}{つきひめ}の\\
+        \ruby{露}{つゆ}のしづくの\ruby[g]{真珠}{しらたま}またま\\
+        \ruby{掌}{て}に\ruby{獲}{え}し\ruby[g]{光栄}{はえ}と\ruby[g]{喜悦}{よろこび}と\\
+        \ruby{七重}{なな|え}の\ruby{潮}{しお}の\ruby{妙音}{たへ|ね}にひびく\\
+        \ruby[g]{美珠}{たま}こそわれの\ruby[g]{生命}{いのち}なれ
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{薫}{くゆ}る\ruby{樹陰}{こ|かげ}に\ruby{花}{はな}\ruby{仄}{ほの}みえて\\
+        \ruby{朧}{おぼろ}おぼろの\ruby{春}{はる}の\ruby[g]{宵󠄁}{よひ}\\
+        \ruby{一壺}{いっ|こ}の\ruby{酒}{さけ}の\ruby{汲}{く}む\ruby{夢}{ゆめ}\ruby{淡}{あわ}く\\
+        \ruby{心}{こころ}の\ruby{酔}{よひ}に\ruby{舞歌}{まひ|うた}を\\
+        \ruby[g]{社会}{ひとのよ}\ruby{高}{たか}くしらべ\ruby{祝}{いわ}はむ\\
+        \ruby{君}{きみ}\ruby{瑞祥}{ずゐ|せう}の\ruby{歳}{とし}なれや
+        
+        \vspace{\linespace}
+        \item~\\
+        % 4.
+        \ruby{彩雲}{あや|ぐも}\ruby{低}{ひく}く\ruby{恵}{めぐみ}の\ruby{家}{いえ}に\\
+        \ruby{幸}{さち}\ruby[g]{漂蕩}{ただよ}ひてゆく\ruby{水}{みず}や\\
+        \ruby{姿}{すがた}うるほす\ruby{柳}{やなぎ}の\ruby{萠黄}{もえ|ぎ}\\
+        \ruby{契}{ちぎ}りゆかしき\ruby{春鳥}{はる|とり}の\\
+        \ruby[g]{団欒}{まどゐ}の\ruby{音}{ね}をばうつし\ruby{伝}{つた}へむ\\
+        \ruby{遠}{とほ}くはるけき\ruby{師}{し}の\ruby{君}{きみ}に
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
