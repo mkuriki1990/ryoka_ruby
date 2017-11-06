@@ -1,0 +1,133 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            あますなく拓きゆく道 % タイトルを入れる
+        }
+        {\small 
+            （昭和十七年大東亜戦争頌歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        切替辰哉君 作歌\\池田政晴君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,7 繰り返しなし)
+% end header
+
+% begin length
+\vspace{0.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.25\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        あますなく\ruby{拓}{ひら}きゆく\ruby{道}{みち}\\
+        \ruby{天雲}{あま|ぐも}の\ruby{向伏}{むか|ぶ}す\ruby{極}{きわ}み\\
+        \ruby{地}{ち}の\ruby{涯}{はて}ゆ、\ruby{征}{ゆ}かむ\ruby{御楯}{み|たて}と\\
+        \ruby[g]{大詔}{みこと}もち、\ruby{我等}{われ|ら}\ruby{日}{ひ}の\ruby{族}{ぞう}\\
+        \ruby[g]{源泉}{みなもと}のごと\ruby{湧}{わ}きたたむ\\
+        \ruby{誇}{ほこ}らかに\ruby{諸声}{もろ|ごえ}に\\
+        \ruby{血潮}{ち|しほ}\ruby{流}{なが}さむ
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby[g]{悠久}{いやはて}の\ruby{天詔琴}{あめ|みのり|ごと}\\
+        \ruby{今}{いま}ぞ\ruby{時}{とき}、\ruby{轟}{とどろ}き\ruby{赴}{おもむ}きぬ\\
+        \ruby{高光}{たか|ひか}り\ruby{剣}{けん}を\ruby{植}{う}ゑて\\
+        \ruby{荒魂}{あら|たま}の\ruby{魂}{たま}にぞ\ruby{生}{い}きむ\\
+        \ruby{遷}{うつ}るべく\ruby{遷}{うつ}る\ruby{亜細亜}{あ|じ|あ}の\\
+        \ruby{峻}{けは}しかる\ruby{大}{おほ}いなる\\
+        \ruby{秋}{とき}に\ruby{生}{うま}れし
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        どよめきぬ\ruby[g]{祖霊}{たまおや}の\ruby{行}{わき}\\
+        \ruby{六合}{りく|がふ}に\ruby{頸}{つよ}く\ruby{漲}{みな}ぎり\\
+        \ruby{天津日}{あま|つ|ひ}は\ruby{紅}{くれなゐ}\ruby{燃}{も}ゆる\\
+        \ruby[g]{南方圏}{みんなみ}の\ruby[g]{洋路}{うみぢ}\ruby{遙}{はろ}けく\\
+        \ruby[g]{秀麗}{うるは}しき\ruby{創成}{さう|せい}の\ruby{神意}{しん|い}\\
+        \ruby{重}{おも}く\ruby{負}{お}ふに\ruby{務}{つと}めして\\
+        \ruby[g]{生命}{いのち}たぎちむ
+        
+        \vspace{\linespace}
+        \item~\\
+        % 4.
+        \ruby{欣求}{ごん|ぐ}の\ruby{宇宙}{う|ちう}\ruby{蝕変}{しょく|へん}\ruby{満}{み}つも\\
+        \ruby{東亜}{とう|あ}の\ruby{空}{そら}、\ruby{復円}{ふく|ゑん}\ruby{光}{こ}らん\\
+        \ruby{斯}{か}くせずばやまぬ\ruby[g]{宿命}{さだめ}と\\
+        \ruby{十億}{じゅう|おく}の\ruby[g]{健剛}{たけき}を\ruby{{\UTF{79B1}}}{の}みて\\ % UTF 禱
+        \ruby{国}{くに}\ruby{挙}{こぞ}り\ruby{歩}{あゆ}みゆくなり\\
+        \ruby[g]{熱涙}{なみだ}もて\ruby{仰}{あお}がなむ\\
+        \ruby[g]{黎明}{あけ}の\ruby{幸星}{こう|せい}
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 5.
+        \ruby{帰}{かえ}るなき\ruby{発程}{はつ|てい}に\ruby{起}{た}つ\\
+        \ruby{眸}{まみ}\ruby{澄}{す}める\ruby{我等}{われ|ら}\ruby[g]{若人}{わこうど}\\
+        \ruby{皇国}{こう|こく}の\ruby{道}{みち}に\ruby[g]{挺身}{すす}まん\\
+        \ruby{諸共}{もろ|とも}に\ruby{雄叫}{を|たけ}びすれば\\
+        \ruby{叫}{さけ}び\ruby{和}{わ}す\ruby{新潮}{にひ|しほ}の\ruby{声}{こえ}\\
+        \ruby{抒情}{じょ|じゃう}\ruby{清}{さや}か、\ruby{白鳥}{はく|てふ}の\\
+        \ruby{海図}{かい|づ}に\ruby{夢}{ゆめ}む
+        
+        \vspace{\linespace}
+        \item~\\
+        % 6.
+        \ruby{厳}{おごそ}かの\ruby{時}{とき}の\ruby{流}{なが}れに\\
+        \ruby{新}{あたら}しき\ruby{力}{ちから}よ\ruby{躍}{おど}れ\\
+        \ruby{鮮}{あざや}けき\ruby{翳}{かけ}りの\ruby{中}{なか}に\\
+        \ruby{新}{あたら}しき\ruby{叫}{さけび}よ\ruby{挙}{あ}がれ\\
+        \ruby[g]{胸臆}{こと}\ruby{朗}{ほが}ら、\ruby{身}{み}を\ruby{透}{と}けて\ruby{佇}{た}つ\\
+        \ruby{揺}{ゆる}ぎなく、\ruby{鍛}{きた}へして\\
+        \ruby{先駆}{せん|く}に\ruby{埋}{う}めん
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 7.
+        ここぞ\ruby{茲}{ここ}、いかで\ruby{忘}{わす}れむ\\
+        \ruby{日}{ひ}に\ruby{若}{わか}き、\ruby{恵迪}{けい|てき}の\ruby{児}{こ}よ\\
+        たどり\ruby{得}{え}し\ruby{道}{みち}の\ruby[g]{感喜}{よろこび}\\
+        \ruby{溢}{あふ}れつつ、ほの\ruby{認}{みと}めけむ\\
+        \ruby{仰}{あお}ぎ\ruby{見}{み}る\ruby{銀漢}{ぎん|が}のほとり\\
+        \ruby[g]{真実}{まこと}もて、\ruby[g]{弥生}{いやお}ひに\\
+        \ruby{継}{つ}ぎて\ruby{行}{ゆ}かなむ
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
