@@ -1,0 +1,113 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            時轍乾坤に % タイトルを入れる
+        }
+        {\small 
+            （大正四年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        沢田退蔵君 作歌・作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,5,6 繰り返しなし)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.33\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby[g]{時轍}{とき}\ruby{乾坤}{けん|こん}に\ruby{回}{めぐ}り\ruby{来}{き}て\\
+        \ruby[g]{陽春}{はる}\ruby{駘蕩}{たい|とう}のおぼろよひ\\
+        \ruby{紫}{むらさき}\ruby{淡}{あは}く\ruby{霞}{かすみ}\ruby{罩}{こ}め\\
+        \ruby{自治}{じ|ち}の\ruby{流}{なが}れは\ruby[g]{永遠}{とこしへ}に\\
+        \ruby{若葉}{わか|ば}の\ruby{陰}{かげ}を\ruby{浮}{うか}べつつ\\
+        \ruby{吾等}{われ|ら}が\ruby{幸}{さち}を\ruby{祝}{いは}ふらん
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{胡馬北風}{こ|ば|ほく|ふう}に\ruby{嘶}{いなな}きて\\
+        \ruby{越鳥南枝}{ゑっ|てう|なん|し}に\ruby{巣}{す}を\ruby{造}{つく}る\\
+        \ruby{世}{よ}の\ruby{濁江}{にごり|え}に\ruby{逆}{さから}へる\\
+        \ruby{棹歌}{たう|か}の\ruby{声}{こえ}の\ruby{勇}{いさ}ましき\\
+        \ruby[g]{三星霜}{みとせ}の\ruby{春}{はる}のおきふしに\\
+        \ruby{深}{ふか}き\ruby[g]{感慨}{おもひ}のなからめや
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{紫扉}{さい|ひ}を\ruby{出}{い}でて\ruby{霜}{しも}を\ruby{踏}{ふ}み\\
+        \ruby[g]{川流}{ながれ}を\ruby{掬}{むす}び\ruby{薪}{たき}\ruby{樵}{きこ}る\\
+        \ruby{崇}{たか}き\ruby[g]{希望}{のぞみ}の\ruby[g]{若人}{わこうど}が\\
+        \ruby{歓喜}{かん|き}\ruby{憂苦}{ゆう|く}を\ruby{共}{とも}にせし\\
+        \ruby{友悌}{ゆう|てい}\ruby{凋}{しほ}まぬ\ruby{松柏}{しょう|はく}と\\
+        \ruby{幾千代}{いく|ち|よ}かけて\ruby{変}{かわ}らざれ
+        
+        \vspace{\linespace}
+        \item~\\
+        % 4.
+        \ruby{彼}{か}の\ruby{邯鄲}{かん|たん}の\ruby{仮枕}{かり|まくら}\\
+        \ruby{栄華}{えい|が}の\ruby{夢}{ゆめ}も\ruby{半}{なかば}にて\\
+        \ruby{世}{よ}の\ruby{秋風}{あき|かぜ}に\ruby{驚}{おどろ}かん\\
+        \ruby{目}{め}ざす\ruby[g]{真理}{まこと}の\ruby{高殿}{たか|どの}は\\
+        \ruby{遠}{とほ}く\ruby{遙}{はろ}けし\ruby[g]{突進}{すす}めいざ\\
+        \ruby{心}{こころ}の\ruby{駒}{こま}に\ruby{鞭打}{むち|う}ちて
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 5.
+        ウラルの\ruby[g]{彼方}{かなた}\ruby{風}{かぜ}\ruby{凄}{すご}く\\
+        \ruby{陣雲}{じん|うん}くらき\ruby[g]{八街}{やちまた}は\\
+        \ruby{鉄騎}{てっ|き}\ruby{百万}{ひゃく|まん}\ruby{駆}{かけ}りつつ\\
+        \ruby{正義}{せい|ぎ}の\ruby{光}{ひかり}\ruby{失}{う}する\ruby{時}{とき}\\
+        \ruby{燃}{も}ゆる\ruby{義憤}{ぎ|ふん}を\ruby{胸}{むね}に\ruby{秘}{ひ}め\\
+        \ruby{起}{た}て\ruby{自治寮}{じ|ち|りょう}の\ruby{健男児}{けん|だん|じ}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 6.
+        \ruby{自由}{じ|ゆう}の\ruby{旗}{はた}を\ruby{振}{ふ}り\ruby{翳}{かざ}し\\
+        \ruby{平和}{へい|わ}の\ruby{楯}{たて}を\ruby{掻}{か}き\ruby{列}{つら}ね\\
+        \ruby{吾等}{われ|ら}\ruby{起}{た}つべき\ruby{時}{とき}は\ruby{来}{き}ぬ\\
+        \ruby{見}{み}よや\ruby{獅子王}{し|し|おう}\ruby{一吼}{いっ|こう}して\\
+        \ruby{曠野}{あら|の}\ruby{虎狼}{こ|ろう}の\ruby{影}{かげ}もなし\\
+        \ruby{祝}{いわ}へ\ruby[g]{今宵󠄁}{こよひ}の\ruby{記念祭}{き|ねん|さい}
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
