@@ -1,0 +1,98 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            起伏しらぬ % タイトルを入れる
+        }
+        {\small 
+            （大正十一年寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        牧原東洋男君 作歌\\高橋北雄君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3,4,5,6 了あり)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{起伏}{おき|ふし}\ruby{知}{し}らぬ\ruby[g]{運命}{さだめ}こそ\\
+        \ruby{時}{とき}の\ruby{流転}{る|てん}の\ruby{弧}{こ}の\ruby{上}{うえ}を\\
+        あはれ\ruby{雪解}{ゆき|げ}のましみづに\\
+        \ruby{流}{なが}れて\ruby{尽}{つ}きぬ\ruby{濁流}{だく|りゅう}よ
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{未知}{み|ち}のひろ\ruby{野}{の}のかぎろひて\\
+        \ruby{輝}{かがや}くまでに\ruby{萠}{も}え\ruby{出}{い}でし\\
+        \ruby{若}{わか}き\ruby{草木}{くさ|き}のさゆらぎに\\
+        \ruby{春}{はる}\ruby{深}{ふか}き\ruby{日}{ひ}の\ruby[g]{逍遙}{さすらひ}や
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{澄}{す}みて\ruby{雲}{くも}なき\ruby{空}{そら}と\ruby{野}{の}を\\
+        かぎりて\ruby{走}{はし}る\ruby{山並}{やま|なみ}に\\
+        \ruby{高}{たか}き\ruby{心}{こころ}のをののきは\\
+        \ruby{躍}{おど}る\ruby{血潮}{ち|しほ}の\ruby[g]{真夏日陽}{まなつひ}よ
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 4.
+        \ruby{銀}{ぎん}の\ruby{香炉}{こう|ろ}にしのび\ruby{雨}{あめ}\\
+        \ruby{楡}{にれ}の\ruby{繁}{しげ}みに\ruby{交}{まじ}らへば\\
+        \ruby{大}{おほ}\ruby[g]{天地}{あめつち}も\ruby{傾}{かたむ}きて\\
+        \ruby{命}{いのち}かなしき\ruby{秋}{あき}なれや
+        
+        \vspace{\linespace}
+        \item~\\
+        % 5.
+        \ruby{夜毎}{よ|ごと}にさゆる\ruby{窓}{まど}の\ruby{星}{ほし}\\
+        \ruby{闇}{やみ}\ruby{行}{ゆ}く\ruby{橇}{そり}の\ruby{鈴}{すず}の\ruby{音}{ね}に\\
+        \ruby[g]{真理}{まこと}の\ruby{水}{みず}の\ruby{人}{ひと}\ruby{掬}{むすび}\\
+        \ruby{求}{もと}めてやまぬ\ruby{瞑想}{めい|さう}よ
+        
+        \vspace{\linespace}
+        \item~\\
+        % 6.
+        \ruby{深}{ふか}き\ruby[g]{安息}{いこひ}の\ruby{夢}{ゆめ}やすく\\
+        げに\ruby[g]{憧憬}{あこがれ}の\ruby{地}{ち}やここに\\
+        \ruby[g]{芸術}{たくみ}の\ruby{霊}{れい}ぞただよへる\\
+        \ruby{自由}{じ|いう}の\ruby{精}{せい}ぞみなぎれる
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
