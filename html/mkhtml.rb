@@ -63,6 +63,10 @@ Dir.glob("../worked/*.tex"){|texFilename|
             next
         end
 
+        if line =~ /\\footnotesize/
+            line.gsub!(/{\\footnotesize(（.+）)}/, '\1')
+        end
+
         # \item トークンの除去と曲番以外でつけた※印の処理
         if line =~ /\\item.*/
             if line !~ /\\item\[(（※）)\]/
