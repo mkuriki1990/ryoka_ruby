@@ -1,9 +1,7 @@
 #!/usr/bin/ruby
 # ルビの TeX トークン を HTML タグのルビに変換するスクリプト
-require 'csv'
 
-# fileList = "" # 作業済みファイル一覧を格納する変数
-# 編集済みファイル一覧を ???.txt 形式で取得
+# TeX ソースが存在するファイルについて処理する
 Dir.glob("../worked/*.tex"){|texFilename|
     if texFilename.match(/template/)
         next
@@ -128,8 +126,9 @@ Dir.glob("../worked/*.tex"){|texFilename|
     # # 最初の空行だけ除く
     # lilycs.sub!("\n", '')
 
+    # page ディレクトリに HTML 文書を作成
     htmlFilename = filename + ".html"
-    result = File.open(htmlFilename, 'w')
+    result = File.open("./page/#{htmlFilename}", 'w')
     result.write(lilycs)
     result.close
 
