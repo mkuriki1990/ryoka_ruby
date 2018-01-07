@@ -4,24 +4,27 @@
 \begin{document}
 % begin header
 %%%%% タイトルと作者 ここから %%%%%
-\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+\begin{minipage}[c]{0.5\hsize} % タイトルは上から 7 割
     \begin{center}
     % begin title
         {\LARGE
             開校祝賀の歌 % タイトルを入れる
         }
-        {\small 
-             % 年などを入れる
-        }
     % end title
     \end{center}
 \end{minipage}
-\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
-    \begin{flushright} % 下寄せにする
+\begin{minipage}[c]{0.5\hsize} % 作歌作曲は上から 3 割
+    \begin{flushleft} % 下寄せにする
         % begin name
-         % 作歌・作曲者
+        {\small 
+            $\left(
+            \begin{tabular}{l}
+                明治四十年 札幌農学校より\\東北帝国大学農科大学となりし時 % 年などを入れる
+            \end{tabular}
+            \right)$
+        }
         % end name
-    \end{flushright}
+    \end{flushleft}
 \end{minipage}
 %%%%% タイトルと作者 ここまで %%%%%
 % % end header
@@ -29,7 +32,7 @@
 % begin length
 \vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
 \newcommand{\linespace}{0.5em} % 行間の設定
-\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\blocksize}{0.25\hsize} % 段組間の設定
 \newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
 % end length
 % begin body
@@ -41,25 +44,22 @@
         \vspace{\linespace}
         \item~\\
         % 1.
-        \ruby{神統}{}\ruby{二}{に}\ruby{千}{せん}\ruby{五}{ご}\ruby{百}{ひゃく}\ruby{年}{ねん}\\
-        \ruby{東海}{とうかい}の\ruby{果}{はて}に\ruby{眠}{ねむ}りたる\\
-        \ruby{大和島根}{やまとしまね}の\ruby{民衆}{みんしゅう}は\\
-        \ruby{見}{み}よや\ruby{目覚}{めざ}めて\ruby{明治}{めいじ}の\ruby{世}{よ}\\
-        \ruby{天}{てん}の\ruby{使命}{しめい}を\ruby{果}{はた}すべく\\
-        \ruby{進取}{しんしゅ}の\ruby{旗}{はた}を\ruby{振}{ふ}り\ruby{立}{}てぬ
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
+        \ruby[g]{{\UTF{FA19}}統}{しんとう}\ruby{二千}{に|せん}\ruby{五百年}{ご|ひゃく|ねん}\\ % UTF 神
+        \ruby{東海}{とう|かい}の\ruby{果}{はて}に\ruby{眠}{ねむ}りたる\\
+        \ruby[g]{大和}{やまと}\ruby{島根}{しま|ね}の\ruby{民衆}{みん|しゅう}は\\
+        \ruby{見}{み}よや\ruby{目覚}{め|ざ}めて\ruby{明治}{めい|じ}の\ruby{世}{よ}\\
+        \ruby{天}{てん}の\ruby{使命}{し|めい}を\ruby{果}{はた}すべく\\
+        \ruby{進取}{しん|しゅ}の\ruby{旗}{はた}を\ruby{振}{ふ}り\ruby{立}{た}てぬ
         
         \vspace{\linespace}
         \item~\\
         % 2.
         \ruby{天}{てん}に\ruby{二}{ふた}つの\ruby{日}{ひ}なければ\\
-        \ruby{地上}{ちじょう}を\ruby{西}{にし}し\ruby{東}{ひがし}せる\\
-        \ruby{文化}{ぶんか}の\ruby{潮}{しお}\ruby{渦巻}{うずま}きて\\
-        \ruby{日出}{ひので}づる\ruby{国}{こく}に\ruby{相}{あい}\ruby{会}{かい}し\\
-        \ruby{炳焉}{}として\ruby{虹}{にじ}の\ruby{如}{}\\
-        \ruby{乾坤}{けんこん}\ruby{茲光}{}あり
+        \ruby{地上}{ち|じょう}を\ruby{西}{にし}し\ruby{東}{ひがし}せる\\
+        \ruby{文化}{ぶん|か}の\ruby{潮}{うしほ}\ruby{渦巻}{うず|ま}きて\\
+        \ruby{日}{ひ}\ruby{出}{い}づる\ruby{国}{くに}に\ruby{相}{あい}\ruby{会}{かい}し\\
+        \ruby{炳焉}{へい|えん}として\ruby{虹}{にじ}の\ruby{如}{ごと}\\
+        \ruby{乾坤}{けん|こん}\ruby{茲}{ここ}に\ruby{光}{ひかり}あり
         
     \end{minipage}
     \begin{minipage}[c]{\blocksize}
@@ -67,25 +67,22 @@
         \vspace{\linespace}
         \item~\\
         % 3.
-        \ruby{此}{この}の\ruby{国運}{こくうん}に\ruby{魁}{さきがけ}し\\
-        \ruby{先}{ま}づ\ruby{北辺}{ほくへん}の\ruby{島}{しま}の\ruby{上}{うえ}\\
-        \ruby{荒蕪}{こうぶ}を\ruby{拓}{ひら}き\ruby{民}{みん}を\ruby{植}{うえ}ゑ\\
-        \ruby{不明}{ふめい}を\ruby{教}{きょう}へ\ruby{道}{みち}を\ruby{樹}{き}て\\
-        \ruby{進取}{しんしゅ}の\ruby{民}{みん}\ruby{範}{はん}たりし\\
-        \ruby{百万}{ひゃくまん}の\ruby{民}{みん}\ruby{若}{わか}かりき
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
+        \ruby{此}{こ}の\ruby{国運}{こく|うん}に\ruby{魁}{さきがけ}し\\
+        \ruby{先}{ま}づ\ruby{北辺}{ほく|へん}の\ruby{島}{しま}の\ruby{上}{うえ}\\
+        \ruby{荒蕪}{こう|ぶ}を\ruby{拓}{ひら}き\ruby{民}{たみ}を\ruby{植}{う}ゑ\\
+        \ruby{不明}{ふ|めい}を\ruby{教}{おし}へ\ruby{道}{みち}を\ruby{樹}{た}て\\
+        \ruby{進取}{しん|しゅ}の\ruby{民}{たみ}の\ruby{範}{のり}たりし\\
+        \ruby{百万}{ひゃく|まん}の\ruby{民}{たみ}\ruby{若}{わか}かりき
         
         \vspace{\linespace}
         \item~\\
         % 4.
-        \ruby{此}{この}の\ruby{民衆}{みんしゅう}を\ruby{導}{みちび}きて\\
-        \ruby{重}{おも}き\ruby{使命}{しめい}に\ruby{負}{ふ}かじと\\
-        \ruby{我}{われ}が\ruby{札幌}{さっぽろ}に\ruby{建}{た}てられし\\
-        \ruby{祖}{そ}\ruby{校}{こう}よく\ruby{其}{そ}の\ruby{任}{にん}に\ruby{耐}{つよし}へ\\
-        \ruby{北辰}{ほくしん}\ruby{高}{たか}く\ruby{輝}{かがや}きし\\
-        \ruby{其}{そ}の\ruby{名声}{めいせい}や\ruby{將}{は}た\ruby{説}{と}かじ
+        \ruby{此}{こ}の\ruby{民衆}{みん|しゅう}を\ruby{導}{みちび}きて\\
+        \ruby{重}{おも}き\ruby{使命}{し|めい}に\ruby{負}{そむ}かじと\\
+        \ruby{我}{わ}が\ruby{札幌}{さっ|ぽろ}に\ruby{建}{た}てられし\\
+        \ruby{祖校}{そ|こう}よく\ruby{其}{そ}の\ruby{任}{にん}に\ruby{耐}{た}へ\\
+        \ruby{北辰}{ほく|しん}\ruby{高}{たか}く\ruby{輝}{かがや}きし\\
+        \ruby{其}{そ}の\ruby{名声}{めい|せい}や\ruby{將}{は}た\ruby{説}{と}かじ
         
     \end{minipage}
     \begin{minipage}[c]{\blocksize}
@@ -93,25 +90,22 @@
         \vspace{\linespace}
         \item~\\
         % 5.
-        \ruby{今}{いま}や\ruby{羽翼}{うよく}を\ruby{整}{せい}へて\\
-        \ruby{徳}{とく}\ruby{乾坤}{けんこん}を\ruby{被}{ひ}ふ\ruby{可}{ふか}き\\
-        \ruby{国}{くに}の\ruby{使命}{しめい}を\ruby{提}{さ}げて\\
-        \ruby{千}{せん}\ruby{余}{よ}の\ruby{学徒}{がくと}\ruby{麾}{さしまね}き\\
-        \ruby{坤}{ひつじさる}\ruby{輿}{こし}の\ruby{民}{みん}\ruby{師}{し}たる\ruby{可}{か}き\\
-        \ruby{新}{しん}\ruby{職分}{しょくぶん}は\ruby{下}{お}りたり
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
+        \ruby{今}{いま}や\ruby{羽翼}{う|よく}を\ruby{整}{ととの}へて\\
+        \ruby{{\UTF{5FB7}}}{とく}\ruby{乾坤}{けん|こん}を\ruby{被}{かば}ふ\ruby{可}{べ}き\\ % UTF 德
+        \ruby{国}{くに}の\ruby{使命}{し|めい}を\ruby{提}{ひっさ}げて\\
+        \ruby{千余}{せん|よ}の\ruby{学徒}{がく|と}\ruby{麾}{さしまね}き\\
+        \ruby[g]{坤輿}{みこし}の\ruby{民}{たみ}の\ruby{師}{し}たる\ruby{可}{べ}き\\
+        \ruby{新}{しん}\ruby{職分}{しょく|ぶん}は\ruby{下}{くだ}りたり
         
         \vspace{\linespace}
         \item~\\
         % 6.
-        \ruby{思}{おもい}へ\ruby{嘗}{かつ}ては\ruby{北辰}{ほくしん}と\\
-        \ruby{光}{ひかり}を\ruby{競}{けい}ひ\ruby{白}{ひはく}\ruby{雪}{ゆき}と\\
-        \ruby{意}{い}\ruby{氣爭}{}ひし\ruby{校風}{こうふう}を\\
-        \ruby{享}{とおる}けし\ruby{我}{われ}らの\ruby{前}{ぜん}\ruby{程}{ほど}は\\
-        \ruby{高}{たか}く\ruby{大}{おお}きく\ruby{清}{きよ}らなる\\
-        \ruby{希望}{きぼう}の\ruby{色}{いろ}に\ruby{溢}{あふ}れずや
+        \ruby{思}{おも}へ\ruby{嘗}{かつ}ては\ruby{北辰}{ほく|しん}と\\
+        \ruby{光}{ひかり}を\ruby{競}{きそ}ひ\ruby{白雪}{はく|せつ}と\\
+        \ruby{意氣}{い|き}\ruby{爭}{あらそ}ひし\ruby{校風}{こう|ふう}を\\
+        \ruby{享}{う}けし\ruby{我}{われ}らの\ruby{前程}{せん|てい}は\\
+        \ruby{高}{たか}く\ruby{大}{おほ}きく\ruby{清}{きよ}らなる\\
+        \ruby{希望}{き|ぼう}の\ruby{色}{いろ}に\ruby{溢}{あふ}れずや
         
     \end{minipage}
     \begin{minipage}[c]{\blocksize}
@@ -119,25 +113,22 @@
         \vspace{\linespace}
         \item~\\
         % 7.
-        \ruby{功利}{こうり}\ruby{若}{わか}し\ruby{世}{よ}の\ruby{風}{かぜ}たらば\\
-        \ruby{其所}{}に\ruby{我等}{われら}の\ruby{戦}{せん}あり\\
-        \ruby{遊}{ゆう}\ruby{情}{じょう}\ruby{若}{わか}し\ruby{世}{よ}の\ruby{俗}{ぞく}たらば\\
-        \ruby{其所}{}に\ruby{我等}{われら}の\ruby{戦}{せん}あり\\
-        \ruby{邪曲}{じゃきょく}\ruby{若}{わか}し\ruby{世}{よ}の\ruby{弊}{へい}たらば\\
-        \ruby{其所}{}に\ruby{我等}{われら}の\ruby{戦}{せん}あり
-        
-    \end{minipage}
-    \begin{minipage}[c]{\blocksize}
+        \ruby{功利}{こう|り}\ruby{若}{も}し\ruby{世}{よ}の\ruby{風}{ふう}たらば\\
+        \ruby[g]{其所}{そこ}に\ruby{我等}{われ|ら}の\ruby{戦}{いくさ}あり\\
+        \ruby{遊情}{ゆう|じょう}\ruby{若}{も}し\ruby{世}{よ}の\ruby{俗}{ぞく}たらば\\
+        \ruby[g]{其所}{そこ}に\ruby{我等}{われ|ら}の\ruby{戦}{いくさ}あり\\
+        \ruby{邪曲}{じゃ|きょく}\ruby{若}{も}し\ruby{世}{よ}の\ruby{弊}{へい}たらば\\
+        \ruby[g]{其所}{そこ}に\ruby{我等}{われ|ら}の\ruby{戦}{いくさ}あり
         
         \vspace{\linespace}
         \item~\\
         % 8.
-        \ruby{楡}{にれ}の\ruby{梢風}{しょうふう}\ruby{鳴}{な}りて\\
-        \ruby{平和}{へいわ}の\ruby{歌}{うた}をなすが\ruby{如}{}\\
-        \ruby{藻岩}{もいわ}の\ruby{雲}{くも}の\ruby{峯}{みね}そひて\\
-        \ruby{莊}{しょう}\ruby{厳}{いわお}の\ruby{色}{いろ}\ruby{動}{うご}く\ruby{如}{}\\
-        \ruby{我等}{われら}の\ruby{歌}{うた}に\ruby{歓喜}{かんき}と\\
-        \ruby{自信}{じしん}の\ruby{響}{ひびき}こもれかし
+        \ruby{楡}{にれ}の\ruby{梢}{こずゑ}\ruby{風}{かぜ}\ruby{鳴}{な}りて\\
+        \ruby{平和}{へい|わ}の\ruby{歌}{うた}をなすが\ruby{如}{ごと}\\
+        \ruby{藻岩}{もい|わ}の\ruby{雲}{くも}の\ruby{峯}{みね}そひて\\
+        \ruby{莊厳}{そう|ごん}の\ruby{色}{いろ}\ruby{動}{うご}く\ruby{如}{ごと}\\
+        \ruby{我等}{われ|ら}の\ruby{歌}{うた}に\ruby[g]{歓喜}{よろこび}と\\
+        \ruby{自信}{じ|しん}の\ruby{響}{ひびき}こもれかし
     
     \end{minipage}
 \end{enumerate} % 番号の箇条書き ここまで
