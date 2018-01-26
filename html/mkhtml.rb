@@ -2,7 +2,8 @@
 # ルビの TeX トークン を HTML タグのルビに変換するスクリプト
 
 # TeX ソースが存在するファイルについて処理する
-Dir.glob("../worked/*.tex"){|texFilename|
+# Dir.glob("../worked/*.tex"){|texFilename|
+ARGV.each{|texFilename|
     if texFilename.match(/template/)
         next
     end
@@ -26,6 +27,12 @@ Dir.glob("../worked/*.tex"){|texFilename|
     lilycs << '<html lang="ja">' << "\n"
     lilycs << '<head>' << "\n" << '    <meta charset="utf-8">' << "\n"
     lilycs << '    <title>北海道大学恵迪寮寮歌</title>' << "\n"
+    lilycs << '    <style type="text/css">' << "\n"
+    lilycs << '        body {' << "\n"
+    lilycs << '        background-color: #ffffff;' << "\n"
+    lilycs << '        color: #000000;' << "\n"
+    lilycs << '        }' << "\n"
+    lilycs << '    </style>' << "\n"
     lilycs << '</head>' << "\n"
     lilycs << '<body>' << "\n"
 
