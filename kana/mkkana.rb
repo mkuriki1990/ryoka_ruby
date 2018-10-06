@@ -2,7 +2,8 @@
 # ルビの TeX トークン を HTML タグのルビに変換するスクリプト
 
 # TeX ソースが存在するファイルについて処理する
-Dir.glob("../worked/*.tex"){|texFilename|
+# Dir.glob("../worked/*.tex"){|texFilename|
+ARGV.each{|texFilename|
     if texFilename.match(/template/)
         next
     end
