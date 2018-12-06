@@ -85,11 +85,11 @@ ARGV.each{|texFilename|
         # 空白を示す "~" は半角スペースに置換
         line.gsub!(/~/, " ")
 
-        # UTF 文字コードで置き換えている部分の処理
-        if line.match(/UTF/)
-            line.gsub!(/ % UTF (.+)/, "")
+        # CID 文字コードで置き換えている部分の処理
+        if line.match(/CID/)
+            line.gsub!(/ % CID (.+)/, "")
             utf = $1
-            line.gsub!(/{\\UTF{....}}/, "#{utf}")
+            line.gsub!(/{\\CID{....}}/, "#{utf}")
         end
 
         # 曲番を抽出
