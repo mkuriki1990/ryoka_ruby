@@ -89,7 +89,7 @@ ARGV.each{|texFilename|
         if line.match(/CID/)
             line.gsub!(/ % CID (.+)/, "")
             utf = $1
-            line.gsub!(/{\\CID{[0-9]{4,5}}/, "#{utf}")
+            line.gsub!(/{\\CID{[0-9]{4,5}}}/, "#{utf}")
         end
 
         # 曲番を抽出
