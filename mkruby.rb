@@ -1,6 +1,8 @@
 ﻿#!/usr/bin/ruby
 # 寮歌の歌詞 txt ファイルの漢字に TeX トークン 
 # \ruby{漢字}{} をつけるスクリプト
+# 引数にファイル名がつけてあれば, そのファイルだけ処理をする. 例 : r01
+# 引数がなければ worked ディレクトリに入っていない全てのファイルを処理する
 require 'csv'
 
 # template に使うファイル名
@@ -111,11 +113,20 @@ Dir.glob("./worked/*.tex"){|file|
 csvList = CSV.read('./src/ryoka_list.csv', headers:true)
 csvList.each{|data|
     srcName = "#{data["ファイル名"]}".gsub!(/.*\//, '')
+
+    # 引数が与えられていればそのファイル名のものだけ処理する
+    if ARGV[0].length != 0
+        if !("#{ARGV[0]}.txt".match(srcName))
+            next
+        end
+    end
+
     # 編集済みファイル一覧にあれば, そのファイルはスキップ
     if fileList.match(srcName)
         p srcName
         next
     end
+
     title = "#{data["曲名"]}"
     # year = "#{data["年"]}"
     year = "#{data[0]}" # なぜか 0 番目要素の "年" だけヘッダ名で取得できない
