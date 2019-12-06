@@ -1,0 +1,81 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            奔る流れ % タイトルを入れる
+        }
+        {\small 
+            （令和元年第百十一回記念祭歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        樋浦一希君 作歌\\伊藤小雪君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 繰り返しなし)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{曇天}{どん|てん}\ruby{低}{ひく}く\ruby{晴緑}{せい|りょく}の\ruby{山}{やま}\\
+        \ruby{高}{たか}くみあげて\ruby{岩}{いわ}\ruby{打}{う}つ\ruby{波間}{なみ|ま}\\
+        \ruby[g]{静寂}{しじま}の\ruby{底}{そこ}に\ruby{力}{ちから}を\ruby{秘}{ひ}して\\
+        \ruby{揺}{ゆ}れては\ruby{消}{き}える\ruby{蒼銀}{あお|ぎん}の\ruby[g]{魚影}{かげ}\\
+        \ruby{未蕾}{み|らい}は\ruby{満}{み}ちて\ruby{華}{はな}ならん
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{急滝}{きゅう|りゅう}\ruby{高}{たか}く\ruby{紅}{くれない}の\ruby{木々}{き|ぎ}\\
+        \ruby{散}{ち}る\ruby{葉}{は}をうけて\ruby{渦}{うず}まく\ruby{白泡}{しら|あわ}\\
+        \ruby[g]{一瞬}{ひととき}ここに\ruby{己}{おのれ}を\ruby{賭}{と}して\\
+        \ruby[g]{白銀}{ぎん}に\ruby{煌}{きら}めけ\ruby{緋赤}{ひ|せき}の\ruby{川面}{かわ|も}\\
+        \ruby{祭}{まつ}りは\ruby{咽}{たけ}く\ruby{華}{はな}たれや
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{月影}{つき|かげ}\ruby{長}{なが}く\ruby[g]{原始林}{もり}を\ruby{貫}{つらぬ}き\\
+        \ruby{街}{まち}\ruby{影}{かげ}\ruby{映}{うつ}す\ruby[g]{学舎}{まなび}の\ruby{流}{なが}れ\\
+        \ruby{刹那}{せつ|な}\ruby{輝}{かがや}き\ruby{我}{われ}\ruby{今}{いま}\ruby{生}{い}きて\\
+        \ruby[g]{札幌}{ひとざと}に\ruby{舞}{ま}う\ruby{川辺}{かわ|べ}の\ruby{銀鱗}{ぎん|りん}\\
+        \ruby{咲}{さ}くは\ruby{次代}{じ|だい}の\ruby{華}{はな}なれや
+
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
