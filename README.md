@@ -25,3 +25,7 @@
 ### 参考
 ルビをある程度自動で振るために形態素解析エンジン [MeCab](http://taku910.github.io/mecab/) 及び
 そのための辞書ファイル [mecab-ipadic-NEologd](https://github.com/neologd/mecab-ipadic-neologd) を利用しています. 
+
+## ライセンス
+寮歌に関わるデータについて, 寮歌アプリとしての利用について[北海道大学恵迪寮自治会](http://keiteki.main.jp)に許可をとっています. 
+著作権の取り扱いについては少々複雑なので, このレポジトリのデータは個人の利用を超える範囲で使用しないようにしてください. 
