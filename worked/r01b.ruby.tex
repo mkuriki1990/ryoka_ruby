@@ -1,0 +1,88 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            楡陵を仰いで % タイトルを入れる
+        }
+        {\small 
+            （令和元年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        佐藤亮君 作歌・作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 繰り返しなし)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.3\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{嗚呼}{あ|あ}\ruby[g]{悠遠}{とお}き\ruby{日}{ひ}の\ruby{燈}{ともしび}よ\\
+        \ruby{我}{われ}らが\ruby{自由}{じ|ゆう}を\ruby{映}{うつ}しなん\\
+        \ruby[g]{今宵}{こよい}\ruby{颪}{おろし}が\ruby{火}{ひ}を\ruby{掠}{かす}め\\
+        \ruby{燭台}{しょく|だい}\ruby{鈍}{にぶ}く\ruby{声}{こえ}\ruby{漏}{も}らし\\
+        \ruby{枯}{か}れ\ruby{蔓}{づる}\ruby{綻}{ほころ}び\ruby{覗}{のぞ}かせて\\
+        \ruby{仄}{ほの}かに\ruby{蝋}{ろう}は\ruby{細}{ほそ}くなりゆく\\
+        されば\ruby{問}{と}え\ruby{己}{おの}が\ruby{心}{こころ}に\\
+        \ruby{我}{わ}が\ruby{胸内}{むね|うち}は\ruby{寮}{りょう}が\ruby{誇}{ほこ}りよ
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{嗚呼}{あ|あ}\ruby[g]{悠遠}{とお}き\ruby{日}{ひ}の\ruby{鞣物}{なめし|もの}\\
+        \ruby[g]{流転}{るてん}の\ruby{輝}{かがや}き\ruby{放}{はな}ちなん\\
+        \ruby{嘗}{かつ}て\ruby[g]{疾風}{はやて}に\ruby{先人}{せん|じん}は\\
+        \ruby{掴}{つか}み\ruby{離}{はな}さず\ruby{此}{こ}れを\ruby{継}{つ}ぎ\\
+        \ruby{擦傷}{さっ|しょう}\ruby{僅}{わず}かに\ruby{見}{み}ゆれども\\
+        \ruby{威風}{い|ふう}\ruby{今}{いま}こそ\ruby{我}{わ}が\ruby{手}{て}に\ruby{至}{いた}る\\
+        されば\ruby{感}{かん}ず\ruby{時潮}{じ|ちょう}の\ruby{想}{おも}い\\
+        \ruby{手}{て}に\ruby{得}{え}し\ruby{重}{おも}み\ruby{寮}{りょう}が\ruby{誇}{ほこ}りよ
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{先人}{せん|じん}\ruby{残}{のこ}せし\ruby{貴}{たか}き\ruby{野心}{や|しん}の\\
+        それにも\ruby{優}{まさ}る\ruby{縁}{えにし}\ruby{在}{あ}り\\
+        いづれ\ruby{別}{わか}れるその\ruby[g]{運命}{さだめ}まで\\
+        \ruby{囲}{かこ}み\ruby{語}{かた}らい\ruby{己}{おの}が\ruby[g]{未来}{さき}\ruby{創}{つく}れ\\
+        \ruby{楡陵}{ゆ|りょう}の\ruby{片隅}{かた|すみ}\ruby{我}{わ}が\ruby[g]{故郷}{ふるさと}は\\
+        \ruby{斯}{か}くあるべしと\ruby{誰}{だれ}か\ruby{言}{い}う 
+
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
