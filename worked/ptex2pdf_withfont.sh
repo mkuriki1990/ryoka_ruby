@@ -5,6 +5,8 @@
 
 for files in $*
 do
-    ptex2pdf -l -od "-f ../fontmap/uptex-kozuka-pr6n-04.map -f ../fontmap/otf-kozuka-pr6n.map" $files
+    filename=${files%.*}
+    # ptex2pdf -l -od "-f ../fontmap/uptex-kozuka-pr6n-04.map -f ../fontmap/otf-kozuka-pr6n.map" $files
+    platex ${filename}.tex && dvipdfmx ${filename}.dvi
 done
 
