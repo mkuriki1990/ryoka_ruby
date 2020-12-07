@@ -1,0 +1,545 @@
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.10.30)  7 DEC 2020 18:59
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**a005.ruby.tex
+(./a005.ruby.tex
+pLaTeX2e <2020-02-02>+2 (based on LaTeX2e <2020-02-02> patch level 2)
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/platex/base/tarticle.cls
+Document Class: tarticle 2020/01/03 v1.8e Standard pLaTeX class
+\c@@paper=\count166
+(/usr/share/texlive/texmf-dist/tex/platex/base/tsize10.clo
+File: tsize10.clo 2020/01/03 v1.8e Standard pLaTeX file (size option)
+)
+(/usr/share/texlive/texmf-dist/tex/platex/base/plext.sty
+Package: plext 2019/09/29 v1.2l pLaTeX package file (community edition)
+\@floatbox=\box61
+\floatwidth=\dimen150
+\floatheight=\dimen151
+\floatruletick=\dimen152
+\captionfloatsep=\dimen153
+\captionwidth=\dimen154
+\@captionbox=\box62
+LaTeX Info: Redefining \parbox on input line 333.
+\save@ybaselineshift=\dimen155
+\save@tbaselineshift=\dimen156
+\@picwd=\dimen157
+\rensujiskip=\skip47
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 619.
+\toclineskip=\dimen158
+\@lnumwidth=\dimen159
+\bibindent=\dimen160
+\heisei=\count175
+) (./template_B6.tex
+(/usr/share/texlive/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty
+Package: otf 2019/04/01 v1.7b8 psitau, u0.24 ttk
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 314.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
+(Font)                  JY1/mc/m/n --> JY1/hmc/m/n on input line 314.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/gt/m/n --> JY1/hmc/m/n on input line 314.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/hmc/m/n --> JY1/hmc/bx/n on input line 316.
+LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 317.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `normal'
+(Font)                  JY1/gt/m/n --> JY1/hgt/m/n on input line 317.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
+(Font)                  JY1/gt/m/n --> JY1/hgt/m/n on input line 317.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
+(Font)                  JY1/hgt/m/n --> JY1/hgt/bx/n on input line 318.
+
+(/usr/share/texlive/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
+Package: ajmacros 2019/04/01 21:00 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp
+>
+\@tempcntc=\count176
+\@tempcntd=\count177
+\@tempcnte=\count178
+\@tempcntf=\count179
+))
+(/usr/share/texlive/texmf-dist/tex/platex/pxchfon/pxchfon.sty
+Package: pxchfon 2020/02/01 v1.7b
+
+
+Package pxchfon Warning: The option 'unicode' is enforced, because the
+(pxchfon)                preset 'sourcehan' is selected..
+
+(/usr/share/texlive/texmf-dist/tex/latex/pxufont/pxufont.sty
+Package: pxufont 2020/02/09 v0.6
+
+(/usr/share/texlive/texmf-dist/tex/generic/ifptex/ifuptex.sty
+Package: ifuptex 2019/11/01 v2.0 pTeX checker
+
+(/usr/share/texlive/texmf-dist/tex/generic/ifptex/ifptex.sty
+Package: ifptex 2019/11/01 v2.0 pTeX checker
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)))))
+(/usr/share/texlive/texmf-dist/tex/latex/bxpapersize/bxpapersize.sty
+Package: bxpapersize 2019/10/05 v0.4
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+)
+\XKV@depth=\count180
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\bxpr@dima=\dimen161
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvipdfmx.def on input line 147.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(/usr/share/texlive/texmf-dist/tex/platex/pxrubrica/pxrubrica.sty
+Package: pxrubrica 2018/08/16 v1.3c PX Japanese-style ruby
+\pxrr@cnta=\count181
+\pxrr@cntr=\count182
+\pxrr@dima=\dimen164
+\pxrr@boxa=\box63
+\pxrr@boxb=\box64
+\pxrr@boxr=\box65
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count183
+\mult@box=\box66
+\multicol@leftmargin=\dimen165
+\c@unbalance=\count184
+\c@collectmore=\count185
+\doublecol@number=\count186
+\multicoltolerance=\count187
+\multicolpretolerance=\count188
+\full@width=\dimen166
+\page@free=\dimen167
+\premulticols=\dimen168
+\postmulticols=\dimen169
+\multicolsep=\skip50
+\multicolbaselineskip=\skip51
+\partial@page=\box67
+\last@line=\box68
+\maxbalancingoverflow=\dimen170
+\mult@rightbox=\box69
+\mult@grightbox=\box70
+\mult@gfirstbox=\box71
+\mult@firstbox=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\c@minrows=\count189
+\c@columnbadness=\count190
+\c@finalcolumnbadness=\count191
+\last@try=\dimen171
+\multicolovershoot=\dimen172
+\multicolundershoot=\dimen173
+\mult@nat@firstbox=\box110
+\colbreak@box=\box111
+\mc@col@check@num=\count192
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2020-02-03 L3 backend support: dvips
+\l__pdf_internal_box=\box112
+\g__pdf_backend_object_int=\count193
+\l__pdf_backend_content_box=\box113
+\l__pdf_backend_model_box=\box114
+\g__pdf_backend_annotation_int=\count194
+\g__pdf_backend_link_int=\count195
+\g__pdf_backend_link_sf_int=\count196
+)
+No file a005.ruby.aux.
+\openout1 = `a005.ruby.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 4.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 4.
+《縦組モード》
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Light.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Light.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Light.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Light.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Heavy.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Heavy.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Heavy.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Heavy.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Light.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Light.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Light.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Light.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Light.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Light.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Light.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Light.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Light.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Light.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSerif-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Regular.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Bold.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Heavy.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Heavy.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Heavy.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Heavy.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Heavy.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Heavy.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Heavy.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Heavy.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Heavy.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Heavy.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+Package pxchfon Info: Font tribe is 'sourcehan':
+(pxchfon)                 SourceHanSans-Medium.otf.
+\AtBeginShipoutBox=\box115
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 16.62714pt on input line 10.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 16.62714pt on input line 10.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 8.65997pt on input line 13.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 8.65997pt on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 18.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 6.73553pt on input line 18.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 4.8111pt on input line 18.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 7--29
+[][]$[]$[] []$[]$[] 
+ []
+
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 4.8111pt on input line 45.
+
+Overfull \hbox (19.30948pt too wide) in paragraph at lines 40--113
+[][]$[]$[] []$[]$[] []$[]$[] 
+ []
+
+[1
+
+] (./a005.ruby.aux) ) 
+Here is how much of TeX's memory you used:
+ 4954 strings out of 481768
+ 71205 string characters out of 5933619
+ 346498 words of memory out of 5000000
+ 20348 multiletter control sequences out of 15000+600000
+ 537716 words of font info for 52 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 46i,5n,59p,432b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on a005.ruby.dvi (1 page, 10988 bytes).
