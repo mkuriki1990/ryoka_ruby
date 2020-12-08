@@ -1,0 +1,5 @@
+.DS_Store
+*.aux
+*.dvi
+*.log
+# template_B6.tex
