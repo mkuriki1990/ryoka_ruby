@@ -3,11 +3,11 @@
 # ひらがな txt ファイルと ruby タグに置き換えた HTML ファイルを
 # 作成するためのスクリプト
 
-filename=$@
+for filename in $*
+do
+    cd ./html/
+    ./mkhtml.rb ../$filename
 
-cd ./html/
-./mkhtml.rb ../$filename
-
-cd ../kana/
-./mkkana.rb ../$filename
-
+    cd ../kana/
+    ./mkkana.rb ../$filename
+done
