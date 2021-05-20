@@ -87,9 +87,10 @@ ARGV.each{|texFilename|
 
         # CID 文字コードで置き換えている部分の処理
         if line.match(/CID/)
-            line.gsub!(/ % CID (.+)/, "")
+            line.gsub!(/ % CID (.+)/, "") # コメントにある漢字文字を読み取り
             utf = $1
-            line.gsub!(/{\\CID{[0-9]{4,5}}}/, "#{utf}")
+            line.gsub!(/{\\CID{[0-9]{4,5}}}/, "#{utf}") # CID 書式で書かれている場合
+            line.gsub!(/{\\UTF{[0-9a-zA-Z]{4}}}/, "#{utf}") # UTF 書式で書かれている場合
         end
 
         # 曲番を抽出
