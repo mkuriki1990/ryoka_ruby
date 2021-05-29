@@ -1,0 +1,78 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            鴉翼の影 % タイトルを入れる
+        }
+        {\small 
+            （令和二年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        テスト君 作歌\\テスト君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 繰り返しなし)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{雲居}{くもい}の\ruby{空}{そら}に \ruby{黒銀}{くろぎん}の\ruby{羽}{はね}\\
+        \ruby{六}{ろく}\ruby{華}{はな}の\ruby{深緑}{しんりょく} \ruby{薄}{うす}れゆき\\
+        \ruby{二豎}{にじゅ}の\ruby{魔}{ま} \ruby{北}{きた}\ruby{溟}{}の\ruby{地}{ち}を\ruby{蝕}{むしば}みて\\
+        \ruby{鴉}{からす}\ruby{翼}{つばさ}は なにをか\ruby{鳴}{な}かん
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{空}{そら}の\ruby{鏡}{かがみ}に \ruby{夜}{よ}さりの\ruby{事跡}{じせき}\\
+        \ruby{若人}{わこうど}の\ruby{光}{ひかり}\ruby{迪}{すすむ} \ruby{幽}{かそけ}けきものへ\\
+        \ruby{闇}{やみ}の\ruby{暗夜}{あんや} \ruby{溌溂}{はつらつ}たる\ruby{影}{かげ}を\ruby{牽}{ひ}きて\\
+        \ruby{鴉}{からす}\ruby{翼}{つばさ}は なにをか\ruby{知}{し}らん
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{朝明}{あさけ}の\ruby{風}{かぜ}に たなびく\ruby{黒翼}{こくよく}\\
+        \ruby{陽}{ひ}は\ruby{悠揚}{ゆうよう}と \ruby{手稲}{ていね}の\ruby{山端}{やまはた}に\\
+        \ruby{春}{はる}の\ruby{芽吹}{めぶ}き \ruby{静寂}{せいじゃく}の\ruby{楡林}{ゆりん}の\ruby{中}{なか}に\\
+        \ruby{鴉}{からす}\ruby{翼}{つばさ}は なにをか\ruby{語}{かた}らん
+
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
