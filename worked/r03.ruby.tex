@@ -1,0 +1,90 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            北嵐 % タイトルを入れる
+        }
+        {\small 
+            （令和三年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        吉野萌君 作歌\\加納央都君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 繰り返しなし)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % \ruby{詩}{し}.
+        \ruby{呑}{の}めよ \ruby{集}{しゅう}へや \ruby{酔}{}ひ\ruby{狂}{きょう}へよ\\
+        \ruby{踊}{おど}れよ \ruby{唄}{うた}へや \ruby{笑}{えみ}（わら）ひ\ruby{狂}{きょう}へよ
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{月}{つき}の\ruby{随}{ずい}に\ruby{盈}{み}ちゆく\ruby{淡}{あわ}\ruby{燈}{あかり}\\
+        \ruby{蛮}{ばん}\ruby{歌}{うた}を\ruby{肴}{さかな}に\ruby{飲酒盃}{いさはい}(いさはい)\ruby{空}{あ}け\ruby{干}{ひ}さば\\
+        \ruby{深宵}{みよ}まで\ruby{痴}{し}れて\ruby{泥}{どろ}のよに\ruby{伏}{ふ}す\\
+        \ruby{朝}{あさ}そら\ruby{朧}{おぼろ}にて\ruby{心}{こころ}と\ruby{戯}{}る\\
+        \ruby{娑婆}{しゃば}の\ruby{夢}{ゆめ}
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        なべて\ruby{蓬莱}{ほうらい}は \ruby{揺蕩}{たゆた}う\ruby{蜃気楼}{しんきろう}\\
+        \ruby{響}{ひびき}む\ruby{晩鐘}{ばんしょう} \ruby{花}{はな}\ruby{零}{れい}る\ruby{沙羅双樹}{さらそうじゅ}\\
+        \ruby{畢竟}{ひっきょう}\ruby{浮世}{うきよ}は \ruby{泡沫}{ほうまつ}よ\\
+        \ruby{影}{かげ}\ruby{映}{うつ}す\ruby{般若湯}{はんにゃとう} \ruby{酌}{く}みて\ruby{禊}{みそぎ}がむ\\
+        \ruby{根無草}{ねなしぐさ}
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{三界流転}{さんがいるてん}に \ruby{息}{いき}つく\ruby{隙}{ひま}もなし\\
+        ふる\ruby{星霜}{せいそう}に \ruby{道}{みち}\ruby{途別}{とべつ}たれど\\
+        \ruby{廻}{まわ}り\ruby{流}{なが}れて \ruby{逢}{}はむとぞ\\
+        コチャ \ruby{杯}{はい}\ruby{交}{か}わせし\\
+        \ruby{彼我}{ひが}の\ruby{郷里}{きょうり}は \ruby{熊}{くま}ぞ\ruby{棲}{す}む\\
+        \ruby{蝦夷}{}ヶ\ruby{島}{えぞがしま}
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
