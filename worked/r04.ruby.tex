@@ -1,0 +1,82 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            星よ色褪せよ % タイトルを入れる
+        }
+        {\small 
+            （令和四年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        上野颯太君 作歌\\渡辺麗菜君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 繰り返しあり)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{蕾}{つぼみ}\ruby{綻}{ほころ}ぶ\ruby{香山}{こう|ざん}の\\
+        \ruby{雪解}{ゆき|げ}はいづこや\ruby{鹿仔}{しか|ご}の\ruby{眼}{め}\\
+        \ruby{神}{かみ}の\ruby{食指}{しょく|し}は\ruby{北}{きた}を\ruby{向}{む}き\\
+        \ruby{羊牛}{よう|ぎゅう}\ruby{摂理}{せつ|り}の\ruby{空}{そら}を\ruby{喰}{は}む\\
+        \ruby{烏合}{う|ごう}は\ruby{楡}{エルム}の\ruby{影}{かげ}\ruby{縫}{ぬ}わん\\
+        \ruby{星}{ほし}の\ruby{燈}{とも}る\ruby{野湯}{の|ゆ}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{最果}{さい|は}て\ruby{憂}{うれ}ぶ\ruby{那由多}{な|ゆ|た}\ruby{雲}{ぐも}\\
+        つまらぬことは\ruby[g]{不呑夜}{のめじよる}\\
+        \ruby[g]{時代}{なみ}に\ruby{揉}{も}まれた\ruby{酒}{さけ}に\ruby{酔}{よ}ひ\\
+        \ruby{銃唄}{ちゃか|うた}\ruby{素知}{そ|し}らぬ\ruby{寮}{りょう}の\ruby{歌}{うた}\\
+        \ruby{夜通}{よ|どお}し\ruby{宵越}{よい|ご}し\ruby[g]{{\UTF{6d04}遊魚}}{かいゆうぎょ}\\ % CID 洄
+        \ruby{星}{ほし}は\ruby[g]{明日}{あす}も\ruby{寝}{ね}ぬ
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{雪路}{ゆき|みち}を\ruby{征}{ゆ}く\ruby{璞玉}{あら|たま}よ\\
+        \ruby{星紋寮}{せい|もん|りょう}とは\ruby{誰}{たれ}\ruby{気}{き}づく\\
+        いかれ\ruby[g]{旦那}{ぽんち}や\ruby{虞美人}{ぐ|び|じん}の\\
+        \ruby{出逢}{で|あ}いと\ruby[g]{別離}{わかれ}が\ruby{恵迪}{けい|てき}\ruby{町}{ちょう}\\
+        \ruby{死人}{し|にん}に\ruby{朽}{く}ち\ruby{無}{な}し\\
+        さらば\ruby[g]{寮族}{とも}\\
+        \ruby{星}{ほし}よ\ruby{色褪}{いろ|あ}せよ
+
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
