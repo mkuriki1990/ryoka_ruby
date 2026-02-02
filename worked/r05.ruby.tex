@@ -1,0 +1,80 @@
+\documentclass[10pt,b5j]{tarticle} % B6 縦書き
+\input{template_B6.tex} % B6 用テンプレート読み込み
+
+\begin{document}
+% begin header
+%%%%% タイトルと作者 ここから %%%%%
+\begin{minipage}[c]{0.7\hsize} % タイトルは上から 7 割
+    \begin{center}
+    % begin title
+        {\LARGE
+            空よ涯てなく % タイトルを入れる
+        }
+        {\small 
+            （令和五年度寮歌） % 年などを入れる
+        }
+    % end title
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.3\hsize} % 作歌作曲は上から 3 割
+    \begin{flushright} % 下寄せにする
+        % begin name
+        田中裕人君 作歌\\渡辺麗菜君 作曲 % 作歌・作曲者
+        % end name
+    \end{flushright}
+\end{minipage}
+%%%%% タイトルと作者 ここまで %%%%%
+% (1,2,3 繰り返しなし)
+% end header
+
+% begin length
+\vspace{1.5em} % タイトル, 作者と歌詞の間に隙間を設ける
+\newcommand{\linespace}{0.5em} % 行間の設定
+\newcommand{\blocksize}{0.5\hsize} % 段組間の設定
+\newcommand{\itemmargin}{3em} % 曲番の位置調整の長さ
+% end length
+% begin body
+%%%%% 歌詞 ここから %%%%%
+\begin{enumerate} % 番号の箇条書き ここから
+    \setlength{\itemindent}{\itemmargin} % 曲番の位置調整
+    \begin{minipage}[c]{\blocksize}
+    
+        \vspace{\linespace}
+        \item~\\
+        % 1.
+        \ruby{空}{そら}よ\ruby{涯}{は}てなく あてどなく\\
+        \ruby[g]{楡鐘}{かね}ぞ\ruby{錆}{さ}びなん \ruby[g]{今日}{きょう}なれど\\
+        なお\ruby{佇}{たたず}まん \ruby[g]{若草}{くさ}の\ruby{城}{しろ}\\
+        \ruby{牧場}{まき|ば}\ruby{一吼}{いっ|こう} こだまして\\
+        \ruby{起}{おこ}さん\ruby{臥床}{が|しょう}の \ruby{手稲山}{て|いね|やま}\\
+        \ruby[g]{天恵}{そら}\ruby{指}{さ}す\ruby{楡}{えるむ} \ruby{時}{とき}\ruby{告}{つ}げん
+        
+        \vspace{\linespace}
+        \item~\\
+        % 2.
+        \ruby{海}{うみ}よ\ruby{涯}{は}てなく あてどなく\\
+        かの\ruby{清}{きよ}き\ruby{国}{くに} \ruby{漕}{こ}ぎ\ruby{着}{つ}けて\\
+        \ruby{風来坊}{ふう|らい|ぼう}が \ruby[g]{北溟}{きた}の\ruby{宿}{やど}\\
+        \ruby[g]{闇夜}{やみ}\ruby{一朶}{いち|だ}まで \ruby{覆}{おお}いては\\
+        \ruby{熾}{おこ}さん\ruby[g]{生命}{いのち}の \ruby{花}{はな}\ruby{篝}{かがり}\\
+        \ruby[g]{光迪}{ひか}れる\ruby{志}{おもい} \ruby{燈}{とも}さなん
+        
+    \end{minipage}
+    \begin{minipage}[c]{\blocksize}
+        
+        \vspace{\linespace}
+        \item~\\
+        % 3.
+        \ruby{旅}{たび}よ\ruby{涯}{は}てなく あてどなく\\
+        \ruby{踏}{ふ}み\ruby{往}{ゆ}く\ruby[g]{此岸}{みち}に \ruby{蛇}{じゃ}は\ruby{出}{で}るか\\
+        \ruby{賽}{さい}\ruby{投}{な}げ\ruby{入}{い}れん \ruby{恵迪寮}{けい|てき|りょう}\\
+        \ruby{生}{い}く\ruby{一刻}{いっ|こく}を \ruby{赫奕}{かく|やく}と\\
+        \ruby{興}{おこ}さん\ruby{真朱}{しん|しゅ}の \ruby{大}{おお}アラシ
+
+    
+    \end{minipage}
+\end{enumerate} % 番号の箇条書き ここまで
+%%%%% 歌詞 ここまで %%%%%
+% end body
+
+\end{document}
